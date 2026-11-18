@@ -1,0 +1,106 @@
+# OJS (journals.csvet.com.br): segurança, HTTPS e URLs limpas para hospedagem compartilhada.
+# Fica na raiz do repositório = raiz do subdomínio (mesmo padrão do profatilio).
+
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 0. Repassa o cabeçalho Authorization ao PHP (o Apache/CGI da hospedagem o descarta);
+    #    necessário para a API REST do OJS com token (ex.: scripts/invite-editors.php)
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # 1. HTTPS e host canônico (apenas em produção; o ambiente local segue em http://localhost)
+    RewriteCond %{HTTP_HOST} ^www\.journals\.csvet\.com\.br$ [NC]
+    RewriteRule ^ https://journals.csvet.com.br%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^journals\.csvet\.com\.br$ [NC]
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteRule ^ https://journals.csvet.com.br%{REQUEST_URI} [R=301,L]
+
+    # 1b. Revista renomeada (BJVR → NVAS): preserva links e autoridade do endereço antigo
+    RewriteRule ^bjvr(/.*)?$ /nvas$1 [R=301,L]
+
+    # 2. Arquivos e pastas ocultos (.git, .env, .ojs-installed-version…), exceto .well-known (SSL)
+    RewriteRule (^|/)\.(?!well-known(/|$)) - [F,L]
+
+    # 2b. Modelos .docx em endereço curto (/download/arquivo.docx), sem mostrar a pasta do tema.
+    #     O endereço antigo redireciona para o novo (links já enviados por e-mail e WhatsApp
+    #     continuam valendo). A declaração .docx saiu em 11/10/2026 (virou caixas no último passo
+    #     do envio): quem chega por um link antigo vai para a página de modelos.
+    RewriteRule ^(download|plugins/themes/csvet/docs)/NVAS-author-declaration-licence\.docx$ /nvas/pt_BR/templates [R=301,L]
+    RewriteCond %{THE_REQUEST} \s/plugins/themes/csvet/docs/
+    RewriteRule ^plugins/themes/csvet/docs/(.*)$ /download/$1 [R=301,L]
+    RewriteRule ^download/(NVAS-[A-Za-z0-9-]+\.docx)$ plugins/themes/csvet/docs/$1 [L]
+
+    # 3. Pastas do projeto e pastas internas do OJS: só index.php, assets e public/ são acessíveis
+    RewriteRule ^(docker|scripts|branding|content|data|node_modules)(/|$) - [F,L]
+    RewriteRule ^(api|cache|classes|controllers|dbscripts|docs|jobs|locale|pages|registry|schemas|tools)(/|$) - [F,L]
+    RewriteRule ^lib/pkp/(api|classes|controllers|dtd|includes|jobs|locale|pages|registry|schemas|tools|xml)(/|$) - [F,L]
+
+    # 4. Nenhum .php pode ser chamado diretamente, exceto index.php
+    RewriteCond %{REQUEST_URI} !^/index\.php
+    RewriteRule \.php$ - [F,L]
+
+    # 5. URLs limpas (restful_urls = On)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php/$1 [QSA,L]
+</IfModule>
+
+# 6. Arquivos sensíveis por nome/extensão (vale mesmo sem mod_rewrite)
+<FilesMatch "(^\.|^config\..*\.php$|^OJS_VERSION$|\.(tpl|sql|log|bak|sh|ps1|py|yml|yaml|lock|dist|md|xml|json|ini|ttf|zip|tar|gz|tgz|rar|7z)$)">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# 6b. App instalável (PWA): tipo do manifesto e service worker sempre revalidado
+AddType application/manifest+json .webmanifest
+<FilesMatch "^(sw\.js|manifest\.webmanifest|offline\.html)$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-cache"
+    </IfModule>
+</FilesMatch>
+
+# 6c. CSS do tema (gerado pelo OJS/OMP sempre no mesmo endereço, sem versão): revalida a cada
+#     visita (resposta 304 rápida quando não mudou), para um deploy aparecer na hora, e não
+#     depois de 7 dias de cache como os demais .css
+<If "%{REQUEST_URI} =~ m#/page/page/css#">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-cache"
+        Header unset Expires
+    </IfModule>
+</If>
+
+# 7. Cabeçalhos de segurança
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# 8. Desempenho (Core Web Vitals / SEO): compressão e cache de arquivos estáticos
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png  "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

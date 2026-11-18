@@ -1,0 +1,26 @@
+{
+  "en": {
+    "trust1Title": "Double-anonymous peer review",
+    "trust1Text": "At least two reviewers; COPE and EQUATOR guidance",
+    "trust2Title": "Open access, CC BY 4.0",
+    "trust2Text": "Authors retain copyright",
+    "trust3Title": "DOI for every article",
+    "trust3Text": "No fees for papers accepted until 31 Jan 2027",
+    "publishedBy": "Published by",
+    "country": "Brazil",
+    "automatedNotice": "This message was sent by the editorial system of the journal. To reply, use the reply button of your e-mail client.",
+    "tagline": "Open-access scientific journal (CC BY 4.0) with double-anonymous peer review"
+  },
+  "pt_BR": {
+    "trust1Title": "Avaliação duplo-anônima",
+    "trust1Text": "Ao menos dois revisores; diretrizes COPE e EQUATOR",
+    "trust2Title": "Acesso aberto, CC BY 4.0",
+    "trust2Text": "Os autores mantêm os direitos autorais",
+    "trust3Title": "DOI em todo artigo",
+    "trust3Text": "Sem taxas para aceites até 31/01/2027",
+    "publishedBy": "Publicada pela",
+    "country": "Brasil",
+    "automatedNotice": "Mensagem enviada pelo sistema editorial da revista. Para responder, use o botão Responder do seu e-mail.",
+    "tagline": "Revista científica de acesso aberto (CC BY 4.0), com avaliação por pares duplo-anônima"
+  }
+}

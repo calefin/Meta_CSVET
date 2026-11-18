@@ -1,0 +1,14 @@
+# OJS texts rewritten for NVAS (same keys as the default translation; see ../pt_BR/locale.po)
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "submission.event.copyrightAgreed"
+msgstr "{$userFullName} ({$username}) agreed to the copyright terms for submission."
+
+msgid "common.help"
+msgstr "Help"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/generic/csvetAffiliation/version.xml
+  *
+  * Filiação dos contribuidores em qualquer idioma da revista (sempre ativo depois de registrado).
+  -->
+<version>
+	<application>csvetAffiliation</application>
+	<type>plugins.generic</type>
+	<release>1.0.0.0</release>
+	<date>2026-10-19</date>
+	<lazy-load>0</lazy-load>
+	<class>CsvetAffiliationPlugin</class>
+</version>

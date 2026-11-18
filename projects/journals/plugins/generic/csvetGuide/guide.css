@@ -1,0 +1,24 @@
+/* Guia editorial no painel (plugins/generic/csvetGuide). Vai inline no <head> do painel pelo
+   GuideHandler: um <style> dentro do template seria descartado pelo Vue, que compila o #app. */
+.csvet-guide { max-width: 880px; color: #1d2233; font-size: 15px; line-height: 1.55; }
+.csvet-guide h1 { margin: 0 0 4px; }
+.csvet-guide .lead { margin: 0 0 20px; color: #5a6080; }
+.csvet-guide nav { display: flex; gap: 8px; margin: 0 0 24px; border-bottom: 1px solid #dde1ee; }
+.csvet-guide nav a { padding: 10px 16px; border: 1px solid transparent; border-bottom: 0; border-radius: 6px 6px 0 0; color: #000080; font-weight: 600; text-decoration: none; }
+.csvet-guide nav a:hover { background: #f4f6fb; }
+.csvet-guide section { display: none; }
+.csvet-guide section:target, .csvet-guide section.default { display: block; }
+.csvet-guide section:target ~ section.default { display: none; }
+.csvet-guide h2 { margin: 32px 0 8px; font-size: 20px; color: #000080; }
+.csvet-guide h3 { margin: 20px 0 6px; font-size: 16px; }
+.csvet-guide table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; font-size: 14px; }
+.csvet-guide th { text-align: left; background: #f4f6fb; color: #000080; }
+.csvet-guide th, .csvet-guide td { padding: 8px 10px; border-bottom: 1px solid #e3e6ef; vertical-align: top; }
+.csvet-guide code, .csvet-guide pre { font-family: Consolas, Menlo, monospace; font-size: 13px; background: #f4f6fb; border-radius: 4px; }
+.csvet-guide code { padding: 1px 5px; }
+.csvet-guide pre { padding: 10px 12px; overflow-x: auto; }
+.csvet-guide ul.check { list-style: none; padding-left: 4px; }
+.csvet-guide ul.check li::before { content: "\2610"; margin-right: 8px; color: #5a6080; }
+.csvet-guide .flow { margin: 12px 0 8px; padding: 12px; background: #fff; border: 1px solid #e3e6ef; border-radius: 8px; }
+.csvet-guide .flow svg { display: block; width: 100%; height: auto; }
+.csvet-guide .note { padding: 10px 14px; background: #eaf7ff; border-left: 3px solid #00aaff; }

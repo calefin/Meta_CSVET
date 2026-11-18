@@ -1,0 +1,12 @@
+<p>Dear {$recipientName},</p>
+<p>On behalf of <em>{$contextName}</em>, {$inviterName} invites you to join the journal in the role described below.</p>
+<div>{$existingRoles}</div>
+<div>{$rolesAdded}</div>
+<p>To accept, please use the button below. On the journal website you will confirm your details (name, affiliation and, if you have one, ORCID iD); if you do not have an account yet, you will create it in the same step.</p>
+<table class='btn-wrap' role='presentation' border='0' cellpadding='0' cellspacing='10'>
+    <tr><td class='btn-cell btn-accept'><a class='btn' href='{$acceptUrl}'>Accept the invitation</a></td></tr>
+    <tr><td class='btn-cell btn-decline'><a class='btn' href='{$declineUrl}'>Decline the invitation</a></td></tr>
+</table>
+<p>This link is personal and valid for a limited time. If you have any questions, simply reply to this e-mail.</p>
+<p>Kind regards,</p>
+<p>{$inviterName}<br><em>{$contextName}</em></p>

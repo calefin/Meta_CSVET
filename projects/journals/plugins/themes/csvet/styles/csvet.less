@@ -1,0 +1,1151 @@
+/**
+ * @file plugins/themes/csvet/styles/csvet.less
+ *
+ * @brief Identidade visual da CSVET Editora sobre o tema padrão do OJS.
+ *  Mesma marca de csvet.com.br: navy #000080/#000067, cinza #c6c6c6,
+ *  destaque #00aaff, Roboto. Compilado junto com o index.less do tema pai,
+ *  então todas as variáveis (@primary, @bg-base, @screen-*) estão disponíveis.
+ */
+
+@csvet-navy:       #000080;
+@csvet-navy-dark:  #000067;
+@csvet-navy-deep:  #00003d;
+@csvet-accent:     #00aaff;
+@csvet-accent-dk:  #0088cc;
+@csvet-gray:       #c6c6c6;
+@csvet-tint:       #f4f6fb;
+@csvet-border:     #e3e6ef;
+
+body {
+	color: #1d2233;
+}
+
+a {
+	color: @csvet-navy;
+
+	&:hover,
+	&:focus {
+		color: @csvet-accent-dk;
+	}
+}
+
+h1, h2, h3, h4 {
+	color: @csvet-navy;
+}
+
+// ---------- Cabeçalho ----------
+.pkp_structure_head {
+	background: linear-gradient(100deg, @csvet-navy-dark 0%, @csvet-navy 100%);
+	border-bottom: 3px solid @csvet-accent;
+}
+
+.pkp_site_name .is_text {
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+@media (min-width: @screen-desktop) {
+	// No desktop o menu fica sobre o gradiente do cabeçalho (no mobile mantém o fundo sólido)
+	.pkp_site_nav_menu {
+		background: transparent;
+	}
+
+	.pkp_navigation_primary_row {
+		background: transparent;
+		border-top: 1px solid rgba(255, 255, 255, 0.14);
+	}
+}
+
+@media (min-width: @screen-desktop) {
+	.pkp_navigation_primary > li > a {
+		font-weight: 500;
+		border-bottom: 2px solid transparent;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			border-color: @csvet-accent;
+		}
+	}
+
+	.pkp_navigation_search_wrapper a:hover,
+	.pkp_navigation_search_wrapper a:focus {
+		color: #fff;
+		border-color: @csvet-accent;
+	}
+}
+
+.pkp_navigation_user > li > a:hover,
+.pkp_navigation_user > li > a:focus {
+	color: @csvet-accent;
+}
+
+// ---------- Botões e links de galé (PDF/HTML) ----------
+.cmp_button,
+.cmp_form .buttons button,
+.page_search .submit button,
+.block_make_submission a,
+.pkp_button_primary {
+	background: @csvet-accent;
+	border-color: @csvet-accent;
+	color: #fff;
+	border-radius: 6px;
+	box-shadow: none;
+	font-weight: 500;
+
+	&:hover,
+	&:focus {
+		background: @csvet-accent-dk;
+		border-color: @csvet-accent-dk;
+		color: #fff;
+	}
+}
+
+.block_make_submission a {
+	display: inline-block;
+	padding: 0.6rem 1.2rem;
+	text-decoration: none;
+}
+
+.obj_galley_link {
+	border-color: @csvet-navy;
+	color: @csvet-navy;
+	border-radius: 6px;
+
+	&:hover,
+	&:focus {
+		background: @csvet-navy;
+		border-color: @csvet-navy;
+		color: #fff;
+	}
+}
+
+// ---------- Conteúdo ----------
+.cmp_breadcrumbs a {
+	color: @csvet-navy;
+}
+
+.page_index_journal .homepage_about,
+.page_index_journal .current_issue,
+.page_index_journal .cmp_announcements {
+	h2 {
+		position: relative;
+		padding-left: 0.9rem;
+		border-left: 4px solid @csvet-accent;
+	}
+}
+
+.obj_article_summary > .title a,
+.obj_issue_summary .title {
+	color: @csvet-navy;
+
+	&:hover,
+	&:focus {
+		color: @csvet-accent-dk;
+	}
+}
+
+.obj_article_details .main_entry .item.doi a,
+.obj_article_details .main_entry .item.keywords .value {
+	color: @csvet-navy;
+}
+
+// Página inicial do portal (lista de revistas)
+.page_index_site .journals > ul > li {
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	border: 1px solid @csvet-border;
+	border-top: 4px solid @csvet-accent;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 61, 0.08);
+}
+
+// ---------- Barra lateral ----------
+.pkp_block .title {
+	color: @csvet-navy;
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	border-bottom: 2px solid @csvet-accent;
+	padding-bottom: 0.4rem;
+}
+
+// ---------- Rodapé ----------
+.pkp_structure_footer_wrapper {
+	background: @csvet-navy-deep;
+	color: @csvet-gray;
+	border-top: 3px solid @csvet-accent;
+
+	a {
+		color: @csvet-accent;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+		}
+	}
+}
+
+.pkp_footer_content {
+	color: @csvet-gray;
+}
+
+.pkp_brand_footer {
+	opacity: 0.6;
+
+	img {
+		filter: brightness(0) invert(1);
+		max-width: 100%;
+		height: auto;
+	}
+
+	@media (max-width: (@screen-tablet - 1)) {
+		float: none;
+		width: auto;
+		max-width: 160px;
+		margin: 0 auto;
+		padding-left: @base;
+		padding-right: @base;
+	}
+}
+
+// Destaques da página inicial (conteúdo adicional da revista)
+.csvet-highlights {
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+
+	@media (min-width: @screen-tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	li {
+		padding: 1rem 1.1rem;
+		background: @csvet-tint;
+		border-left: 4px solid @csvet-accent;
+		border-radius: 0 8px 8px 0;
+		line-height: 1.5;
+	}
+
+	strong {
+		display: block;
+		color: @csvet-navy;
+		margin-bottom: 0.2rem;
+	}
+}
+
+// Chamada aberta em destaque na página inicial (leva às páginas das chamadas)
+.csvet-callout {
+	list-style: none;
+	margin: 0 0 1.75rem;
+	padding: 0;
+
+	li {
+		padding: 1.1rem 1.25rem;
+		border-radius: 12px;
+		color: #dfe4ff;
+		line-height: 1.55;
+		background:
+			radial-gradient(circle at 100% 0, rgba(0, 170, 255, 0.35), transparent 60%),
+			linear-gradient(140deg, @csvet-navy-deep 0%, @csvet-navy 100%);
+	}
+
+	strong {
+		color: #fff;
+	}
+
+	> li > strong:first-child {
+		display: block;
+		margin-bottom: 0.25rem;
+		color: @csvet-accent;
+		font-size: 0.8rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	a:not(.cmp_button) {
+		color: #8fd8ff;
+	}
+
+	.cmp_button {
+		display: inline-block;
+		margin: 0.75rem 0.75rem 0 0;
+		padding: 0.6rem 1.1rem;
+		text-decoration: none;
+	}
+}
+
+// ---------- Celular ----------
+// Textos longos (DOIs, URLs, e-mails) quebram a linha em vez de alargar a página
+.pkp_structure_main {
+	overflow-wrap: anywhere;
+}
+
+.pkp_structure_main img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: (@screen-tablet - 1)) {
+	// Tabelas (tipos de artigo, documentos da submissão) rolam dentro do próprio bloco
+	.pkp_structure_main table {
+		display: block;
+		max-width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		overflow-wrap: normal;
+
+		th,
+		td {
+			min-width: 7rem;
+		}
+	}
+
+	// Campos com 16px: o iPhone não dá zoom ao tocar (era o que "desmontava" a página no login)
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
+	input[type="url"],
+	input[type="tel"],
+	select,
+	textarea {
+		font-size: 16px;
+		max-width: 100%;
+	}
+
+	.pkp_form .fields input[type="text"],
+	.pkp_form .fields input[type="email"],
+	.pkp_form .fields input[type="password"],
+	.pkp_form .fields select {
+		width: 100%;
+	}
+
+	// Botões da página inicial empilhados e fáceis de tocar
+	.additional_content .cmp_button {
+		display: block;
+		text-align: center;
+		margin-bottom: 0.75rem;
+	}
+
+	// Logo maior no cabeçalho do celular
+	.pkp_site_name .is_img img {
+		max-height: 40px;
+	}
+}
+
+// ---------- Chamadas (páginas personalizadas call-for-papers e clinical-images) ----------
+// Pensada para quem abre o link no celular (WhatsApp): uma coluna e botões grandes;
+// em telas maiores, cartões em grade.
+.pkp_page_call-for-papers .page > .page_title,
+.pkp_page_clinical-images .page > .page_title {
+	// o título já está no destaque da chamada: some da tela, fica para leitores de tela
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+.cfp {
+	line-height: 1.55;
+	margin-bottom: 2rem;
+
+	svg {
+		width: 28px;
+		height: 28px;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 1.7;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+}
+
+.cfp-lang {
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.4rem;
+	margin: 0 0 0.75rem;
+	font-size: 0.85rem;
+
+	a {
+		padding: 0.3rem 0.75rem;
+		border: 1px solid @csvet-border;
+		border-radius: 999px;
+		text-decoration: none;
+		color: @csvet-navy;
+
+		&[aria-current] {
+			background: @csvet-navy;
+			border-color: @csvet-navy;
+			color: #fff;
+		}
+	}
+}
+
+.cfp-hero {
+	padding: 1.75rem 1.25rem 1.5rem;
+	border-radius: 14px;
+	color: #fff;
+	background:
+		radial-gradient(circle at 100% 0, rgba(0, 170, 255, 0.35), transparent 55%),
+		linear-gradient(140deg, @csvet-navy-deep 0%, @csvet-navy 100%);
+	box-shadow: 0 10px 30px rgba(0, 0, 61, 0.25);
+
+	@media (min-width: @screen-tablet) {
+		padding: 2.5rem 2.25rem 2rem;
+	}
+
+	a:not(.cfp-btn) {
+		color: #8fd8ff;
+	}
+}
+
+.cfp-kicker {
+	display: inline-block;
+	margin: 0 0 0.75rem;
+	padding: 0.25rem 0.7rem;
+	border-radius: 999px;
+	background: rgba(0, 170, 255, 0.18);
+	border: 1px solid rgba(0, 170, 255, 0.55);
+	color: #bfe9ff;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.pkp_structure_main .cfp-title {
+	margin: 0 0 0.75rem;
+	color: #fff;
+	font-size: 1.9rem;
+	line-height: 1.15;
+	font-weight: 700;
+
+	span {
+		color: @csvet-accent;
+	}
+
+	@media (min-width: @screen-tablet) {
+		font-size: 2.5rem;
+	}
+}
+
+.cfp-lead {
+	margin: 0 0 1.25rem;
+	color: #dfe4ff;
+	font-size: 1.02rem;
+
+	strong {
+		color: #fff;
+	}
+}
+
+.cfp-deadline {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35rem 0.75rem;
+	margin: 0 0 1.25rem;
+	padding: 0.9rem 1rem;
+	border-radius: 10px;
+	background: #fff;
+	color: @csvet-navy;
+	border-left: 6px solid @csvet-accent;
+}
+
+.cfp-deadline-label {
+	width: 100%;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #5a6080;
+}
+
+.cfp-deadline-date {
+	font-size: 1.45rem;
+	line-height: 1.2;
+}
+
+.cfp-countdown {
+	padding: 0.15rem 0.6rem;
+	border-radius: 999px;
+	background: #ffe7a3;
+	color: #6b4a00;
+	font-size: 0.85rem;
+	font-weight: 700;
+
+	.cfp-is-closed & {
+		background: #eceef5;
+		color: #5a6080;
+	}
+}
+
+.cfp-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	margin: 0 0 0.75rem;
+
+	@media (min-width: @screen-tablet) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.pkp_structure_main .cfp-btn {
+	display: block;
+	padding: 0.95rem 1.4rem;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.05rem;
+	font-weight: 700;
+	line-height: 1.2;
+	transition: background 0.15s, border-color 0.15s;
+}
+
+.pkp_structure_main .cfp-btn-primary {
+	background: @csvet-accent;
+	border-color: @csvet-accent;
+	color: #fff;
+	box-shadow: 0 6px 18px rgba(0, 170, 255, 0.4);
+
+	&:hover,
+	&:focus {
+		background: @csvet-accent-dk;
+		border-color: @csvet-accent-dk;
+		color: #fff;
+	}
+}
+
+.pkp_structure_main .cfp-btn-ghost {
+	background: transparent;
+	border-color: rgba(255, 255, 255, 0.6);
+	color: #fff;
+
+	&:hover,
+	&:focus {
+		background: rgba(255, 255, 255, 0.1);
+		border-color: #fff;
+		color: #fff;
+	}
+}
+
+.cfp-login {
+	margin: 0;
+	font-size: 0.9rem;
+	color: #c9cdf0;
+}
+
+// Vantagens: 1 coluna no celular, 2 a partir de 480px
+.cfp-perks {
+	list-style: none;
+	margin: 1.25rem 0 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.75rem;
+
+	@media (min-width: 480px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	li {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-rows: min-content 1fr;
+		column-gap: 0.75rem;
+		align-items: start;
+		padding: 0.9rem 1rem;
+		border: 1px solid @csvet-border;
+		border-radius: 12px;
+		background: #fff;
+	}
+
+	svg {
+		grid-row: span 2;
+		padding: 7px;
+		width: 42px;
+		height: 42px;
+		border-radius: 10px;
+		background: @csvet-tint;
+		color: @csvet-accent-dk;
+	}
+
+	strong {
+		color: @csvet-navy;
+	}
+
+	span {
+		font-size: 0.9rem;
+		color: #4a5070;
+	}
+}
+
+.cfp-section {
+	margin-top: 2.25rem;
+
+	h3 {
+		margin: 0 0 0.4rem;
+		padding-left: 0.8rem;
+		border-left: 4px solid @csvet-accent;
+		font-size: 1.35rem;
+	}
+
+	> p {
+		margin: 0 0 1rem;
+		color: #4a5070;
+	}
+}
+
+// Tipos de artigo
+.cfp-types {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.75rem;
+
+	@media (min-width: 480px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		padding: 0.9rem 1rem 0.9rem 1.1rem;
+		border-radius: 10px;
+		background: @csvet-tint;
+		border-left: 4px solid @csvet-navy;
+	}
+
+	li.cfp-student {
+		border-left-color: @csvet-accent;
+		background: #eaf7ff;
+	}
+
+	strong {
+		color: @csvet-navy;
+		font-size: 1.02rem;
+	}
+
+	span {
+		font-size: 0.9rem;
+		color: #3c4262;
+	}
+
+	em {
+		margin-top: auto;
+		padding-top: 0.25rem;
+		font-style: normal;
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: @csvet-accent-dk;
+	}
+
+	// selo "ótimo para estudantes" acima do nome
+	b {
+		align-self: flex-start;
+		order: -1;
+		padding: 0.1rem 0.5rem;
+		border-radius: 999px;
+		background: @csvet-accent;
+		color: #fff;
+		font-size: 0.7rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+}
+
+// Como funciona: linha do tempo vertical numerada (lê bem em qualquer largura)
+.cfp-steps {
+	list-style: none;
+	counter-reset: cfp-step;
+	margin: 0;
+	padding: 0;
+
+	li {
+		counter-increment: cfp-step;
+		position: relative;
+		padding: 0 0 1.1rem 3.4rem;
+		min-height: 2.6rem;
+
+		&::before {
+			content: counter(cfp-step);
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			width: 2.4rem;
+			height: 2.4rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background: @csvet-navy;
+			color: #fff;
+			font-weight: 700;
+		}
+
+		// trilho entre os números
+		&::after {
+			content: "";
+			position: absolute;
+			left: ~"calc(1.2rem - 1px)";
+			top: 2.4rem;
+			bottom: 0;
+			width: 2px;
+			background: @csvet-border;
+		}
+
+		&:last-child {
+			padding-bottom: 0;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	li.cfp-you::before {
+		background: @csvet-accent;
+	}
+
+	li.cfp-done::before {
+		content: "\2713";
+		background: #12a150;
+	}
+
+	strong {
+		display: block;
+		padding-top: 0.35rem;
+		color: @csvet-navy;
+		font-size: 1.02rem;
+	}
+
+	span {
+		display: block;
+		font-size: 0.92rem;
+		color: #3c4262;
+	}
+}
+
+.cfp-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 1.25rem 0 0;
+	font-size: 0.8rem;
+	color: #5a6080;
+}
+
+.cfp-key::before {
+	content: "";
+	display: inline-block;
+	width: 0.7rem;
+	height: 0.7rem;
+	margin-right: 0.35rem;
+	border-radius: 50%;
+	background: @csvet-navy;
+	vertical-align: -0.05rem;
+}
+
+.cfp-key-you::before {
+	background: @csvet-accent;
+}
+
+.cfp-key-done::before {
+	background: #12a150;
+}
+
+// Antes de enviar
+.cfp-check ul {
+	list-style: none;
+	margin: 0;
+	padding: 1rem 1.1rem;
+	border: 1px dashed @csvet-gray;
+	border-radius: 12px;
+
+	li {
+		position: relative;
+		padding: 0.35rem 0 0.35rem 1.8rem;
+
+		&::before {
+			content: "\2713";
+			position: absolute;
+			left: 0;
+			top: 0.45rem;
+			width: 1.3rem;
+			height: 1.3rem;
+			border-radius: 50%;
+			background: @csvet-tint;
+			color: @csvet-accent-dk;
+			font-size: 0.8rem;
+			font-weight: 700;
+			line-height: 1.3rem;
+			text-align: center;
+		}
+	}
+
+	strong {
+		color: @csvet-navy;
+	}
+}
+
+// Chamada final
+.cfp-final {
+	margin-top: 2.25rem;
+	padding: 1.5rem 1.25rem;
+	border-radius: 14px;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient(140deg, @csvet-navy 0%, @csvet-navy-deep 100%);
+
+	.cfp-actions {
+		justify-content: center;
+	}
+
+	a:not(.cfp-btn) {
+		color: #8fd8ff;
+	}
+}
+
+.cfp-final-title {
+	margin: 0 0 1rem;
+	font-size: 1.3rem;
+	line-height: 1.3;
+
+	strong {
+		display: block;
+		color: @csvet-accent;
+		font-size: 1.6rem;
+	}
+}
+
+.cfp-contact {
+	margin: 0.5rem 0 0;
+	font-size: 0.88rem;
+	color: #c9cdf0;
+}
+
+// Números do formato (chamada de imagens clínicas)
+.cfp-facts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.75rem;
+
+	@media (min-width: @screen-tablet) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	li {
+		padding: 0.85rem 0.9rem;
+		border-radius: 10px;
+		background: @csvet-tint;
+		border-top: 3px solid @csvet-accent;
+	}
+
+	// número ímpar de cartões no celular: o último ocupa a linha inteira
+	@media (max-width: (@screen-tablet - 1)) {
+		li:last-child:nth-child(odd) {
+			grid-column: 1 / -1;
+		}
+	}
+
+	strong {
+		display: block;
+		color: @csvet-navy;
+		font-size: 1.35rem;
+		line-height: 1.2;
+	}
+
+	span {
+		font-size: 0.85rem;
+		color: #3c4262;
+	}
+}
+
+.cfp-section .cfp-note {
+	margin: 1rem 0 0;
+	padding: 0.8rem 1rem;
+	border-radius: 10px;
+	background: #fff8e1;
+	color: #4a3b00;
+	font-size: 0.92rem;
+}
+
+// Pode / não pode
+.cfp-dodont {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.75rem;
+
+	@media (min-width: 560px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	> div {
+		padding: 1rem 1.1rem;
+		border-radius: 12px;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		position: relative;
+		padding: 0.3rem 0 0.3rem 1.6rem;
+		font-size: 0.92rem;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0.3rem;
+			font-weight: 700;
+		}
+	}
+}
+
+.cfp-do {
+	background: #e9f8ef;
+	border: 1px solid #b7e4c7;
+
+	li::before {
+		content: "\2713";
+		color: #12a150;
+	}
+}
+
+.cfp-dont {
+	background: #fdecec;
+	border: 1px solid #f3c1c1;
+
+	li::before {
+		content: "\2715";
+		color: #c62828;
+	}
+}
+
+.cfp-section .cfp-dd-title {
+	margin: 0 0 0.4rem;
+	font-weight: 700;
+	font-size: 0.8rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #1d2233;
+}
+
+.cfp-types.cfp-criteria li {
+	border-left-color: @csvet-accent;
+}
+
+// Modalidades aceitas (chips no destaque da chamada de imagens clínicas)
+.cfp-modalities {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin: 0 0 1rem;
+	padding: 0;
+
+	li {
+		padding: 0.2rem 0.65rem;
+		border-radius: 999px;
+		background: rgba(255, 255, 255, 0.12);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		color: #fff;
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+}
+
+// Formulário "Quero publicar" (página publish-with-us; plugin generic/csvetLeads)
+.cfp-form {
+	max-width: 560px;
+	padding: 1.25rem 1rem;
+	border: 1px solid @csvet-border;
+	border-radius: 14px;
+	background: #fff;
+
+	@media (min-width: @screen-tablet) {
+		padding: 1.5rem 1.75rem;
+	}
+
+	.cfp-field {
+		margin: 0 0 1rem;
+	}
+
+	label {
+		display: block;
+		margin: 0 0 0.3rem;
+		font-weight: 700;
+		color: @csvet-navy;
+
+		small {
+			font-weight: 400;
+			color: #5a6080;
+		}
+	}
+
+	// 16px: abaixo disso o iPhone dá zoom no campo ao tocar
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	select,
+	textarea {
+		display: block;
+		width: 100%;
+		min-height: 48px;
+		padding: 0.65rem 0.8rem;
+		border: 1px solid #b9bfd6;
+		border-radius: 10px;
+		background: #fff;
+		color: #1d2340;
+		font: inherit;
+		font-size: 16px;
+
+		&:focus {
+			outline: none;
+			border-color: @csvet-accent;
+			box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.25);
+		}
+
+		&[aria-invalid] {
+			border-color: #b42318;
+		}
+	}
+
+	textarea {
+		min-height: 90px;
+		resize: vertical;
+	}
+
+	.cfp-consent {
+		display: flex;
+		gap: 0.6rem;
+		align-items: flex-start;
+
+		input {
+			flex: none;
+			width: 22px;
+			height: 22px;
+			margin: 0.1rem 0 0;
+		}
+
+		label {
+			font-weight: 400;
+			font-size: 0.9rem;
+			color: #3c4262;
+		}
+	}
+
+	button.cfp-btn {
+		width: 100%;
+		cursor: pointer;
+
+		&[disabled] {
+			opacity: 0.7;
+			cursor: wait;
+		}
+	}
+}
+
+// Armadilha para robôs: fora da tela, sem sumir do formulário
+.cfp-hp {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.cfp-field-error,
+.cfp-form-error {
+	display: block;
+	margin: 0.35rem 0 0;
+	color: #b42318;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.cfp-form-error {
+	margin: 0 0 1rem;
+	padding: 0.7rem 0.9rem;
+	border-radius: 10px;
+	background: #fdecea;
+
+	&[hidden] {
+		display: none;
+	}
+}
+
+.cfp-form-done {
+	max-width: 560px;
+	padding: 1.25rem 1rem;
+	border-radius: 14px;
+	border-left: 6px solid #1e6b3a;
+	background: #e8f5ec;
+	color: #1d2340;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.cfp-form-done-title {
+	margin: 0 0 0.5rem;
+	color: #1e6b3a;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.pkp_structure_main .cfp-btn-outline {
+	background: #fff;
+	border-color: @csvet-navy;
+	color: @csvet-navy;
+
+	&:hover,
+	&:focus {
+		background: @csvet-tint;
+		color: @csvet-navy;
+	}
+}
+
+// Perguntas frequentes: abre e fecha (leve no celular)
+.cfp-faq details {
+	margin: 0 0 0.6rem;
+	border: 1px solid @csvet-border;
+	border-radius: 10px;
+	background: #fff;
+
+	summary {
+		padding: 0.85rem 1rem;
+		font-weight: 700;
+		color: @csvet-navy;
+		cursor: pointer;
+	}
+
+	p {
+		margin: 0;
+		padding: 0 1rem 0.9rem;
+		color: #3c4262;
+	}
+}

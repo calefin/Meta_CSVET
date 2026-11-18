@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/generic/csvetFormUrls/version.xml
+  *
+  * Formulários com link (http/https) enviados codificados pelo tema, para o ModSecurity não recusar (sempre ativo depois de registrado).
+  -->
+<version>
+	<application>csvetFormUrls</application>
+	<type>plugins.generic</type>
+	<release>1.0.0.0</release>
+	<date>2026-11-14</date>
+	<lazy-load>0</lazy-load>
+	<class>CsvetFormUrlsPlugin</class>
+</version>

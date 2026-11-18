@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/generic/csvetDb/version.xml
+  *
+  * Consultas preparadas pelo PHP, para evitar o erro 1615 do MySQL (sempre ativo depois de registrado).
+  -->
+<version>
+	<application>csvetDb</application>
+	<type>plugins.generic</type>
+	<release>1.0.0.0</release>
+	<date>2026-10-18</date>
+	<lazy-load>0</lazy-load>
+	<class>CsvetDbPlugin</class>
+</version>

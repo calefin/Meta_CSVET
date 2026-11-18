@@ -1,0 +1,11 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.themes.csvet.name"
+msgstr "CSVET Editora Theme"
+
+msgid "plugins.themes.csvet.description"
+msgstr "Default theme customised with the CSVET Editora visual identity (navy, #00aaff, Roboto)."
