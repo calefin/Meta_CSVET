@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" xmlns="http://www.w3.org/1999/xhtml" data-csvet-layout="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>{{journalName}}</title>
+<style>
+  body { margin:0; padding:0; background:#eef1f7; }
+  .csvet-body p { margin:0 0 16px; }
+  .csvet-body a { color:#000080; text-decoration:underline; }
+  .csvet-body a:hover { color:#0088cc; }
+  .csvet-body h1, .csvet-body h2, .csvet-body h3 { font-family:Georgia, 'Times New Roman', serif; color:#000067; font-weight:normal; line-height:1.3; margin:24px 0 12px; }
+  .csvet-body ul, .csvet-body ol { margin:0 0 16px; padding-left:22px; }
+  .csvet-body li { margin:0 0 6px; }
+  .csvet-body blockquote { margin:0 0 16px; padding:12px 16px; background:#f4f6fb; border-left:3px solid #00aaff; }
+  @media (max-width:620px) {
+    .csvet-pad { padding-left:24px !important; padding-right:24px !important; }
+    .csvet-logo { width:240px !important; height:auto !important; }
+    .csvet-trust td { display:block !important; width:100% !important; padding:4px 0 !important; }
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background:#eef1f7;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef1f7;">
+  <tr>
+    <td align="center" style="padding:32px 12px;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+
+        <!-- Cabeçalho: logo da revista sobre o navy da marca -->
+        <tr>
+          <td class="csvet-pad" style="background:#000067;padding:28px 40px 24px;border-radius:8px 8px 0 0;">
+            <a href="{{journalUrl}}" style="text-decoration:none;">{{logo}}</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="background:#00aaff;height:3px;line-height:3px;font-size:0;">&nbsp;</td>
+        </tr>
+
+        <!-- Corpo da mensagem (vem do OJS) -->
+        <tr>
+          <td class="csvet-pad csvet-body" style="background:#ffffff;padding:36px 40px 28px;font-family:Roboto, -apple-system, 'Segoe UI', Arial, sans-serif;font-size:15px;line-height:1.65;color:#1d2233;">
+            {{content}}
+          </td>
+        </tr>
+
+        <!-- Faixa de credenciais: só nos e-mails de captação (build.py); vazia nos e-mails do OJS -->
+        {{trustBand}}
+
+        <!-- Rodapé institucional -->
+        <tr>
+          <td class="csvet-pad" style="background:#00003d;padding:24px 40px;border-radius:0 0 8px 8px;font-family:Roboto, -apple-system, 'Segoe UI', Arial, sans-serif;font-size:12px;line-height:1.6;color:#c6c9dd;">
+            <div style="font-family:Georgia, 'Times New Roman', serif;font-size:15px;color:#ffffff;margin:0 0 4px;">{{journalName}}</div>
+            <div style="margin:0 0 4px;">{{tagline}}</div>
+            <div style="margin:0 0 12px;">{{publishedBy}} <a href="https://csvet.com.br" style="color:#ffffff;text-decoration:none;">CSVET Editora</a> &middot; Americana, SP, {{country}}</div>
+            <div>
+              <a href="{{journalUrl}}" style="color:#00aaff;text-decoration:none;">{{journalHost}}</a>
+              &nbsp;&middot;&nbsp; <a href="mailto:contato@csvet.com.br" style="color:#00aaff;text-decoration:none;">contato@csvet.com.br</a>
+            </div>
+            <div style="margin-top:14px;font-size:11px;color:#8b90b0;">{{automatedNotice}}</div>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

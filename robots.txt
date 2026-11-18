@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /index.php/
+Disallow: /*/login
+Disallow: /*/user/
+Disallow: /*/management/
+Disallow: /*/workflow/
+Disallow: /*/search?
+Disallow: /*/api/
+Disallow: /*/$$$call$$$/
+# Formulário "Quero publicar" (envio e lista dos editores) e triagem: não são páginas
+Disallow: /*/interest/
+Disallow: /*/screening/
+Disallow: /*/guide
+# CSS do tema é servido por $$$call$$$: o Google precisa dele para renderizar a página
+Allow: /*/$$$call$$$/page/page/css
+Allow: /
+
+# URL final (sem redirecionamento): o índice aponta para o sitemap de cada revista
+Sitemap: https://journals.csvet.com.br/index/en/sitemap

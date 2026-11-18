@@ -1,0 +1,55 @@
+# O código do OJS NÃO é versionado: ele é instalado por scripts/install-ojs.sh
+# (equivalente ao "composer install" do profatilio). Por isso ignoramos tudo
+# e liberamos apenas os arquivos deste projeto.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/.htaccess
+!/robots.txt
+!/.env.example
+!/README.md
+!/PLANO_EDITORIAL.md
+!/PROXIMOS_PASSOS.md
+!/OJS_VERSION
+!/manifest.webmanifest
+!/sw.js
+!/offline.html
+!/docker-compose.yml
+!/docker/
+!/scripts/
+!/branding/
+!/content/
+
+# Tema e plugins próprios (o restante de plugins/ é código do OJS)
+!/plugins/
+/plugins/*
+!/plugins/themes/
+/plugins/themes/*
+!/plugins/themes/csvet/
+!/plugins/generic/
+/plugins/generic/*
+!/plugins/generic/csvetEmail/
+!/plugins/generic/csvetLocaleUrl/
+!/plugins/generic/csvetDeclaration/
+!/plugins/generic/csvetScreening/
+!/plugins/generic/csvetLeads/
+!/plugins/generic/csvetDb/
+!/plugins/generic/csvetAffiliation/
+!/plugins/generic/csvetReviewReminder/
+!/plugins/generic/csvetGuide/
+!/plugins/generic/csvetFormUrls/
+!/plugins/generic/csvetTransparency/
+!/plugins/generic/csvetReviewQuality/
+
+# Saídas geradas
+/branding/out/
+
+# Planilhas preenchidas do corpo editorial (dados pessoais): nunca versionar
+/content/*/corpo-editorial/*.csv
+/content/*/corpo-editorial/*preenchid*
+/content/*/private/
+content/nvas/emails/prontos/
+
+# Cache do Python (os geradores em content/ importam uns aos outros)
+__pycache__/

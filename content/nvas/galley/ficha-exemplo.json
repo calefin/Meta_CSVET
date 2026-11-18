@@ -1,0 +1,79 @@
+{
+  "_comment": [
+    "Ficha de um artigo para build_galley.py (dados FICTÍCIOS). Caminhos relativos partem da pasta desta ficha.",
+    "manuscript: o .docx anonimizado, no formato dos modelos da revista (content/nvas/templates).",
+    "title: aceita <em> para nomes científicos. short_title: título corrido do cabeçalho das páginas.",
+    "section: título da seção como no journal.json (define a cor e o rótulo da bandeira); article_type: subtipo mostrado ao lado.",
+    "authors: surname vai no cabeçalho corrido; cite_name na citação (Vancouver); affiliations são índices de 'affiliations' (1, 2...).",
+    "floats (opcional), por tabela ou figura: src = arquivo em alta resolução (PNG/JPG) no lugar da imagem do .docx; after = trecho do parágrafo ou título depois do qual ela entra; width = full (padrão), column ou page; scale = % da largura.",
+    "Sem 'after', vale a posição do autor no .docx (ou o marcador [Figure 1 here]); sem isso, logo depois do 1º parágrafo que a cita. O relatório do build mostra onde cada uma ficou.",
+    "declarations: [rótulo, texto] que substituem as declarações ocultas na anonimização (ou entram no fim; Acknowledgments entra no começo).",
+    "Prova do autor (--proof): volume, article_number (ex.: e12), doi (ex.: 10.54547/nvas.2026.12), received, accepted; proof_deadline opcional. Publicação (--final): também published (ex.: 3 March 2027)."
+  ],
+  "slug": "NVAS_exemplo_case_report",
+  "manuscript": "manuscrito_anonimizado.docx",
+  "title": "Cutaneous lymphoma in a domestic ferret (<em>Mustela putorius furo</em>): a case report",
+  "short_title": "Cutaneous lymphoma in a ferret",
+  "article_type": "Case report",
+  "section": "Case Reports and Case Series",
+  "authors": [
+    {
+      "name": "Ana Exemplo da Silva",
+      "surname": "Silva",
+      "cite_name": "Silva AE",
+      "orcid": "0000-0000-0000-0000",
+      "affiliations": [
+        1
+      ]
+    },
+    {
+      "name": "Bruno Modelo Souza",
+      "surname": "Souza",
+      "cite_name": "Souza BM",
+      "affiliations": [
+        1,
+        2
+      ],
+      "corresponding": true
+    }
+  ],
+  "affiliations": [
+    "Faculdade de Medicina Veterinária, Universidade Exemplo, São Paulo, SP, Brazil",
+    "Hospital Veterinário Exemplo, Campinas, SP, Brazil"
+  ],
+  "corresponding": {
+    "name": "Bruno Modelo Souza",
+    "email": "autor@example.org"
+  },
+  "floats": {
+    "Figure 1": {
+      "src": "Figure1.png",
+      "after": "Histopathology revealed",
+      "width": "full"
+    },
+    "Table 1": {
+      "width": "column"
+    }
+  },
+  "declarations": [
+    [
+      "Acknowledgments",
+      "The authors thank the hospital staff."
+    ],
+    [
+      "Author contributions (CRediT)",
+      "Ana Exemplo da Silva: Investigation, Writing – original draft. Bruno Modelo Souza: Supervision, Writing – review and editing."
+    ],
+    [
+      "Conflicts of interest",
+      "The authors declare no conflicts of interest."
+    ]
+  ],
+  "volume": null,
+  "article_number": null,
+  "doi": null,
+  "received": null,
+  "accepted": null,
+  "proof_deadline": null,
+  "published": null
+}

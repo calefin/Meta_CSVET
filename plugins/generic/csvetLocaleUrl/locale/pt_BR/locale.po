@@ -1,0 +1,29 @@
+# Textos do OJS reescritos para a NVAS. O OJS carrega este arquivo depois da tradução
+# padrão (lib/pkp/locale), então a mesma chave aqui vale no lugar da original.
+msgid ""
+msgstr ""
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+# Aviso no fim dos formulários (ex.: envio de submissão) quando falta algo: o padrão
+# "Por favor corrija um erro. Pular para o próximo erro" confundia os autores.
+msgid "form.errorOne"
+msgstr "Há 1 campo para corrigir."
+
+msgid "form.errorMany"
+msgstr "Há {$count} campos para corrigir."
+
+msgid "form.errorGoTo"
+msgstr "Mostrar onde"
+
+# Histórico da submissão: o padrão do OJS 3.5.0-5 usa {$filename}, que esse registro não tem
+# (aparecia "{$filename} (usuario) concordou..."); o nome vem em {$userFullName}
+msgid "submission.event.copyrightAgreed"
+msgstr "{$userFullName} ({$username}) concordou com os termos de direitos autorais da submissão."
+
+# Chave usada pelo painel e ausente nas traduções do OJS 3.5.0-5 (aparecia "##common.help##")
+msgid "common.help"
+msgstr "Ajuda"

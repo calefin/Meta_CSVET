@@ -1,0 +1,1896 @@
+{
+  "_comment": "Configuração da revista aplicada por scripts/configure-journal.php. Edite aqui e rode o script de novo. Campos vazios não são alterados no OJS. Textos longos em HTML; chaves de idioma ausentes na revista são ignoradas.",
+  "path": "nvas",
+  "previousPaths": [
+    "bjvr"
+  ],
+  "locales": {
+    "supportedFormLocales": [
+      "en",
+      "pt_BR"
+    ],
+    "supportedSubmissionMetadataLocales": [
+      "en",
+      "pt_BR"
+    ],
+    "supportedSubmissionLocales": [
+      "en",
+      "pt_BR"
+    ]
+  },
+  "site": {
+    "title": {
+      "en": "CSVET Journals",
+      "pt_BR": "CSVET Journals",
+      "es": "CSVET Journals"
+    },
+    "contactName": {
+      "en": "CSVET Editora",
+      "pt_BR": "CSVET Editora",
+      "es": "CSVET Editora"
+    },
+    "contactEmail": {
+      "en": "contato@csvet.com.br",
+      "pt_BR": "contato@csvet.com.br",
+      "es": "contato@csvet.com.br"
+    },
+    "themePluginPath": "csvet"
+  },
+  "siteImages": {
+    "pageHeaderTitleImage": {
+      "file": "images/csvet-editora-white.png",
+      "altText": {
+        "en": "CSVET Editora",
+        "pt_BR": "CSVET Editora",
+        "es": "CSVET Editora"
+      }
+    }
+  },
+  "settings": {
+    "name": {
+      "en": "Neotropical Veterinary and Animal Science",
+      "pt_BR": "Neotropical Veterinary and Animal Science",
+      "es": "Neotropical Veterinary and Animal Science"
+    },
+    "acronym": {
+      "en": "NVAS",
+      "pt_BR": "NVAS",
+      "es": "NVAS"
+    },
+    "abbreviation": {
+      "en": "Neotrop. Vet. Anim. Sci.",
+      "pt_BR": "Neotrop. Vet. Anim. Sci.",
+      "es": "Neotrop. Vet. Anim. Sci."
+    },
+    "country": "BR",
+    "publisherInstitution": "CSVET Editora",
+    "publisherUrl": "https://csvet.com.br",
+    "contactName": "Dr. Atilio Sersun Calefi",
+    "contactEmail": "calefi@csvet.com.br",
+    "contactAffiliation": {
+      "en": "Universidade Cruzeiro do Sul, São Paulo, Brazil",
+      "pt_BR": "Universidade Cruzeiro do Sul, São Paulo, Brasil",
+      "es": "Universidade Cruzeiro do Sul, São Paulo, Brasil"
+    },
+    "mailingAddress": "CSVET Editora, Cursos e Treinamentos (CNPJ 32.645.724/0001-89)\nAmericana, SP, Brazil\ncontato@csvet.com.br",
+    "supportName": "CSVET Editora",
+    "supportEmail": "contato@csvet.com.br",
+    "themePluginPath": "csvet",
+    "searchDescription": {
+      "en": "Open-access, broad-scope veterinary and animal science journal by CSVET Editora: original research, case reports, reviews, clinical images and more.",
+      "pt_BR": "Revista de acesso aberto e escopo amplo em medicina veterinária e zootecnia da CSVET Editora: artigos originais, relatos de caso, revisões e mais."
+    },
+    "description": {
+      "en": "<p><strong>Neotropical Veterinary and Animal Science (NVAS)</strong> is a peer-reviewed, open-access, broad-scope journal published by CSVET Editora. It covers all areas of veterinary medicine and animal science and all animal species, from basic and translational research to clinical practice, animal production, applied technology, food safety, One Health and policy. It publishes original research, short communications, case reports and case series, clinical images, reviews, methods, data articles and perspectives, with special interest in the Neotropics and other tropical regions.</p>",
+      "pt_BR": "<p>A <strong>Neotropical Veterinary and Animal Science (NVAS)</strong> é uma revista científica de acesso aberto, revisada por pares e de escopo amplo, publicada pela CSVET Editora. Cobre todas as áreas da medicina veterinária e da zootecnia e todas as espécies animais, da pesquisa básica e translacional à prática clínica, produção animal, tecnologia aplicada, segurança dos alimentos, Saúde Única e políticas públicas. Publica artigos originais, comunicações curtas, relatos e séries de casos, imagens clínicas, revisões, métodos, artigos de dados e perspectivas, com interesse especial pelos Neotrópicos e por outras regiões tropicais.</p>"
+    },
+    "about": {
+      "en": "<h3>Focus and scope</h3><p>Neotropical Veterinary and Animal Science (NVAS) is a broad-scope journal covering the whole spectrum of veterinary medicine and animal science, from basic and translational research to clinical practice, production, technology, public health and policy. Topics include:</p><ul><li>Companion animal medicine and surgery (including dermatology, cardiology, oncology, neurology, ophthalmology and dentistry)</li><li>Equine medicine, surgery and sports medicine</li><li>Farm animal health and production medicine (ruminants, swine and poultry)</li><li>Aquatic animal health and aquaculture</li><li>Wild and non-conventional animals: wildlife, zoo, exotic and non-conventional pets, and conservation medicine</li><li>Animal anatomy and morphology</li><li>Physiology and biochemistry</li><li>Veterinary pathology, clinical pathology and laboratory diagnostics</li><li>Diagnostic imaging</li><li>Anaesthesia, analgesia, emergency and critical care</li><li>Microbiology, virology, immunology and vaccinology</li><li>Parasitology and vector-borne diseases</li><li>Pharmacology, toxicology and therapeutics, including antimicrobial resistance and stewardship</li><li>Epidemiology, preventive medicine and biosecurity</li><li>One Health, zoonoses and veterinary public health</li><li>Food safety, inspection and technology of products of animal origin</li><li>Animal nutrition and feed science</li><li>Animal production systems, husbandry, sustainability and climate</li><li>Animal reproduction and reproductive biotechnology</li><li>Animal genetics, genomics and breeding</li><li>Animal welfare, behaviour and ethics</li><li>Technology applied to animal production and veterinary medicine: precision livestock farming, sensors and IoT, artificial intelligence and computer vision, telemedicine and digital health, bioinformatics, robotics and software</li><li>Laboratory animal science and comparative and translational medicine</li><li>Veterinary forensic medicine and legal veterinary medicine</li><li>Veterinary education, practice management, economics and policy</li></ul><p>All animal species are within scope: companion, farm, equine, aquatic, wild, zoo, exotic and laboratory animals. The journal gives special attention to the species, production systems, diseases and environmental challenges of the Neotropics (Latin America and the Caribbean) and other tropical regions, but welcomes high-quality work from any country.</p><h3>Article types</h3><ul><li><strong>Original Research Articles</strong>: complete experimental, observational, clinical, diagnostic or field studies.</li><li><strong>Short Communications</strong>: concise reports of novel, preliminary or confirmatory findings.</li><li><strong>Case Reports and Case Series</strong>: clinical, pathological, forensic or epidemiological cases with novelty or educational value.</li><li><strong>Clinical Images</strong>: a striking image (clinical, imaging, gross or microscopic) with a brief educational description.</li><li><strong>Reviews</strong>: systematic reviews and meta-analyses, scoping reviews, narrative reviews and mini-reviews.</li><li><strong>Methods and Technical Notes</strong>: new or improved techniques, protocols, diagnostic tests, devices or software.</li><li><strong>Data Articles</strong>: descriptions of datasets (surveillance, production, genomic, clinical) deposited in public repositories.</li><li><strong>Perspectives and Commentaries</strong>: evidence-based opinion on emerging issues, technology, policy, education or practice.</li><li><strong>Letters to the Editor and Editorials</strong>.</li><li><strong>Proceedings and Supplements</strong>: peer-reviewed abstracts or papers from scientific events and thematic supplements.</li></ul><h3>Authorship requirement</h3><p>Every manuscript must include at least one author who has completed an undergraduate degree in veterinary medicine, animal science or a related field, who acts as guarantor of the work and is identified with a verifiable Lattes CV, professional registration (CRMV) or ORCID profile. Manuscripts authored only by students are not accepted; students must publish with their supervisor or a graduated professional responsible for the work.</p><h3>Peer review</h3><p>All manuscripts are screened by the editors for scope, ethics, reporting completeness and similarity. Manuscripts that pass screening undergo double-anonymous peer review by at least two independent reviewers; a statistical or methodological review may be requested. Reviewers are asked to respond to the invitation within 3 days and to submit the review within 7 days. <strong>Single external review.</strong> When, after reasonable effort (invitations to at least four reviewers or 21 days without a second report), only one complete external review is available, the handling editor, who must have no conflict of interest with the manuscript, may write a signed editorial assessment and decide on the basis of both; the decision letter states this. Acceptance always requires at least one complete external review. This exception does not apply to manuscripts with an author from the editorial board. Clinical Images are assessed by one external reviewer and the handling editor. Every published article states the dates of receipt and acceptance and the name of the handling editor. The journal follows the COPE core practices, the ICMJE Recommendations, the <a href=\"https://www.councilscienceeditors.org/recommendations-for-promoting-integrity-in-scientific-journal-publications\">CSE Recommendations for Promoting Integrity in Scientific Journal Publications</a>, the principles of <a href=\"https://doi.org/10.17226/12192\"><em>On Being a Scientist</em></a> (US National Academies) and the EQUATOR Network reporting guidelines (ARRIVE 2.0, STROBE-Vet, CONSORT/REFLECT, STARD, CARE, PRISMA 2020).</p><h3 id=\"editors-articles\">Articles by editors</h3><p>Editors may publish in NVAS, under the same requirements as any author and with the following safeguards, in line with COPE guidance:</p><ul><li>the manuscript is handled by an editor with no conflict of interest with it, preferably from another institution, who selects the reviewers and makes all decisions;</li><li>the editor who is an author takes no part in any stage of the assessment of their own manuscript: they do not suggest or select reviewers, do not know their identity, see no more of the reviews than any author receives, and take no part in discussions or decisions;</li><li>at least two external reviews are always required (the single external review exception does not apply);</li><li>the published article names the handling editor and carries a note stating that the author is a member of the editorial board and took no part in the editorial process.</li></ul><p>When an author has a conflict of interest with an editor through supervision, recent co-authorship or a personal relationship, that editor does not handle the manuscript. Being from the same institution is a declared conflict: the manuscript is handled, whenever possible, by an editor from another institution and, when none is available, proceeds with at least two complete external reviews, which support the decision. The journal monitors the proportion of articles with authors from the editorial board to avoid concentration.</p><h3>Research ethics</h3><p>Studies involving animals must have been approved by an animal ethics committee (in Brazil, a CEUA under Law 11,794/2008 and CONCEA rules) or equivalent body and reported according to ARRIVE 2.0. Studies with animals that have a legal guardian (owner or responsible institution) require the guardian's informed consent; case reports and clinical images from routine clinical care do not require ethics approval and require consent only when the animal or its guardian can be identified; studies on commercial farms require the consent of the establishment and must meet at least the welfare standards of the applicable legislation; field trials with investigational veterinary products must report the regulatory authorization (in Brazil, MAPA). Work with wild fauna or Brazilian genetic heritage must report the applicable permits (SISBIO, SisGen). Research involving people (questionnaires, interviews, human samples) requires approval by a human research ethics committee (in Brazil, CEP/Plataforma Brasil) and participant consent.</p><h3>Research data</h3><p>Authors are encouraged to deposit the data, code and protocols that support their findings in public repositories with a DOI (e.g. Zenodo, Figshare, Dryad, Mendeley Data, GenBank), to provide them as supplementary material or to publish a linked Data Article in NVAS. Every article includes a Data Availability Statement.</p><h3>Open science and ORCID</h3><p>NVAS follows the open science practices of the SciELO Program. At submission, the author declaration includes the open science compliance form: posting as a preprint (allowed, with the DOI given), availability of data, code and materials, and participation of authors from the editorial board. All authors must have an ORCID iD: each author confirms their own ORCID through the email sent by the system, and the article is only published when the ORCID of every author has been verified.</p><h3>Artificial intelligence</h3><p>AI tools cannot be authors. Generative AI may be used to improve language, with a declaration in the manuscript; it may not be used to generate data, results, interpretations or images, and every reference must be verified by the authors. AI used as a research method must be fully described in the Methods. Reviewers and editors must not upload manuscripts to AI tools; the only exception is translation and copyediting of accepted manuscripts by the journal, with tools that do not train on the content. Details are in the Guide for Authors.</p><h3>Publication frequency</h3><p>Continuous publication: articles are published online as soon as they are ready and are grouped into one volume per year.</p><h3>Open access and licensing</h3><p>All articles are freely available immediately upon publication under the <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International licence (CC BY 4.0)</a>. Authors retain copyright. Every published article receives a DOI. Posting preprints is permitted.</p><h3>Publication fees</h3><p>There are no submission fees. No article processing charge (APC) is charged for manuscripts accepted on or before 31 January 2027. Any APC for manuscripts accepted after that date will be announced in advance on this page, and fee waivers will be available.</p><h3>Publisher</h3><p>NVAS is published by <a href=\"https://csvet.com.br\">CSVET Editora, Cursos e Treinamentos</a> (CNPJ 32.645.724/0001-89), Americana, SP, Brazil. The publisher operates online. Contact: contato@csvet.com.br.</p><p>Editor-in-Chief: Prof. Atilio Sersun Calefi, DVM, biologist, MSc and PhD in Experimental and Comparative Pathology from the School of Veterinary Medicine and Animal Science, University of São Paulo (FMVZ-USP), with postdoctoral training in the Department of Pathology at the same institution, professor at Universidade Cruzeiro do Sul, São Paulo, Brazil (calefi@csvet.com.br; <a href=\"http://lattes.cnpq.br/4438211760493798\">Lattes CV</a>; ORCID <a href=\"https://orcid.org/0000-0002-1859-2046\">0000-0002-1859-2046</a>). The Editor-in-Chief is also the director of CSVET Editora. Manuscripts authored by the Editor-in-Chief or by other editors follow the policy for articles by editors described above.</p>",
+      "pt_BR": "<h3>Foco e escopo</h3><p>A Neotropical Veterinary and Animal Science (NVAS) é uma revista de escopo amplo, que cobre todo o espectro da medicina veterinária e da zootecnia, da pesquisa básica e translacional à prática clínica, à produção, à tecnologia, à saúde pública e às políticas públicas. Os temas incluem:</p><ul><li>Clínica e cirurgia de animais de companhia (incluindo dermatologia, cardiologia, oncologia, neurologia, oftalmologia e odontologia)</li><li>Clínica, cirurgia e medicina esportiva de equinos</li><li>Sanidade e medicina da produção de animais de produção (ruminantes, suínos e aves)</li><li>Sanidade de animais aquáticos e aquicultura</li><li>Animais selvagens e não convencionais: fauna silvestre, animais de zoológico, exóticos e pets não convencionais, e medicina da conservação</li><li>Anatomia e morfologia animal</li><li>Fisiologia e bioquímica</li><li>Patologia veterinária, patologia clínica e diagnóstico laboratorial</li><li>Diagnóstico por imagem</li><li>Anestesiologia, analgesia, emergência e terapia intensiva</li><li>Microbiologia, virologia, imunologia e vacinologia</li><li>Parasitologia e doenças transmitidas por vetores</li><li>Farmacologia, toxicologia e terapêutica, incluindo resistência e uso racional de antimicrobianos</li><li>Epidemiologia, medicina preventiva e biosseguridade</li><li>Saúde Única, zoonoses e saúde pública veterinária</li><li>Segurança, inspeção e tecnologia de produtos de origem animal</li><li>Nutrição animal e ciência de alimentos para animais</li><li>Sistemas de produção animal, manejo, sustentabilidade e clima</li><li>Reprodução animal e biotecnologias da reprodução</li><li>Genética, genômica e melhoramento animal</li><li>Bem-estar, comportamento e ética animal</li><li>Tecnologia aplicada à produção animal e à medicina veterinária: pecuária de precisão, sensores e IoT, inteligência artificial e visão computacional, telemedicina e saúde digital, bioinformática, robótica e softwares</li><li>Ciência de animais de laboratório e medicina comparada e translacional</li><li>Medicina veterinária legal e forense</li><li>Educação veterinária, gestão, economia e políticas públicas</li></ul><p>Todas as espécies animais estão no escopo: animais de companhia, de produção, equinos, aquáticos, selvagens, de zoológico, exóticos e de laboratório. A revista dá atenção especial às espécies, sistemas de produção, doenças e desafios ambientais dos Neotrópicos (América Latina e Caribe) e de outras regiões tropicais, mas recebe trabalhos de qualidade de qualquer país.</p><h3>Tipos de artigo</h3><ul><li><strong>Artigos Originais</strong>: estudos experimentais, observacionais, clínicos, diagnósticos ou de campo completos.</li><li><strong>Comunicações Curtas</strong>: relatos concisos de achados novos, preliminares ou confirmatórios.</li><li><strong>Relatos e Séries de Casos</strong>: casos clínicos, patológicos, forenses ou epidemiológicos com ineditismo ou valor didático.</li><li><strong>Imagens Clínicas</strong>: uma imagem marcante (clínica, de diagnóstico por imagem, macroscópica ou microscópica) com breve descrição didática.</li><li><strong>Revisões</strong>: revisões sistemáticas e meta-análises, revisões de escopo, revisões narrativas e mini-revisões.</li><li><strong>Métodos e Notas Técnicas</strong>: técnicas, protocolos, testes diagnósticos, dispositivos ou softwares novos ou aprimorados.</li><li><strong>Artigos de Dados</strong>: descrição de conjuntos de dados (vigilância, produção, genômica, clínica) depositados em repositórios públicos.</li><li><strong>Perspectivas e Comentários</strong>: opinião baseada em evidências sobre temas emergentes, tecnologia, políticas, ensino ou prática.</li><li><strong>Cartas ao Editor e Editoriais</strong>.</li><li><strong>Anais e Suplementos</strong>: resumos ou trabalhos revisados por pares de eventos científicos e suplementos temáticos.</li></ul><h3>Exigência de autoria</h3><p>Todo manuscrito deve ter pelo menos um autor com graduação concluída em medicina veterinária, zootecnia ou área afim, responsável (guarantor) pelo trabalho e identificado com Currículo Lattes, registro profissional (CRMV) ou ORCID verificável. Não são aceitos manuscritos de autoria exclusiva de estudantes; os estudantes devem publicar com o orientador ou um profissional graduado responsável pelo trabalho.</p><h3>Avaliação por pares</h3><p>Todos os manuscritos passam por triagem editorial quanto a escopo, ética, completude do relato e similaridade. Os aprovados na triagem seguem para avaliação por pares duplo-anônima por pelo menos dois revisores independentes; pode ser solicitada revisão estatística ou metodológica. Os revisores devem responder ao convite em até 3 dias e enviar o parecer em até 7 dias. <strong>Parecer externo único.</strong> Quando, após esforço razoável (convites a pelo menos quatro revisores ou 21 dias sem o segundo parecer), houver apenas um parecer externo completo, o editor responsável, sem conflito de interesses com o manuscrito, pode redigir um parecer editorial assinado e decidir com base nos dois; a carta de decisão informa isso. O aceite sempre exige ao menos um parecer externo completo. Essa exceção não vale para manuscritos com autor do corpo editorial. As Imagens Clínicas são avaliadas por um revisor externo e pelo editor responsável. Cada artigo publicado informa as datas de recebimento e de aceite e o nome do editor responsável. A revista segue as práticas do COPE, as Recomendações do ICMJE, as <a href=\"https://www.councilscienceeditors.org/recommendations-for-promoting-integrity-in-scientific-journal-publications\">Recomendações para Promoção da Integridade em Publicações Científicas do CSE</a>, os princípios de <a href=\"https://doi.org/10.17226/12192\"><em>On Being a Scientist</em></a> (Academias Nacionais dos EUA) e as diretrizes de relato da Rede EQUATOR (ARRIVE 2.0, STROBE-Vet, CONSORT/REFLECT, STARD, CARE, PRISMA 2020).</p><h3 id=\"editors-articles\">Artigos de editores</h3><p>Os editores podem publicar na NVAS, com as mesmas exigências feitas a qualquer autor e com estas salvaguardas, conforme as orientações do COPE:</p><ul><li>o manuscrito é conduzido por um editor responsável sem conflito de interesses com ele, preferencialmente de outra instituição, que escolhe os revisores e toma todas as decisões;</li><li>o editor que é autor não participa de nenhuma etapa da avaliação do próprio manuscrito: não sugere nem escolhe revisores, não conhece a identidade deles, não acessa os pareceres além do que é enviado a todo autor e não participa das discussões nem das decisões;</li><li>são exigidos sempre pelo menos dois pareceres externos (a exceção do parecer externo único não se aplica);</li><li>o artigo publicado traz o nome do editor responsável e uma nota informando que o autor integra o corpo editorial e não participou do processo editorial.</li></ul><p>Quando um autor tem conflito de interesses com um editor por orientação, coautoria recente ou relação pessoal, esse editor não conduz o manuscrito. Ser da mesma instituição é um conflito declarado: o manuscrito é conduzido, sempre que possível, por um editor de outra instituição e, quando não houver, segue com pelo menos dois pareceres externos completos, que sustentam a decisão. A revista acompanha a proporção de artigos com autores do corpo editorial, para evitar concentração.</p><h3>Ética em pesquisa</h3><p>Estudos com animais devem ter aprovação de comissão de ética no uso de animais (no Brasil, CEUA, conforme a Lei nº 11.794/2008 e as normas do CONCEA) ou órgão equivalente e ser relatados segundo o ARRIVE 2.0. Estudos com animais que têm responsável legal (tutor, proprietário ou instituição) exigem o consentimento dele; relatos de caso e imagens clínicas de atendimento de rotina dispensam aprovação ética e só exigem consentimento quando o animal ou o responsável puder ser identificado; estudos em propriedades comerciais exigem o consentimento do estabelecimento e devem atender, no mínimo, aos padrões de bem-estar da legislação aplicável; ensaios de campo com produtos veterinários em teste devem informar a autorização regulatória (no Brasil, do MAPA). Trabalhos com fauna silvestre ou com o patrimônio genético brasileiro devem informar as autorizações aplicáveis (SISBIO, SisGen). Pesquisas com seres humanos (questionários, entrevistas, amostras humanas) exigem aprovação de comitê de ética em pesquisa (no Brasil, CEP/Plataforma Brasil) e o consentimento dos participantes.</p><h3>Dados de pesquisa</h3><p>Os autores são incentivados a depositar os dados, códigos e protocolos que sustentam os resultados em repositórios públicos com DOI (por exemplo Zenodo, Figshare, Dryad, Mendeley Data, GenBank), enviá-los como material suplementar ou publicar um Artigo de Dados vinculado na NVAS. Todo artigo traz uma Declaração de Disponibilidade de Dados.</p><h3>Ciência aberta e ORCID</h3><p>A NVAS segue as práticas de ciência aberta do Programa SciELO. Na submissão, a declaração dos autores inclui o formulário de conformidade com a ciência aberta: depósito como preprint (permitido, com o DOI informado), disponibilidade de dados, códigos e materiais, e participação de autores do corpo editorial. Todos os autores devem ter ORCID: cada autor confirma o próprio ORCID pelo e-mail enviado pelo sistema, e o artigo só é publicado com o ORCID de todos os autores verificado.</p><h3>Inteligência artificial</h3><p>Ferramentas de IA não podem ser autoras. A IA generativa pode ser usada para melhorar a linguagem, com declaração no manuscrito; não pode ser usada para gerar dados, resultados, interpretações ou imagens, e toda referência deve ser conferida pelos autores. A IA usada como método de pesquisa deve ser descrita integralmente em Material e Métodos. Revisores e editores não podem enviar manuscritos a ferramentas de IA; a única exceção é a tradução e a edição de texto de manuscritos aceitos pela revista, com ferramentas que não usam o conteúdo para treinamento. Detalhes nas Instruções aos Autores.</p><h3>Periodicidade</h3><p>Publicação contínua: os artigos são publicados on-line assim que ficam prontos e reunidos em um volume por ano.</p><h3>Acesso aberto e licença</h3><p>Todos os artigos ficam disponíveis gratuitamente desde a publicação, sob a licença <a href=\"https://creativecommons.org/licenses/by/4.0/deed.pt-br\">Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)</a>. Os autores mantêm os direitos autorais. Todo artigo publicado recebe um DOI. É permitido depositar preprints.</p><h3>Taxas</h3><p>Não há taxa de submissão. Não é cobrada taxa de publicação (APC) dos manuscritos aceitos até 31 de janeiro de 2027. Eventual APC para manuscritos aceitos após essa data será anunciada com antecedência nesta página, com possibilidade de isenção.</p><h3>Editora</h3><p>A NVAS é publicada pela <a href=\"https://csvet.com.br\">CSVET Editora, Cursos e Treinamentos</a> (CNPJ 32.645.724/0001-89), Americana, SP, Brasil. A editora atua de forma on-line. Contato: contato@csvet.com.br.</p><p>Editor-chefe: Prof. Dr. Atilio Sersun Calefi, médico veterinário e biólogo, mestre e doutor em Patologia Experimental e Comparada pela Faculdade de Medicina Veterinária e Zootecnia da Universidade de São Paulo (FMVZ-USP), com pós-doutorado no Departamento de Patologia da mesma instituição, professor da Universidade Cruzeiro do Sul, São Paulo, Brasil (calefi@csvet.com.br; <a href=\"http://lattes.cnpq.br/4438211760493798\">Currículo Lattes</a>; ORCID <a href=\"https://orcid.org/0000-0002-1859-2046\">0000-0002-1859-2046</a>). O editor-chefe é também diretor da CSVET Editora. Os manuscritos de autoria do editor-chefe ou de outros editores seguem a política para artigos de editores, descrita acima.</p>"
+    },
+    "editorialHistory": {
+      "en": "<p>Editor-in-Chief: <a href=\"http://lattes.cnpq.br/4438211760493798\">Atilio Sersun Calefi</a> (Universidade Cruzeiro do Sul, São Paulo, Brazil; Director of CSVET Editora; ORCID <a href=\"https://orcid.org/0000-0002-1859-2046\">0000-0002-1859-2046</a>), October 2026 to present.</p>",
+      "pt_BR": "<p>Editor-chefe: <a href=\"http://lattes.cnpq.br/4438211760493798\">Atilio Sersun Calefi</a> (Universidade Cruzeiro do Sul, São Paulo, Brasil; diretor da CSVET Editora; ORCID <a href=\"https://orcid.org/0000-0002-1859-2046\">0000-0002-1859-2046</a>), de outubro de 2026 até o presente.</p>"
+    },
+    "pageFooter": {
+      "en": "<p><em>Neotropical Veterinary and Animal Science</em> is published by <a href=\"https://csvet.com.br\">CSVET Editora, Cursos e Treinamentos</a> (CNPJ 32.645.724/0001-89). All articles are open access under the <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a> licence. Contact: contato@csvet.com.br</p>",
+      "pt_BR": "<p>A <em>Neotropical Veterinary and Animal Science</em> é publicada pela <a href=\"https://csvet.com.br\">CSVET Editora, Cursos e Treinamentos</a> (CNPJ 32.645.724/0001-89). Todos os artigos são de acesso aberto sob a licença <a href=\"https://creativecommons.org/licenses/by/4.0/deed.pt-br\">CC BY 4.0</a>. Contato: contato@csvet.com.br</p>"
+    },
+    "additionalHomeContent": {
+      "en": "<ul class=\"csvet-callout\"><li><strong>Call for papers: first issue</strong> Submissions until <strong>15 November 2026</strong>, no publication fees, with a DOI and peer review.<br><a class=\"cmp_button\" href=\"https://journals.csvet.com.br/nvas/en/call-for-papers\">See the call for papers</a> <a href=\"https://journals.csvet.com.br/nvas/en/clinical-images\">Call for clinical images</a></li></ul><h2>Veterinary medicine and animal science from the tropics to the world</h2><p><strong>Neotropical Veterinary and Animal Science (NVAS)</strong> covers all areas of veterinary medicine and animal science, applied technology included, and all animal species. It publishes original research, short communications, case reports, clinical images, reviews, methods and data articles, with special interest in the animals, production systems and One Health challenges of the Neotropics.</p><ul class=\"csvet-highlights\"><li><strong>Double-anonymous peer review</strong> by at least two reviewers, following COPE and EQUATOR guidance</li><li><strong>Open access</strong> under CC BY 4.0; authors retain copyright</li><li><strong>No fees</strong> for manuscripts accepted until 31 January 2027</li><li><strong>DOI</strong> for every article and continuous publication</li></ul><p><a class=\"cmp_button\" href=\"https://journals.csvet.com.br/nvas/submission\">Submit a manuscript</a> &nbsp; <a href=\"https://journals.csvet.com.br/nvas/about/submissions\">Instructions for authors</a> &nbsp; <a href=\"https://journals.csvet.com.br/nvas/about\">About the journal</a></p><h3>How to submit in 3 steps</h3><ol><li><a href=\"https://journals.csvet.com.br/nvas/user/register\"><strong>Create your account</strong></a> (free). If you already have one, just <a href=\"https://journals.csvet.com.br/nvas/login\">log in</a>.</li><li>Read the <a href=\"https://journals.csvet.com.br/nvas/about/submissions\">Instructions for authors</a> and prepare the files: cover letter, title page and anonymized manuscript. The author declaration is completed online in the last step of the submission.</li><li>Click <a href=\"https://journals.csvet.com.br/nvas/submission\"><strong>Submit a manuscript</strong></a> and follow the steps.</li></ol><p><strong>Students:</strong> submissions are welcome, but include your supervisor or another graduated professional as co-author (senior author requirement, Section 2.4 of the instructions).</p>",
+      "pt_BR": "<ul class=\"csvet-callout\"><li><strong>Chamada aberta: 1ª edição</strong> Submissões até <strong>15 de novembro de 2026</strong>, sem custo de publicação, com DOI e revisão por pares.<br><a class=\"cmp_button\" href=\"https://journals.csvet.com.br/nvas/pt_BR/call-for-papers\">Ver a chamada de artigos</a> <a href=\"https://journals.csvet.com.br/nvas/pt_BR/clinical-images\">Chamada de imagens clínicas</a></li></ul><h2>Medicina veterinária e zootecnia dos trópicos para o mundo</h2><p>A <strong>Neotropical Veterinary and Animal Science (NVAS)</strong> cobre todas as áreas da medicina veterinária e da zootecnia, incluindo a tecnologia aplicada, e todas as espécies animais. Publica artigos originais, comunicações curtas, relatos de caso, imagens clínicas, revisões, métodos e artigos de dados, com interesse especial pelos animais, sistemas de produção e desafios de Saúde Única dos Neotrópicos.</p><ul class=\"csvet-highlights\"><li><strong>Avaliação por pares duplo-anônima</strong> por ao menos dois revisores, seguindo as diretrizes COPE e EQUATOR</li><li><strong>Acesso aberto</strong> sob CC BY 4.0; os autores mantêm os direitos autorais</li><li><strong>Sem taxas</strong> para manuscritos aceitos até 31 de janeiro de 2027</li><li><strong>DOI</strong> em todos os artigos e publicação contínua</li></ul><p><a class=\"cmp_button\" href=\"https://journals.csvet.com.br/nvas/submission\">Submeter manuscrito</a> &nbsp; <a href=\"https://journals.csvet.com.br/nvas/about/submissions\">Instruções aos autores</a> &nbsp; <a href=\"https://journals.csvet.com.br/nvas/about\">Sobre a revista</a></p><h3>Como submeter em 3 passos</h3><ol><li><a href=\"https://journals.csvet.com.br/nvas/user/register\"><strong>Crie sua conta</strong></a> (gratuita). Quem já tem conta só precisa <a href=\"https://journals.csvet.com.br/nvas/login\">entrar</a>.</li><li>Leia as <a href=\"https://journals.csvet.com.br/nvas/about/submissions\">Instruções aos autores</a> e prepare os arquivos: carta de apresentação, folha de rosto e manuscrito anonimizado. A declaração dos autores é preenchida no próprio sistema, no último passo do envio.</li><li>Clique em <a href=\"https://journals.csvet.com.br/nvas/submission\"><strong>Submeter manuscrito</strong></a> e siga as etapas.</li></ol><p><strong>Estudantes:</strong> a submissão é bem-vinda, mas inclua o orientador ou outro profissional graduado como coautor (exigência de autor graduado, Seção 2.4 das instruções).</p>"
+    },
+    "openAccessPolicy": {
+      "en": "<p>This journal provides immediate open access to its content on the principle that making research freely available to the public supports a greater global exchange of knowledge. All articles are published under the Creative Commons Attribution 4.0 International licence (CC BY 4.0), which allows anyone to share and adapt the work for any purpose, provided the original work is properly cited.</p>",
+      "pt_BR": "<p>Esta revista oferece acesso aberto imediato ao seu conteúdo, seguindo o princípio de que disponibilizar gratuitamente a pesquisa ao público favorece a troca global de conhecimento. Todos os artigos são publicados sob a licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0), que permite compartilhar e adaptar o trabalho para qualquer finalidade, desde que a obra original seja devidamente citada.</p>"
+    },
+    "copyrightNotice": {
+      "en": "<p>Authors retain copyright of their work and grant the journal the right of first publication. Articles are simultaneously licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0), which allows others to share and adapt the work with acknowledgement of its authorship and initial publication in this journal. Authors may deposit any version of their work (preprint, accepted manuscript or published version) in institutional or thematic repositories, with a link to the published article.</p>",
+      "pt_BR": "<p>Os autores mantêm os direitos autorais sobre o trabalho e concedem à revista o direito de primeira publicação. Os artigos são licenciados simultaneamente sob a licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0), que permite a terceiros compartilhar e adaptar o trabalho com o devido reconhecimento da autoria e da publicação inicial nesta revista. Os autores podem depositar qualquer versão do trabalho (preprint, manuscrito aceito ou versão publicada) em repositórios institucionais ou temáticos, com link para o artigo publicado.</p>"
+    },
+    "privacyStatement": {
+      "en": "<p><em>Neotropical Veterinary and Animal Science</em> (NVAS) is published by CSVET Editora, Cursos e Treinamentos (CNPJ 32.645.724/0001-89, Americana, SP, Brazil), the controller of the personal data processed by this journal under the Brazilian General Data Protection Law (LGPD, Law 13,709/2018).</p><ul><li><strong>What data:</strong> what you provide when registering, submitting and reviewing (name, e-mail, institution, ORCID and affiliations) and, in the \"Publish with us\" form, also WhatsApp, profile, type of work and message.</li><li><strong>What for:</strong> only for the journal's services: the editorial process, peer review, publication and, for the form, guidance on how to publish. Authors' names, affiliations and ORCID appear in published articles.</li><li><strong>Legal basis:</strong> your consent and the editorial process you requested.</li><li><strong>Sharing:</strong> data is never sold or passed on to third parties. Once DOIs and indexing are in place, the metadata of published articles is sent to registration and indexing services.</li><li><strong>How long:</strong> for the duration of the editorial process and the record of published articles; contacts from the \"Publish with us\" form, until you ask for deletion.</li><li><strong>Your rights:</strong> to confirm, access, correct or delete your data and withdraw consent, by writing to <a href=\"mailto:contato@csvet.com.br\">contato@csvet.com.br</a>. Data in published articles remains part of the scholarly record.</li></ul>",
+      "pt_BR": "<p>A <em>Neotropical Veterinary and Animal Science</em> (NVAS) é publicada pela CSVET Editora, Cursos e Treinamentos (CNPJ 32.645.724/0001-89, Americana, SP), controladora dos dados pessoais tratados nesta revista, conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).</p><ul><li><strong>Quais dados:</strong> os que você informa no cadastro, na submissão e na avaliação (nome, e-mail, instituição, ORCID e afiliações) e, no formulário \"Quero publicar\", também WhatsApp, perfil, tipo de trabalho e mensagem.</li><li><strong>Para quê:</strong> só para os serviços da revista: processo editorial, avaliação por pares, publicação e, no caso do formulário, orientação sobre como publicar. Nomes, afiliações e ORCID dos autores aparecem nos artigos publicados.</li><li><strong>Base legal:</strong> o seu consentimento e a execução do processo editorial que você solicitou.</li><li><strong>Compartilhamento:</strong> os dados não são vendidos nem cedidos a terceiros. Quando houver DOI e indexação, os metadados dos artigos publicados são enviados aos serviços de registro e indexação.</li><li><strong>Por quanto tempo:</strong> enquanto durar o processo editorial e o registro dos artigos publicados; os contatos do formulário \"Quero publicar\", até você pedir a exclusão.</li><li><strong>Seus direitos:</strong> confirmar, acessar, corrigir ou excluir seus dados e revogar o consentimento, escrevendo para <a href=\"mailto:contato@csvet.com.br\">contato@csvet.com.br</a>. Dados de artigos já publicados seguem no registro científico.</li></ul>"
+    },
+    "competingInterests": {
+      "en": "<p>Reviewers must declare any competing interest (financial, personal, academic or institutional) that could influence their assessment of this manuscript, including recent collaboration with the authors, working at the same institution, or a commercial interest in the products or services studied. If such a conflict exists, decline the invitation or describe it here so that the editor can decide.</p>",
+      "pt_BR": "<p>Os revisores devem declarar qualquer conflito de interesses (financeiro, pessoal, acadêmico ou institucional) que possa influenciar a avaliação deste manuscrito, incluindo colaboração recente com os autores, vínculo com a mesma instituição ou interesse comercial nos produtos ou serviços estudados. Havendo conflito, recuse o convite ou descreva-o aqui para que o editor decida.</p>"
+    },
+    "reviewGuidelines": {
+      "en": "<p>Thank you for reviewing for Neotropical Veterinary and Animal Science. Reviews are double-anonymous and should be completed within <strong>7 days</strong> of accepting the invitation.</p><ul><li><strong>Confidentiality.</strong> The manuscript is confidential. Do not share it or upload it, in whole or in part, to generative AI tools or other online services.</li><li><strong>Scientific quality.</strong> Assess whether the question is relevant, the design and methods are adequate, the statistics are appropriate and the conclusions are supported by the data.</li><li><strong>Reporting.</strong> Check the applicable EQUATOR guideline: ARRIVE 2.0 (animal experiments), STROBE-Vet (observational studies), CONSORT/REFLECT (trials), STARD (diagnostic accuracy), CARE (case reports), PRISMA 2020 (systematic reviews) or SANRA (narrative reviews). Case reports may follow a clinical, a biopsy pathology or a necropsy profile: in the pathology profiles, do not penalise clinical data that were not available to the laboratory (history, physical examination, treatment, follow-up) when the authors state it and list it as a limitation; judge the quality of the gross and microscopic description, the figures, the diagnostic criteria and classification, and the teaching value.</li><li><strong>Ethics.</strong> Confirm that animal ethics approval, consent of the legal guardian (when required) and required permits are reported, and flag any welfare concern.</li><li><strong>Integrity.</strong> Report to the editor, confidentially, any suspicion of plagiarism, fabricated or falsified data, image manipulation or duplicate publication; do not contact the authors and do not use unpublished information from the manuscript. Reviewers follow the CSE Recommendations for Promoting Integrity in Scientific Journal Publications.</li><li><strong>Case reports.</strong> Consider novelty, educational value, diagnostic confirmation and follow-up.</li><li><strong>Report.</strong> Give a short summary, numbered major and minor comments for the authors, and a recommendation (accept, minor revision, major revision or reject), with confidential comments to the editor when needed. Be specific and constructive. The form requires a minimum number of words in the summary (30), the strengths and weaknesses (30) and the major comments (100), and does not accept the recommendation \"Accept\" together with answers that indicate a serious problem; every answer \"Partly\" or \"No\" should have the corresponding point in the comments.</li><li><strong>Conflicts of interest.</strong> Decline the invitation if you have a competing interest with the authors or the topic.</li></ul><p>Reviewers can receive a review certificate and recognition of the review on their ORCID record.</p>",
+      "pt_BR": "<p>Agradecemos sua colaboração como revisor da Neotropical Veterinary and Animal Science. A avaliação é duplo-anônima e deve ser concluída em até <strong>7 dias</strong> após o aceite do convite.</p><ul><li><strong>Confidencialidade.</strong> O manuscrito é confidencial. Não o compartilhe nem o envie, no todo ou em parte, a ferramentas de inteligência artificial generativa ou outros serviços on-line.</li><li><strong>Qualidade científica.</strong> Avalie se a pergunta é relevante, se o delineamento e os métodos são adequados, se a estatística é apropriada e se as conclusões são sustentadas pelos dados.</li><li><strong>Relato.</strong> Verifique a diretriz EQUATOR aplicável: ARRIVE 2.0 (experimentos com animais), STROBE-Vet (estudos observacionais), CONSORT/REFLECT (ensaios), STARD (acurácia diagnóstica), CARE (relatos de caso), PRISMA 2020 (revisões sistemáticas) ou SANRA (revisões narrativas). O relato de caso pode seguir o perfil clínico, de patologia de biópsia ou de necropsia: nos perfis de patologia, não penalize a falta de dados clínicos que o laboratório não recebeu (histórico, exame físico, tratamento, evolução) quando os autores a informam e a citam como limitação; avalie a descrição macroscópica e microscópica, as figuras, os critérios de diagnóstico e a classificação, e o valor didático.</li><li><strong>Ética.</strong> Confirme se a aprovação da comissão de ética, o consentimento do responsável legal (quando exigido) e as autorizações necessárias foram informados, e aponte qualquer preocupação com o bem-estar animal.</li><li><strong>Integridade.</strong> Informe ao editor, de forma confidencial, qualquer suspeita de plágio, dados fabricados ou falsificados, manipulação de imagens ou publicação duplicada; não entre em contato com os autores nem use informações inéditas do manuscrito. Os revisores seguem as recomendações de integridade do Council of Science Editors (CSE).</li><li><strong>Relatos de caso.</strong> Considere ineditismo, valor didático, confirmação diagnóstica e acompanhamento.</li><li><strong>Parecer.</strong> Apresente um breve resumo, comentários maiores e menores numerados para os autores e uma recomendação (aceitar, revisão menor, revisão maior ou rejeitar), com comentários confidenciais ao editor quando necessário. Seja específico e construtivo. O formulário exige um mínimo de palavras no resumo (30), nos pontos fortes e fracos (30) e nos comentários principais (100), e não aceita a recomendação \"Aceitar\" junto com respostas que indiquem problema grave; cada resposta \"Parcialmente\" ou \"Não\" deve ter o ponto correspondente nos comentários.</li><li><strong>Conflito de interesses.</strong> Recuse o convite se houver conflito de interesses com os autores ou com o tema.</li></ul><p>Os revisores podem receber certificado de avaliação e o reconhecimento da revisão no ORCID.</p>"
+    },
+    "copyrightHolderType": "author",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "defaultReviewMode": 2,
+    "numWeeksPerReview": 1,
+    "numWeeksPerResponse": 1,
+    "numDaysAfterReviewResponseReminderDue": 2,
+    "numDaysBeforeReviewSubmitReminderDue": 2,
+    "numDaysAfterReviewSubmitReminderDue": 2,
+    "_doiComment": "DOI: prefixo da ABEC (o mesmo da Editora CSVET em books.csvet.com.br). Sufixos com espaço de nomes próprio (nvas.) para nunca coincidir com os dos livros (csvet.book.). Formato nvas.<ano do fascículo>.<id do artigo> (ex.: 10.54547/nvas.2026.8), decidido em 15/11/2026; %Y exige o artigo atribuído a um fascículo. Sem área nem mês: seção pode mudar e a Crossref pede sufixo sem dados mutáveis. Prefixo 10.54547 (ABEC). Troque enableDois para true quando o depósito na Crossref estiver pronto: na revista, depois do ISSN; nos livros, depois do ISBN de cada obra.",
+    "enableDois": false,
+    "doiPrefix": "10.54547",
+    "doiSuffixType": "customPattern",
+    "doiPublicationSuffixPattern": "nvas.%Y.%a",
+    "doiRepresentationSuffixPattern": "nvas.%Y.%a.g%g",
+    "doiIssueSuffixPattern": "nvas.v%vi%i",
+    "enabledDoiTypes": [
+      "publication"
+    ],
+    "doiCreationTime": "copyEditCreationTime",
+    "doiVersioning": false,
+    "reviewerAccessKeysEnabled": true,
+    "restrictReviewerFileAccess": true,
+    "keywords": "require",
+    "enableOai": true,
+    "sidebar": [
+      "makesubmissionblockplugin",
+      "informationblockplugin",
+      "languagetoggleblockplugin",
+      "WebFeedBlockPlugin"
+    ],
+    "submissionChecklist": {
+      "en": "<p>All submissions must meet the following requirements. Submissions that do not are returned to the authors without review.</p><ul><li>The manuscript is original, has not been published and is not under consideration by another journal (preprints are allowed and must be declared).</li><li><strong>At least one author has completed an undergraduate degree in veterinary medicine, animal science or a related field</strong> and is identified on the title page with degree, institution and Lattes CV, CRMV or ORCID link. Manuscripts authored only by students are not accepted.</li><li>Studies involving animals have the approval of an animal ethics committee (CEUA or equivalent) and, when applicable, the consent of the legal guardian or farm (when required), regulatory authorizations (MAPA) and permits (SISBIO, SisGen); studies involving people have human research ethics approval (CEP or equivalent).</li><li>The manuscript is entirely in English or entirely in Portuguese (manuscripts accepted in Portuguese are translated into English by the journal, with the authors' approval, for publication), all text inside figures and graphs is in English, and the text follows the article type limits and the structure described in the Guide for Authors.</li><li>The manuscript was written in the <a href=\"https://journals.csvet.com.br/nvas/en/templates\" target=\"_blank\" rel=\"noopener\">journal template</a> for its article type (a thesis or internship report must be rewritten as an article). The submission includes a single anonymized manuscript (no identifying information in the text, file name or file properties), the <a href=\"https://journals.csvet.com.br/download/NVAS-title-page-template.docx\" target=\"_blank\" rel=\"noopener\">title page</a> with all authors and the corresponding author, and the <a href=\"https://journals.csvet.com.br/download/NVAS-cover-letter-template.docx\" target=\"_blank\" rel=\"noopener\">cover letter</a> (not needed for Clinical Images and Letters to the Editor), each file uploaded with its type. The author declaration and licence are completed in the last step of the submission (no form to upload).</li><li>The completed checklist of the applicable reporting guideline (ARRIVE, STROBE-Vet, CONSORT/REFLECT, STARD, CARE, PRISMA, SANRA) is uploaded: <a href=\"https://journals.csvet.com.br/nvas/en/templates#checklists\" target=\"_blank\" rel=\"noopener\">which checklist to use</a>. Not needed for Clinical Images, Perspectives and Letters to the Editor; Clinical Images upload the labelled and the unlabelled figure as separate files.</li><li>The manuscript includes the declarations: author contributions (CRediT), conflicts of interest, funding, data availability and use of generative AI.</li><li>AI tools are not listed as authors, no AI-generated or AI-altered images are included (unless they are the object of the research), all references were checked by the authors, and any use of generative AI is declared as described in the Guide for Authors.</li><li>All authors have approved the submission and <strong>every author has an ORCID iD</strong>, given on the title page (each author confirms theirs through the email sent by the system; the article is only published when every ORCID has been verified).</li></ul>",
+      "pt_BR": "<p>Todas as submissões devem atender aos requisitos abaixo. Submissões que não os atendam são devolvidas aos autores sem avaliação.</p><ul><li>O manuscrito é original, inédito e não está em avaliação em outra revista (preprints são permitidos e devem ser declarados).</li><li><strong>Pelo menos um autor tem graduação concluída em medicina veterinária, zootecnia ou área afim</strong> e está identificado na folha de rosto com titulação, instituição e link do Currículo Lattes, CRMV ou ORCID. Não são aceitos manuscritos de autoria exclusiva de estudantes.</li><li>Estudos com animais têm aprovação de comissão de ética no uso de animais (CEUA ou equivalente) e, quando aplicável, consentimento do responsável legal ou da propriedade (quando exigido), autorizações regulatórias (MAPA) e licenças (SISBIO, SisGen); estudos com seres humanos têm aprovação de comitê de ética em pesquisa (CEP ou equivalente).</li><li>O manuscrito está inteiro em português ou inteiro em inglês (manuscritos aceitos em português são traduzidos para o inglês pela revista, com a aprovação dos autores, para a publicação), todo texto dentro das figuras e dos gráficos está em inglês, e o texto segue os limites do tipo de artigo e a estrutura descritos nas Instruções aos Autores.</li><li>O manuscrito foi escrito no <a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates\" target=\"_blank\" rel=\"noopener\">modelo da revista</a> do seu tipo de artigo (TCC ou relatório de estágio precisa ser reescrito no formato de artigo). A submissão inclui um único manuscrito anonimizado (sem informação identificadora no texto, no nome ou nas propriedades do arquivo), a <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-folha-de-rosto.docx\" target=\"_blank\" rel=\"noopener\">folha de rosto</a> com todos os autores e o autor de correspondência e a <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-carta-de-apresentacao.docx\" target=\"_blank\" rel=\"noopener\">carta de apresentação</a> (dispensada na Imagem Clínica e na Carta ao Editor), cada arquivo enviado com o seu tipo. A declaração dos autores e a licença são preenchidas no último passo do envio (sem formulário para enviar).</li><li>O checklist preenchido da diretriz de relato aplicável (ARRIVE, STROBE-Vet, CONSORT/REFLECT, STARD, CARE, PRISMA, SANRA) foi enviado: <a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates#checklists\" target=\"_blank\" rel=\"noopener\">qual checklist usar</a>. Dispensado na Imagem Clínica, na Perspectiva e na Carta ao Editor; a Imagem Clínica envia a figura com marcações e a figura sem marcações, em arquivos separados.</li><li>O manuscrito traz as declarações: contribuição dos autores (CRediT), conflito de interesses, financiamento, disponibilidade de dados e uso de IA generativa.</li><li>Ferramentas de IA não constam como autoras, não há imagens geradas ou alteradas por IA (salvo quando objeto da pesquisa), todas as referências foram conferidas pelos autores e qualquer uso de IA generativa está declarado conforme as Instruções aos Autores.</li><li>Todos os autores aprovaram a submissão e <strong>todos têm ORCID</strong>, informado na folha de rosto (cada autor confirma o seu pelo e-mail do sistema; o artigo só é publicado com o ORCID de todos verificado).</li></ul>"
+    },
+    "beginSubmissionHelp": {
+      "pt_BR": "<p>Agradecemos sua submissão à <em>Neotropical Veterinary and Animal Science</em> (NVAS). Nas próximas etapas você vai enviar os arquivos, informar todos os autores e preencher título, resumo e palavras-chave.</p><p>Antes de começar, confira as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\" target=\"_blank\" rel=\"noopener\">Instruções aos autores</a> e tenha em mãos, já nos <a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates\" target=\"_blank\" rel=\"noopener\">modelos da revista</a>: manuscrito anonimizado (em português ou em inglês; texto das figuras sempre em inglês), folha de rosto, carta de apresentação e o checklist da diretriz de relato (por exemplo, CARE no relato de caso). Se faltar algum arquivo obrigatório, o sistema avisa antes de concluir. A declaração dos autores é preenchida no último passo, sem formulário para imprimir. A NVAS publica em inglês: se um manuscrito submetido em português for aceito, a revista traduz para o inglês e os autores aprovam a tradução. <strong>Estudantes:</strong> incluam o orientador ou outro profissional graduado como coautor.</p><p>Você pode salvar a submissão e continuar depois; nada é enviado à revista até a última etapa.</p>",
+      "en": "<p>Thank you for submitting to <em>Neotropical Veterinary and Animal Science</em> (NVAS). In the next steps you will upload your files, list all authors and enter the title, abstract and keywords.</p><p>Before you start, read the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\" target=\"_blank\" rel=\"noopener\">Instructions for authors</a> and have ready, already in the <a href=\"https://journals.csvet.com.br/nvas/en/templates\" target=\"_blank\" rel=\"noopener\">journal templates</a>: anonymized manuscript (in English or Portuguese; text inside figures always in English), title page, cover letter and the reporting guideline checklist (for example, CARE for a case report). If a required file is missing, the system tells you before you can finish. The author declaration is completed in the last step, with no form to print. NVAS publishes in English: if a manuscript submitted in Portuguese is accepted, the journal translates it into English and the authors approve the translation. <strong>Students:</strong> include your supervisor or another graduated professional as co-author.</p><p>You can save the submission and continue later; nothing is sent to the journal until the last step.</p>"
+    },
+    "authorInformation": {
+      "pt_BR": "<p>Quer publicar na NVAS? Leia as <a href=\"https://journals.csvet.com.br/nvas/about/submissions\">Instruções aos autores</a> e o <a href=\"https://journals.csvet.com.br/nvas/about\">Sobre a Revista</a> (escopo, avaliação por pares e políticas). Para submeter, <a href=\"https://journals.csvet.com.br/nvas/user/register\">crie sua conta</a> (gratuita) ou <a href=\"https://journals.csvet.com.br/nvas/login\">entre</a>, e clique em <a href=\"https://journals.csvet.com.br/nvas/submission\">Submeter manuscrito</a>.</p><p>Estudantes são bem-vindos como autores, desde que o orientador ou outro profissional graduado seja coautor. Não há taxas para manuscritos aceitos até 31 de janeiro de 2027.</p>",
+      "en": "<p>Interested in publishing in NVAS? Read the <a href=\"https://journals.csvet.com.br/nvas/about/submissions\">Instructions for authors</a> and <a href=\"https://journals.csvet.com.br/nvas/about\">About the Journal</a> (scope, peer review and policies). To submit, <a href=\"https://journals.csvet.com.br/nvas/user/register\">create your free account</a> or <a href=\"https://journals.csvet.com.br/nvas/login\">log in</a>, then click <a href=\"https://journals.csvet.com.br/nvas/submission\">Submit a manuscript</a>.</p><p>Students are welcome as authors, provided their supervisor or another graduated professional is a co-author. There are no fees for manuscripts accepted until 31 January 2027.</p>"
+    },
+    "readerInformation": {
+      "pt_BR": "<p>Todos os artigos da NVAS são de acesso aberto e gratuito, sob a licença CC BY 4.0. Para receber um aviso a cada novo artigo, <a href=\"https://journals.csvet.com.br/nvas/user/register\">crie sua conta</a> e marque a opção de notificações, ou assine o <a href=\"https://journals.csvet.com.br/nvas/gateway/plugin/WebFeedGatewayPlugin/atom\">feed</a>.</p><p>Na <a href=\"https://journals.csvet.com.br/nvas/about/privacy\">Declaração de Privacidade</a> você vê como usamos seu nome e e-mail: somente para os serviços da revista.</p>",
+      "en": "<p>All NVAS articles are free to read under the CC BY 4.0 licence. To be notified of each new article, <a href=\"https://journals.csvet.com.br/nvas/user/register\">create an account</a> and turn on notifications, or subscribe to the <a href=\"https://journals.csvet.com.br/nvas/gateway/plugin/WebFeedGatewayPlugin/atom\">feed</a>.</p><p>Our <a href=\"https://journals.csvet.com.br/nvas/about/privacy\">Privacy Statement</a> explains that your name and e-mail are used only for the journal's services.</p>"
+    },
+    "emailSignature": "<br><br>—<br><p><a href=\"https://journals.csvet.com.br/nvas\">Neotropical Veterinary and Animal Science</a> · CSVET Editora</p>",
+    "uploadFilesHelp": {
+      "pt_BR": "<p><strong>Envie cada arquivo e, em seguida, escolha o tipo dele</strong> na lista que aparece. O sistema confere e avisa, antes de você concluir, se faltar algum arquivo obrigatório do seu tipo de artigo. Os links abrem em nova aba; seu envio continua aqui.</p><ul><li><strong>Manuscrito anonimizado (sem nomes de autores)</strong>: todos os tipos. Modelo de <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-relato-de-caso.docx\" target=\"_blank\" rel=\"noopener\">relato de caso</a>, <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-artigo-original.docx\" target=\"_blank\" rel=\"noopener\">artigo original</a> (também comunicação curta e método), <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-revisao.docx\" target=\"_blank\" rel=\"noopener\">revisão</a> ou <a href=\"https://journals.csvet.com.br/download/NVAS-clinical-image-template.docx\" target=\"_blank\" rel=\"noopener\">imagem clínica</a>.</li><li><strong>Folha de rosto (com os autores)</strong>: todos os tipos. <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-folha-de-rosto.docx\" target=\"_blank\" rel=\"noopener\">Modelo</a>.</li><li><strong>Carta de apresentação</strong>: todos os tipos, menos Imagem Clínica e Carta ao Editor. <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-carta-de-apresentacao.docx\" target=\"_blank\" rel=\"noopener\">Modelo</a>.</li><li><strong>Checklist da diretriz de relato</strong>: artigos originais, comunicações curtas, relatos e séries de casos, revisões, métodos e artigos de dados. <a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates#checklists\" target=\"_blank\" rel=\"noopener\">Qual checklist usar</a> (relato de caso: CARE).</li><li><strong>Imagem clínica: figura COM marcações</strong> e <strong>figura SEM marcações</strong>: só na Imagem Clínica, em arquivos separados.</li><li><strong>Quando houver</strong>: documento de ética ou licença (CEUA, CEP, SISBIO...), <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-termo-de-consentimento.docx\" target=\"_blank\" rel=\"noopener\">termo de consentimento do responsável legal</a>, autorização de uso de figura de terceiros e material suplementar.</li></ul><p>Não envie duas versões do manuscrito (com e sem nomes): os nomes vão só na folha de rosto. Trabalho de conclusão de curso (TCC) ou relatório de estágio precisa ser reescrito no modelo do artigo. Figuras em alta resolução, só depois do aceite.</p>",
+      "en": "<p><strong>Upload each file and then choose its type</strong> in the list that appears. The system checks and tells you, before you can finish, if a file required for your article type is missing. Links open in a new tab; your submission stays here.</p><ul><li><strong>Anonymized manuscript (no author names)</strong>: all types. Template for <a href=\"https://journals.csvet.com.br/download/NVAS-case-report-template.docx\" target=\"_blank\" rel=\"noopener\">case report</a>, <a href=\"https://journals.csvet.com.br/download/NVAS-original-article-template.docx\" target=\"_blank\" rel=\"noopener\">original article</a> (also short communication and method), <a href=\"https://journals.csvet.com.br/download/NVAS-review-template.docx\" target=\"_blank\" rel=\"noopener\">review</a> or <a href=\"https://journals.csvet.com.br/download/NVAS-clinical-image-template.docx\" target=\"_blank\" rel=\"noopener\">clinical image</a>.</li><li><strong>Title page (with authors)</strong>: all types. <a href=\"https://journals.csvet.com.br/download/NVAS-title-page-template.docx\" target=\"_blank\" rel=\"noopener\">Template</a>.</li><li><strong>Cover letter</strong>: all types except Clinical Images and Letters to the Editor. <a href=\"https://journals.csvet.com.br/download/NVAS-cover-letter-template.docx\" target=\"_blank\" rel=\"noopener\">Template</a>.</li><li><strong>Reporting guideline checklist</strong>: original articles, short communications, case reports and series, reviews, methods and data articles. <a href=\"https://journals.csvet.com.br/nvas/en/templates#checklists\" target=\"_blank\" rel=\"noopener\">Which checklist to use</a> (case report: CARE).</li><li><strong>Clinical image: labelled figure</strong> and <strong>unlabelled figure</strong>: Clinical Images only, as separate files.</li><li><strong>When applicable</strong>: ethics approval or permit, <a href=\"https://journals.csvet.com.br/download/NVAS-consent-form-template.docx\" target=\"_blank\" rel=\"noopener\">consent form of the legal guardian</a>, permission for third-party figures and supplementary material.</li></ul><p>Do not upload two versions of the manuscript (with and without names): names go only on the title page. A thesis or internship report must be rewritten in the article template. High-resolution figures only after acceptance.</p>"
+    }
+  },
+  "files": {
+    "authorGuidelines": "author-guidelines.{locale}.html"
+  },
+  "pages": [
+    {
+      "_comment": "Chamada de artigos da 1ª edição (prazo 15/11/2026), para divulgar no WhatsApp: https://journals.csvet.com.br/nvas/pt_BR/call-for-papers. Edite os arquivos HTML e rode o script (não salve pelo painel: o editor tira <script> e <svg>). Imagem de prévia: plugins/themes/csvet/images/og/nvas-call-for-papers.<idioma>.png (branding/build_cfp_og.py).",
+      "path": "call-for-papers",
+      "title": {
+        "pt_BR": "Chamada de artigos",
+        "en": "Call for papers",
+        "es": "Convocatoria de artículos"
+      },
+      "file": "pages/call-for-papers.{locale}.html",
+      "menu": {
+        "area": "primary",
+        "first": true
+      }
+    },
+    {
+      "_comment": "Chamada de Imagens Clínicas (seção IMG, formato de comunicação curta, submissão em português ou inglês, publicação nos dois idiomas; repositório visual validado). Ligada a partir da chamada de artigos; sem item no menu. Regras completas no Anexo B das normas.",
+      "path": "clinical-images",
+      "title": {
+        "pt_BR": "Chamada de imagens clínicas",
+        "en": "Call for clinical images",
+        "es": "Convocatoria de imágenes clínicas"
+      },
+      "file": "pages/clinical-images.{locale}.html"
+    },
+    {
+      "_comment": "Modelos .docx com orientação passo a passo para quem nunca publicou (relato de caso, artigo original, revisão, imagem clínica, folha de rosto, carta). Arquivos em plugins/themes/csvet/docs, gerados por content/nvas/templates/build_manuscript_templates.py. Item no menu principal.",
+      "path": "templates",
+      "title": {
+        "pt_BR": "Modelos para autores",
+        "en": "Templates for authors",
+        "es": "Plantillas para autores"
+      },
+      "file": "pages/templates.{locale}.html",
+      "menu": {
+        "area": "primary"
+      }
+    },
+    {
+      "_comment": "Captação de autores: formulário curto (plugin generic/csvetLeads) que envia a orientação por e-mail em português, inglês ou espanhol e avisa os editores. data-title na página = título para o Google (o menu usa o título curto). Imagem de prévia: branding/build_cfp_og.py.",
+      "path": "publish-with-us",
+      "title": {
+        "pt_BR": "Quero publicar",
+        "en": "Publish with us",
+        "es": "Quiero publicar"
+      },
+      "file": "pages/publish-with-us.{locale}.html",
+      "menu": {
+        "area": "primary"
+      }
+    }
+  ],
+  "emailTemplates": [
+    {
+      "_comment": "Decisão Solicitar modificações: o texto padrão do OJS em pt_BR tem o link quebrado (\"< um href\"); só o pt_BR é reescrito, o en fica o padrão.",
+      "key": "EDITOR_DECISION_REVISIONS",
+      "subject": {
+        "pt_BR": "[NVAS] Sua submissão: correções obrigatórias"
+      },
+      "file": "ojs-emails/EDITOR_DECISION_REVISIONS.{locale}.html"
+    },
+    {
+      "_comment": "Modelos padrão do OJS reescritos no tom da revista; o corpo vem de ojs-emails/<KEY>.<idioma>.html. Editar pelo painel funciona, mas este script sobrescreve.",
+      "key": "USER_ROLE_ASSIGNMENT_INVITATION",
+      "subject": {
+        "pt_BR": "Convite para integrar a {$contextName}",
+        "en": "Invitation to join {$contextName}"
+      },
+      "file": "ojs-emails/USER_ROLE_ASSIGNMENT_INVITATION.{locale}.html"
+    },
+    {
+      "_comment": "Confirmação automática ao autor que enviou: próximo passo (triagem em até 7 dias) e links das normas e dos modelos.",
+      "key": "SUBMISSION_ACK",
+      "subject": {
+        "pt_BR": "Recebemos sua submissão: {$submissionTitle}",
+        "en": "We have received your submission: {$submissionTitle}"
+      },
+      "file": "ojs-emails/SUBMISSION_ACK.{locale}.html"
+    },
+    {
+      "_comment": "Recusa sem avaliação por escopo ou mérito (decisão Recusar submissão, modelo padrão). Para falta de arquivos ou normas, use a opção NVAS_TECHNICAL_RETURN no mesmo e-mail.",
+      "key": "EDITOR_DECISION_INITIAL_DECLINE",
+      "subject": {
+        "pt_BR": "Decisão sobre sua submissão: {$submissionTitle}",
+        "en": "Decision on your submission: {$submissionTitle}"
+      },
+      "file": "ojs-emails/EDITOR_DECISION_INITIAL_DECLINE.{locale}.html"
+    },
+    {
+      "_comment": "Devolução técnica (faltam arquivos ou não segue as normas): opção do e-mail da decisão Recusar submissão (Usar modelo). Lista o que falta com os links das normas e dos modelos; o editor apaga os itens que não se aplicam.",
+      "key": "NVAS_TECHNICAL_RETURN",
+      "alternateTo": "EDITOR_DECISION_INITIAL_DECLINE",
+      "name": {
+        "pt_BR": "Devolução técnica (normas ou arquivos)",
+        "en": "Technical return (guidelines or files)"
+      },
+      "subject": {
+        "pt_BR": "Submissão devolvida para ajustes: {$submissionTitle}",
+        "en": "Submission returned for corrections: {$submissionTitle}"
+      },
+      "file": "ojs-emails/NVAS_TECHNICAL_RETURN.{locale}.html"
+    },
+    {
+      "_comment": "E-mails aos avaliadores, bilíngues: português e inglês na mesma mensagem, o idioma da tela de quem envia primeiro. Corpo gerado por ojs-emails/build_reviewer_emails.py (edite lá e rode de novo).",
+      "key": "REVIEW_REQUEST",
+      "subject": {
+        "pt_BR": "[NVAS] Convite para avaliação · Invitation to review",
+        "en": "[NVAS] Invitation to review · Convite para avaliação"
+      },
+      "file": "ojs-emails/REVIEW_REQUEST.{locale}.html"
+    },
+    {
+      "key": "REVIEW_REQUEST_SUBSEQUENT",
+      "subject": {
+        "pt_BR": "[NVAS] Nova rodada de avaliação · New review round",
+        "en": "[NVAS] New review round · Nova rodada de avaliação"
+      },
+      "file": "ojs-emails/REVIEW_REQUEST_SUBSEQUENT.{locale}.html"
+    },
+    {
+      "key": "REVIEW_RESPONSE_OVERDUE_AUTO",
+      "subject": {
+        "pt_BR": "[NVAS] Aguardamos sua resposta ao convite · Awaiting your reply to our invitation",
+        "en": "[NVAS] Awaiting your reply to our invitation · Aguardamos sua resposta ao convite"
+      },
+      "file": "ojs-emails/REVIEW_RESPONSE_OVERDUE_AUTO.{locale}.html"
+    },
+    {
+      "key": "REVIEW_REMIND",
+      "subject": {
+        "pt_BR": "[NVAS] Lembrete da sua avaliação · Review reminder",
+        "en": "[NVAS] Review reminder · Lembrete da sua avaliação"
+      },
+      "file": "ojs-emails/REVIEW_REMIND.{locale}.html"
+    },
+    {
+      "_comment": "Opção do Lembrete ao Avaliador (plugin csvetReviewReminder), escolhida sozinha quando o avaliador ainda não respondeu ao convite.",
+      "key": "NVAS_REVIEW_INVITE_RESEND",
+      "alternateTo": "REVIEW_REMIND",
+      "name": {
+        "pt_BR": "Reenvio do convite (sem resposta)",
+        "en": "Invitation resent (no reply)"
+      },
+      "subject": {
+        "pt_BR": "[NVAS] Convite para avaliação (reenvio) · Invitation to review (resent)",
+        "en": "[NVAS] Invitation to review (resent) · Convite para avaliação (reenvio)"
+      },
+      "file": "ojs-emails/NVAS_REVIEW_INVITE_RESEND.{locale}.html"
+    },
+    {
+      "_comment": "Opção do Lembrete ao Avaliador (plugin csvetReviewReminder), escolhida sozinha quando a avaliação aceita passou do prazo.",
+      "key": "NVAS_REVIEW_OVERDUE",
+      "alternateTo": "REVIEW_REMIND",
+      "name": {
+        "pt_BR": "Avaliação em atraso",
+        "en": "Overdue review"
+      },
+      "subject": {
+        "pt_BR": "[NVAS] Sua avaliação está em atraso · Your review is overdue",
+        "en": "[NVAS] Your review is overdue · Sua avaliação está em atraso"
+      },
+      "file": "ojs-emails/NVAS_REVIEW_OVERDUE.{locale}.html"
+    },
+    {
+      "key": "REVIEW_REMIND_AUTO",
+      "subject": {
+        "pt_BR": "[NVAS] Lembrete da sua avaliação · Review reminder",
+        "en": "[NVAS] Review reminder · Lembrete da sua avaliação"
+      },
+      "file": "ojs-emails/REVIEW_REMIND_AUTO.{locale}.html"
+    },
+    {
+      "key": "REVIEW_CANCEL",
+      "subject": {
+        "pt_BR": "[NVAS] Convite de avaliação cancelado · Review request cancelled",
+        "en": "[NVAS] Review request cancelled · Convite de avaliação cancelado"
+      },
+      "file": "ojs-emails/REVIEW_CANCEL.{locale}.html"
+    },
+    {
+      "key": "REVIEW_REINSTATE",
+      "subject": {
+        "pt_BR": "[NVAS] Ainda pode avaliar? · Can you still review?",
+        "en": "[NVAS] Can you still review? · Ainda pode avaliar?"
+      },
+      "file": "ojs-emails/REVIEW_REINSTATE.{locale}.html"
+    },
+    {
+      "key": "REVIEW_RESEND_REQUEST",
+      "subject": {
+        "pt_BR": "[NVAS] Reconsideraria o convite? · Would you reconsider our invitation?",
+        "en": "[NVAS] Would you reconsider our invitation? · Reconsideraria o convite?"
+      },
+      "file": "ojs-emails/REVIEW_RESEND_REQUEST.{locale}.html"
+    },
+    {
+      "key": "REVIEW_ACK",
+      "subject": {
+        "pt_BR": "[NVAS] Obrigado pela sua avaliação · Thank you for your review",
+        "en": "[NVAS] Thank you for your review · Obrigado pela sua avaliação"
+      },
+      "file": "ojs-emails/REVIEW_ACK.{locale}.html"
+    },
+    {
+      "key": "REVIEW_EDIT",
+      "subject": {
+        "pt_BR": "[NVAS] Prazos da sua avaliação atualizados · Review deadlines updated",
+        "en": "[NVAS] Review deadlines updated · Prazos da sua avaliação atualizados"
+      },
+      "file": "ojs-emails/REVIEW_EDIT.{locale}.html"
+    },
+    {
+      "key": "EDITOR_DECISION_NOTIFY_REVIEWERS",
+      "subject": {
+        "pt_BR": "[NVAS] Decisão sobre o manuscrito que você avaliou · Decision on the manuscript you reviewed",
+        "en": "[NVAS] Decision on the manuscript you reviewed · Decisão sobre o manuscrito que você avaliou"
+      },
+      "file": "ojs-emails/EDITOR_DECISION_NOTIFY_REVIEWERS.{locale}.html"
+    }
+  ],
+  "images": {
+    "pageHeaderLogoImage": {
+      "file": "images/logo-white@2x.png",
+      "altText": {
+        "en": "Neotropical Veterinary and Animal Science (NVAS), CSVET Editora",
+        "pt_BR": "Neotropical Veterinary and Animal Science (NVAS), CSVET Editora",
+        "es": "Neotropical Veterinary and Animal Science (NVAS), CSVET Editora"
+      }
+    },
+    "journalThumbnail": {
+      "file": "images/thumbnail.png",
+      "altText": {
+        "en": "NVAS",
+        "pt_BR": "NVAS",
+        "es": "NVAS"
+      }
+    },
+    "favicon": {
+      "file": "images/favicon.png"
+    }
+  },
+  "plugins": {
+    "install": [
+      "generic/csvetEmail",
+      "generic/csvetLocaleUrl",
+      "generic/csvetDeclaration",
+      "generic/csvetScreening",
+      "generic/csvetLeads",
+      "generic/csvetDb",
+      "generic/csvetAffiliation",
+      "generic/csvetReviewReminder",
+      "generic/csvetGuide",
+      "generic/csvetFormUrls",
+      "generic/csvetTransparency",
+      "generic/csvetReviewQuality"
+    ],
+    "enable": [
+      "csvetthemeplugin",
+      "googlescholarplugin",
+      "dublincoremetaplugin",
+      "webfeedplugin",
+      "makesubmissionblockplugin",
+      "informationblockplugin",
+      "languagetoggleblockplugin"
+    ],
+    "disable": [
+      "subscriptionblockplugin"
+    ],
+    "enableSite": [
+      "csvetthemeplugin"
+    ],
+    "settings": {
+      "csvetemailplugin": {
+        "_comment": "Cópia oculta (Cco) dos e-mails do fluxo editorial (convites, envio, decisões, avaliação), para acompanhar o fluxo. E-mails da conta pessoal (senha, cadastro, confirmação/troca de e-mail, ORCID) nunca vão em cópia. Acrescente ou troque os endereços aqui e rode php scripts/configure-journal.php.",
+        "bccEmails": [
+          "calefi@csvet.com.br"
+        ]
+      },
+      "csvetleadsplugin": {
+        "_comment": "Formulário Quero publicar (página publish-with-us): deadline = prazo da chamada citado na orientação por e-mail (AAAA-MM-DD; some sozinho depois da data). Lista dos interessados: /nvas/pt_BR/interest/list (gestores).",
+        "deadline": "2026-11-15"
+      },
+      "csvetscreeningplugin": {
+        "_comment": "Triagem de cada nova submissão por e-mail: vai para os gestores da revista e para notifyEmails (acrescente outros e-mails aqui). locale: idioma do relatório.",
+        "notifyEmails": [
+          "calefi@csvet.com.br"
+        ],
+        "locale": "pt_BR"
+      },
+      "csvetreviewqualityplugin": {
+        "_comment": "Qualidade dos pareceres. As regras de cada pergunta (minWords, blocksAccept) vêm dos formulários em reviewForms e são gravadas pelo script. defaultForms: formulário posto sozinho no convite quando o editor não escolhe nenhum (por sigla da seção; * = demais). minWordsWithoutForm: mínimo do parecer livre, se mesmo assim faltar formulário. blockedGenres: tipos de arquivo com nomes dos autores, que nunca vão aos avaliadores (somem da seleção de arquivos da decisão, a janela de arquivos da rodada recusa e o avaliador não consegue baixar).",
+        "defaultForms": {
+          "IMG": "NVAS clinical image review (v2)",
+          "*": "NVAS standard review (v2)"
+        },
+        "minWordsWithoutForm": 200,
+        "blockedGenres": [
+          "NVAS_TITLE_PAGE",
+          "NVAS_COVER_LETTER",
+          "NVAS_ETHICS",
+          "NVAS_CONSENT",
+          "NVAS_PERMISSION"
+        ]
+      }
+    }
+  },
+  "sections": [
+    {
+      "abbrev": "ART",
+      "title": {
+        "en": "Original Research Articles",
+        "pt_BR": "Artigos Originais",
+        "es": "Artículos Originales"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 300,
+      "policy": {
+        "en": "<p>A complete study (experimental, observational, clinical, diagnostic or field), with its own question, methods and results. Theses, dissertations and internship reports are accepted only after being rewritten as an article. Up to 6,000 words, a structured abstract (Background, Objectives, Methods, Results, Conclusions) of up to 300 words, 60 references and 8 figures and tables. <strong>Files:</strong> anonymized manuscript, title page, cover letter and reporting guideline checklist (ARRIVE, STROBE-Vet, CONSORT/REFLECT or STARD: <a href=\"https://journals.csvet.com.br/nvas/en/templates#checklists\">which checklist to use</a>). Use the <a href=\"https://journals.csvet.com.br/download/NVAS-original-article-template.docx\">original article template</a> and follow the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p>Estudo completo (experimental, observacional, clínico, diagnóstico ou de campo), com pergunta, método e resultados próprios. TCC, dissertação ou relatório de estágio só entram depois de reescritos no formato de artigo. Até 6.000 palavras, resumo estruturado (Background, Objectives, Methods, Results, Conclusions) de até 300 palavras, 60 referências e 8 figuras e tabelas. <strong>Arquivos:</strong> manuscrito anonimizado, folha de rosto, carta de apresentação e checklist da diretriz de relato (ARRIVE, STROBE-Vet, CONSORT/REFLECT ou STARD: <a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates#checklists\">qual checklist usar</a>). Use o <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-artigo-original.docx\">modelo de artigo original</a> e siga as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "SC",
+      "title": {
+        "en": "Short Communications",
+        "pt_BR": "Comunicações Curtas",
+        "es": "Comunicaciones Cortas"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 200,
+      "policy": {
+        "en": "<p>New, preliminary or confirmatory findings of immediate interest, with the sections of an original article in condensed form. A clinical case belongs in Case Reports and Case Series; a striking image, in Clinical Images. Up to 2,500 words, an unstructured abstract of up to 200 words, 25 references and 3 figures and tables. <strong>Files:</strong> anonymized manuscript, title page, cover letter and reporting guideline checklist (<a href=\"https://journals.csvet.com.br/nvas/en/templates#checklists\">which checklist to use</a>). Use the <a href=\"https://journals.csvet.com.br/download/NVAS-original-article-template.docx\">original article template</a> and follow the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p>Achados novos, preliminares ou confirmatórios de interesse imediato, com as seções do artigo original em forma condensada. Um caso clínico vai para Relatos e Séries de Casos; uma imagem marcante, para Imagens Clínicas. Até 2.500 palavras, resumo não estruturado de até 200 palavras, 25 referências e 3 figuras e tabelas. <strong>Arquivos:</strong> manuscrito anonimizado, folha de rosto, carta de apresentação e checklist da diretriz de relato (<a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates#checklists\">qual checklist usar</a>). Use o <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-artigo-original.docx\">modelo de artigo original</a> e siga as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "CR",
+      "title": {
+        "en": "Case Reports and Case Series",
+        "pt_BR": "Relatos e Séries de Casos",
+        "es": "Reportes y Series de Casos"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 200,
+      "policy": {
+        "en": "<p><strong>Case report:</strong> one case or outbreak with novelty, a diagnostic or therapeutic lesson or teaching value; up to 2,500 words, an abstract of up to 200 words, 25 references and 6 figures and tables. <strong>Case series:</strong> three or more related cases with descriptive analysis; up to 3,500 words, an abstract of up to 250 words, 35 references and 6 figures and tables. The diagnosis must be confirmed by an appropriate method (e.g. histopathology, culture, PCR or imaging). Structure: Introduction, Case presentation, Discussion, Conclusion and Learning points. Three profiles are accepted: <strong>clinical</strong> (an animal followed in the clinic), <strong>surgical or biopsy pathology</strong> (a sample received by the laboratory) and <strong>necropsy</strong>; in the pathology profiles the case presentation follows the material (submission data, gross and microscopic findings, ancillary tests, diagnosis with the classification used), and clinical data that were not available are stated as such and listed as limitations, never reconstructed. Internship reports must be rewritten as a case report. <strong>Files:</strong> anonymized manuscript, title page, cover letter and completed CARE checklist; a consent form when the animal or its owner can be identified. Use the <a href=\"https://journals.csvet.com.br/download/NVAS-case-report-template.docx\">case report template</a> and follow the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p><strong>Relato de caso:</strong> um caso ou surto com ineditismo, lição diagnóstica ou terapêutica ou valor didático; até 2.500 palavras, resumo de até 200 palavras, 25 referências e 6 figuras e tabelas. <strong>Série de casos:</strong> três ou mais casos relacionados, com análise descritiva; até 3.500 palavras, resumo de até 250 palavras, 35 referências e 6 figuras e tabelas. O diagnóstico precisa estar confirmado por método adequado (por exemplo histopatologia, cultura, PCR ou imagem). Estrutura: Introduction, Case presentation, Discussion, Conclusion e Learning points. São aceitos três perfis: <strong>clínico</strong> (animal acompanhado no atendimento), <strong>patologia de biópsia ou peça cirúrgica</strong> (amostra recebida pelo laboratório) e <strong>necropsia</strong>; nos perfis de patologia, a apresentação do caso segue o material (dados da requisição, macroscopia, microscopia, exames complementares, diagnóstico com a classificação usada), e os dados clínicos que não estavam disponíveis são informados como tal e citados nas limitações, nunca reconstituídos. Relatório de estágio precisa ser reescrito no formato de relato. <strong>Arquivos:</strong> manuscrito anonimizado, folha de rosto, carta de apresentação e checklist CARE preenchido; termo de consentimento quando o animal ou o responsável puder ser identificado. Use o <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-relato-de-caso.docx\">modelo de relato de caso</a> e siga as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "IMG",
+      "title": {
+        "en": "Clinical Images",
+        "pt_BR": "Imagens Clínicas",
+        "es": "Imágenes Clínicas"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 60,
+      "policy": {
+        "en": "<p>Peer-reviewed short articles (short-communication format) built around one striking, original image with a confirmed diagnosis: clinical photography, radiology and diagnostic imaging (radiograph, ultrasound, CT, MRI), endoscopy, gross pathology, cytology or histopathology. Submitted in English or Portuguese and <strong>published in both languages</strong> (the journal prepares the other version after acceptance, for the authors' approval), up to 500 words per language; any words on the figures in English; one or two figures with at most 4 panels, uploaded in labelled and unlabelled versions. Together they form the journal's validated visual repository. Follow Appendix B of the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a> and use the <a href=\"https://journals.csvet.com.br/download/NVAS-clinical-image-template.docx\">clinical image template</a>.</p>",
+        "pt_BR": "<p>Artigos curtos com revisão por pares (formato de comunicação curta) construídos em torno de uma imagem original e marcante, com diagnóstico confirmado: fotografia clínica, radiologia e diagnóstico por imagem (radiografia, ultrassonografia, TC, RM), endoscopia, patologia macroscópica, citologia ou histopatologia. Submissão em português ou em inglês e <strong>publicação nos dois idiomas</strong> (a revista prepara a outra versão após o aceite, para aprovação dos autores), até 500 palavras por idioma; palavras nas figuras, se houver, em inglês; uma ou duas figuras com no máximo 4 painéis, enviadas nas versões com e sem marcações. Juntas, formam o repositório visual validado da revista. Siga o Anexo B das <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a> e use o <a href=\"https://journals.csvet.com.br/download/NVAS-clinical-image-template.docx\">modelo de imagem clínica</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "REV",
+      "title": {
+        "en": "Reviews",
+        "pt_BR": "Revisões",
+        "es": "Revisiones"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 300,
+      "policy": {
+        "en": "<p>Systematic reviews (with or without meta-analysis), scoping, integrative, umbrella, rapid and narrative reviews and mini-reviews. The type is defined by the method, not the title, and the title must state it (e.g. “…: a narrative review”). <strong>Narrative reviews are accepted by invitation or after a pre-submission enquiry to the editors</strong> (title, 300-word outline, rationale and the authors' expertise in the topic). Systematic reviews require a registered protocol and a last search less than 12 months old. Limits: systematic 8,000 words, scoping 7,000, narrative 6,000 and mini-review 3,000. A thesis literature review must be rewritten as an article. <strong>Files:</strong> anonymized manuscript, title page, cover letter and reporting guideline checklist (PRISMA 2020, PRISMA-ScR or SANRA, according to the type). Use the <a href=\"https://journals.csvet.com.br/download/NVAS-review-template.docx\">review template</a> and check Appendix A of the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p>Revisões sistemáticas (com ou sem meta-análise), de escopo, integrativas, guarda-chuva, rápidas, narrativas e mini-revisões. O tipo é definido pelo método, não pelo título, e o título deve dizê-lo (por exemplo “…: a narrative review”). <strong>Revisões narrativas são aceitas por convite ou após consulta prévia aos editores</strong> (título, roteiro de 300 palavras, justificativa e experiência dos autores no tema). Revisões sistemáticas exigem protocolo registrado e última busca com menos de 12 meses. Limites: sistemática 8.000 palavras, de escopo 7.000, narrativa 6.000 e mini-revisão 3.000. Revisão de TCC precisa ser reescrita como artigo. <strong>Arquivos:</strong> manuscrito anonimizado, folha de rosto, carta de apresentação e checklist da diretriz de relato (PRISMA 2020, PRISMA-ScR ou SANRA, conforme o tipo). Use o <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-revisao.docx\">modelo de revisão</a> e confira o Anexo A das <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      },
+      "replaces": [
+        "SR"
+      ]
+    },
+    {
+      "abbrev": "TN",
+      "title": {
+        "en": "Methods and Technical Notes",
+        "pt_BR": "Métodos e Notas Técnicas",
+        "es": "Métodos y Notas Técnicas"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 200,
+      "policy": {
+        "en": "<p>A new or improved technique, protocol, diagnostic test, device or software, always with validation data. Up to 3,500 words, an unstructured abstract of up to 200 words, 30 references and 5 figures and tables, with the sections of an original article in condensed form. <strong>Files:</strong> anonymized manuscript, title page, cover letter and reporting guideline checklist (STARD for diagnostic tests: <a href=\"https://journals.csvet.com.br/nvas/en/templates#checklists\">which checklist to use</a>). Use the <a href=\"https://journals.csvet.com.br/download/NVAS-original-article-template.docx\">original article template</a> and follow the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p>Técnica, protocolo, teste diagnóstico, dispositivo ou software novo ou aprimorado, sempre com dados de validação. Até 3.500 palavras, resumo não estruturado de até 200 palavras, 30 referências e 5 figuras e tabelas, com as seções do artigo original em forma condensada. <strong>Arquivos:</strong> manuscrito anonimizado, folha de rosto, carta de apresentação e checklist da diretriz de relato (STARD para testes diagnósticos: <a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates#checklists\">qual checklist usar</a>). Use o <a href=\"https://journals.csvet.com.br/download/NVAS-modelo-artigo-original.docx\">modelo de artigo original</a> e siga as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "DATA",
+      "title": {
+        "en": "Data Articles",
+        "pt_BR": "Artigos de Dados",
+        "es": "Artículos de Datos"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 200,
+      "policy": {
+        "en": "<p>Description of a dataset already deposited in a public repository (surveillance, production, genomics, clinical, imaging): collection, structure, quality control, repository, licence and the dataset DOI. Up to 2,500 words, an unstructured abstract of up to 200 words, 20 references and 4 figures and tables. <strong>Files:</strong> anonymized manuscript, title page, cover letter and reporting guideline checklist (<a href=\"https://journals.csvet.com.br/nvas/en/templates#checklists\">which checklist to use</a>). Follow the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p>Descrição de um conjunto de dados já depositado em repositório público (vigilância, produção, genômica, clínica, imagem): coleta, estrutura, controle de qualidade, repositório, licença e DOI do conjunto. Até 2.500 palavras, resumo não estruturado de até 200 palavras, 20 referências e 4 figuras e tabelas. <strong>Arquivos:</strong> manuscrito anonimizado, folha de rosto, carta de apresentação e checklist da diretriz de relato (<a href=\"https://journals.csvet.com.br/nvas/pt_BR/templates#checklists\">qual checklist usar</a>). Siga as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "PER",
+      "title": {
+        "en": "Perspectives and Commentaries",
+        "pt_BR": "Perspectivas e Comentários",
+        "es": "Perspectivas y Comentarios"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 150,
+      "policy": {
+        "en": "<p>Evidence-based opinion on emerging topics, technology, policy, education or practice. Up to 2,500 words, an unstructured abstract of up to 150 words, 30 references and 2 figures and tables. <strong>Files:</strong> anonymized manuscript, title page and cover letter (no reporting checklist). Follow the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p>Opinião baseada em evidências sobre temas emergentes, tecnologia, políticas, ensino ou prática. Até 2.500 palavras, resumo não estruturado de até 150 palavras, 30 referências e 2 figuras e tabelas. <strong>Arquivos:</strong> manuscrito anonimizado, folha de rosto e carta de apresentação (sem checklist de diretriz). Siga as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "LET",
+      "title": {
+        "en": "Letters to the Editor",
+        "pt_BR": "Cartas ao Editor",
+        "es": "Cartas al Editor"
+      },
+      "metaReviewed": false,
+      "metaIndexed": true,
+      "abstractsNotRequired": true,
+      "policy": {
+        "en": "<p>A comment on an article published in NVAS or a brief scientific observation. Up to 1,000 words, no abstract, 10 references and 1 figure or table. <strong>Files:</strong> anonymized manuscript and title page (no cover letter and no checklist). Follow the <a href=\"https://journals.csvet.com.br/nvas/en/about/submissions\">Instructions for authors</a>.</p>",
+        "pt_BR": "<p>Comentário sobre um artigo publicado na NVAS ou breve observação científica. Até 1.000 palavras, sem resumo, 10 referências e 1 figura ou tabela. <strong>Arquivos:</strong> manuscrito anonimizado e folha de rosto (sem carta de apresentação e sem checklist). Siga as <a href=\"https://journals.csvet.com.br/nvas/pt_BR/about/submissions\">Instruções aos autores</a>.</p>"
+      }
+    },
+    {
+      "abbrev": "ED",
+      "title": {
+        "en": "Editorials",
+        "pt_BR": "Editoriais",
+        "es": "Editoriales"
+      },
+      "metaReviewed": false,
+      "metaIndexed": true,
+      "abstractsNotRequired": true,
+      "policy": {
+        "en": "<p>Commissioned by the editors; the section does not accept unsolicited submissions.</p>",
+        "pt_BR": "<p>Encomendados pelos editores; a seção não recebe submissões espontâneas.</p>"
+      },
+      "editorRestricted": true
+    },
+    {
+      "abbrev": "SUPP",
+      "title": {
+        "en": "Proceedings and Supplements",
+        "pt_BR": "Anais e Suplementos",
+        "es": "Actas y Suplementos"
+      },
+      "metaReviewed": true,
+      "metaIndexed": true,
+      "wordCount": 300,
+      "policy": {
+        "en": "<p>Abstracts and papers from scientific meetings, published at the editors' invitation. Meeting organizers interested in a supplement should contact the editorial office.</p>",
+        "pt_BR": "<p>Resumos e trabalhos de eventos científicos, publicados por encomenda dos editores. Organizadores de eventos interessados em um suplemento devem contatar a secretaria editorial.</p>"
+      },
+      "editorRestricted": true
+    }
+  ],
+  "deactivateSections": [
+    "SUR",
+    "RLR",
+    "NR",
+    "MR"
+  ],
+  "categories": [
+    {
+      "path": "small-animal-medicine",
+      "title": {
+        "en": "Companion Animal Medicine and Surgery",
+        "pt_BR": "Clínica e Cirurgia de Animais de Companhia",
+        "es": "Clínica y Cirugía de Animales de Compañía"
+      }
+    },
+    {
+      "path": "large-animal-medicine",
+      "title": {
+        "en": "Equine Medicine and Surgery",
+        "pt_BR": "Clínica e Cirurgia de Equinos",
+        "es": "Clínica y Cirugía de Equinos"
+      }
+    },
+    {
+      "path": "farm-animal-health",
+      "title": {
+        "en": "Farm Animal Health and Production Medicine",
+        "pt_BR": "Sanidade e Medicina da Produção",
+        "es": "Sanidad y Medicina de la Producción"
+      }
+    },
+    {
+      "path": "wildlife-non-conventional",
+      "replaces": [
+        "wildlife-aquatic"
+      ],
+      "title": {
+        "en": "Wild and Non-Conventional Animals",
+        "pt_BR": "Animais Selvagens e Não Convencionais",
+        "es": "Animales Silvestres y No Convencionales"
+      }
+    },
+    {
+      "path": "aquatic-animals",
+      "title": {
+        "en": "Aquatic Animal Health and Aquaculture",
+        "pt_BR": "Sanidade de Animais Aquáticos e Aquicultura",
+        "es": "Sanidad de Animales Acuáticos y Acuicultura"
+      }
+    },
+    {
+      "path": "fish",
+      "title": {
+        "en": "Fish",
+        "pt_BR": "Peixes",
+        "es": "Peces"
+      }
+    },
+    {
+      "path": "terrestrial-invertebrates",
+      "title": {
+        "en": "Terrestrial Invertebrates",
+        "pt_BR": "Invertebrados Terrestres",
+        "es": "Invertebrados Terrestres"
+      }
+    },
+    {
+      "path": "marine-invertebrates",
+      "title": {
+        "en": "Marine Invertebrates",
+        "pt_BR": "Invertebrados Marinhos",
+        "es": "Invertebrados Marinos"
+      }
+    },
+    {
+      "path": "animal-anatomy",
+      "title": {
+        "en": "Animal Anatomy",
+        "pt_BR": "Anatomia Animal",
+        "es": "Anatomía Animal"
+      }
+    },
+    {
+      "path": "pathology",
+      "title": {
+        "en": "Pathology and Laboratory Diagnostics",
+        "pt_BR": "Patologia e Diagnóstico Laboratorial",
+        "es": "Patología y Diagnóstico de Laboratorio"
+      }
+    },
+    {
+      "path": "diagnostic-imaging",
+      "title": {
+        "en": "Diagnostic Imaging",
+        "pt_BR": "Diagnóstico por Imagem",
+        "es": "Diagnóstico por Imagen"
+      }
+    },
+    {
+      "path": "anaesthesia-critical-care",
+      "title": {
+        "en": "Anaesthesia, Analgesia and Critical Care",
+        "pt_BR": "Anestesiologia, Analgesia e Terapia Intensiva",
+        "es": "Anestesiología, Analgesia y Cuidados Intensivos"
+      }
+    },
+    {
+      "path": "infectious-parasitic-diseases",
+      "title": {
+        "en": "Infectious and Parasitic Diseases",
+        "pt_BR": "Doenças Infecciosas e Parasitárias",
+        "es": "Enfermedades Infecciosas y Parasitarias"
+      }
+    },
+    {
+      "path": "pharmacology",
+      "title": {
+        "en": "Pharmacology, Toxicology and Therapeutics",
+        "pt_BR": "Farmacologia, Toxicologia e Terapêutica",
+        "es": "Farmacología, Toxicología y Terapéutica"
+      }
+    },
+    {
+      "path": "epidemiology",
+      "title": {
+        "en": "Epidemiology and Preventive Medicine",
+        "pt_BR": "Epidemiologia e Medicina Preventiva",
+        "es": "Epidemiología y Medicina Preventiva"
+      }
+    },
+    {
+      "path": "one-health",
+      "title": {
+        "en": "One Health and Veterinary Public Health",
+        "pt_BR": "Saúde Única e Saúde Pública Veterinária",
+        "es": "Una Salud y Salud Pública Veterinaria"
+      }
+    },
+    {
+      "path": "food-safety",
+      "title": {
+        "en": "Food Safety and Products of Animal Origin",
+        "pt_BR": "Segurança e Inspeção de Produtos de Origem Animal",
+        "es": "Inocuidad y Productos de Origen Animal"
+      }
+    },
+    {
+      "path": "animal-production-nutrition",
+      "title": {
+        "en": "Animal Production and Nutrition",
+        "pt_BR": "Produção e Nutrição Animal",
+        "es": "Producción y Nutrición Animal"
+      }
+    },
+    {
+      "path": "reproduction-genetics",
+      "title": {
+        "en": "Reproduction, Genetics and Breeding",
+        "pt_BR": "Reprodução, Genética e Melhoramento",
+        "es": "Reproducción, Genética y Mejoramiento"
+      }
+    },
+    {
+      "path": "animal-health-welfare",
+      "title": {
+        "en": "Animal Welfare and Behaviour",
+        "pt_BR": "Bem-Estar e Comportamento Animal",
+        "es": "Bienestar y Comportamiento Animal"
+      }
+    },
+    {
+      "path": "technology",
+      "title": {
+        "en": "Technology in Animal Production and Veterinary Medicine",
+        "pt_BR": "Tecnologia na Produção Animal e na Medicina Veterinária",
+        "es": "Tecnología en Producción Animal y Medicina Veterinaria"
+      }
+    },
+    {
+      "path": "basic-comparative",
+      "title": {
+        "en": "Basic, Laboratory Animal and Comparative Sciences",
+        "pt_BR": "Ciências Básicas, Animais de Laboratório e Medicina Comparada",
+        "es": "Ciencias Básicas, Animales de Laboratorio y Medicina Comparada"
+      }
+    },
+    {
+      "path": "forensic-legal",
+      "title": {
+        "en": "Veterinary Forensic and Legal Medicine",
+        "pt_BR": "Medicina Veterinária Legal e Forense",
+        "es": "Medicina Veterinaria Legal y Forense"
+      }
+    },
+    {
+      "path": "education-practice",
+      "title": {
+        "en": "Education, Practice Management and Policy",
+        "pt_BR": "Ensino, Gestão e Políticas Públicas",
+        "es": "Educación, Gestión y Políticas Públicas"
+      }
+    }
+  ],
+  "reviewForms": [
+    {
+      "key": "NVAS-standard-v2",
+      "title": {
+        "en": "NVAS standard review (v2)",
+        "pt_BR": "Avaliação padrão NVAS (v2)"
+      },
+      "description": {
+        "en": "<p>Standard form for all article types. Questions marked as visible to the authors are sent to them with the decision; the others are seen only by the editors.</p><p>Answers that are too short are not accepted: the summary, the strengths and weaknesses and the major comments have a minimum number of words, and the recommendation \"Accept\" cannot be combined with answers that indicate a serious problem. These rules follow the practice of indexed international journals.</p>",
+        "pt_BR": "<p>Formulário padrão para todos os tipos de artigo. As perguntas marcadas como visíveis aos autores são enviadas a eles com a decisão; as demais são vistas só pelos editores.</p><p>Respostas curtas demais não são aceitas: o resumo, os pontos fortes e fracos e os comentários principais têm um número mínimo de palavras, e a recomendação \"Aceitar\" não pode ser combinada com respostas que indiquem um problema grave. As regras seguem a prática das revistas internacionais indexadas.</p>"
+      },
+      "elements": [
+        {
+          "type": "textarea",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Summary of the manuscript and its main contribution",
+            "pt_BR": "Resumo do manuscrito e sua principal contribuição"
+          },
+          "description": {
+            "en": "In two to four sentences, in your own words. At least 30 words.",
+            "pt_BR": "Em duas a quatro frases, com suas palavras. Pelo menos 30 palavras."
+          },
+          "minWords": 30
+        },
+        {
+          "type": "textarea",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Strengths and weaknesses of the manuscript",
+            "pt_BR": "Pontos fortes e pontos fracos do manuscrito"
+          },
+          "description": {
+            "en": "What the work does well and its main limitations, with specific examples from the text (at least 30 words).",
+            "pt_BR": "O que o trabalho faz bem e suas principais limitações, com exemplos específicos do texto (pelo menos 30 palavras)."
+          },
+          "minWords": 30
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Relevance and originality",
+            "pt_BR": "Relevância e originalidade"
+          },
+          "responses": {
+            "en": [
+              "High",
+              "Adequate",
+              "Low",
+              "Insufficient for publication"
+            ],
+            "pt_BR": [
+              "Alta",
+              "Adequada",
+              "Baixa",
+              "Insuficiente para publicação"
+            ]
+          },
+          "blocksAccept": [
+            "Insufficient for publication"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Are the study design and methods adequate to answer the question?",
+            "pt_BR": "O delineamento e os métodos são adequados para responder à pergunta?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não"
+            ]
+          },
+          "blocksAccept": [
+            "No"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Statistical analysis",
+            "pt_BR": "Análise estatística"
+          },
+          "responses": {
+            "en": [
+              "Adequate",
+              "Needs revision",
+              "Needs specialist statistical review",
+              "Not applicable"
+            ],
+            "pt_BR": [
+              "Adequada",
+              "Requer revisão",
+              "Requer revisão estatística especializada",
+              "Não se aplica"
+            ]
+          }
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Does the manuscript follow the applicable reporting guideline (ARRIVE 2.0, STROBE-Vet, CONSORT/REFLECT, STARD, CARE, PRISMA 2020, SANRA)?",
+            "pt_BR": "O manuscrito segue a diretriz de relato aplicável (ARRIVE 2.0, STROBE-Vet, CONSORT/REFLECT, STARD, CARE, PRISMA 2020, SANRA)?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No",
+              "Not applicable"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não",
+              "Não se aplica"
+            ]
+          },
+          "blocksAccept": [
+            "No"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Are the figures and tables necessary, legible and fully explained in their legends?",
+            "pt_BR": "As figuras e tabelas são necessárias, legíveis e explicadas por completo nas legendas?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Need adjustment",
+              "No",
+              "No figures or tables"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Precisam de ajuste",
+              "Não",
+              "Não há figuras nem tabelas"
+            ]
+          },
+          "blocksAccept": [
+            "No"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Are the conclusions supported by the data?",
+            "pt_BR": "As conclusões são sustentadas pelos dados?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não"
+            ]
+          },
+          "blocksAccept": [
+            "No"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Are the references adequate and up to date?",
+            "pt_BR": "As referências são adequadas e atualizadas?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não"
+            ]
+          }
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Language and presentation",
+            "pt_BR": "Idioma e apresentação"
+          },
+          "responses": {
+            "en": [
+              "Good",
+              "Needs minor editing",
+              "Needs professional language editing"
+            ],
+            "pt_BR": [
+              "Boa",
+              "Requer revisão menor",
+              "Requer revisão profissional do idioma"
+            ]
+          }
+        },
+        {
+          "type": "textarea",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Major comments to the authors",
+            "pt_BR": "Comentários principais para os autores"
+          },
+          "description": {
+            "en": "Numbered. Points that must be addressed for the manuscript to be acceptable. For every answer \"Partly\", \"No\" or \"Need adjustment\" above, include the corresponding point here. At least 100 words; if you recommend acceptance without changes, explain why the manuscript is ready.",
+            "pt_BR": "Numerados. Pontos que precisam ser resolvidos para que o manuscrito seja aceitável. Para cada resposta \"Parcialmente\", \"Não\" ou \"Precisam de ajuste\" acima, inclua o ponto correspondente aqui. Pelo menos 100 palavras; se recomendar o aceite sem mudanças, explique por que o manuscrito está pronto."
+          },
+          "minWords": 100
+        },
+        {
+          "type": "textarea",
+          "required": false,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Minor comments to the authors",
+            "pt_BR": "Comentários menores para os autores"
+          },
+          "description": {
+            "en": "Numbered, with line numbers when possible.",
+            "pt_BR": "Numerados, com o número da linha quando possível."
+          }
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Ethics and animal welfare: are ethics approval (CEUA or equivalent), consent of the legal guardian (when required) and required permits reported?",
+            "pt_BR": "Ética e bem-estar animal: a aprovação ética (CEUA ou equivalente), o consentimento do responsável legal (quando exigido) e as autorizações necessárias foram informados?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "No or incomplete",
+              "I have a welfare concern (describe below)",
+              "Not applicable"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Não ou incompleto",
+              "Tenho uma preocupação com bem-estar (descrever abaixo)",
+              "Não se aplica"
+            ]
+          },
+          "blocksAccept": [
+            "No or incomplete",
+            "I have a welfare concern (describe below)"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Research integrity: do you suspect plagiarism, fabricated or falsified data, image manipulation or duplicate publication?",
+            "pt_BR": "Integridade em pesquisa: você suspeita de plágio, dados fabricados ou falsificados, manipulação de imagens ou publicação duplicada?"
+          },
+          "responses": {
+            "en": [
+              "No",
+              "Yes (describe below)"
+            ],
+            "pt_BR": [
+              "Não",
+              "Sim (descrever abaixo)"
+            ]
+          },
+          "blocksAccept": [
+            "Yes (describe below)"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Your expertise on the topic of this manuscript",
+            "pt_BR": "Sua experiência no tema deste manuscrito"
+          },
+          "responses": {
+            "en": [
+              "Expert on this specific topic",
+              "Experienced in the broader field",
+              "General knowledge only"
+            ],
+            "pt_BR": [
+              "Especialista neste tema",
+              "Experiência na área mais ampla",
+              "Apenas conhecimento geral"
+            ]
+          }
+        },
+        {
+          "type": "textarea",
+          "required": false,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Parts of the manuscript you could not assess",
+            "pt_BR": "Partes do manuscrito que você não conseguiu avaliar"
+          },
+          "description": {
+            "en": "For example statistics, molecular methods or imaging. The editor may invite a specialist.",
+            "pt_BR": "Por exemplo estatística, métodos moleculares ou imagem. O editor pode convidar um especialista."
+          }
+        },
+        {
+          "type": "textarea",
+          "required": false,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Confidential comments to the editor",
+            "pt_BR": "Comentários confidenciais ao editor"
+          },
+          "description": {
+            "en": "Not sent to the authors.",
+            "pt_BR": "Não são enviados aos autores."
+          }
+        },
+        {
+          "type": "checkboxes",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Reviewer declaration",
+            "pt_BR": "Declaração do revisor"
+          },
+          "responses": {
+            "en": [
+              "I read the whole manuscript, including figures, tables and supplementary material; i have no undeclared competing interest with the authors or the topic, and I did not upload the manuscript, in whole or in part, to generative AI tools."
+            ],
+            "pt_BR": [
+              "Li o manuscrito completo, incluindo figuras, tabelas e material suplementar; não tenho conflito de interesses não declarado com os autores ou o tema, e não enviei o manuscrito, no todo ou em parte, a ferramentas de IA generativa."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "NVAS-clinical-image-v2",
+      "title": {
+        "en": "NVAS clinical image review (v2)",
+        "pt_BR": "Avaliação de imagem clínica NVAS (v2)"
+      },
+      "description": {
+        "en": "<p>Form for the Clinical Images section (short-communication format), which makes up the journal's validated visual repository. Assess the labelled and the unlabelled versions of the figure. Questions marked as visible to the authors are sent to them with the decision; the others are seen only by the editors.</p><p>Answers that are too short are not accepted: the summary, the strengths and weaknesses and the major comments have a minimum number of words, and the recommendation \"Accept\" cannot be combined with answers that indicate a serious problem. These rules follow the practice of indexed international journals.</p>",
+        "pt_BR": "<p>Formulário da seção Imagens Clínicas (formato de comunicação curta), que forma o repositório visual validado da revista. Avalie as versões da figura com e sem marcações. As perguntas marcadas como visíveis aos autores são enviadas a eles com a decisão; as demais são vistas só pelos editores.</p><p>Respostas curtas demais não são aceitas: o resumo, os pontos fortes e fracos e os comentários principais têm um número mínimo de palavras, e a recomendação \"Aceitar\" não pode ser combinada com respostas que indiquem um problema grave. As regras seguem a prática das revistas internacionais indexadas.</p>"
+      },
+      "elements": [
+        {
+          "type": "textarea",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "What does the image show and what is its teaching message?",
+            "pt_BR": "O que a imagem mostra e qual é a mensagem didática?"
+          },
+          "description": {
+            "en": "In two or three sentences, in your own words. At least 20 words.",
+            "pt_BR": "Em duas ou três frases, com suas palavras. Pelo menos 20 palavras."
+          },
+          "minWords": 20
+        },
+        {
+          "type": "textarea",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Strengths and weaknesses of the manuscript",
+            "pt_BR": "Pontos fortes e pontos fracos do manuscrito"
+          },
+          "description": {
+            "en": "What the work does well and its main limitations, with specific examples from the text (at least 20 words).",
+            "pt_BR": "O que o trabalho faz bem e suas principais limitações, com exemplos específicos do texto (pelo menos 20 palavras)."
+          },
+          "minWords": 20
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Teaching value",
+            "pt_BR": "Valor didático"
+          },
+          "responses": {
+            "en": [
+              "High: classic, rare or practice-changing",
+              "Adequate",
+              "Low: common finding with no new message",
+              "Insufficient for publication"
+            ],
+            "pt_BR": [
+              "Alto: clássico, raro ou que muda a prática",
+              "Adequado",
+              "Baixo: achado comum sem mensagem nova",
+              "Insuficiente para publicação"
+            ]
+          },
+          "blocksAccept": [
+            "Insufficient for publication"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Technical quality of the image (focus, exposure, framing, resolution)",
+            "pt_BR": "Qualidade técnica da imagem (foco, exposição, enquadramento, resolução)"
+          },
+          "responses": {
+            "en": [
+              "Excellent",
+              "Adequate",
+              "Needs a better version of the same image",
+              "Unacceptable"
+            ],
+            "pt_BR": [
+              "Excelente",
+              "Adequada",
+              "Precisa de versão melhor da mesma imagem",
+              "Inaceitável"
+            ]
+          },
+          "blocksAccept": [
+            "Unacceptable"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Is the stated diagnosis recognizable in the image?",
+            "pt_BR": "O diagnóstico informado é reconhecível na imagem?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não"
+            ]
+          },
+          "blocksAccept": [
+            "No"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Was the diagnosis confirmed by an appropriate method (histopathology, cytology, culture, PCR, imaging, surgery, necropsy or follow-up)?",
+            "pt_BR": "O diagnóstico foi confirmado por método adequado (histopatologia, citologia, cultura, PCR, imagem, cirurgia, necropsia ou evolução)?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No",
+              "Not stated"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não",
+              "Não informado"
+            ]
+          },
+          "blocksAccept": [
+            "No",
+            "Not stated"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Arrows, labels and panels: necessary, clear, consistent and explained in the legend?",
+            "pt_BR": "Setas, marcações e painéis: necessários, claros, padronizados e explicados na legenda?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Need adjustment",
+              "No labels needed",
+              "Inadequate"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Precisam de ajuste",
+              "Não há marcações e não são necessárias",
+              "Inadequados"
+            ]
+          },
+          "blocksAccept": [
+            "Inadequate"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Scale bar, magnification, staining, view or plane reported where applicable?",
+            "pt_BR": "Barra de escala, aumento, coloração, projeção ou plano informados quando cabível?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No",
+              "Not applicable"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não",
+              "Não se aplica"
+            ]
+          }
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Reference value: would this image serve as a reliable reference in the journal's validated image repository (representative, correctly identified, documented and classified by species, system and modality)?",
+            "pt_BR": "Valor como referência: esta imagem serviria de referência confiável no repositório de imagens validadas da revista (representativa, corretamente identificada, documentada e classificada por espécie, sistema e modalidade)?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Yes, after the requested revisions",
+              "No"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Sim, após as revisões pedidas",
+              "Não"
+            ]
+          },
+          "blocksAccept": [
+            "No"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Text: accurate, concise (up to 500 words) and with a clear teaching point?",
+            "pt_BR": "Texto: correto, conciso (até 500 palavras) e com mensagem para a prática clara?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não"
+            ]
+          }
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Language and presentation",
+            "pt_BR": "Idioma e apresentação"
+          },
+          "responses": {
+            "en": [
+              "Good",
+              "Needs minor editing",
+              "Needs professional language editing"
+            ],
+            "pt_BR": [
+              "Boa",
+              "Requer revisão menor",
+              "Requer revisão profissional do idioma"
+            ]
+          }
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Are the references adequate (up to 5) and up to date?",
+            "pt_BR": "As referências são adequadas (até 5) e atualizadas?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "Partly",
+              "No"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Parcialmente",
+              "Não"
+            ]
+          }
+        },
+        {
+          "type": "textarea",
+          "required": true,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Major comments to the authors",
+            "pt_BR": "Comentários principais para os autores"
+          },
+          "description": {
+            "en": "Numbered. Points that must be addressed for the image to be acceptable, including a better image if needed. For every answer \"Partly\", \"No\" or \"Need adjustment\" above, include the corresponding point here. At least 50 words; if you recommend acceptance without changes, explain why the manuscript is ready.",
+            "pt_BR": "Numerados. Pontos que precisam ser resolvidos para que a imagem seja aceitável, inclusive uma imagem melhor, se for o caso. Para cada resposta \"Parcialmente\", \"Não\" ou \"Precisam de ajuste\" acima, inclua o ponto correspondente aqui. Pelo menos 50 palavras; se recomendar o aceite sem mudanças, explique por que o manuscrito está pronto."
+          },
+          "minWords": 50
+        },
+        {
+          "type": "textarea",
+          "required": false,
+          "includedForAuthors": true,
+          "question": {
+            "en": "Minor comments to the authors",
+            "pt_BR": "Comentários menores para os autores"
+          },
+          "description": {
+            "en": "Numbered, with line numbers when possible.",
+            "pt_BR": "Numerados, com o número da linha quando possível."
+          }
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Image integrity: comparing the labelled and unlabelled versions, is there any sign of cloning, erasing, local retouching, AI enhancement or composite not stated in the legend?",
+            "pt_BR": "Integridade da imagem: comparando as versões com e sem marcações, há sinal de clonagem, apagamento, retoque localizado, melhoria por IA ou montagem não informada na legenda?"
+          },
+          "responses": {
+            "en": [
+              "No",
+              "Uncertain: request the original file",
+              "Yes (describe below)"
+            ],
+            "pt_BR": [
+              "Não",
+              "Dúvida: pedir o arquivo original",
+              "Sim (descrever abaixo)"
+            ]
+          },
+          "blocksAccept": [
+            "Yes (describe below)"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Anonymization: are patient, guardian, farm or hospital identifiers visible (names, record numbers, dates, logos, readable ear tags, identifiable people)?",
+            "pt_BR": "Anonimização: há identificadores visíveis do paciente, responsável, propriedade ou hospital (nomes, prontuário, datas, logotipos, brincos legíveis, pessoas identificáveis)?"
+          },
+          "responses": {
+            "en": [
+              "None",
+              "Yes, must be removed (describe below)"
+            ],
+            "pt_BR": [
+              "Nenhum",
+              "Sim, precisam ser removidos (descrever abaixo)"
+            ]
+          },
+          "blocksAccept": [
+            "Yes, must be removed (describe below)"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Ethics and welfare: image anonymized (or, if the animal or its guardian can be identified, consent of the legal guardian stated) and free of unnecessary suffering or gratuitously graphic content?",
+            "pt_BR": "Ética e bem-estar: imagem anonimizada (ou, se o animal ou o responsável puder ser identificado, consentimento do responsável legal declarado) e sem sofrimento desnecessário ou conteúdo chocante gratuito?"
+          },
+          "responses": {
+            "en": [
+              "Yes",
+              "No or incomplete",
+              "I have a welfare concern (describe below)"
+            ],
+            "pt_BR": [
+              "Sim",
+              "Não ou incompleto",
+              "Tenho uma preocupação com bem-estar (descrever abaixo)"
+            ]
+          },
+          "blocksAccept": [
+            "No or incomplete",
+            "I have a welfare concern (describe below)"
+          ]
+        },
+        {
+          "type": "radio",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Your expertise on the topic of this manuscript",
+            "pt_BR": "Sua experiência no tema deste manuscrito"
+          },
+          "responses": {
+            "en": [
+              "Expert on this specific topic",
+              "Experienced in the broader field",
+              "General knowledge only"
+            ],
+            "pt_BR": [
+              "Especialista neste tema",
+              "Experiência na área mais ampla",
+              "Apenas conhecimento geral"
+            ]
+          }
+        },
+        {
+          "type": "textarea",
+          "required": false,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Parts of the manuscript you could not assess",
+            "pt_BR": "Partes do manuscrito que você não conseguiu avaliar"
+          },
+          "description": {
+            "en": "For example statistics, molecular methods or imaging. The editor may invite a specialist.",
+            "pt_BR": "Por exemplo estatística, métodos moleculares ou imagem. O editor pode convidar um especialista."
+          }
+        },
+        {
+          "type": "textarea",
+          "required": false,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Confidential comments to the editor",
+            "pt_BR": "Comentários confidenciais ao editor"
+          },
+          "description": {
+            "en": "Not sent to the authors.",
+            "pt_BR": "Não são enviados aos autores."
+          }
+        },
+        {
+          "type": "checkboxes",
+          "required": true,
+          "includedForAuthors": false,
+          "question": {
+            "en": "Reviewer declaration",
+            "pt_BR": "Declaração do revisor"
+          },
+          "responses": {
+            "en": [
+              "I read the whole manuscript, including figures, tables and supplementary material; i have no undeclared competing interest with the authors or the topic, and I did not upload the manuscript or the images, in whole or in part, to generative AI tools."
+            ],
+            "pt_BR": [
+              "Li o manuscrito completo, incluindo figuras, tabelas e material suplementar; não tenho conflito de interesses não declarado com os autores ou o tema, e não enviei o manuscrito nem as imagens, no todo ou em parte, a ferramentas de IA generativa."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "userGroups": [
+    {
+      "roleId": 16,
+      "permitSettings": true,
+      "name": {
+        "en": "Editor-in-Chief",
+        "pt_BR": "Editor-chefe"
+      },
+      "abbrev": {
+        "en": "EIC",
+        "pt_BR": "EC"
+      }
+    },
+    {
+      "roleId": 16,
+      "permitSettings": true,
+      "name": {
+        "en": "Co-Editor-in-Chief",
+        "pt_BR": "Coeditor-chefe"
+      },
+      "abbrev": {
+        "en": "CoEIC",
+        "pt_BR": "CoEC"
+      }
+    },
+    {
+      "_comment": "Criado no painel em 16/11/2026 (id 22, etapas 1/3/4/5). Conduz os artigos em que o editor-chefe é autor.",
+      "roleId": 17,
+      "name": {
+        "en": "Associate Editor",
+        "pt_BR": "Editor Associado"
+      },
+      "abbrev": {
+        "en": "AE",
+        "pt_BR": "EA"
+      }
+    }
+  ],
+  "masthead": [
+    {
+      "email": "calefi@csvet.com.br",
+      "userGroup": {
+        "roleId": 16,
+        "name": "Editor-in-Chief"
+      },
+      "profile": {
+        "givenName": {
+          "en": "Atilio Sersun",
+          "pt_BR": "Atilio Sersun"
+        },
+        "familyName": {
+          "en": "Calefi",
+          "pt_BR": "Calefi"
+        },
+        "affiliation": {
+          "en": "Universidade Cruzeiro do Sul",
+          "pt_BR": "Universidade Cruzeiro do Sul"
+        },
+        "country": "BR",
+        "url": "http://lattes.cnpq.br/4438211760493798",
+        "biography": {
+          "pt_BR": "<p>Médico veterinário e biólogo, mestre e doutor em Patologia Experimental e Comparada pela Faculdade de Medicina Veterinária e Zootecnia da Universidade de São Paulo (FMVZ-USP), com pós-doutorado no Departamento de Patologia da FMVZ-USP. Professor da Universidade Cruzeiro do Sul (São Paulo, Brasil), editor-chefe da <em>Neotropical Veterinary and Animal Science</em> e diretor da CSVET Editora.</p>",
+          "en": "<p>Veterinarian (DVM) and biologist, MSc and PhD in Experimental and Comparative Pathology from the School of Veterinary Medicine and Animal Science, University of São Paulo (FMVZ-USP), with postdoctoral training in the Department of Pathology, FMVZ-USP. Professor at Universidade Cruzeiro do Sul (São Paulo, Brazil), Editor-in-Chief of <em>Neotropical Veterinary and Animal Science</em> and director of CSVET Editora.</p>"
+        },
+        "signature": {
+          "pt_BR": "<p>Dr. Atilio Sersun Calefi<br>Editor-chefe<br><em>Neotropical Veterinary and Animal Science</em> (NVAS)<br>CSVET Editora</p>",
+          "en": "<p>Dr. Atilio Sersun Calefi<br>Editor-in-Chief<br><em>Neotropical Veterinary and Animal Science</em> (NVAS)<br>CSVET Editora</p>"
+        }
+      },
+      "hideOnMastheadAs": [
+        {
+          "roleId": 16,
+          "name": "Journal editor"
+        },
+        {
+          "roleId": 16,
+          "name": "Journal manager"
+        }
+      ]
+    }
+  ],
+  "genres": {
+    "_comment": "Tipos de arquivo que o autor escolhe para cada arquivo no envio (componentes do OJS), casados pela chave. Os arquivos exigidos em cada tipo de artigo ficam em plugins/generic/csvetScreening/rules.php; o OJS só exige sozinho os marcados com required. 'disable': tipos padrão do OJS que confundem o autor (arquivos antigos com eles continuam).",
+    "items": [
+      {
+        "key": "SUBMISSION",
+        "category": 1,
+        "supplementary": false,
+        "required": true,
+        "name": {
+          "pt_BR": "Manuscrito anonimizado (sem nomes de autores)",
+          "en": "Anonymized manuscript (no author names)"
+        }
+      },
+      {
+        "key": "NVAS_TITLE_PAGE",
+        "category": 1,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Folha de rosto (com os autores)",
+          "en": "Title page (with authors)"
+        }
+      },
+      {
+        "key": "NVAS_COVER_LETTER",
+        "category": 1,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Carta de apresentação",
+          "en": "Cover letter"
+        }
+      },
+      {
+        "key": "NVAS_REPORTING_CHECKLIST",
+        "category": 1,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Checklist da diretriz de relato (CARE, ARRIVE, PRISMA...)",
+          "en": "Reporting guideline checklist (CARE, ARRIVE, PRISMA...)"
+        }
+      },
+      {
+        "key": "NVAS_FIGURE",
+        "category": 2,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Figura do artigo (uma por arquivo; Imagem Clínica usa os dois tipos abaixo)",
+          "en": "Figure (one per file; Clinical Images use the two types below)"
+        }
+      },
+      {
+        "key": "NVAS_FIGURE_LABELLED",
+        "category": 2,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Imagem clínica: figura COM marcações",
+          "en": "Clinical image: labelled figure"
+        }
+      },
+      {
+        "key": "NVAS_FIGURE_UNLABELLED",
+        "category": 2,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Imagem clínica: figura SEM marcações",
+          "en": "Clinical image: unlabelled figure"
+        }
+      },
+      {
+        "key": "NVAS_ETHICS",
+        "category": 1,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Documento de ética ou licença (CEUA, CEP, SISBIO...)",
+          "en": "Ethics approval or permit (animal/human ethics committee, SISBIO...)"
+        }
+      },
+      {
+        "key": "NVAS_CONSENT",
+        "category": 1,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Termo de consentimento do responsável legal",
+          "en": "Consent form of the legal guardian"
+        }
+      },
+      {
+        "key": "NVAS_PERMISSION",
+        "category": 1,
+        "supplementary": false,
+        "required": false,
+        "name": {
+          "pt_BR": "Autorização de uso (figura ou texto de terceiros)",
+          "en": "Permission to reproduce (third-party figure or text)"
+        }
+      },
+      {
+        "key": "DATASET",
+        "category": 3,
+        "supplementary": true,
+        "required": false,
+        "name": {
+          "pt_BR": "Material suplementar (dados, tabelas, vídeos)",
+          "en": "Supplementary material (data, tables, videos)"
+        }
+      },
+      {
+        "key": "OTHER",
+        "category": 3,
+        "supplementary": true,
+        "required": false,
+        "name": {
+          "pt_BR": "Outro (só se nenhum tipo acima servir)",
+          "en": "Other (only if no type above fits)"
+        }
+      }
+    ],
+    "disable": [
+      "RESEARCHINSTRUMENT",
+      "RESEARCHMATERIALS",
+      "RESEARCHRESULTS",
+      "TRANSCRIPTS",
+      "DATAANALYSIS",
+      "SOURCETEXTS"
+    ]
+  },
+  "retiredReviewForms": {
+    "_comment": "Formulários já usados em avaliações (o OJS não deixa mudar): ficam inativos, sem aparecer no convite de novos avaliadores. As avaliações em andamento com eles continuam e seguem as mesmas regras de mínimo de palavras (casadas pelo texto da pergunta em inglês).",
+    "titles": [
+      "NVAS standard review",
+      "NVAS clinical image review"
+    ]
+  }
+}

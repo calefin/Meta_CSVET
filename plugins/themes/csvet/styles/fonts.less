@@ -1,0 +1,17 @@
+/**
+ * @file plugins/themes/csvet/styles/fonts.less
+ *
+ * @brief Roboto servida localmente (Apache 2.0), mesma fonte de csvet.com.br.
+ */
+.csvet-roboto(@weight) {
+	@font-face {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: @weight;
+		font-display: swap;
+		src: url('@{baseUrl}/plugins/themes/csvet/fonts/Roboto-@{weight}.woff2') format('woff2');
+	}
+}
+.csvet-roboto(400);
+.csvet-roboto(500);
+.csvet-roboto(700);

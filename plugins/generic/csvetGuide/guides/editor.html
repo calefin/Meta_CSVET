@@ -1,0 +1,149 @@
+<p class="note">Guia do editor-chefe, atualizado em 19/10/2026. O guia da coeditora está na outra aba.</p>
+
+<h2>Visão geral</h2>
+<p>Todo artigo passa pelas mesmas etapas do OJS: submissão, avaliação, edição de texto, produção e publicação. O editor-chefe faz a triagem, a edição, a produção e a publicação; a coeditora conduz a avaliação dos artigos designados a ela.</p>
+<div class="flow">
+<svg viewBox="0 0 760 704" role="img" aria-label="Fluxo editorial: a coeditora conduz a avaliação; o editor-chefe, a triagem e a produção" font-family="Arial, sans-serif" font-size="13">
+<defs><marker id="guide-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8a90a8"/></marker></defs>
+<text x="24" y="34" font-size="15" font-weight="600" fill="#1d2233">A coeditora conduz a avaliação; o editor-chefe, a triagem e a produção</text>
+<g fill="#f1f2f7"><rect x="28" y="64" width="224" height="620" rx="8"/><rect x="268" y="64" width="224" height="620" rx="8"/><rect x="508" y="64" width="224" height="620" rx="8"/></g>
+<g font-weight="600" fill="#1d2233" text-anchor="middle"><text x="140" y="90">Autor</text><text x="380" y="90">Coeditora</text><text x="620" y="90">Editor-chefe</text></g>
+<g fill="none" stroke="#8a90a8" stroke-width="1.25">
+<path d="M140 150V162H620V174" marker-end="url(#guide-arrow)"/>
+<path d="M620 214V226H380V238" marker-end="url(#guide-arrow)"/>
+<path d="M380 278V302" marker-end="url(#guide-arrow)"/>
+<path d="M282 322H140V366" marker-end="url(#guide-arrow)"/>
+<path d="M42 386H22V258H282" stroke-dasharray="4 4" marker-end="url(#guide-arrow)"/>
+<path d="M478 322H620V430" marker-end="url(#guide-arrow)"/>
+<path d="M620 470V494" marker-end="url(#guide-arrow)"/>
+<path d="M620 534V546H140V558" marker-end="url(#guide-arrow)"/>
+<path d="M140 598V610H620V622" marker-end="url(#guide-arrow)"/>
+</g>
+<g fill="#fff" stroke="#8a90a8" stroke-width="1.25">
+<rect x="42" y="110" width="196" height="40" rx="8"/><rect x="522" y="174" width="196" height="40" rx="8"/><rect x="282" y="238" width="196" height="40" rx="8"/><rect x="282" y="302" width="196" height="40" rx="8"/><rect x="42" y="366" width="196" height="40" rx="8"/><rect x="522" y="430" width="196" height="40" rx="8"/><rect x="522" y="494" width="196" height="40" rx="8"/><rect x="42" y="558" width="196" height="40" rx="8"/>
+</g>
+<rect x="522" y="622" width="196" height="40" rx="8" fill="#e6e8f7" stroke="#000080" stroke-width="2"/>
+<g fill="#1d2233" text-anchor="middle">
+<text x="140" y="134">Envia o manuscrito</text><text x="620" y="198">Triagem e designação</text><text x="380" y="262">Convida 2 avaliadores</text><text x="380" y="326">Decisão editorial</text><text x="140" y="390">Revisa o manuscrito</text><text x="620" y="454">Edição e tradução</text><text x="620" y="518">Gera a prova (PDF)</text><text x="140" y="582">Confere e aprova a prova</text><text x="620" y="646" font-weight="600">Publica e deposita o DOI</text>
+</g>
+<g font-size="11.5" fill="#5a6080"><text x="205" y="314" text-anchor="middle">revisões</text><text x="549" y="314" text-anchor="middle">aceite</text><text x="28" y="250">nova rodada</text></g>
+</svg>
+</div>
+<p>Artigos em que o editor-chefe é autor seguem o mesmo fluxo, mas a triagem, a avaliação e a decisão ficam inteiras com a coeditora.</p>
+
+<h2>Pasta e ficha de cada artigo</h2>
+<p>Cada artigo aceito ganha uma pasta própria no OneDrive, criada no dia do aceite: <code>NVAS\producao\&lt;nº da submissão&gt;-&lt;sobrenome do 1º autor&gt;\</code>.</p>
+<table>
+<thead><tr><th>Arquivo</th><th>O que é</th><th>Quando entra</th></tr></thead>
+<tbody>
+<tr><td><code>manuscrito_final.docx</code></td><td>Texto final, já revisado e, se veio em português, traduzido</td><td>Fim da edição de texto</td></tr>
+<tr><td><code>Figure1.png</code>, <code>Figure2.tif</code>…</td><td>Figuras em alta resolução (300 dpi ou mais), pedidas ao autor</td><td>Logo após o aceite</td></tr>
+<tr><td><code>ficha.json</code></td><td>Dados da folha de rosto e da publicação; cópia de <code>content/nvas/galley/ficha-exemplo.json</code></td><td>Início da produção</td></tr>
+<tr><td><code>&lt;slug&gt;_PROOF.pdf</code></td><td>Prova enviada ao autor</td><td>Produção</td></tr>
+<tr><td><code>&lt;slug&gt;.pdf</code></td><td>PDF publicado (a galé)</td><td>Publicação</td></tr>
+</tbody>
+</table>
+<p>A ficha é a única fonte dos dados que não estão no manuscrito anonimizado: autores, ORCID, filiações, contribuições (CRediT), conflitos de interesse e agradecimentos. Copie da folha de rosto, não digite de memória.</p>
+
+<h2>Quem conduz cada artigo</h2>
+<p>Regra da <a href="https://journals.csvet.com.br/nvas/pt_BR/about#editors-articles" target="_blank" rel="noopener">política para artigos de editores</a>. Orientação, coautoria recente ou relação próxima impedem o editor; ser da mesma instituição é conflito declarado. A triagem automática avisa quando há autor do corpo editorial ou da instituição do corpo editorial e mostra a proporção dessa instituição nos últimos 12 meses.</p>
+<table>
+<thead><tr><th>Situação</th><th>Quem conduz</th><th>Avaliadores</th></tr></thead>
+<tbody>
+<tr><td>O editor-chefe é <strong>autor</strong></td><td>Editor associado (papel "Editor Associado"; desde 16/11/2026, Andressa Rorato)</td><td>Dois pareceres externos completos (o sistema só publica assim)</td></tr>
+<tr><td>A coeditora-chefe é autora</td><td>Editor-chefe ou editor externo</td><td>Dois pareceres externos completos</td></tr>
+<tr><td>O editor-chefe <strong>não é autor</strong>, mas um autor é orientando dele ou publicou com ele recentemente</td><td>Coeditora-chefe</td><td>De fora da instituição dos autores</td></tr>
+<tr><td>Autor colega da mesma instituição, sem vínculo direto com o editor</td><td>Editor-chefe, com o conflito declarado</td><td>Os dois de fora da instituição</td></tr>
+<tr><td>Demais artigos</td><td>Editor-chefe</td><td>Regra geral</td></tr>
+</tbody>
+</table>
+<p>Meta interna: nenhuma instituição com mais de cerca de um terço dos artigos publicados no ano. O editor externo tem compromisso pequeno: só os artigos do editor-chefe, cerca de 3 a 5 por ano (teto interno de 1 em cada 10 artigos com autor do corpo editorial).</p>
+
+<h2>Até o aceite: triagem, avaliação e decisão</h2>
+<p>Até o aceite, o trabalho é todo no OJS; o editor-chefe designa e acompanha, a coeditora conduz o que for designado a ela.</p>
+<ol>
+<li><strong>Triagem (etapa Submissão).</strong> O e-mail "[NVAS] Nova submissão #id" e o quadro de triagem mostram o que falta: manuscrito, folha de rosto, carta e checklist (exceto Imagem Clínica e Carta ao Editor). Confira também:
+<ul>
+<li>escopo da revista e tipo de artigo na seção certa;</li>
+<li>revisão narrativa só com convite ou consulta prévia aceita;</li>
+<li>manuscrito anonimizado (sem nomes, instituição ou agradecimentos);</li>
+<li>declaração de ética e consentimento do responsável quando o caso é identificável.</li>
+</ul></li>
+<li><strong>Falta algo simples</strong> → Devolução técnica (modelo alternativo na recusa). <strong>Fora do escopo</strong> → recusa inicial.</li>
+<li><strong>Designação.</strong> Artigo em que o editor-chefe é autor vai sempre para o editor associado (papel "Editor Associado"), e o editor-chefe não vê avaliadores nem pareceres.</li>
+<li><strong>Avaliação (Rodada 1).</strong> Dois avaliadores, duplo-cego. Convites e lembretes saem no idioma da interface de quem envia; o compositor de decisões tem troca de idioma. "Enviar lembrete" só aparece com prazo vencido; antes disso, use "Email ao avaliador".</li>
+<li><strong>Decisão.</strong> Aceitar, pedir revisões ou recusar. No aceite, peça junto as figuras em alta resolução e o que faltar da folha de rosto (ORCID, filiação completa).</li>
+</ol>
+
+<h2>Após o aceite: edição de texto</h2>
+<p>A edição termina quando existe um <code>manuscrito_final.docx</code> em inglês que o autor aprovou.</p>
+<ul class="check">
+<li>Tradução, se o artigo veio em português (grátis até 31/01/2027); o autor revisa a tradução e aprova. Anote horas e palavras na tabela de tradução do <code>PROXIMOS_PASSOS.md</code>.</li>
+<li>Figuras em alta resolução recebidas, com todo o texto interno em inglês.</li>
+<li>Referências conferidas: autores, ano e DOI de cada uma no Crossref ou PubMed.</li>
+<li>Declaração de IA compatível com o uso real (IA só para tradução e linguagem, nunca para gerar conteúdo).</li>
+<li>Formato que o gerador lê: títulos de seção em negrito, subtítulos em negrito e itálico, legendas começando por "Figure 1." e "Table 1.", <em>Declarations</em> e <em>References</em> no fim.</li>
+<li>Asteriscos, símbolos e itálicos de nomes científicos conferidos (no artigo do xenotransplante, os asteriscos da busca sumiram).</li>
+</ul>
+
+<h2>Produção: prova do autor e PDF final</h2>
+<p>O PDF publicado é feito por nós, no computador do editor, com o gerador <code>content/nvas/galley/build_galley.py</code>; o OJS só recebe o arquivo. A prova e o final saem da mesma ficha, então o publicado é exatamente o que o autor aprovou.</p>
+<ol>
+<li>Preencha na ficha os dados de publicação: <code>volume</code>, <code>article_number</code>, <code>doi</code> (copiado do OJS), <code>received</code>, <code>accepted</code> e <code>proof_deadline</code> (3 a 5 dias).</li>
+<li>Gere a prova: <pre>python content/nvas/galley/build_galley.py ficha.json --proof</pre></li>
+<li>Leia o relatório que o gerador imprime: onde cada tabela e figura ficou e por qual regra. Se uma caiu em lugar ruim, ajuste <code>floats</code> na ficha e gere de novo.</li>
+<li>Envie o <code>_PROOF.pdf</code> ao autor por uma discussão na etapa Produção. Nesta fase só se corrigem erros, nunca se reescreve o texto.</li>
+<li>Aplique as correções no <code>.docx</code>, preencha <code>published</code> e gere a versão final com <code>--final</code> (sem faixa e sem marca d'água).</li>
+</ol>
+<h3>Posição das figuras</h3>
+<p>Na ordem em que as regras valem:</p>
+<ol>
+<li><code>after</code> na ficha: logo depois do parágrafo ou título que contém o trecho indicado (decisão do editor).</li>
+<li>Onde o autor deixou no <code>.docx</code>, ou um marcador <code>[Figure 1 here]</code> / <code>[Figura 1 aqui]</code>.</li>
+<li>Logo depois do primeiro parágrafo que cita a figura.</li>
+<li>No fim do texto, com aviso de que a figura não é citada.</li>
+</ol>
+<p>Exemplo de ficha com decisões de posição:</p>
+<pre>"floats": {
+  "Figure 2": {"width": "page"},
+  "Table 1": {"after": "Space and complexity matter"}
+}</pre>
+<p>Se preferir, peça ao Claude: "Gera a prova do artigo 12, arquivos em &lt;pasta&gt;, Figura 2 em página inteira." Ele monta a ficha pela folha de rosto, gera a prova e aponta problemas (referência sem DOI, figura em baixa resolução, trecho estranho no <code>.docx</code>).</p>
+
+<h2>Publicação e depois</h2>
+<p>O artigo está publicado quando o PDF final está no ar como galé e o DOI foi depositado na Crossref.</p>
+<ul class="check">
+<li>Upload do PDF final em <em>Publicação › Galés</em> (rótulo "PDF").</li>
+<li>Metadados conferidos no OJS contra o PDF: título, autores e ORCID, resumo, palavras-chave, referências, licença CC BY 4.0.</li>
+<li>Publicar no volume do ano (publicação contínua).</li>
+<li>Depositar o DOI pelo plugin Crossref do OJS e conferir que <code>https://doi.org/&lt;doi&gt;</code> abre o artigo.</li>
+<li>Guardar o PDF final na pasta do artigo.</li>
+<li>Com o 5º a 8º artigo publicado: pedir o ISSN eletrônico ao IBICT (gratuito, vale desde o 1º número).</li>
+</ul>
+
+<h2>Regras fixas</h2>
+<p>Estas regras valem para todo artigo; mudá-las depois do 1º artigo publicado bagunça citações e DOIs.</p>
+<table>
+<thead><tr><th>Item</th><th>Regra</th><th>Exemplo</th></tr></thead>
+<tbody>
+<tr><td>Volume</td><td>Um por ano, publicação contínua</td><td>2026 = volume 1, 2027 = volume 2</td></tr>
+<tr><td>Número do artigo</td><td>Ordem de publicação dentro do volume, não o nº da submissão</td><td>e1, e2, e3</td></tr>
+<tr><td>DOI</td><td>Prefixo 10.54547 + sufixo do OJS; copiar do OJS, nunca montar à mão</td><td>10.54547/nvas.2026.12</td></tr>
+<tr><td>Datas</td><td>As do OJS: recebido = envio, aceito = decisão de aceite</td><td>2 November 2026</td></tr>
+<tr><td>Figura em duas colunas</td><td>Padrão para gráficos, painéis e tabelas</td><td><code>"width": "full"</code></td></tr>
+<tr><td>Figura em uma coluna</td><td>Só foto ou micrografia sem texto pequeno</td><td><code>"width": "column"</code></td></tr>
+<tr><td>Figura em página inteira</td><td>Fluxograma alto ou painel grande</td><td><code>"width": "page"</code></td></tr>
+<tr><td>Idioma com estrangeiros</td><td>Autor ou avaliador de fora do Brasil recebe tudo só em inglês: no compositor, clique em "Alternar para: inglês" antes de editar; discussões, cartas e anexos em inglês. Cadastre o país da pessoa: com país diferente de Brasil, os e-mails automáticos bilíngues saem só na parte em inglês.</td><td>País = Índia → convite só em inglês</td></tr>
+<tr><td>Prazo da prova</td><td>3 a 5 dias; sem resposta, um lembrete e mais 2 dias</td><td><code>"proof_deadline": "22 December 2026"</code></td></tr>
+</tbody>
+</table>
+
+<h2>Antes do 1º artigo publicado</h2>
+<p>O site e os e-mails prometem DOI em todo artigo, então nada é publicado antes dos três primeiros itens.</p>
+<ul class="check">
+<li>Adesão à Crossref aprovada (amostras enviadas em 19/10/2026; aguardando resposta).</li>
+<li>Credenciais da Crossref digitadas no painel do OJS (plugin Crossref) e DOIs ligados: <code>enableDois</code> = true no <code>journal.json</code> + <code>php scripts/configure-journal.php</code>.</li>
+<li>Um depósito de teste conferido em <code>https://doi.org/...</code>.</li>
+<li>Cron do OJS no cPanel (lembretes automáticos aos avaliadores).</li>
+<li>ModSecurity da hospedagem liberado para journals (salvar ORCID, links e referências com DOI dá erro 406).</li>
+</ul>

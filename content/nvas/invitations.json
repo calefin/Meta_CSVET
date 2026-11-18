@@ -1,0 +1,84 @@
+{
+  "_comment": "Modelos de convite por função, usados por scripts/invite-editors.php. Marcadores trocados pelo script: {nome}, {area}, {funcao}. Variáveis do OJS (não altere): {$recipientName}, {$rolesAdded} (só no modelo em inglês: o OJS o gera no idioma principal da revista), {$acceptUrl}, {$declineUrl}. O link de aceite só funciona se {$acceptUrl} estiver no corpo.",
+  "roles": {
+    "Coeditor-chefe": {
+      "userGroup": {
+        "roleId": 16,
+        "name": "Co-Editor-in-Chief"
+      },
+      "masthead": true,
+      "subject": {
+        "pt_BR": "Convite para coeditor(a)-chefe do Neotropical Veterinary and Animal Science",
+        "en": "Invitation to serve as Co-Editor-in-Chief of the Neotropical Veterinary and Animal Science"
+      },
+      "intro": {
+        "pt_BR": "<p>É com satisfação que o(a) convido a assumir a função de <strong>Coeditor(a)-chefe</strong> do <em>Neotropical Veterinary and Animal Science</em> (NVAS).</p><p>O(a) coeditor(a)-chefe compartilha comigo a definição da política editorial, as decisões finais sobre os manuscritos e a coordenação dos editores associados, com uma carga estimada de 4 a 6 horas mensais.</p>",
+        "en": "<p>I am pleased to invite you to serve as <strong>Co-Editor-in-Chief</strong> of the <em>Neotropical Veterinary and Animal Science</em> (NVAS).</p><p>The Co-Editor-in-Chief shares with me the definition of editorial policy, final decisions on manuscripts and the coordination of the associate editors, with an estimated workload of 4 to 6 hours per month.</p>"
+      }
+    },
+    "Editor de métodos": {
+      "userGroup": {
+        "roleId": 17,
+        "name": "Section editor"
+      },
+      "masthead": true,
+      "subject": {
+        "pt_BR": "Convite para editor(a) de estatística e métodos da Neotropical Veterinary and Animal Science",
+        "en": "Invitation to serve as Statistics and Methods Editor of Neotropical Veterinary and Animal Science"
+      },
+      "intro": {
+        "pt_BR": "<p>É com satisfação que o(a) convido a integrar o corpo editorial da <em>Neotropical Veterinary and Animal Science</em> (NVAS) como <strong>Editor(a) de Estatística e Métodos</strong>.</p><p>O(a) editor(a) de estatística e métodos avalia o delineamento, a análise estatística e, nas revisões sistemáticas, o rigor metodológico dos manuscritos indicados pelos editores associados, com uma carga estimada de 2 a 4 manuscritos por semestre.</p>",
+        "en": "<p>I am pleased to invite you to join the editorial team of <em>Neotropical Veterinary and Animal Science</em> (NVAS) as <strong>Statistics and Methods Editor</strong>.</p><p>The Statistics and Methods Editor assesses study design, statistical analysis and, for systematic reviews, methodological rigour of manuscripts referred by the associate editors, with an estimated workload of 2 to 4 manuscripts per semester.</p>"
+      }
+    },
+    "Editor associado": {
+      "userGroup": {
+        "roleId": 17,
+        "name": "Section editor"
+      },
+      "masthead": true,
+      "subject": {
+        "pt_BR": "Convite para editor(a) associado(a) do Neotropical Veterinary and Animal Science",
+        "en": "Invitation to serve as Associate Editor of the Neotropical Veterinary and Animal Science"
+      },
+      "intro": {
+        "pt_BR": "<p>É com satisfação que o(a) convido a integrar o corpo editorial do <em>Neotropical Veterinary and Animal Science</em> (NVAS) como <strong>Editor(a) Associado(a)</strong> na área de <strong>{area}</strong>.</p><p>O(a) editor(a) associado(a) conduz os manuscritos da sua área: triagem inicial, convite a revisores e recomendação de decisão, com uma carga estimada de 2 a 4 manuscritos por semestre.</p>",
+        "en": "<p>I am pleased to invite you to join the editorial team of the <em>Neotropical Veterinary and Animal Science</em> (NVAS) as <strong>Associate Editor</strong> for <strong>{area}</strong>.</p><p>Associate Editors handle manuscripts in their area (initial screening, inviting reviewers and recommending decisions), with an estimated workload of 2 to 4 manuscripts per semester.</p>"
+      }
+    },
+    "Conselho editorial": {
+      "userGroup": {
+        "roleId": 4097,
+        "name": "Editorial Board Member"
+      },
+      "masthead": true,
+      "subject": {
+        "pt_BR": "Convite para o Conselho Editorial do Neotropical Veterinary and Animal Science",
+        "en": "Invitation to join the Editorial Board of the Neotropical Veterinary and Animal Science"
+      },
+      "intro": {
+        "pt_BR": "<p>Gostaria de convidá-lo(a) a integrar o <strong>Conselho Editorial</strong> do <em>Neotropical Veterinary and Animal Science</em> (NVAS).</p><p>O Conselho Editorial tem papel consultivo: orientar a política editorial, sugerir temas e revisores e, quando possível, avaliar manuscritos da sua especialidade ({area}). Não há carga fixa de trabalho.</p>",
+        "en": "<p>I would like to invite you to join the <strong>Editorial Board</strong> of the <em>Neotropical Veterinary and Animal Science</em> (NVAS).</p><p>The Editorial Board has an advisory role: guiding editorial policy, suggesting topics and reviewers and, when possible, reviewing manuscripts in your field ({area}). There is no fixed workload.</p>"
+      }
+    },
+    "Revisor": {
+      "userGroup": {
+        "roleId": 4096,
+        "name": "Reviewer"
+      },
+      "masthead": false,
+      "subject": {
+        "pt_BR": "Convite para o banco de revisores do Neotropical Veterinary and Animal Science",
+        "en": "Invitation to join the reviewer pool of the Neotropical Veterinary and Animal Science"
+      },
+      "intro": {
+        "pt_BR": "<p>Gostaria de convidá-lo(a) a integrar o <strong>banco de revisores</strong> do <em>Neotropical Veterinary and Animal Science</em> (NVAS) na área de <strong>{area}</strong>.</p><p>Os revisores são consultados manuscrito a manuscrito e podem aceitar ou recusar cada convite. A avaliação é duplo-anônima, com prazo de 21 dias, e o revisor recebe certificado e reconhecimento no ORCID.</p>",
+        "en": "<p>I would like to invite you to join the <strong>reviewer pool</strong> of the <em>Neotropical Veterinary and Animal Science</em> (NVAS) for <strong>{area}</strong>.</p><p>Reviewers are contacted for each manuscript and may accept or decline each invitation. Review is double-anonymous with a 21-day deadline, and reviewers receive a certificate and recognition on ORCID.</p>"
+      }
+    }
+  },
+  "body": {
+    "pt_BR": "<p>Prezado(a) {nome},</p>{intro}<p>A NVAS é uma revista de acesso aberto, revisada por pares e de escopo amplo, publicada pela CSVET Editora, que cobre todas as áreas da medicina veterinária e da zootecnia e todas as espécies animais (artigos originais, relatos de caso, revisões, imagens clínicas, métodos e artigos de dados), com interesse especial pelos Neotrópicos. A avaliação é duplo-anônima e segue as diretrizes COPE e EQUATOR.</p><p><strong>Natureza da participação.</strong> A participação é voluntária e não remunerada, nos termos da Lei nº 9.608/1998, e não gera vínculo empregatício, funcional, previdenciário ou de prestação de serviços com a CSVET Editora. Pode ser encerrada a qualquer momento, por qualquer das partes, mediante simples comunicação. Após o aceite, enviaremos o Termo de Adesão ao Serviço Voluntário para assinatura.</p><p>Ao aceitar, seu nome, afiliação e ORCID poderão constar no expediente público da revista; você mesmo(a) informa esses dados e escolhe o que exibir.</p><table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:8px 0 24px;\"><tr><td style=\"background:#000080;border-radius:6px;\"><a href=\"{$acceptUrl}\" style=\"display:inline-block;padding:12px 28px;font-weight:bold;color:#ffffff;text-decoration:none;\">Aceitar o convite</a></td><td style=\"padding-left:18px;\"><a href=\"{$declineUrl}\" style=\"color:#5a6178;\">Recusar</a></td></tr></table><p>Fico à disposição para qualquer dúvida.</p><p>Atenciosamente,<br>Prof. Dr. Atilio Sersun Calefi<br>Editor-chefe, Neotropical Veterinary and Animal Science<br>CSVET Editora | calefi@csvet.com.br<br>https://journals.csvet.com.br/nvas</p>",
+    "en": "<p>Dear {nome},</p>{intro}<p>NVAS is a peer-reviewed, open-access, broad-scope journal published by CSVET Editora (Brazil), covering all areas of veterinary medicine and animal science and all animal species (original research, case reports, reviews, clinical images, methods and data articles), with special interest in the Neotropics. Peer review is double-anonymous and follows COPE and EQUATOR guidance.</p><p><strong>Nature of the role.</strong> This is a voluntary, unpaid position. It does not create any employment, service or contractual relationship with CSVET Editora and may be ended at any time by either party with simple notice. After you accept, we will send you a short volunteer agreement to sign.</p><p>Once you accept, your name, affiliation and ORCID iD may be listed on the journal's public editorial masthead; you enter these details yourself and choose what is shown.</p><div>{$rolesAdded}</div><table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:8px 0 24px;\"><tr><td style=\"background:#000080;border-radius:6px;\"><a href=\"{$acceptUrl}\" style=\"display:inline-block;padding:12px 28px;font-weight:bold;color:#ffffff;text-decoration:none;\">Accept the invitation</a></td><td style=\"padding-left:18px;\"><a href=\"{$declineUrl}\" style=\"color:#5a6178;\">Decline</a></td></tr></table><p>Please do not hesitate to contact me with any questions.</p><p>Kind regards,<br>Prof. Atilio Sersun Calefi<br>Editor-in-Chief, Neotropical Veterinary and Animal Science<br>CSVET Editora | calefi@csvet.com.br<br>https://journals.csvet.com.br/nvas</p>"
+  }
+}
