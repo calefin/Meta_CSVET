@@ -1,0 +1,130 @@
+/**
+ * Painel do OJS/OMP (área logada) no celular.
+ *
+ * O painel do OJS/OMP 3.5 não tem versão para telas pequenas: o menu lateral fixo (336 px)
+ * ocupa a tela do celular e o conteúdo fica espremido à direita. Aqui, abaixo de 768 px,
+ * o menu vira uma gaveta aberta pelo botão ☰ (criado em backend.js) e o conteúdo usa a
+ * largura toda. Mesmo arquivo de journals.csvet.com.br (o painel do OMP 3.5 é o mesmo do OJS).
+ */
+#csvet-nav-toggle {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	/* O OJS define min-width: fit-content no body: a página toda alargava com as tabelas */
+	body {
+		min-width: 0 !important;
+	}
+
+	.app__body {
+		display: block !important;
+	}
+
+	#app-nav {
+		display: none !important;
+	}
+
+	body.csvet-nav-open #app-nav {
+		display: flex !important;
+		position: fixed !important;
+		top: 3rem !important;
+		left: 0;
+		z-index: 1000;
+		width: min(85vw, 336px) !important;
+		height: calc(100vh - 3rem) !important;
+		background: #fff;
+		box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.35);
+	}
+
+	#app-main,
+	.app__main {
+		width: 100% !important;
+		min-width: 0 !important;
+		margin: 0 !important;
+	}
+
+	.app__page {
+		width: auto !important;
+		min-width: 0 !important;
+		max-width: 100% !important;
+	}
+
+	.app__page > div {
+		margin-left: 0.75rem !important;
+		margin-right: 0.75rem !important;
+		min-width: 0 !important;
+	}
+
+	/* Espaço para o botão ☰ à esquerda do nome da revista */
+	.app__header {
+		padding-left: 48px !important;
+	}
+
+	.app__contextTitle {
+		min-width: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	#app-main h1 {
+		font-size: 1.6rem !important;
+		line-height: 1.25 !important;
+		white-space: normal !important;
+		flex-wrap: wrap;
+		overflow-wrap: anywhere;
+	}
+
+	#app-main h1 * {
+		white-space: normal !important;
+	}
+
+	/* Tabelas (listas de submissões) rolam dentro do próprio bloco */
+	#app-main div:has(> table) {
+		overflow-x: auto;
+		max-width: 100%;
+	}
+
+	/* Filtros e busca das listas quebram a linha */
+	#app-main .justify-between:has(.pkpSearch),
+	#app-main .flex-row:has(.pkpSearch) {
+		flex-wrap: wrap;
+		row-gap: 0.5rem;
+	}
+
+	#app-main .flex-row:has(> .pkpSearch) {
+		flex: 1 1 100%;
+		min-width: 0;
+	}
+
+	#app-main .pkpSearch {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+
+	/* Campos com 16px: o iPhone não dá zoom ao tocar */
+	#app-main input,
+	#app-main select,
+	#app-main textarea {
+		font-size: 16px;
+		max-width: 100%;
+	}
+
+	#csvet-nav-toggle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1001;
+		width: 48px;
+		height: 48px;
+		border: 0;
+		background: transparent;
+		color: #fff;
+		font-size: 24px;
+		line-height: 1;
+		cursor: pointer;
+	}
+}

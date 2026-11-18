@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.themes.csvet.name"
+msgstr "CSVET Editora Theme"
+
+msgid "plugins.themes.csvet.description"
+msgstr "Default theme customised with the CSVET Editora visual identity (navy, #00aaff, Roboto), for books and monographs."
+
+msgid "plugins.themes.csvet.credits.supervisor"
+msgstr "Supervisor"
+
+msgid "plugins.themes.csvet.credits.cosupervisor"
+msgstr "Co-supervisor"
+
+msgid "plugins.themes.csvet.credits.committee"
+msgstr "Examining committee"
+
+msgid "plugins.themes.csvet.credits.note"
+msgstr "Derived from an approved academic work. Supervisors and examiners are credited for the original work and are not authors of this edition."
+
+msgid "plugins.themes.csvet.credits.editorsAbbrev"
+msgstr "eds."
+
+msgid "plugins.themes.csvet.seo.tagline"
+msgstr "Books and monographs in Veterinary Medicine and Animal Science"
+
+msgid "plugins.themes.csvet.seo.catalogDescription"
+msgstr "Editora CSVET catalogue: open-access scientific books, edited volumes, manuals, monographs, dissertations and theses in veterinary medicine and animal science, with ISBN."
+
+msgid "plugins.themes.csvet.seo.categoryDescription"
+msgstr "Open-access books on {$category} published by Editora CSVET, peer reviewed and with ISBN."

@@ -1,0 +1,56 @@
+# O código do OMP NÃO é versionado: ele é instalado por scripts/install-omp.sh
+# (equivalente ao "composer install" do profatilio). Por isso ignoramos tudo
+# e liberamos apenas os arquivos deste projeto.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/.htaccess
+!/robots.txt
+!/.env.example
+!/README.md
+!/PLANO_EDITORIAL.md
+!/PROXIMOS_PASSOS.md
+!/OMP_VERSION
+!/manifest.webmanifest
+!/sw.js
+!/offline.html
+!/docker-compose.yml
+!/docker/
+!/scripts/
+!/branding/
+!/content/
+
+# Tema próprio (o restante de plugins/ é código do OMP)
+!/plugins/
+/plugins/*
+!/plugins/themes/
+/plugins/themes/*
+!/plugins/themes/csvet/
+!/plugins/generic/
+/plugins/generic/*
+!/plugins/generic/csvetEditorial/
+!/plugins/generic/csvetLocaleUrl/
+
+# Saídas geradas
+/branding/out/
+
+# Dados pessoais (planilhas preenchidas, resultados de convites, originais): nunca versionar
+*.csv
+*preenchid*
+/content/*/private/
+/content/*/convites/
+
+# LaTeX: arquivos auxiliares e PDF de trabalho (o exemplo de referência é exemplo-16x23.pdf)
+/content/editora/producao/latex/*.aux
+/content/editora/producao/latex/*.log
+/content/editora/producao/latex/*.toc
+/content/editora/producao/latex/*.idx
+/content/editora/producao/latex/*.ind
+/content/editora/producao/latex/*.ilg
+/content/editora/producao/latex/*.out
+/content/editora/producao/latex/*.fls
+/content/editora/producao/latex/*.fdb_latexmk
+/content/editora/producao/latex/*.synctex.gz
+/content/editora/producao/latex/livro.pdf
+/content/editora/producao/latex/capitulos/*.aux

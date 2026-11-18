@@ -1,0 +1,50 @@
+# Ambiente de desenvolvimento local do OMP (books.csvet.com.br)
+# Produção roda em hospedagem compartilhada (PHP + MySQL); este compose
+# reproduz essa stack localmente. Veja README.md.
+
+services:
+  db:
+    image: ${DB_IMAGE:-mysql:8.0}
+    container_name: books_db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+      - "127.0.0.1:${DB_PORT:-3308}:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD}"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+
+  app:
+    image: pkpofficial/omp:${OMP_VERSION:-3_5_0-5}
+    container_name: books_app
+    environment:
+      SERVERNAME: ${SERVERNAME:-localhost}
+      PKP_CONF: /var/www/html/config.inc.php
+      PKP_WEB_CONF: /etc/apache2/conf-enabled/pkp.conf
+      PKP_CLI_INSTALL: "0"
+    ports:
+      - "127.0.0.1:${HTTP_PORT:-8081}:80"
+    volumes:
+      # Raiz do repositório = raiz do site, igual à produção (código instalado por scripts/install-omp.sh)
+      - ./:/var/www/html
+      - ./docker/php.custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro
+      - files:/var/www/files
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  db:
+  files:

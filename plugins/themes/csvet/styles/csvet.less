@@ -1,0 +1,488 @@
+/**
+ * @file plugins/themes/csvet/styles/csvet.less
+ *
+ * @brief Identidade visual da CSVET Editora sobre o tema padrão do OMP (livros).
+ *  Mesma marca de csvet.com.br: navy #000080/#000067, cinza #c6c6c6,
+ *  destaque #00aaff, Roboto. Compilado junto com o index.less do tema pai,
+ *  então todas as variáveis (@primary, @bg-base, @screen-*) estão disponíveis.
+ */
+
+@csvet-navy:       #000080;
+@csvet-navy-dark:  #000067;
+@csvet-navy-deep:  #00003d;
+@csvet-accent:     #00aaff;
+@csvet-accent-dk:  #0088cc;
+@csvet-gray:       #c6c6c6;
+@csvet-tint:       #f4f6fb;
+@csvet-border:     #e3e6ef;
+
+body {
+	color: #1d2233;
+}
+
+a {
+	color: @csvet-navy;
+
+	&:hover,
+	&:focus {
+		color: @csvet-accent-dk;
+	}
+}
+
+h1, h2, h3, h4 {
+	color: @csvet-navy;
+}
+
+// ---------- Cabeçalho ----------
+.pkp_structure_head {
+	background: linear-gradient(100deg, @csvet-navy-dark 0%, @csvet-navy 100%);
+	border-bottom: 3px solid @csvet-accent;
+}
+
+.pkp_site_name .is_text {
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+@media (min-width: @screen-desktop) {
+	// No desktop o menu fica sobre o gradiente do cabeçalho (no mobile mantém o fundo sólido)
+	.pkp_site_nav_menu {
+		background: transparent;
+	}
+
+	.pkp_navigation_primary_row {
+		background: transparent;
+		border-top: 1px solid rgba(255, 255, 255, 0.14);
+	}
+}
+
+@media (min-width: @screen-desktop) {
+	.pkp_navigation_primary > li > a {
+		font-weight: 500;
+		border-bottom: 2px solid transparent;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+			border-color: @csvet-accent;
+		}
+	}
+
+	.pkp_navigation_search_wrapper a:hover,
+	.pkp_navigation_search_wrapper a:focus {
+		color: #fff;
+		border-color: @csvet-accent;
+	}
+}
+
+.pkp_navigation_user > li > a:hover,
+.pkp_navigation_user > li > a:focus {
+	color: @csvet-accent;
+}
+
+// ---------- Botões e links de download ----------
+.cmp_button,
+.cmp_form .buttons button,
+.page_search .submit button,
+.block_make_submission a,
+.pkp_button_primary {
+	background: @csvet-accent;
+	border-color: @csvet-accent;
+	color: #fff;
+	border-radius: 6px;
+	box-shadow: none;
+	font-weight: 500;
+
+	&:hover,
+	&:focus {
+		background: @csvet-accent-dk;
+		border-color: @csvet-accent-dk;
+		color: #fff;
+	}
+}
+
+.block_make_submission a {
+	display: inline-block;
+	padding: 0.6rem 1.2rem;
+	text-decoration: none;
+}
+
+.cmp_download_link {
+	border-color: @csvet-navy;
+	color: @csvet-navy;
+	border-radius: 6px;
+
+	&:hover,
+	&:focus {
+		background: @csvet-navy;
+		border-color: @csvet-navy;
+		color: #fff;
+	}
+}
+
+// ---------- Conteúdo ----------
+.cmp_breadcrumbs a {
+	color: @csvet-navy;
+}
+
+.page_homepage .homepage_about,
+.page_homepage .cmp_monographs_list,
+.page_homepage .cmp_announcements,
+.page_catalog .cmp_monographs_list {
+	> h2,
+	> .title {
+		position: relative;
+		padding-left: 0.9rem;
+		border-left: 4px solid @csvet-accent;
+	}
+}
+
+// Sem destaques, lançamentos ou avisos acima (catálogo ainda vazio), o conteúdo adicional
+// abre a página: sem a linha separadora e o espaço do tema padrão
+.page_homepage > .additional_content:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+// Capas no catálogo: sombra de livro e leve elevação ao passar o mouse
+.obj_monograph_summary {
+	.cover img {
+		border-radius: 2px 6px 6px 2px;
+		box-shadow: 0 1px 2px rgba(0, 0, 61, 0.12), 0 6px 16px rgba(0, 0, 61, 0.14);
+		transition: transform 0.15s ease, box-shadow 0.15s ease;
+	}
+
+	.cover:hover img,
+	.cover:focus img {
+		transform: translateY(-3px);
+		box-shadow: 0 2px 4px rgba(0, 0, 61, 0.14), 0 12px 24px rgba(0, 0, 61, 0.18);
+	}
+
+	.title a {
+		color: @csvet-navy;
+
+		&:hover,
+		&:focus {
+			color: @csvet-accent-dk;
+		}
+	}
+
+	.seriesPosition {
+		color: @csvet-accent-dk;
+		font-weight: 500;
+	}
+}
+
+// Página do livro
+.obj_monograph_full {
+	.item.cover img {
+		border-radius: 2px 6px 6px 2px;
+		box-shadow: 0 2px 4px rgba(0, 0, 61, 0.12), 0 10px 28px rgba(0, 0, 61, 0.18);
+	}
+
+	.main_entry .item.doi a,
+	.main_entry .item.keywords .value,
+	.item.series a,
+	.item.categories a {
+		color: @csvet-navy;
+	}
+
+	.entry_details .item .label,
+	.main_entry .item .label {
+		color: @csvet-navy;
+	}
+
+	.item.chapters li {
+		border-left: 3px solid @csvet-border;
+		padding-left: 0.75rem;
+	}
+}
+
+// Página inicial do portal (lista de editoras)
+.pkp_page_index .presses > ul > li {
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	border: 1px solid @csvet-border;
+	border-top: 4px solid @csvet-accent;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 61, 0.08);
+}
+
+// ---------- Barra lateral ----------
+.pkp_block .title {
+	color: @csvet-navy;
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	border-bottom: 2px solid @csvet-accent;
+	padding-bottom: 0.4rem;
+}
+
+// ---------- Rodapé ----------
+.pkp_structure_footer_wrapper {
+	background: @csvet-navy-deep;
+	color: @csvet-gray;
+	border-top: 3px solid @csvet-accent;
+
+	a {
+		color: @csvet-accent;
+
+		&:hover,
+		&:focus {
+			color: #fff;
+		}
+	}
+}
+
+.pkp_footer_content {
+	color: @csvet-gray;
+}
+
+.pkp_brand_footer {
+	opacity: 0.6;
+
+	img {
+		filter: brightness(0) invert(1);
+		max-width: 100%;
+		height: auto;
+	}
+
+	@media (max-width: (@screen-tablet - 1)) {
+		float: none;
+		width: auto;
+		max-width: 160px;
+		margin: 0 auto;
+		padding-left: @base;
+		padding-right: @base;
+	}
+}
+
+// Destaques da página inicial (conteúdo adicional da revista)
+.csvet-highlights {
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+
+	@media (min-width: @screen-tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	li {
+		padding: 1rem 1.1rem;
+		background: @csvet-tint;
+		border-left: 4px solid @csvet-accent;
+		border-radius: 0 8px 8px 0;
+		line-height: 1.5;
+	}
+
+	strong {
+		display: block;
+		color: @csvet-navy;
+		margin-bottom: 0.2rem;
+	}
+}
+
+// Créditos acadêmicos (orientação e banca) na página do livro
+.csvet_credits {
+	margin-top: 1rem;
+	padding: 0.75rem 1rem;
+	background: @csvet-tint;
+	border-left: 3px solid @csvet-accent;
+	border-radius: 0 6px 6px 0;
+	font-size: 0.93rem;
+
+	.csvet_credit .label {
+		font-weight: 700;
+		color: @csvet-navy;
+	}
+
+	.csvet_credits_note {
+		margin: 0.4rem 0 0;
+		font-size: 0.85rem;
+		color: #555566;
+	}
+}
+
+// Páginas de conteúdo (ética, monografias, coletâneas) e instruções aos autores
+.csvet-lead {
+	font-size: 1.15rem;
+	line-height: 1.6;
+	color: #2a3047;
+}
+
+.csvet-small {
+	font-size: 0.85rem;
+	color: #555566;
+}
+
+.page,
+.page_submissions,
+.page_about {
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 1rem 0 1.5rem;
+		font-size: 0.93rem;
+	}
+
+	th {
+		background: @csvet-navy;
+		color: #fff;
+		text-align: left;
+		font-weight: 500;
+	}
+
+	th,
+	td {
+		padding: 0.55rem 0.7rem;
+		border: 1px solid @csvet-border;
+		vertical-align: top;
+	}
+
+	tbody tr:nth-child(even) {
+		background: @csvet-tint;
+	}
+
+	blockquote {
+		margin: 1rem 0;
+		padding: 0.75rem 1.1rem;
+		border-left: 4px solid @csvet-accent;
+		background: @csvet-tint;
+		font-style: italic;
+	}
+
+	h3 {
+		margin-top: 2rem;
+	}
+}
+
+// Perguntas frequentes em sanfona (<details>)
+details {
+	margin: 0.5rem 0;
+	border: 1px solid @csvet-border;
+	border-radius: 8px;
+	background: #fff;
+
+	summary {
+		cursor: pointer;
+		padding: 0.8rem 1rem;
+		font-weight: 500;
+		color: @csvet-navy;
+		list-style: none;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		&::before {
+			content: "+";
+			display: inline-block;
+			width: 1.2rem;
+			color: @csvet-accent-dk;
+			font-weight: 700;
+		}
+	}
+
+	&[open] summary::before {
+		content: "−";
+	}
+
+	> p {
+		margin: 0;
+		padding: 0 1rem 0.9rem 2.2rem;
+	}
+}
+
+// Tabelas largas não quebram o layout no celular
+@media (max-width: (@screen-tablet - 1)) {
+	.page table {
+		display: block;
+		overflow-x: auto;
+	}
+}
+
+// Caixa de modelos para download (Instruções aos Autores)
+.csvet-downloads {
+	margin: 1.25rem 0 1.75rem;
+	padding: 1rem 1.25rem;
+	border: 1px solid @csvet-border;
+	border-top: 4px solid @csvet-accent;
+	border-radius: 10px;
+	background: @csvet-tint;
+
+	p {
+		margin-top: 0;
+		color: @csvet-navy;
+	}
+
+	ul {
+		margin-bottom: 0;
+		padding-left: 1.1rem;
+	}
+
+	li {
+		margin: 0.3rem 0;
+	}
+}
+
+// ---------- Celular ----------
+// Textos longos (DOIs, ISBN, URLs, e-mails) quebram a linha em vez de alargar a página
+.pkp_structure_main {
+	overflow-wrap: anywhere;
+}
+
+.pkp_structure_main img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: (@screen-tablet - 1)) {
+	// Campos com 16px: o iPhone não dá zoom ao tocar (desmontava a página no login)
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
+	input[type="url"],
+	input[type="tel"],
+	select,
+	textarea {
+		font-size: 16px;
+		max-width: 100%;
+	}
+
+	.pkp_form .fields input[type="text"],
+	.pkp_form .fields input[type="email"],
+	.pkp_form .fields input[type="password"],
+	.pkp_form .fields select {
+		width: 100%;
+	}
+
+	// Logo maior no cabeçalho do celular
+	.pkp_site_name .is_img img {
+		max-height: 40px;
+	}
+}
+
+// Checklist (Instruções aos Autores › E-book): itens com ✓ em vez de marcadores
+.csvet-checklist ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.csvet-checklist li {
+	position: relative;
+	padding-left: 1.6rem;
+
+	&::before {
+		content: "✓";
+		position: absolute;
+		left: 0.2rem;
+		color: @csvet-accent-dk;
+		font-weight: 700;
+	}
+}

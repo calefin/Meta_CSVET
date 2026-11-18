@@ -1,0 +1,97 @@
+{
+  "_comment": "Modelos de convite por função, usados por scripts/invite.php. Marcadores trocados pelo script: {nome}, {area}, {funcao}, {livro}, {capitulo}, {prazo}, {organizador}. Variáveis do OMP (não altere): {$recipientName}, {$rolesAdded} (só no modelo em inglês: o OMP o gera no idioma principal), {$acceptUrl}, {$declineUrl}. O link de aceite só funciona se {$acceptUrl} estiver no corpo. 'requires' lista as colunas obrigatórias da planilha para a função; 'body' escolhe o corpo do e-mail (default ou capitulo).",
+  "roles": {
+    "Coeditor-chefe": {
+      "userGroup": {
+        "roleId": 16,
+        "name": "Co-Editor-in-Chief"
+      },
+      "masthead": true,
+      "subject": {
+        "pt_BR": "Convite para coeditor(a)-chefe da Editora CSVET",
+        "en": "Invitation to serve as Co-Editor-in-Chief of Editora CSVET"
+      },
+      "intro": {
+        "pt_BR": "<p>É com satisfação que o(a) convido a assumir a função de <strong>Coeditor(a)-chefe</strong> da <em>Editora CSVET</em>, dedicada a livros técnico-científicos de medicina veterinária e zootecnia.</p><p>O(a) coeditor(a)-chefe compartilha comigo a definição da política editorial, as decisões finais sobre as propostas de livros e a coordenação dos editores de coleção e do Conselho Editorial, com uma carga estimada de 4 a 6 horas mensais.</p>",
+        "en": "<p>I am pleased to invite you to serve as <strong>Co-Editor-in-Chief</strong> of <em>Editora CSVET</em>, a publisher of technical and scientific books in veterinary medicine and animal science.</p><p>The Co-Editor-in-Chief shares with me the definition of editorial policy, final decisions on book proposals and the coordination of the series editors and the Editorial Board, with an estimated workload of 4 to 6 hours per month.</p>"
+      }
+    },
+    "Conselho editorial": {
+      "userGroup": {
+        "roleId": 4097,
+        "name": "Editorial Board Member"
+      },
+      "masthead": true,
+      "subject": {
+        "pt_BR": "Convite para o Conselho Editorial da Editora CSVET",
+        "en": "Invitation to join the Editorial Board of Editora CSVET"
+      },
+      "intro": {
+        "pt_BR": "<p>Gostaria de convidá-lo(a) a integrar o <strong>Conselho Editorial</strong> da <strong>Editora CSVET</strong>, que publica livros, coletâneas, manuais e monografias de acesso aberto em medicina veterinária e zootecnia.</p><p>O Conselho Editorial define a política editorial e faz a <strong>avaliação interna</strong> das propostas da sua área ({area}): adequação ao escopo, originalidade, qualidade e público, em até 15 dias por proposta, além de sugerir pareceristas externos. A carga estimada é de 2 a 4 propostas por semestre, e você pode recusar qualquer uma.</p>",
+        "en": "<p>I would like to invite you to join the <strong>Editorial Board</strong> of <strong>Editora CSVET</strong>, which publishes open-access books, edited volumes, manuals and monographs in veterinary medicine and animal science.</p><p>The Editorial Board sets editorial policy and carries out the <strong>internal review</strong> of proposals in your field ({area}): scope, originality, quality and readership, within 15 days per proposal, and suggests external reviewers. The estimated workload is 2 to 4 proposals per semester, and you may decline any of them.</p>"
+      }
+    },
+    "Editor de coleção": {
+      "userGroup": {
+        "roleId": 17,
+        "name": "Series editor"
+      },
+      "masthead": true,
+      "subject": {
+        "pt_BR": "Convite para editor(a) de coleção da Editora CSVET",
+        "en": "Invitation to serve as Series Editor at Editora CSVET"
+      },
+      "intro": {
+        "pt_BR": "<p>É com satisfação que o(a) convido a ser <strong>Editor(a) da coleção {area}</strong> da <strong>Editora CSVET</strong>.</p><p>O(a) editor(a) de coleção conduz as propostas da coleção: avaliação interna, escolha e convite dos pareceristas externos, acompanhamento das revisões e recomendação da decisão ao Conselho Editorial, com uma carga estimada de 2 a 4 obras por semestre.</p>",
+        "en": "<p>I am pleased to invite you to serve as <strong>Editor of the {area} series</strong> at <strong>Editora CSVET</strong>.</p><p>Series editors handle the proposals in their series: internal review, choosing and inviting external reviewers, following revisions and recommending decisions to the Editorial Board, with an estimated workload of 2 to 4 books per semester.</p>"
+      }
+    },
+    "Parecerista": {
+      "userGroup": {
+        "roleId": 4096,
+        "name": "External Reviewer"
+      },
+      "masthead": false,
+      "subject": {
+        "pt_BR": "Convite para o banco de pareceristas da Editora CSVET",
+        "en": "Invitation to join the reviewer pool of Editora CSVET"
+      },
+      "intro": {
+        "pt_BR": "<p>Gostaria de convidá-lo(a) a integrar o <strong>banco de pareceristas</strong> da <strong>Editora CSVET</strong> na área de <strong>{area}</strong>.</p><p>Os pareceristas avaliam livros e capítulos de forma duplo-anônima, em até 30 dias por obra. Cada avaliação é um convite separado, que você pode aceitar ou recusar, e gera declaração de parecerista e o registro da avaliação no ORCID.</p>",
+        "en": "<p>I would like to invite you to join the <strong>reviewer pool</strong> of <strong>Editora CSVET</strong> in <strong>{area}</strong>.</p><p>Reviewers assess books and chapters under double-anonymous review, within 30 days per work. Each review is a separate invitation that you may accept or decline, and earns a reviewer certificate and ORCID recognition.</p>"
+      }
+    },
+    "Autor de capítulo": {
+      "userGroup": {
+        "roleId": 65536,
+        "name": "Chapter Author"
+      },
+      "masthead": false,
+      "body": "capitulo",
+      "requires": [
+        "livro",
+        "capitulo",
+        "prazo",
+        "organizador"
+      ],
+      "subject": {
+        "pt_BR": "Convite para escrever um capítulo do livro \"{livro}\" (Editora CSVET)",
+        "en": "Invitation to write a chapter for \"{livro}\" (Editora CSVET)"
+      },
+      "intro": {
+        "pt_BR": "<p>Em nome de <strong>{organizador}</strong>, organizador(a) do livro <strong>{livro}</strong>, a ser publicado pela <strong>Editora CSVET</strong>, convido você a escrever o capítulo:</p><p style=\"margin-left:1.5em\"><strong>{capitulo}</strong></p><p><strong>Prazo para a entrega do texto completo: {prazo}.</strong></p>",
+        "en": "<p>On behalf of <strong>{organizador}</strong>, editor of the book <strong>{livro}</strong>, to be published by <strong>Editora CSVET</strong>, I invite you to write the chapter:</p><p style=\"margin-left:1.5em\"><strong>{capitulo}</strong></p><p><strong>Deadline for the full text: {prazo}.</strong></p>"
+      }
+    }
+  },
+  "body": {
+    "default": {
+      "pt_BR": "<p>Prezado(a) {nome},</p>{intro}<p>A Editora CSVET publica em acesso aberto, com avaliação por pares duplo-anônima, ISBN e ficha catalográfica, e segue as diretrizes do COPE. Conheça a editora em https://books.csvet.com.br.</p><p><strong>Natureza da participação.</strong> A participação é voluntária e não remunerada, nos termos da Lei nº 9.608/1998, e não gera vínculo empregatício, funcional, previdenciário ou de prestação de serviços com a CSVET Editora, Cursos e Treinamentos. Pode ser encerrada a qualquer momento, por qualquer das partes, mediante simples comunicação. Para funções do Conselho Editorial e de editor de coleção, enviaremos após o aceite o Termo de Adesão ao Serviço Voluntário.</p><p>Ao aceitar, seu nome, afiliação e ORCID poderão constar na página pública da equipe editorial; você mesmo(a) informa esses dados e escolhe o que exibir.</p><p><a href=\"{$acceptUrl}\"><strong>Aceitar o convite</strong></a> &nbsp;|&nbsp; <a href=\"{$declineUrl}\">Recusar</a></p><p>Fico à disposição para qualquer dúvida.</p><p>Atenciosamente,<br>Prof. Dr. Atilio Sersun Calefi<br>Editor-chefe, Editora CSVET<br>calefi@csvet.com.br | https://books.csvet.com.br</p>",
+      "en": "<p>Dear {nome},</p>{intro}<p>Editora CSVET publishes open access, with double-anonymous peer review, ISBN and cataloguing record, and follows COPE guidance. Learn more at https://books.csvet.com.br.</p><p><strong>Nature of the role.</strong> This is a voluntary, unpaid role. It does not create any employment, service or contractual relationship with CSVET Editora, Cursos e Treinamentos and may be ended at any time by either party with simple notice. For Editorial Board and series editor roles, we will send a short volunteer agreement after you accept.</p><p>Once you accept, your name, affiliation and ORCID iD may be listed on the public editorial team page; you enter these details yourself and choose what is shown.</p><div>{$rolesAdded}</div><p><a href=\"{$acceptUrl}\"><strong>Accept the invitation</strong></a> &nbsp;|&nbsp; <a href=\"{$declineUrl}\">Decline</a></p><p>Please do not hesitate to contact me with any questions.</p><p>Kind regards,<br>Prof. Atilio Sersun Calefi<br>Editor-in-Chief, Editora CSVET<br>calefi@csvet.com.br | https://books.csvet.com.br</p>"
+    },
+    "capitulo": {
+      "pt_BR": "<p>Prezado(a) {nome},</p>{intro}<p><strong>Como funciona.</strong></p><ol><li>Clique em <strong>Aceitar o convite</strong> abaixo e crie sua conta na plataforma da editora (ou entre com a conta que já tem), informando instituição e ORCID.</li><li>Em seguida, você será incluído(a) no livro e receberá acesso à área de discussões do livro, onde poderá falar com o(a) organizador(a) e com a editora e <strong>entregar o capítulo</strong>.</li><li>Prepare o texto no <strong>modelo de capítulo</strong> da editora e envie também o <strong>Termo de Autor de Capítulo</strong> assinado. Os dois estão em https://books.csvet.com.br/editora/about/submissions (Instruções aos Autores, seção de coletâneas).</li><li>Os capítulos passam por avaliação por pares duplo-anônima. O livro é publicado em acesso aberto (CC BY 4.0), com ISBN, e cada capítulo tem página própria, citável e indexada no Google Acadêmico. Os autores mantêm os direitos autorais.</li></ol><p>Não há qualquer taxa para os autores de capítulo.</p><p><a href=\"{$acceptUrl}\"><strong>Aceitar o convite</strong></a> &nbsp;|&nbsp; <a href=\"{$declineUrl}\">Recusar</a></p><p>Dúvidas sobre o conteúdo do capítulo: fale com {organizador}. Dúvidas sobre a plataforma: contato@csvet.com.br.</p><p>Atenciosamente,<br>Editora CSVET<br>https://books.csvet.com.br</p>",
+      "en": "<p>Dear {nome},</p>{intro}<p><strong>How it works.</strong></p><ol><li>Click <strong>Accept the invitation</strong> below and create your account on the publisher's platform (or sign in with your existing account), adding your institution and ORCID iD.</li><li>You will then be added to the book and get access to its discussion area, where you can talk to the volume editor and the publisher and <strong>deliver your chapter</strong>.</li><li>Prepare the text using the publisher's <strong>chapter template</strong> and send the signed <strong>Chapter Author Agreement</strong>. Both are available at https://books.csvet.com.br/editora/about/submissions (Author Guidelines, edited volumes section).</li><li>Chapters undergo double-anonymous peer review. The book is published open access (CC BY 4.0) with an ISBN, and each chapter has its own citable page indexed in Google Scholar. Authors retain copyright.</li></ol><p>There are no fees for chapter authors.</p><div>{$rolesAdded}</div><p><a href=\"{$acceptUrl}\"><strong>Accept the invitation</strong></a> &nbsp;|&nbsp; <a href=\"{$declineUrl}\">Decline</a></p><p>Questions about the chapter content: contact {organizador}. Questions about the platform: contato@csvet.com.br.</p><p>Kind regards,<br>Editora CSVET<br>https://books.csvet.com.br</p>"
+    }
+  }
+}

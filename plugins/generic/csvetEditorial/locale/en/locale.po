@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.csvetEditorial.name"
+msgstr "Editora CSVET: editorial rules"
+
+msgid "plugins.generic.csvetEditorial.description"
+msgstr "Mandatory submission agreement with acceptance record, supervision and examiners credited outside authorship, and branded emails."
+
+msgid "plugins.generic.csvetEditorial.terms.label"
+msgstr "Submission, originality and copyright agreement"
+
+msgid "plugins.generic.csvetEditorial.terms.agree"
+msgstr "I have read and accept the agreement above on my behalf and on behalf of all registered authors, volume editors and contributors."
+
+msgid "plugins.generic.csvetEditorial.terms.required"
+msgstr "To submit, you must read and accept the submission, originality and copyright agreement."
+
+msgid "plugins.generic.csvetEditorial.terms.log"
+msgstr "Submission agreement accepted electronically by {$name} (user {$username}, {$email}) on {$date}, IP {$ip}, browser \"{$agent}\". Agreement version {$version} (SHA-256 {$hash})."
+
+msgid "plugins.generic.csvetEditorial.email.footer"
+msgstr "<strong style=\"color:#ffffff;\">Editora CSVET</strong> · CSVET Editora, Cursos e Treinamentos · Americana, SP, Brazil · contato@csvet.com.br"
+
+msgid "plugins.generic.csvetEditorial.email.notice"
+msgstr "Sent by the editorial platform. Works under review are confidential: do not forward or share this content."
