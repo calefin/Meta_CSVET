@@ -1,0 +1,48 @@
+# Override para produção com Nginx Proxy Manager (NPM)
+# Uso: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#
+# Pré-requisito: definir NPM_NETWORK no .env com o nome da rede do NPM
+# Ex: NPM_NETWORK=nginxproxymanager_default
+
+services:
+  backend:
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
+    volumes: []
+    environment:
+      APP_ENV: production
+
+  celery:
+    environment:
+      APP_ENV: production
+
+  minio:
+    # DESATIVADO em produção (2026-11-17): a imagem minio/minio foi removida do Docker Hub (sem
+    # atualizações) e o MinIO só servia à exportação de pedigree em PDF, que a interface não chama
+    # (bucket nunca criado, 0 exportações). Sem ele, export_pedigree_pdf devolve "" como já fazia.
+    # Para subir mesmo assim: adicionar `--profile minio` ao comando do compose.
+    profiles: ["minio"]
+    # !override: sem isso o compose SOMA as portas do arquivo base (9001 ficava pública)
+    # console só local: ssh -L 9001:127.0.0.1:9001 meu-vps
+    ports: !override
+      - "127.0.0.1:9001:9001"
+
+  nginx:
+    image: nginx:alpine
+    container_name: plumora_nginx
+    # público só via NPM (rede appnet -> plumora_nginx:80); 3000 fica só local
+    ports: !override
+      - "127.0.0.1:3000:80"
+    volumes:
+      - ./nginx/nginx.npm.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - default
+      - appnet
+    depends_on:
+      backend:
+        condition: service_healthy
+      frontend:
+        condition: service_started
+
+networks:
+  appnet:
+    external: true

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --plumora-green-deep: #1a3d2b;
+  --plumora-green-mid:  #2d6a4f;
+  --plumora-gold:       #c8922a;
+  --plumora-cream:      #faf6f0;
+  --plumora-terracotta: #c45c3d;
+  --plumora-charcoal:   #1e2620;
+  --plumora-mist:       #e8f0eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background-color: var(--plumora-cream);
+  color: var(--plumora-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--plumora-mist);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--plumora-green-mid);
+  border-radius: 4px;
+}
