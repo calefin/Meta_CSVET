@@ -1,0 +1,49 @@
+# Laravel root redirection and security for shared hosting
+# Place this file in the root directory of your Laravel installation (same level as 'public', 'app', '.env')
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 0. Force HTTPS (login and session cookie never travel in plain text).
+    # Skips localhost and requests already HTTPS behind a proxy, to avoid redirect loops.
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # 1. Disable directory listing for security
+    Options -Indexes
+
+    # 2. Block access to hidden/system files (like .env, .git, etc.)
+    # This prevents access to any file starting with a dot
+    RewriteRule ^\.(.*) - [F,L]
+
+    # 3. Block access to sensitive PHP system directories
+    # If someone tries to access /app/User.php or /vendor/autoload.php, they get a 403 Forbidden
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|storage|tests|vendor)(/|$) - [F,L]
+
+    # 4. Redirect all web traffic to the public/ folder
+    # This acts as if the DocumentRoot was set to public/
+    RewriteRule ^$ public/ [L]
+    RewriteCond %{REQUEST_URI} !/deploy\.php$
+    RewriteRule ^((?!public/).*)$ public/$1 [L]
+</IfModule>
+
+# 6. Security headers (HSTS only on HTTPS; no includeSubDomains, so other subdomains are not affected)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Strict-Transport-Security "max-age=31536000" "expr=%{HTTPS} == 'on'"
+</IfModule>
+
+# 5. Fallback protection if mod_rewrite is disabled
+<FilesMatch "^\.env|composer\.(json|lock)|package\.(json|lock)|artisan|web\.config|phpunit\.xml">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
