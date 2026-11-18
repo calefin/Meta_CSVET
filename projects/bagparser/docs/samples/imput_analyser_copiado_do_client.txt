@@ -1,0 +1,7 @@
+Received Damage
+Total: 0
+Max-DPS: 0
+Damage Types
+No data
+Damage Sources
+No data

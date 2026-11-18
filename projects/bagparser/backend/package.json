@@ -1,0 +1,27 @@
+{
+  "name": "bagparser-api",
+  "private": true,
+  "version": "0.14.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "fastify": "5.12.8",
+    "ioredis": "5.4.1",
+    "nodemailer": "10.2.1",
+    "pg": "8.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.6",
+    "@types/nodemailer": "8.0.2",
+    "@types/pg": "8.11.10",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vitest": "2.1.4"
+  }
+}

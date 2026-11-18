@@ -1,0 +1,28 @@
+{
+    "Balance": "-632",
+    "Damage": "377",
+    "Damage/h": "20,589",
+    "Healing": "0",
+    "Healing/h": "0",
+    "Killed Monsters": [
+        {
+            "Count": 2,
+            "Name": "poison spider"
+        },
+        {
+            "Count": 5,
+            "Name": "rotworm"
+        }
+    ],
+    "Loot": "0",
+    "Looted Items": [
+    ],
+    "Raw XP Gain": "251",
+    "Raw XP/h": "9,102",
+    "Session end": "2026-11-05, 17:38:06",
+    "Session length": "00:01h",
+    "Session start": "2026-11-05, 17:36:27",
+    "Supplies": "632",
+    "XP Gain": "373",
+    "XP/h": "13,527"
+}

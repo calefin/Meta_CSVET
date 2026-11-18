@@ -1,0 +1,18 @@
+# Produção atrás do Nginx Proxy Manager (NPM rodando em Docker na mesma VPS)
+# Uso: docker compose -f docker-compose.yml -f docker-compose.npm.yml up -d --build
+#
+# O NPM roda em outro container, então "127.0.0.1:3080" da VPS não é alcançável a partir dele.
+# Este override conecta o container web à rede do NPM; no NPM o Forward Hostname é "bagparser_web", porta 80.
+# NPM_NETWORK (no .env) = nome da rede do NPM (deploy.sh detecta; ou veja com `docker network ls`).
+# TRUST_PROXY_HOPS continua 2: NPM + Nginx do container web.
+
+services:
+  web:
+    networks:
+      - bagparser_net
+      - npm
+
+networks:
+  npm:
+    external: true
+    name: ${NPM_NETWORK:?defina NPM_NETWORK no .env com o nome da rede do Nginx Proxy Manager}

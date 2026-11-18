@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+coverage/
+# D-68: database dumps (server only)
+backups/

@@ -1,0 +1,9 @@
+Received Damage
+Total: 3,065
+Max-DPS: 274
+Damage Types
+  Physical 2,628 (85.7%)
+  Life Drain 437 (14.3%)
+Damage Sources
+  broken shaper 1,974 (64.4%)
+  twisted shaper 1,091 (35.6%)
