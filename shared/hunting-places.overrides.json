@@ -1,0 +1,4 @@
+{
+  "_comment": "Manual fixes for shared/hunting-places.json (D-42), merged by name when the API seeds the hunting places. Example: { \"Carlin Sewers\": { \"accessQuests\": [] } }",
+  "places": {}
+}

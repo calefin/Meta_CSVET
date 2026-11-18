@@ -1,0 +1,26 @@
+Session data: From 2026-11-05, 17:36:27 to 2026-11-05, 17:41:23
+Session: 00:04h
+Raw XP Gain: 19,001
+XP Gain: 28,498
+Raw XP/h: 231,216
+XP/h: 346,782
+Loot: 3,735
+Supplies: 3,792
+Balance: -57
+Damage: 24,774
+Damage/h: 339,337
+Healing: 1,665
+Healing/h: 22,806
+Killed Monsters:
+  7x broken shaper
+  2x poison spider
+  5x rotworm
+  3x twisted shaper
+Looted Items:
+  775x a gold coin
+  11x a platinum coin
+  4x an orichalcum pearl
+  2x an onyx chip
+  3x a cave turnip
+  2x an ancient belt buckle
+  1x a cracked alabaster vase

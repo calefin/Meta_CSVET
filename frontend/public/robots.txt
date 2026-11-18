@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /account
+Disallow: /retro
+Disallow: /reset
+Disallow: /characters/
+
+Sitemap: https://bagparser.com/sitemap.xml

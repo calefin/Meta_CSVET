@@ -1,0 +1,151 @@
+services:
+  # 1. Frontend Web App (Nginx Alpine serving static build, proxies /api to the API)
+  web:
+    container_name: bagparser_web
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    restart: unless-stopped
+    ports:
+      # Exposed only on localhost; the host reverse proxy forwards the public domain here
+      - "127.0.0.1:${WEB_PORT:-3080}:80"
+    depends_on:
+      - api
+    networks:
+      - bagparser_net
+
+  # 2. Backend API (BossLedger ingestion, SpawnRank, item catalog)
+  api:
+    container_name: bagparser_api
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DATABASE_URL: postgres://bagparser_user:${DB_PASSWORD:-secure_db_pass}@db:5432/bagparser_db
+      REDIS_URL: redis://redis:6379
+      FINGERPRINT_SALT: ${FINGERPRINT_SALT:-change_me}
+      # Reverse proxies in front of the API: host Nginx + web container (use 1 without a host proxy)
+      TRUST_PROXY_HOPS: ${TRUST_PROXY_HOPS:-2}
+      # Accounts (D-24): e-mails that always become admin (comma separated)
+      ADMIN_EMAILS: ${ADMIN_EMAILS:-}
+      # YouTube Data API v3 key (D-38); empty = tutorials directory disabled
+      YOUTUBE_API_KEY: ${YOUTUBE_API_KEY:-}
+      # Login with Google / Discord (D-39): a provider is enabled when both id and secret are set.
+      # PUBLIC_URL = canonical origin used in the OAuth redirect URI (e.g. https://bagparser.com)
+      PUBLIC_URL: ${PUBLIC_URL:-}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
+      DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID:-}
+      DISCORD_CLIENT_SECRET: ${DISCORD_CLIENT_SECRET:-}
+      # Stripe (D-51): all charges. Without the secret key the checkout stays disabled ("coming soon")
+      STRIPE_PUBLISHABLE_KEY: ${STRIPE_PUBLISHABLE_KEY:-}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
+      STRIPE_PRICE_PRO_BRL_MONTHLY: ${STRIPE_PRICE_PRO_BRL_MONTHLY:-}
+      STRIPE_PRICE_PRO_BRL_YEARLY: ${STRIPE_PRICE_PRO_BRL_YEARLY:-}
+      STRIPE_PRICE_PRO_USD_MONTHLY: ${STRIPE_PRICE_PRO_USD_MONTHLY:-}
+      STRIPE_PRICE_PRO_USD_YEARLY: ${STRIPE_PRICE_PRO_USD_YEARLY:-}
+      # Local tests only (fake Stripe server); never set in production
+      STRIPE_API_BASE: ${STRIPE_API_BASE:-}
+      # D-65: e-mail (password reset, notices). The password lives only in the .env of the server.
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-465}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASS: ${SMTP_PASS:-}
+      MAIL_FROM: ${MAIL_FROM:-}
+      SUPPORT_EMAIL: ${SUPPORT_EMAIL:-}
+      MAIL_LOG: ${MAIL_LOG:-}
+      # D-66: Google AdSense (free plan only). Empty = no ads.
+      ADSENSE_CLIENT: ${ADSENSE_CLIENT:-ca-pub-8311618945249138}
+      ADSENSE_SLOT: ${ADSENSE_SLOT:-}
+      # D-69: Pix via Mercado Pago (Access Token + webhook secret; empty = no Pix)
+      MP_ACCESS_TOKEN: ${MP_ACCESS_TOKEN:-}
+      MP_WEBHOOK_SECRET: ${MP_WEBHOOK_SECRET:-}
+      MP_API_BASE: ${MP_API_BASE:-}
+      # orders (default) or payments
+      MP_API_MODE: ${MP_API_MODE:-}
+      # D-75: Telegram bot (@BotFather token; empty = bot off). Webhook secret is derived from the token unless set.
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_WEBHOOK_SECRET: ${TELEGRAM_WEBHOOK_SECRET:-}
+      # Local test bot only: 1 = read updates with getUpdates (removes the webhook of that bot)
+      TELEGRAM_POLLING: ${TELEGRAM_POLLING:-}
+      TELEGRAM_API_BASE: ${TELEGRAM_API_BASE:-}
+      # Session cookie Secure flag: auto (follows HTTPS from the proxy), true or false
+      COOKIE_SECURE: ${COOKIE_SECURE:-auto}
+      # Cloudflare Turnstile anti-bot verification
+      TURNSTILE_SECRET: ${TURNSTILE_SECRET:-}
+      TURNSTILE_HOSTNAMES: ${TURNSTILE_HOSTNAMES:-bagparser.com,localhost,127.0.0.1}
+    volumes:
+      # D-68: backup status for the admin panel (read-only)
+      - ./backups:/backups:ro
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - bagparser_net
+
+  # 3. Database (PostgreSQL, not exposed to the host)
+  db:
+    container_name: bagparser_db
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bagparser_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secure_db_pass}
+      POSTGRES_DB: bagparser_db
+    volumes:
+      - bagparser_pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bagparser_user -d bagparser_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - bagparser_net
+
+  # 4. In-Memory Cache (drop-rate aggregations and rate limiting)
+  # D-68: daily database backup (compressed dump, checked, 14 days) into ./backups on the server
+  backup:
+    container_name: bagparser_backup
+    image: postgres:16-alpine
+    restart: unless-stopped
+    entrypoint: ["/bin/sh", "/backup-loop.sh"]
+    environment:
+      PGHOST: db
+      PGUSER: bagparser_user
+      PGPASSWORD: ${DB_PASSWORD:-secure_db_pass}
+      PGDATABASE: bagparser_db
+      BACKUP_KEEP_DAYS: ${BACKUP_KEEP_DAYS:-14}
+      BACKUP_HOUR_UTC: ${BACKUP_HOUR_UTC:-6}
+    volumes:
+      - ./backups:/backups
+      - ./scripts/backup-loop.sh:/backup-loop.sh:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - bagparser_net
+
+  redis:
+    container_name: bagparser_redis
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - bagparser_redisdata:/data
+    networks:
+      - bagparser_net
+
+volumes:
+  bagparser_pgdata:
+  bagparser_redisdata:
+
+networks:
+  bagparser_net:
+    driver: bridge

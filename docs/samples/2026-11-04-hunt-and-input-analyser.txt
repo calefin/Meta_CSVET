@@ -1,0 +1,38 @@
+[04/11/2026 07:36] Player: Received Damage
+Total: 592
+Max-DPS: 240
+Damage Types
+  Physical 472 (79.7%)
+  Death 116 (19.6%)
+  Earth 4 (0.7%)
+Damage Sources
+  undead gladiator 266 (44.9%)
+  vicious squire 174 (29.4%)
+  necromancer 127 (21.5%)
+  ghoul 21 (3.5%)
+  (other) 4 (0.7%)
+[04/11/2026 07:37] Player: Session data: From 2026-11-04, 07:34:44 to 2026-11-04, 07:36:49
+Session: 00:02h
+Raw XP Gain: 4,008
+XP Gain: 6,010
+Raw XP/h: 115,920
+XP/h: 173,822
+Loot: 845
+Supplies: 1,580
+Balance: -735
+Damage: 4,962
+Damage/h: 156,694
+Healing: 0
+Healing/h: 0
+Killed Monsters:
+  2x necromancer
+  2x poison spider
+  2x rotworm
+  1x undead gladiator
+  2x vicious squire
+  2x wild warrior
+Looted Items:
+  157x a gold coin
+  2x a poison arrow
+  1x a belted cape
+  1x a book of necromantic rituals

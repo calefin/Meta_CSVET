@@ -1,0 +1,1498 @@
+
+Channel Server Log saved Wed Nov 04 17:02:27 2026
+16:56 During your absence you trained for 15 minutes.
+16:56 Your Sword Fighting skill changed from level 104 and 54.38% to 54.43%.
+16:56 Your Shielding skill changed from level 95 and 38.68% to 38.75%.
+16:56 Your last visit in Tibia: 04. Nov 2026 19:43:43 CET.
+16:56 Today's boosted creature: Sparkion
+16:56 Today's boosted boss: Court Warlock
+16:56 You have one reward in the reward chest.
+16:56 You have entered the subarea Darashia City. Find 1 point of interest to fully discover it.
+16:56 Using one of 593 great mana potions...
+16:56 You gained 214 mana.
+16:56 You see Asima.
+16:56 Sold 818x empty potion flask for 4090 gold.
+16:56 Bought 475x ultimate health potion for 180025 gold.
+16:56 Paid 39520 gold from inventory and 140505 gold from bank account. Your account balance is now 1735735 gold.
+16:57 Bought 40x great mana potion for 6320 gold.
+16:57 Paid 6320 gold from bank account. Your account balance is now 1729415 gold.
+16:57 Star Joba loses 3 hitpoints. 
+16:57 You have left the subarea Darashia City. Return to discover its remaining secrets!
+16:57 You have entered the subarea Northern Darama Desert. Find 4 points of interest to fully discover it.
+16:57 Using the last squeezing gear of girlpower...
+16:57 You have left the subarea Northern Darama Desert. Return to discover its remaining secrets!
+16:57 A werehyaena loses 79 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 A werehyaena loses 351 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 A werehyaena loses 93 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 A werehyaena loses 315 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 Arthalion Seruix loses 172 mana due to an attack by a werehyaena. 
+16:57 You lose 56 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 9 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 240 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 289 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 282 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 21 hitpoints due to an attack by a werehyaena. 
+16:57 Using one of 668 ultimate health potions...
+16:57 You healed yourself for 750 hitpoints. 
+16:57 Using one of 632 great mana potions...
+16:57 You gained 169 mana.
+16:57 You lose 60 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 192 hitpoints due to an attack by a werehyaena. 
+16:58 Using the last squeezing gear of girlpower...
+16:58 You lose 63 hitpoints due to an attack by a werehyaena. 
+16:58 Using one of 667 ultimate health potions...
+16:58 You healed yourself for 430 hitpoints. 
+16:58 Using one of 631 great mana potions...
+16:58 You gained 128 mana.
+16:58 You lose 33 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 122 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 136 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 21 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 82 hitpoints due to an attack by a werehyaena. 
+16:58 Using the last squeezing gear of girlpower...
+16:58 You lose 30 hitpoints due to an attack by a white lion. 
+16:58 A white lion loses 271 hitpoints due to your attack. 
+16:58 You were healed for 68 hitpoints. 
+16:58 You gained 45 mana.
+16:58 A white lion loses 863 hitpoints due to your attack. 
+16:58 You were healed for 119 hitpoints. 
+16:58 You gained 78 mana.
+16:58 A white lion loses 861 hitpoints due to your attack. 
+16:58 You were healed for 119 hitpoints. 
+16:58 You gained 77 mana.
+16:58 You lose 85 hitpoints due to an attack by a werelion. 
+16:58 Using one of 630 great mana potions...
+16:58 You gained 210 mana.
+16:58 You lose 14 hitpoints due to an attack by a white lion. 
+16:58 A werelion loses 431 hitpoints due to your attack. 
+16:58 You were healed for 108 hitpoints. 
+16:58 A werelion loses 929 hitpoints due to your attack. 
+16:58 You were healed for 53 hitpoints. 
+16:58 You gained 151 mana.
+16:58 You lose 135 hitpoints due to an attack by a werelion. 
+16:58 Using one of 629 great mana potions...
+16:58 You gained 49 mana.
+16:58 You lose 384 hitpoints due to an attack by a white lion. 
+16:58 A white lion loses 373 hitpoints due to your attack. 
+16:58 You were healed for 38 hitpoints. 
+16:58 You gained 25 mana.
+16:58 A white lion loses 375 hitpoints due to your attack. 
+16:58 You were healed for 38 hitpoints. 
+16:58 You gained 25 mana.
+16:58 A werelion loses 381 hitpoints due to your attack. 
+16:58 You were healed for 39 hitpoints. 
+16:58 You gained 25 mana.
+16:58 You lose 61 hitpoints due to an attack by a werelion. 
+16:58 You lose 1 hitpoint due to an attack by a white lion. 
+16:58 You lose 348 hitpoints due to an attack by a white lion. 
+16:58 You lose 37 hitpoints due to an attack by a white lion. 
+16:58 A white lion loses 320 hitpoints due to your attack. 
+16:58 You were healed for 80 hitpoints. 
+16:58 You gained 48 mana.
+16:58 You lose 100 hitpoints due to an attack by a werelion. 
+16:58 A white lion loses 730 hitpoints due to your attack. 
+16:58 You were healed for 74 hitpoints. 
+16:58 You gained 48 mana.
+16:58 A white lion loses 731 hitpoints due to your attack. 
+16:58 You were healed for 74 hitpoints. 
+16:58 You gained 48 mana.
+16:58 A werelion loses 755 hitpoints due to your attack. 
+16:58 You were healed for 76 hitpoints. 
+16:58 You gained 50 mana.
+16:58 Using one of 628 great mana potions...
+16:58 You gained 176 mana.
+16:58 You lose 268 hitpoints due to an attack by a white lion. 
+16:58 You lose 28 hitpoints due to an attack by a white lion. 
+16:58 You lose 145 hitpoints due to an attack by a werelion. 
+16:58 You lose 440 hitpoints due to an attack by a werelion. 
+16:58 A white lion loses 446 hitpoints due to your attack. 
+16:58 You were healed for 112 hitpoints. 
+16:58 You gained 38 mana.
+16:58 A white lion loses 413 hitpoints due to your attack. 
+16:58 You were healed for 80 hitpoints. 
+16:58 You gained 52 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a white lion: a great spirit potion, 4 platinum coins, a lion's mane, twin hooks.
+16:58 A white lion loses 17 hitpoints due to your attack. 
+16:58 You were healed for 80 hitpoints. 
+16:58 You gained 52 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a white lion: 2 great spirit potions, 5 platinum coins, terra boots.
+16:58 A werelion loses 304 hitpoints due to your attack. 
+16:58 You were healed for 83 hitpoints. 
+16:58 You gained 54 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3300 experience points.
+16:58 Loot of a werelion: 3 platinum coins.
+16:58 You looted the complete 400 gold, but you only looted some of the dropped items.
+16:58 You looted the complete 500 gold, but you only looted some of the dropped items.
+16:58 You looted 300 gold.
+16:58 You looted 3 corpses.
+16:58 You lose 350 hitpoints due to an attack by a werelioness. 
+16:58 You lose 150 hitpoints due to an attack by a werelioness. 
+16:58 You lose 169 hitpoints due to an attack by a werelioness. 
+16:58 A white lion loses 353 hitpoints due to your attack. 
+16:58 You were healed for 89 hitpoints. 
+16:58 You gained 10 mana.
+16:58 Using one of 666 ultimate health potions...
+16:58 You healed yourself for 805 hitpoints. 
+16:58 You lose 288 hitpoints due to an attack by a werelion. 
+16:58 You lose 14 hitpoints due to an attack by a white lion. 
+16:58 Using one of 665 ultimate health potions...
+16:58 You lose 76 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 665 ultimate health potions...
+16:58 You healed yourself for 791 hitpoints. 
+16:58 A werelioness loses 820 hitpoints due to your attack. 
+16:58 You were healed for 67 hitpoints. 
+16:58 You gained 44 mana.
+16:58 A white lion loses 785 hitpoints due to your attack. 
+16:58 You were healed for 65 hitpoints. 
+16:58 You gained 42 mana.
+16:58 A werelioness loses 812 hitpoints due to your attack. 
+16:58 You were healed for 66 hitpoints. 
+16:58 You gained 43 mana.
+16:58 A werelion loses 829 hitpoints due to your attack. 
+16:58 You were healed for 68 hitpoints. 
+16:58 You gained 44 mana.
+16:58 You lose 56 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 664 ultimate health potions...
+16:58 You lose 178 hitpoints due to an attack by a werelioness. 
+16:58 You healed yourself for 479 hitpoints. 
+16:58 Using one of 663 ultimate health potions...
+16:58 You lose 85 hitpoints due to an attack by a werelioness. 
+16:58 You lose 36 hitpoints due to an attack by a werelion. 
+16:58 You lose 478 hitpoints due to an attack by a werelion. 
+16:58 You lose 85 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 663 ultimate health potions...
+16:58 You healed yourself for 684 hitpoints. 
+16:58 You lose 54 hitpoints due to an attack by a werelioness. 
+16:58 A white lion loses 359 hitpoints due to your attack. 
+16:58 You were healed for 54 hitpoints. 
+16:58 You gained 59 mana.
+16:58 A white lion loses 803 hitpoints due to your attack. 
+16:58 You gained 131 mana.
+16:58 Using one of 662 ultimate health potions...
+16:58 You lose 337 hitpoints due to an attack by a werelion. 
+16:58 You lose 137 hitpoints due to an attack by a werelioness. 
+16:58 You lose 350 hitpoints due to an attack by a werelioness. 
+16:58 You healed yourself for 736 hitpoints. 
+16:58 You lose 200 hitpoints due to an attack by a werelion. 
+16:58 Using one of 661 ultimate health potions...
+16:58 You lose 45 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 661 ultimate health potions...
+16:58 You lose 337 hitpoints due to an attack by a werelion. 
+16:58 You lose 41 hitpoints due to an attack by a werelion. 
+16:58 You lose 105 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 627 great mana potions...
+16:58 Using one of 661 ultimate health potions...
+16:58 You healed yourself for 808 hitpoints. 
+16:58 You lose 339 hitpoints due to an attack by a werelioness. 
+16:58 You lose 158 hitpoints due to an attack by a werelioness. 
+16:58 You lose 312 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 627 great mana potions...
+16:58 You gained 180 mana.
+16:58 You lose 79 hitpoints due to an attack by a white lion. 
+16:58 A werelioness loses 991 hitpoints due to your attack. 
+16:58 You were healed for 100 hitpoints. 
+16:58 You gained 65 mana.
+16:58 A werelion loses 977 hitpoints due to your attack. 
+16:58 You were healed for 98 hitpoints. 
+16:58 You gained 64 mana.
+16:58 A white lion loses 400 hitpoints due to your attack. 
+16:58 You were healed for 95 hitpoints. 
+16:58 You gained 62 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a white lion: a great spirit potion, a platinum coin, an axe.
+16:58 Using one of 660 ultimate health potions...
+16:58 You healed yourself for 595 hitpoints. 
+16:58 You lose 377 hitpoints due to an attack by a werelioness. 
+16:58 You lose 6 hitpoints due to an attack by a werelioness. 
+16:58 You lose 118 hitpoints due to an attack by a werelioness. 
+16:58 You lose 146 hitpoints due to an attack by a werelioness. 
+16:58 You lose 81 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 659 ultimate health potions...
+16:58 You healed yourself for 720 hitpoints. 
+16:58 You lose 75 hitpoints due to an attack by a werelion. 
+16:58 Using one of 626 great mana potions...
+16:58 You gained 210 mana.
+16:58 You lose 328 hitpoints due to an attack by a werelioness. 
+16:58 You lose 132 hitpoints due to an attack by a werelioness. 
+16:58 You lose 374 hitpoints due to an attack by a werelioness. 
+16:58 You lose 132 hitpoints due to an attack by a werelioness. 
+16:58 You lose 100 hitpoints due to an attack by a werelioness. 
+16:58 A werelioness loses 661 hitpoints due to your critical attack. 
+16:58 You were healed for 47 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelioness loses 676 hitpoints due to your critical attack. 
+16:58 You were healed for 48 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelioness loses 670 hitpoints due to your critical attack. 
+16:58 You were healed for 48 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelioness loses 664 hitpoints due to your critical attack. 
+16:58 You were healed for 47 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelion loses 669 hitpoints due to your critical attack. 
+16:58 You were healed for 48 hitpoints. 
+16:58 You gained 31 mana.
+16:58 You lose 56 hitpoints due to an attack by a werelion. 
+16:58 You lose 370 hitpoints due to an attack by a werelion. 
+16:58 Using one of 658 ultimate health potions...
+16:58 You healed yourself for 675 hitpoints. 
+16:58 You lose 41 hitpoints due to an attack by a werelioness. 
+16:58 You lose 366 hitpoints due to an attack by a werelioness. 
+16:58 You lose 191 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 657 ultimate health potions...
+16:58 You lose 120 hitpoints due to an attack by a werelioness. 
+16:58 You lose 370 hitpoints due to an attack by a werelioness. 
+16:58 You healed yourself for 826 hitpoints. 
+16:58 You lose 87 hitpoints due to an attack by a werelioness. 
+16:58 A werelioness loses 259 hitpoints due to your attack. 
+16:58 You were healed for 65 hitpoints. 
+16:58 You gained 43 mana.
+16:58 You lose 69 hitpoints due to an attack by a werelion. 
+16:58 A werelioness loses 600 hitpoints due to your attack. 
+16:58 You were healed for 42 hitpoints. 
+16:58 You gained 28 mana.
+16:58 A werelioness loses 521 hitpoints due to your attack. 
+16:58 You were healed for 42 hitpoints. 
+16:58 You gained 28 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a werelioness: 76 gold coins, ham.
+16:58 A werelioness loses 607 hitpoints due to your attack. 
+16:58 You were healed for 43 hitpoints. 
+16:58 You gained 28 mana.
+16:58 A werelioness loses 607 hitpoints due to your attack. 
+16:58 You were healed for 43 hitpoints. 
+16:58 You gained 28 mana.
+16:58 A werelion loses 607 hitpoints due to your attack. 
+16:58 You were healed for 43 hitpoints. 
+16:58 You gained 28 mana.
+16:58 You lose 368 hitpoints due to an attack by a werelion. 
+16:58 Using one of 656 ultimate health potions...
+16:58 You healed yourself for 687 hitpoints. 
+16:59 You lose 47 hitpoints due to an attack by a werelioness. 
+16:59 You lose 362 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 625 great mana potions...
+16:59 You lose 122 hitpoints due to an attack by a werelioness. 
+16:59 You lose 105 hitpoints due to an attack by a werelioness. 
+16:59 You lose 352 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 655 ultimate health potions...
+16:59 You healed yourself for 760 hitpoints. 
+16:59 You lose 130 hitpoints due to an attack by a werelion. 
+16:59 Using one of 625 great mana potions...
+16:59 You lose 355 hitpoints due to an attack by a werelioness. 
+16:59 You gained 246 mana.
+16:59 You lose 92 hitpoints due to an attack by a werelion. 
+16:59 You lose 192 hitpoints due to an attack by a werelioness. 
+16:59 You lose 125 hitpoints due to an attack by a werelioness. 
+16:59 You lose 367 hitpoints due to an attack by a werelioness. 
+16:59 You lose 78 hitpoints due to an attack by a werelion. 
+16:59 You lose 362 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 313 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelion loses 321 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelioness loses 311 hitpoints due to your attack. 
+16:59 You were healed for 22 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelioness loses 314 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelion loses 316 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 Using one of 654 ultimate health potions...
+16:59 You healed yourself for 719 hitpoints. 
+16:59 Using one of 653 ultimate health potions...
+16:59 Using one of 653 ultimate health potions...
+16:59 You lose 481 hitpoints due to an attack by a werelion. 
+16:59 You lose 82 hitpoints due to an attack by a werelioness. 
+16:59 You healed yourself for 819 hitpoints. 
+16:59 You lose 79 hitpoints due to an attack by a werelioness. 
+16:59 You lose 343 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 652 ultimate health potions...
+16:59 You lose 199 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 206 hitpoints due to your attack. 
+16:59 You were healed for 52 hitpoints. 
+16:59 You gained 34 mana.
+16:59 Using one of 652 ultimate health potions...
+16:59 You healed yourself for 762 hitpoints. 
+16:59 A werelioness loses 347 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 98 gold coins, 3 ham, 2 platinum coins, a lion's mane, a white pearl.
+16:59 A werelion loses 595 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 A werelioness loses 592 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 A werelioness loses 597 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 A werelion loses 379 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: 2 great spirit potions, 2 platinum coins, a doublet.
+16:59 Using one of 651 ultimate health potions...
+16:59 You lose 301 hitpoints due to an attack by a werelion. 
+16:59 You lose 86 hitpoints due to an attack by a werelioness. 
+16:59 You lose 179 hitpoints due to an attack by a werelioness. 
+16:59 You healed yourself for 739 hitpoints. 
+16:59 Using one of 624 great mana potions...
+16:59 You gained 170 mana.
+16:59 A werelion loses 254 hitpoints due to your attack. 
+16:59 You were healed for 64 hitpoints. 
+16:59 You gained 42 mana.
+16:59 A werelion loses 653 hitpoints due to your attack. 
+16:59 You were healed for 137 hitpoints. 
+16:59 You gained 90 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: a platinum coin.
+16:59 A werelioness loses 612 hitpoints due to your attack. 
+16:59 You were healed for 136 hitpoints. 
+16:59 You gained 88 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 61 gold coins, 2 ham, a platinum coin, a lion's mane, a black pearl.
+16:59 You lose 105 hitpoints due to an attack by a werelioness. 
+16:59 You lose 386 hitpoints due to an attack by a werelioness. 
+16:59 A werelioness loses 289 hitpoints due to your attack. 
+16:59 You were healed for 73 hitpoints. 
+16:59 You gained 47 mana.
+16:59 A werelioness loses 317 hitpoints due to your attack. 
+16:59 You were healed for 80 hitpoints. 
+16:59 You gained 52 mana.
+16:59 You lose 28 hitpoints due to an attack by a werelioness. 
+16:59 You lose 331 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 623 great mana potions...
+16:59 You gained 193 mana.
+16:59 A werelioness loses 214 hitpoints due to your attack. 
+16:59 You were healed for 130 hitpoints. 
+16:59 You gained 85 mana.
+16:59 You gained 3 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 78 gold coins, 3 ham, a platinum coin, a crystal sword.
+16:59 You looted none of the dropped items. (3 corpses)
+16:59 You looted the complete 161 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 298 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 200 gold but none of the dropped items.
+16:59 You looted 100 gold.
+16:59 You looted the complete 76 gold but none of the dropped items.
+16:59 You looted the complete 178 gold but none of the dropped items.
+16:59 You looted 9 corpses.
+16:59 You lose 466 hitpoints due to an attack by a werelion. 
+16:59 You lose 51 hitpoints due to an attack by a werelion. 
+16:59 Using one of 650 ultimate health potions...
+16:59 You healed yourself for 737 hitpoints. 
+16:59 You lose 319 hitpoints due to an attack by a werelion. 
+16:59 You lose 136 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 270 hitpoints due to your attack. 
+16:59 You were healed for 68 hitpoints. 
+16:59 You gained 44 mana.
+16:59 A werelioness loses 903 hitpoints due to your critical attack. 
+16:59 You were healed for 91 hitpoints. 
+16:59 You gained 59 mana.
+16:59 A werelion loses 911 hitpoints due to your critical attack. 
+16:59 You were healed for 92 hitpoints. 
+16:59 You gained 60 mana.
+16:59 A werelioness loses 896 hitpoints due to your critical attack. 
+16:59 You were healed for 90 hitpoints. 
+16:59 You gained 59 mana.
+16:59 Using one of 622 great mana potions...
+16:59 You gained 246 mana.
+16:59 You lose 103 hitpoints due to an attack by a werelioness. 
+16:59 You lose 338 hitpoints due to an attack by a werelioness. 
+16:59 You lose 122 hitpoints due to an attack by a werelioness. 
+16:59 You lose 369 hitpoints due to an attack by a werelioness. 
+16:59 You lose 109 hitpoints due to an attack by a werelion. 
+16:59 Using one of 649 ultimate health potions...
+16:59 You healed yourself for 795 hitpoints. 
+16:59 A werelioness loses 340 hitpoints due to your attack. 
+16:59 You were healed for 85 hitpoints. 
+16:59 You gained 56 mana.
+16:59 A werelioness loses 874 hitpoints due to your attack. 
+16:59 You were healed for 121 hitpoints. 
+16:59 You gained 79 mana.
+16:59 A werelion loses 869 hitpoints due to your attack. 
+16:59 You were healed for 120 hitpoints. 
+16:59 You gained 79 mana.
+16:59 Using one of 648 ultimate health potions...
+16:59 You healed yourself for 727 hitpoints. 
+16:59 You lose 220 hitpoints due to an attack by a werelion. 
+16:59 You lose 480 hitpoints due to an attack by a werelion. 
+16:59 You lose 83 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 310 hitpoints due to your attack. 
+16:59 You were healed for 78 hitpoints. 
+16:59 You gained 51 mana.
+16:59 A werelion loses 412 hitpoints due to your attack. 
+16:59 You were healed for 34 hitpoints. 
+16:59 You gained 22 mana.
+16:59 A werelioness loses 417 hitpoints due to your attack. 
+16:59 You were healed for 35 hitpoints. 
+16:59 You gained 23 mana.
+16:59 A werelion loses 412 hitpoints due to your attack. 
+16:59 You were healed for 34 hitpoints. 
+16:59 You gained 22 mana.
+16:59 A werelioness loses 407 hitpoints due to your attack. 
+16:59 You were healed for 34 hitpoints. 
+16:59 You gained 22 mana.
+16:59 Using one of 647 ultimate health potions...
+16:59 You healed yourself for 568 hitpoints. 
+16:59 You lose 118 hitpoints due to an attack by a werelioness. 
+16:59 You lose 366 hitpoints due to an attack by a werelioness. 
+16:59 You lose 9 hitpoints due to an attack by a werelioness. 
+16:59 You lose 147 hitpoints due to an attack by a werelion. 
+16:59 You lose 91 hitpoints due to an attack by a werelion. 
+16:59 You lose 373 hitpoints due to an attack by a werelion. 
+16:59 A werelion loses 448 hitpoints due to your attack. 
+16:59 You were healed for 112 hitpoints. 
+16:59 You gained 73 mana.
+16:59 A werelion loses 772 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 A werelioness loses 196 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 47 gold coins, 2 platinum coins, a lion's mane, a soul orb.
+16:59 A werelioness loses 762 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 A werelion loses 608 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: 2 great spirit potions, 4 platinum coins, a lion's mane, a glorious axe.
+16:59 Using one of 621 great mana potions...
+16:59 You gained 236 mana.
+16:59 You lose 102 hitpoints due to an attack by a werelioness. 
+16:59 You lose 322 hitpoints due to an attack by a werelioness. 
+16:59 You lose 93 hitpoints due to an attack by a werelion. 
+16:59 You lose 338 hitpoints due to an attack by a werelion. 
+16:59 A werelion loses 974 hitpoints due to your attack. 
+16:59 You were healed for 244 hitpoints. 
+16:59 You gained 159 mana.
+16:59 Using one of 646 ultimate health potions...
+16:59 You healed yourself for 718 hitpoints. 
+16:59 You lose 28 hitpoints due to an attack by a werelioness. 
+16:59 You lose 350 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 223 hitpoints due to your attack. 
+16:59 You were healed for 56 hitpoints. 
+16:59 You gained 37 mana.
+16:59 A werelion loses 194 hitpoints due to your attack. 
+16:59 You were healed for 52 hitpoints. 
+16:59 You gained 34 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: a great spirit potion, a platinum coin, a lion's mane, a dark armor, a rainbow quartz.
+16:59 A werelioness loses 383 hitpoints due to your attack. 
+16:59 You were healed for 53 hitpoints. 
+16:59 You gained 35 mana.
+16:59 You looted the complete 100 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 400 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 247 gold and all dropped items.
+16:59 You looted 3 corpses.
+16:59 You lose 10 hitpoints due to an attack by a werelioness. 
+16:59 A werelioness loses 19 hitpoints due to your attack. 
+16:59 You were healed for 62 hitpoints. 
+16:59 You gained 41 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 39 gold coins, ham, an ankh.
+16:59 You lose 144 hitpoints due to an attack by a werelion. 
+16:59 You lose 478 hitpoints due to an attack by a werelion. 
+16:59 You lose 91 hitpoints due to an attack by a werelion. 
+16:59 Using one of 645 ultimate health potions...
+16:59 You lose 365 hitpoints due to an attack by a werelion. 
+16:59 You healed yourself for 739 hitpoints. 
+16:59 Using one of 644 ultimate health potions...
+16:59 You healed yourself for 674 hitpoints. 
+16:59 You lose 69 hitpoints due to an attack by a werelioness. 
+16:59 You lose 317 hitpoints due to an attack by a werelioness. 
+16:59 You lose 454 hitpoints due to an attack by Yirkas Blue Scales. 
+16:59 You lose 63 hitpoints due to an attack by Yirkas Blue Scales. 
+16:59 Yirkas Blue Scales loses 523 hitpoints due to your attack. 
+16:59 You were healed for 262 hitpoints. 
+16:59 You gained 85 mana.
+16:59 Using one of 620 great mana potions...
+16:59 You gained 191 mana.
+16:59 Using one of 643 ultimate health potions...
+16:59 You healed yourself for 675 hitpoints. 
+16:59 Yirkas Blue Scales loses 873 hitpoints due to your critical attack. 
+16:59 You were healed for 373 hitpoints. 
+16:59 You gained 142 mana.
+16:59 Yirkas Blue Scales loses 851 hitpoints due to your attack. 
+16:59 You gained 139 mana.
+16:59 Using one of 619 great mana potions...
+16:59 You gained 136 mana.
+16:59 You lose 69 hitpoints due to an attack by Yirkas Blue Scales. 
+16:59 Yirkas Blue Scales loses 251 hitpoints due to your attack. 
+16:59 You were healed for 69 hitpoints. 
+16:59 You gained 41 mana.
+17:00 You lose 125 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 235 hitpoints due to your attack. 
+17:00 You were healed for 118 hitpoints. 
+17:00 You gained 39 mana.
+17:00 Yirkas Blue Scales loses 622 hitpoints due to your attack. 
+17:00 You were healed for 7 hitpoints. 
+17:00 You gained 102 mana.
+17:00 Using one of 618 great mana potions...
+17:00 You gained 223 mana.
+17:00 You lose 38 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 You lose 353 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 820 hitpoints due to your critical attack. 
+17:00 You were healed for 391 hitpoints. 
+17:00 You gained 78 mana.
+17:00 Yirkas Blue Scales loses 733 hitpoints due to your attack. 
+17:00 You gained 120 mana.
+17:00 You lose 66 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 You lose 452 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 292 hitpoints due to your attack. 
+17:00 You were healed for 146 hitpoints. 
+17:00 You gained 48 mana.
+17:00 Using one of 617 great mana potions...
+17:00 You gained 157 mana.
+17:00 You lose 17 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 299 hitpoints due to your attack. 
+17:00 You were healed for 150 hitpoints. 
+17:00 Yirkas Blue Scales loses 801 hitpoints due to your attack. 
+17:00 You were healed for 231 hitpoints. 
+17:00 You gained 134 mana.
+17:00 You gained 7350 experience points.
+17:00 No loot. (1 corpse)
+17:00 The following items dropped by Yirkas Blue Scales are available in your reward chest: a blue goanna scale, a skull helmet, a jade hammer, 3 ultimate health potions, 3 platinum coins.
+17:01 You are still exhausted from your last battle.
+17:01 You lose 398 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 124 hitpoints due to your attack. 
+17:01 You were healed for 62 hitpoints. 
+17:01 You gained 21 mana.
+17:01 Katex Blood Tongue loses 765 hitpoints due to your attack. 
+17:01 You were healed for 336 hitpoints. 
+17:01 You gained 125 mana.
+17:01 Using one of 616 great mana potions...
+17:01 You gained 183 mana.
+17:01 Using one of 615 great mana potions...
+17:01 You gained 196 mana.
+17:01 You lose 33 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 You lose 452 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 703 hitpoints due to your attack. 
+17:01 You were healed for 352 hitpoints. 
+17:01 You gained 115 mana.
+17:01 Using one of 614 great mana potions...
+17:01 You gained 150 mana.
+17:01 Using one of 613 great mana potions...
+17:01 You lose 427 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 220 hitpoints due to your attack. 
+17:01 You were healed for 110 hitpoints. 
+17:01 You gained 36 mana.
+17:01 Katex Blood Tongue loses 383 hitpoints due to your attack. 
+17:01 You were healed for 192 hitpoints. 
+17:01 You gained 63 mana.
+17:01 You lose 76 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 You lose 475 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 You lose 454 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 187 hitpoints due to your attack. 
+17:01 You were healed for 94 hitpoints. 
+17:01 You gained 31 mana.
+17:01 Katex Blood Tongue loses 691 hitpoints due to your attack. 
+17:01 You were healed for 346 hitpoints. 
+17:01 You gained 113 mana.
+17:01 You lose 106 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 233 hitpoints due to your attack. 
+17:01 You were healed for 117 hitpoints. 
+17:01 You gained 38 mana.
+17:01 Katex Blood Tongue loses 1122 hitpoints due to your critical attack. 
+17:01 You were healed for 561 hitpoints. 
+17:01 You gained 183 mana.
+17:01 Using one of 613 great mana potions...
+17:01 You gained 200 mana.
+17:01 Katex Blood Tongue loses 396 hitpoints due to your attack. 
+17:01 You were healed for 198 hitpoints. 
+17:01 You gained 65 mana.
+17:01 Katex Blood Tongue loses 296 hitpoints due to your attack. 
+17:01 You were healed for 37 hitpoints. 
+17:01 You gained 49 mana.
+17:01 You lose 55 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 755 hitpoints due to your attack. 
+17:01 You were healed for 55 hitpoints. 
+17:01 You gained 123 mana.
+17:01 Using one of 612 great mana potions...
+17:01 You gained 155 mana.
+17:01 You lose 91 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 425 hitpoints due to your critical attack. 
+17:01 You were healed for 91 hitpoints. 
+17:01 You gained 119 mana.
+17:01 You gained 7500 experience points.
+17:01 The following items dropped by Katex Blood Tongue are available in your reward chest: 5 ultimate health potions, 12 platinum coins.
+17:01 You looted none of the dropped items. (1 corpse)
+17:02 Using one of 611 great mana potions...
+17:02 You gained 180 mana.
+17:02 Utua Stone Sting loses 148 hitpoints due to your attack. 
+17:02 You gained 25 mana.
+17:02 You lose 128 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 668 hitpoints due to your attack. 
+17:02 You were healed for 128 hitpoints. 
+17:02 You gained 109 mana.
+17:02 Using one of 610 great mana potions...
+17:02 You gained 187 mana.
+17:02 Using one of 609 great mana potions...
+17:02 You gained 169 mana.
+17:02 You lose 14 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 97 hitpoints due to your attack. 
+17:02 You were healed for 14 hitpoints. 
+17:02 You gained 16 mana.
+17:02 Utua Stone Sting loses 829 hitpoints due to your attack. 
+17:02 You gained 135 mana.
+17:02 Using one of 608 great mana potions...
+17:02 You gained 124 mana.
+17:02 You lose 38 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 361 hitpoints due to your attack. 
+17:02 You were healed for 38 hitpoints. 
+17:02 You lose 176 hitpoints due to an attack by Utua Stone Sting. 
+
+Channel Server Log saved Wed Nov 04 17:03:05 2026
+16:56 During your absence you trained for 15 minutes.
+16:56 Your Sword Fighting skill changed from level 104 and 54.38% to 54.43%.
+16:56 Your Shielding skill changed from level 95 and 38.68% to 38.75%.
+16:56 Your last visit in Tibia: 04. Nov 2026 19:43:43 CET.
+16:56 Today's boosted creature: Sparkion
+16:56 Today's boosted boss: Court Warlock
+16:56 You have one reward in the reward chest.
+16:56 You have entered the subarea Darashia City. Find 1 point of interest to fully discover it.
+16:56 Using one of 593 great mana potions...
+16:56 You gained 214 mana.
+16:56 You see Asima.
+16:56 Sold 818x empty potion flask for 4090 gold.
+16:56 Bought 475x ultimate health potion for 180025 gold.
+16:56 Paid 39520 gold from inventory and 140505 gold from bank account. Your account balance is now 1735735 gold.
+16:57 Bought 40x great mana potion for 6320 gold.
+16:57 Paid 6320 gold from bank account. Your account balance is now 1729415 gold.
+16:57 Star Joba loses 3 hitpoints. 
+16:57 You have left the subarea Darashia City. Return to discover its remaining secrets!
+16:57 You have entered the subarea Northern Darama Desert. Find 4 points of interest to fully discover it.
+16:57 Using the last squeezing gear of girlpower...
+16:57 You have left the subarea Northern Darama Desert. Return to discover its remaining secrets!
+16:57 A werehyaena loses 79 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 A werehyaena loses 351 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 A werehyaena loses 93 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 A werehyaena loses 315 hitpoints due to an attack by Arthalion Seruix. (Bounty Talisman Effect: More Damage Dealt)
+16:57 Arthalion Seruix loses 172 mana due to an attack by a werehyaena. 
+16:57 You lose 56 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 9 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 240 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 289 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 282 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 21 hitpoints due to an attack by a werehyaena. 
+16:57 Using one of 668 ultimate health potions...
+16:57 You healed yourself for 750 hitpoints. 
+16:57 Using one of 632 great mana potions...
+16:57 You gained 169 mana.
+16:57 You lose 60 hitpoints due to an attack by a werehyaena. 
+16:57 You lose 192 hitpoints due to an attack by a werehyaena. 
+16:58 Using the last squeezing gear of girlpower...
+16:58 You lose 63 hitpoints due to an attack by a werehyaena. 
+16:58 Using one of 667 ultimate health potions...
+16:58 You healed yourself for 430 hitpoints. 
+16:58 Using one of 631 great mana potions...
+16:58 You gained 128 mana.
+16:58 You lose 33 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 122 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 136 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 21 hitpoints due to an attack by a werehyaena. 
+16:58 You lose 82 hitpoints due to an attack by a werehyaena. 
+16:58 Using the last squeezing gear of girlpower...
+16:58 You lose 30 hitpoints due to an attack by a white lion. 
+16:58 A white lion loses 271 hitpoints due to your attack. 
+16:58 You were healed for 68 hitpoints. 
+16:58 You gained 45 mana.
+16:58 A white lion loses 863 hitpoints due to your attack. 
+16:58 You were healed for 119 hitpoints. 
+16:58 You gained 78 mana.
+16:58 A white lion loses 861 hitpoints due to your attack. 
+16:58 You were healed for 119 hitpoints. 
+16:58 You gained 77 mana.
+16:58 You lose 85 hitpoints due to an attack by a werelion. 
+16:58 Using one of 630 great mana potions...
+16:58 You gained 210 mana.
+16:58 You lose 14 hitpoints due to an attack by a white lion. 
+16:58 A werelion loses 431 hitpoints due to your attack. 
+16:58 You were healed for 108 hitpoints. 
+16:58 A werelion loses 929 hitpoints due to your attack. 
+16:58 You were healed for 53 hitpoints. 
+16:58 You gained 151 mana.
+16:58 You lose 135 hitpoints due to an attack by a werelion. 
+16:58 Using one of 629 great mana potions...
+16:58 You gained 49 mana.
+16:58 You lose 384 hitpoints due to an attack by a white lion. 
+16:58 A white lion loses 373 hitpoints due to your attack. 
+16:58 You were healed for 38 hitpoints. 
+16:58 You gained 25 mana.
+16:58 A white lion loses 375 hitpoints due to your attack. 
+16:58 You were healed for 38 hitpoints. 
+16:58 You gained 25 mana.
+16:58 A werelion loses 381 hitpoints due to your attack. 
+16:58 You were healed for 39 hitpoints. 
+16:58 You gained 25 mana.
+16:58 You lose 61 hitpoints due to an attack by a werelion. 
+16:58 You lose 1 hitpoint due to an attack by a white lion. 
+16:58 You lose 348 hitpoints due to an attack by a white lion. 
+16:58 You lose 37 hitpoints due to an attack by a white lion. 
+16:58 A white lion loses 320 hitpoints due to your attack. 
+16:58 You were healed for 80 hitpoints. 
+16:58 You gained 48 mana.
+16:58 You lose 100 hitpoints due to an attack by a werelion. 
+16:58 A white lion loses 730 hitpoints due to your attack. 
+16:58 You were healed for 74 hitpoints. 
+16:58 You gained 48 mana.
+16:58 A white lion loses 731 hitpoints due to your attack. 
+16:58 You were healed for 74 hitpoints. 
+16:58 You gained 48 mana.
+16:58 A werelion loses 755 hitpoints due to your attack. 
+16:58 You were healed for 76 hitpoints. 
+16:58 You gained 50 mana.
+16:58 Using one of 628 great mana potions...
+16:58 You gained 176 mana.
+16:58 You lose 268 hitpoints due to an attack by a white lion. 
+16:58 You lose 28 hitpoints due to an attack by a white lion. 
+16:58 You lose 145 hitpoints due to an attack by a werelion. 
+16:58 You lose 440 hitpoints due to an attack by a werelion. 
+16:58 A white lion loses 446 hitpoints due to your attack. 
+16:58 You were healed for 112 hitpoints. 
+16:58 You gained 38 mana.
+16:58 A white lion loses 413 hitpoints due to your attack. 
+16:58 You were healed for 80 hitpoints. 
+16:58 You gained 52 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a white lion: a great spirit potion, 4 platinum coins, a lion's mane, twin hooks.
+16:58 A white lion loses 17 hitpoints due to your attack. 
+16:58 You were healed for 80 hitpoints. 
+16:58 You gained 52 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a white lion: 2 great spirit potions, 5 platinum coins, terra boots.
+16:58 A werelion loses 304 hitpoints due to your attack. 
+16:58 You were healed for 83 hitpoints. 
+16:58 You gained 54 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3300 experience points.
+16:58 Loot of a werelion: 3 platinum coins.
+16:58 You looted the complete 400 gold, but you only looted some of the dropped items.
+16:58 You looted the complete 500 gold, but you only looted some of the dropped items.
+16:58 You looted 300 gold.
+16:58 You looted 3 corpses.
+16:58 You lose 350 hitpoints due to an attack by a werelioness. 
+16:58 You lose 150 hitpoints due to an attack by a werelioness. 
+16:58 You lose 169 hitpoints due to an attack by a werelioness. 
+16:58 A white lion loses 353 hitpoints due to your attack. 
+16:58 You were healed for 89 hitpoints. 
+16:58 You gained 10 mana.
+16:58 Using one of 666 ultimate health potions...
+16:58 You healed yourself for 805 hitpoints. 
+16:58 You lose 288 hitpoints due to an attack by a werelion. 
+16:58 You lose 14 hitpoints due to an attack by a white lion. 
+16:58 Using one of 665 ultimate health potions...
+16:58 You lose 76 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 665 ultimate health potions...
+16:58 You healed yourself for 791 hitpoints. 
+16:58 A werelioness loses 820 hitpoints due to your attack. 
+16:58 You were healed for 67 hitpoints. 
+16:58 You gained 44 mana.
+16:58 A white lion loses 785 hitpoints due to your attack. 
+16:58 You were healed for 65 hitpoints. 
+16:58 You gained 42 mana.
+16:58 A werelioness loses 812 hitpoints due to your attack. 
+16:58 You were healed for 66 hitpoints. 
+16:58 You gained 43 mana.
+16:58 A werelion loses 829 hitpoints due to your attack. 
+16:58 You were healed for 68 hitpoints. 
+16:58 You gained 44 mana.
+16:58 You lose 56 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 664 ultimate health potions...
+16:58 You lose 178 hitpoints due to an attack by a werelioness. 
+16:58 You healed yourself for 479 hitpoints. 
+16:58 Using one of 663 ultimate health potions...
+16:58 You lose 85 hitpoints due to an attack by a werelioness. 
+16:58 You lose 36 hitpoints due to an attack by a werelion. 
+16:58 You lose 478 hitpoints due to an attack by a werelion. 
+16:58 You lose 85 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 663 ultimate health potions...
+16:58 You healed yourself for 684 hitpoints. 
+16:58 You lose 54 hitpoints due to an attack by a werelioness. 
+16:58 A white lion loses 359 hitpoints due to your attack. 
+16:58 You were healed for 54 hitpoints. 
+16:58 You gained 59 mana.
+16:58 A white lion loses 803 hitpoints due to your attack. 
+16:58 You gained 131 mana.
+16:58 Using one of 662 ultimate health potions...
+16:58 You lose 337 hitpoints due to an attack by a werelion. 
+16:58 You lose 137 hitpoints due to an attack by a werelioness. 
+16:58 You lose 350 hitpoints due to an attack by a werelioness. 
+16:58 You healed yourself for 736 hitpoints. 
+16:58 You lose 200 hitpoints due to an attack by a werelion. 
+16:58 Using one of 661 ultimate health potions...
+16:58 You lose 45 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 661 ultimate health potions...
+16:58 You lose 337 hitpoints due to an attack by a werelion. 
+16:58 You lose 41 hitpoints due to an attack by a werelion. 
+16:58 You lose 105 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 627 great mana potions...
+16:58 Using one of 661 ultimate health potions...
+16:58 You healed yourself for 808 hitpoints. 
+16:58 You lose 339 hitpoints due to an attack by a werelioness. 
+16:58 You lose 158 hitpoints due to an attack by a werelioness. 
+16:58 You lose 312 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 627 great mana potions...
+16:58 You gained 180 mana.
+16:58 You lose 79 hitpoints due to an attack by a white lion. 
+16:58 A werelioness loses 991 hitpoints due to your attack. 
+16:58 You were healed for 100 hitpoints. 
+16:58 You gained 65 mana.
+16:58 A werelion loses 977 hitpoints due to your attack. 
+16:58 You were healed for 98 hitpoints. 
+16:58 You gained 64 mana.
+16:58 A white lion loses 400 hitpoints due to your attack. 
+16:58 You were healed for 95 hitpoints. 
+16:58 You gained 62 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a white lion: a great spirit potion, a platinum coin, an axe.
+16:58 Using one of 660 ultimate health potions...
+16:58 You healed yourself for 595 hitpoints. 
+16:58 You lose 377 hitpoints due to an attack by a werelioness. 
+16:58 You lose 6 hitpoints due to an attack by a werelioness. 
+16:58 You lose 118 hitpoints due to an attack by a werelioness. 
+16:58 You lose 146 hitpoints due to an attack by a werelioness. 
+16:58 You lose 81 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 659 ultimate health potions...
+16:58 You healed yourself for 720 hitpoints. 
+16:58 You lose 75 hitpoints due to an attack by a werelion. 
+16:58 Using one of 626 great mana potions...
+16:58 You gained 210 mana.
+16:58 You lose 328 hitpoints due to an attack by a werelioness. 
+16:58 You lose 132 hitpoints due to an attack by a werelioness. 
+16:58 You lose 374 hitpoints due to an attack by a werelioness. 
+16:58 You lose 132 hitpoints due to an attack by a werelioness. 
+16:58 You lose 100 hitpoints due to an attack by a werelioness. 
+16:58 A werelioness loses 661 hitpoints due to your critical attack. 
+16:58 You were healed for 47 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelioness loses 676 hitpoints due to your critical attack. 
+16:58 You were healed for 48 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelioness loses 670 hitpoints due to your critical attack. 
+16:58 You were healed for 48 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelioness loses 664 hitpoints due to your critical attack. 
+16:58 You were healed for 47 hitpoints. 
+16:58 You gained 31 mana.
+16:58 A werelion loses 669 hitpoints due to your critical attack. 
+16:58 You were healed for 48 hitpoints. 
+16:58 You gained 31 mana.
+16:58 You lose 56 hitpoints due to an attack by a werelion. 
+16:58 You lose 370 hitpoints due to an attack by a werelion. 
+16:58 Using one of 658 ultimate health potions...
+16:58 You healed yourself for 675 hitpoints. 
+16:58 You lose 41 hitpoints due to an attack by a werelioness. 
+16:58 You lose 366 hitpoints due to an attack by a werelioness. 
+16:58 You lose 191 hitpoints due to an attack by a werelioness. 
+16:58 Using one of 657 ultimate health potions...
+16:58 You lose 120 hitpoints due to an attack by a werelioness. 
+16:58 You lose 370 hitpoints due to an attack by a werelioness. 
+16:58 You healed yourself for 826 hitpoints. 
+16:58 You lose 87 hitpoints due to an attack by a werelioness. 
+16:58 A werelioness loses 259 hitpoints due to your attack. 
+16:58 You were healed for 65 hitpoints. 
+16:58 You gained 43 mana.
+16:58 You lose 69 hitpoints due to an attack by a werelion. 
+16:58 A werelioness loses 600 hitpoints due to your attack. 
+16:58 You were healed for 42 hitpoints. 
+16:58 You gained 28 mana.
+16:58 A werelioness loses 521 hitpoints due to your attack. 
+16:58 You were healed for 42 hitpoints. 
+16:58 You gained 28 mana.
+16:58 You gained 10 mana.
+16:58 You gained 3450 experience points.
+16:58 Loot of a werelioness: 76 gold coins, ham.
+16:58 A werelioness loses 607 hitpoints due to your attack. 
+16:58 You were healed for 43 hitpoints. 
+16:58 You gained 28 mana.
+16:58 A werelioness loses 607 hitpoints due to your attack. 
+16:58 You were healed for 43 hitpoints. 
+16:58 You gained 28 mana.
+16:58 A werelion loses 607 hitpoints due to your attack. 
+16:58 You were healed for 43 hitpoints. 
+16:58 You gained 28 mana.
+16:58 You lose 368 hitpoints due to an attack by a werelion. 
+16:58 Using one of 656 ultimate health potions...
+16:58 You healed yourself for 687 hitpoints. 
+16:59 You lose 47 hitpoints due to an attack by a werelioness. 
+16:59 You lose 362 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 625 great mana potions...
+16:59 You lose 122 hitpoints due to an attack by a werelioness. 
+16:59 You lose 105 hitpoints due to an attack by a werelioness. 
+16:59 You lose 352 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 655 ultimate health potions...
+16:59 You healed yourself for 760 hitpoints. 
+16:59 You lose 130 hitpoints due to an attack by a werelion. 
+16:59 Using one of 625 great mana potions...
+16:59 You lose 355 hitpoints due to an attack by a werelioness. 
+16:59 You gained 246 mana.
+16:59 You lose 92 hitpoints due to an attack by a werelion. 
+16:59 You lose 192 hitpoints due to an attack by a werelioness. 
+16:59 You lose 125 hitpoints due to an attack by a werelioness. 
+16:59 You lose 367 hitpoints due to an attack by a werelioness. 
+16:59 You lose 78 hitpoints due to an attack by a werelion. 
+16:59 You lose 362 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 313 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelion loses 321 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelioness loses 311 hitpoints due to your attack. 
+16:59 You were healed for 22 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelioness loses 314 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 A werelion loses 316 hitpoints due to your attack. 
+16:59 You were healed for 23 hitpoints. 
+16:59 You gained 15 mana.
+16:59 Using one of 654 ultimate health potions...
+16:59 You healed yourself for 719 hitpoints. 
+16:59 Using one of 653 ultimate health potions...
+16:59 Using one of 653 ultimate health potions...
+16:59 You lose 481 hitpoints due to an attack by a werelion. 
+16:59 You lose 82 hitpoints due to an attack by a werelioness. 
+16:59 You healed yourself for 819 hitpoints. 
+16:59 You lose 79 hitpoints due to an attack by a werelioness. 
+16:59 You lose 343 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 652 ultimate health potions...
+16:59 You lose 199 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 206 hitpoints due to your attack. 
+16:59 You were healed for 52 hitpoints. 
+16:59 You gained 34 mana.
+16:59 Using one of 652 ultimate health potions...
+16:59 You healed yourself for 762 hitpoints. 
+16:59 A werelioness loses 347 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 98 gold coins, 3 ham, 2 platinum coins, a lion's mane, a white pearl.
+16:59 A werelion loses 595 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 A werelioness loses 592 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 A werelioness loses 597 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 A werelion loses 379 hitpoints due to your attack. 
+16:59 You were healed for 42 hitpoints. 
+16:59 You gained 28 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: 2 great spirit potions, 2 platinum coins, a doublet.
+16:59 Using one of 651 ultimate health potions...
+16:59 You lose 301 hitpoints due to an attack by a werelion. 
+16:59 You lose 86 hitpoints due to an attack by a werelioness. 
+16:59 You lose 179 hitpoints due to an attack by a werelioness. 
+16:59 You healed yourself for 739 hitpoints. 
+16:59 Using one of 624 great mana potions...
+16:59 You gained 170 mana.
+16:59 A werelion loses 254 hitpoints due to your attack. 
+16:59 You were healed for 64 hitpoints. 
+16:59 You gained 42 mana.
+16:59 A werelion loses 653 hitpoints due to your attack. 
+16:59 You were healed for 137 hitpoints. 
+16:59 You gained 90 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: a platinum coin.
+16:59 A werelioness loses 612 hitpoints due to your attack. 
+16:59 You were healed for 136 hitpoints. 
+16:59 You gained 88 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 61 gold coins, 2 ham, a platinum coin, a lion's mane, a black pearl.
+16:59 You lose 105 hitpoints due to an attack by a werelioness. 
+16:59 You lose 386 hitpoints due to an attack by a werelioness. 
+16:59 A werelioness loses 289 hitpoints due to your attack. 
+16:59 You were healed for 73 hitpoints. 
+16:59 You gained 47 mana.
+16:59 A werelioness loses 317 hitpoints due to your attack. 
+16:59 You were healed for 80 hitpoints. 
+16:59 You gained 52 mana.
+16:59 You lose 28 hitpoints due to an attack by a werelioness. 
+16:59 You lose 331 hitpoints due to an attack by a werelioness. 
+16:59 Using one of 623 great mana potions...
+16:59 You gained 193 mana.
+16:59 A werelioness loses 214 hitpoints due to your attack. 
+16:59 You were healed for 130 hitpoints. 
+16:59 You gained 85 mana.
+16:59 You gained 3 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 78 gold coins, 3 ham, a platinum coin, a crystal sword.
+16:59 You looted none of the dropped items. (3 corpses)
+16:59 You looted the complete 161 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 298 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 200 gold but none of the dropped items.
+16:59 You looted 100 gold.
+16:59 You looted the complete 76 gold but none of the dropped items.
+16:59 You looted the complete 178 gold but none of the dropped items.
+16:59 You looted 9 corpses.
+16:59 You lose 466 hitpoints due to an attack by a werelion. 
+16:59 You lose 51 hitpoints due to an attack by a werelion. 
+16:59 Using one of 650 ultimate health potions...
+16:59 You healed yourself for 737 hitpoints. 
+16:59 You lose 319 hitpoints due to an attack by a werelion. 
+16:59 You lose 136 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 270 hitpoints due to your attack. 
+16:59 You were healed for 68 hitpoints. 
+16:59 You gained 44 mana.
+16:59 A werelioness loses 903 hitpoints due to your critical attack. 
+16:59 You were healed for 91 hitpoints. 
+16:59 You gained 59 mana.
+16:59 A werelion loses 911 hitpoints due to your critical attack. 
+16:59 You were healed for 92 hitpoints. 
+16:59 You gained 60 mana.
+16:59 A werelioness loses 896 hitpoints due to your critical attack. 
+16:59 You were healed for 90 hitpoints. 
+16:59 You gained 59 mana.
+16:59 Using one of 622 great mana potions...
+16:59 You gained 246 mana.
+16:59 You lose 103 hitpoints due to an attack by a werelioness. 
+16:59 You lose 338 hitpoints due to an attack by a werelioness. 
+16:59 You lose 122 hitpoints due to an attack by a werelioness. 
+16:59 You lose 369 hitpoints due to an attack by a werelioness. 
+16:59 You lose 109 hitpoints due to an attack by a werelion. 
+16:59 Using one of 649 ultimate health potions...
+16:59 You healed yourself for 795 hitpoints. 
+16:59 A werelioness loses 340 hitpoints due to your attack. 
+16:59 You were healed for 85 hitpoints. 
+16:59 You gained 56 mana.
+16:59 A werelioness loses 874 hitpoints due to your attack. 
+16:59 You were healed for 121 hitpoints. 
+16:59 You gained 79 mana.
+16:59 A werelion loses 869 hitpoints due to your attack. 
+16:59 You were healed for 120 hitpoints. 
+16:59 You gained 79 mana.
+16:59 Using one of 648 ultimate health potions...
+16:59 You healed yourself for 727 hitpoints. 
+16:59 You lose 220 hitpoints due to an attack by a werelion. 
+16:59 You lose 480 hitpoints due to an attack by a werelion. 
+16:59 You lose 83 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 310 hitpoints due to your attack. 
+16:59 You were healed for 78 hitpoints. 
+16:59 You gained 51 mana.
+16:59 A werelion loses 412 hitpoints due to your attack. 
+16:59 You were healed for 34 hitpoints. 
+16:59 You gained 22 mana.
+16:59 A werelioness loses 417 hitpoints due to your attack. 
+16:59 You were healed for 35 hitpoints. 
+16:59 You gained 23 mana.
+16:59 A werelion loses 412 hitpoints due to your attack. 
+16:59 You were healed for 34 hitpoints. 
+16:59 You gained 22 mana.
+16:59 A werelioness loses 407 hitpoints due to your attack. 
+16:59 You were healed for 34 hitpoints. 
+16:59 You gained 22 mana.
+16:59 Using one of 647 ultimate health potions...
+16:59 You healed yourself for 568 hitpoints. 
+16:59 You lose 118 hitpoints due to an attack by a werelioness. 
+16:59 You lose 366 hitpoints due to an attack by a werelioness. 
+16:59 You lose 9 hitpoints due to an attack by a werelioness. 
+16:59 You lose 147 hitpoints due to an attack by a werelion. 
+16:59 You lose 91 hitpoints due to an attack by a werelion. 
+16:59 You lose 373 hitpoints due to an attack by a werelion. 
+16:59 A werelion loses 448 hitpoints due to your attack. 
+16:59 You were healed for 112 hitpoints. 
+16:59 You gained 73 mana.
+16:59 A werelion loses 772 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 A werelioness loses 196 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 47 gold coins, 2 platinum coins, a lion's mane, a soul orb.
+16:59 A werelioness loses 762 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 A werelion loses 608 hitpoints due to your attack. 
+16:59 You were healed for 63 hitpoints. 
+16:59 You gained 41 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: 2 great spirit potions, 4 platinum coins, a lion's mane, a glorious axe.
+16:59 Using one of 621 great mana potions...
+16:59 You gained 236 mana.
+16:59 You lose 102 hitpoints due to an attack by a werelioness. 
+16:59 You lose 322 hitpoints due to an attack by a werelioness. 
+16:59 You lose 93 hitpoints due to an attack by a werelion. 
+16:59 You lose 338 hitpoints due to an attack by a werelion. 
+16:59 A werelion loses 974 hitpoints due to your attack. 
+16:59 You were healed for 244 hitpoints. 
+16:59 You gained 159 mana.
+16:59 Using one of 646 ultimate health potions...
+16:59 You healed yourself for 718 hitpoints. 
+16:59 You lose 28 hitpoints due to an attack by a werelioness. 
+16:59 You lose 350 hitpoints due to an attack by a werelion. 
+16:59 A werelioness loses 223 hitpoints due to your attack. 
+16:59 You were healed for 56 hitpoints. 
+16:59 You gained 37 mana.
+16:59 A werelion loses 194 hitpoints due to your attack. 
+16:59 You were healed for 52 hitpoints. 
+16:59 You gained 34 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3300 experience points.
+16:59 Loot of a werelion: a great spirit potion, a platinum coin, a lion's mane, a dark armor, a rainbow quartz.
+16:59 A werelioness loses 383 hitpoints due to your attack. 
+16:59 You were healed for 53 hitpoints. 
+16:59 You gained 35 mana.
+16:59 You looted the complete 100 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 400 gold, but you only looted some of the dropped items.
+16:59 You looted the complete 247 gold and all dropped items.
+16:59 You looted 3 corpses.
+16:59 You lose 10 hitpoints due to an attack by a werelioness. 
+16:59 A werelioness loses 19 hitpoints due to your attack. 
+16:59 You were healed for 62 hitpoints. 
+16:59 You gained 41 mana.
+16:59 You gained 10 mana.
+16:59 You gained 3450 experience points.
+16:59 Loot of a werelioness: 39 gold coins, ham, an ankh.
+16:59 You lose 144 hitpoints due to an attack by a werelion. 
+16:59 You lose 478 hitpoints due to an attack by a werelion. 
+16:59 You lose 91 hitpoints due to an attack by a werelion. 
+16:59 Using one of 645 ultimate health potions...
+16:59 You lose 365 hitpoints due to an attack by a werelion. 
+16:59 You healed yourself for 739 hitpoints. 
+16:59 Using one of 644 ultimate health potions...
+16:59 You healed yourself for 674 hitpoints. 
+16:59 You lose 69 hitpoints due to an attack by a werelioness. 
+16:59 You lose 317 hitpoints due to an attack by a werelioness. 
+16:59 You lose 454 hitpoints due to an attack by Yirkas Blue Scales. 
+16:59 You lose 63 hitpoints due to an attack by Yirkas Blue Scales. 
+16:59 Yirkas Blue Scales loses 523 hitpoints due to your attack. 
+16:59 You were healed for 262 hitpoints. 
+16:59 You gained 85 mana.
+16:59 Using one of 620 great mana potions...
+16:59 You gained 191 mana.
+16:59 Using one of 643 ultimate health potions...
+16:59 You healed yourself for 675 hitpoints. 
+16:59 Yirkas Blue Scales loses 873 hitpoints due to your critical attack. 
+16:59 You were healed for 373 hitpoints. 
+16:59 You gained 142 mana.
+16:59 Yirkas Blue Scales loses 851 hitpoints due to your attack. 
+16:59 You gained 139 mana.
+16:59 Using one of 619 great mana potions...
+16:59 You gained 136 mana.
+16:59 You lose 69 hitpoints due to an attack by Yirkas Blue Scales. 
+16:59 Yirkas Blue Scales loses 251 hitpoints due to your attack. 
+16:59 You were healed for 69 hitpoints. 
+16:59 You gained 41 mana.
+17:00 You lose 125 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 235 hitpoints due to your attack. 
+17:00 You were healed for 118 hitpoints. 
+17:00 You gained 39 mana.
+17:00 Yirkas Blue Scales loses 622 hitpoints due to your attack. 
+17:00 You were healed for 7 hitpoints. 
+17:00 You gained 102 mana.
+17:00 Using one of 618 great mana potions...
+17:00 You gained 223 mana.
+17:00 You lose 38 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 You lose 353 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 820 hitpoints due to your critical attack. 
+17:00 You were healed for 391 hitpoints. 
+17:00 You gained 78 mana.
+17:00 Yirkas Blue Scales loses 733 hitpoints due to your attack. 
+17:00 You gained 120 mana.
+17:00 You lose 66 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 You lose 452 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 292 hitpoints due to your attack. 
+17:00 You were healed for 146 hitpoints. 
+17:00 You gained 48 mana.
+17:00 Using one of 617 great mana potions...
+17:00 You gained 157 mana.
+17:00 You lose 17 hitpoints due to an attack by Yirkas Blue Scales. 
+17:00 Yirkas Blue Scales loses 299 hitpoints due to your attack. 
+17:00 You were healed for 150 hitpoints. 
+17:00 Yirkas Blue Scales loses 801 hitpoints due to your attack. 
+17:00 You were healed for 231 hitpoints. 
+17:00 You gained 134 mana.
+17:00 You gained 7350 experience points.
+17:00 No loot. (1 corpse)
+17:00 The following items dropped by Yirkas Blue Scales are available in your reward chest: a blue goanna scale, a skull helmet, a jade hammer, 3 ultimate health potions, 3 platinum coins.
+17:01 You are still exhausted from your last battle.
+17:01 You lose 398 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 124 hitpoints due to your attack. 
+17:01 You were healed for 62 hitpoints. 
+17:01 You gained 21 mana.
+17:01 Katex Blood Tongue loses 765 hitpoints due to your attack. 
+17:01 You were healed for 336 hitpoints. 
+17:01 You gained 125 mana.
+17:01 Using one of 616 great mana potions...
+17:01 You gained 183 mana.
+17:01 Using one of 615 great mana potions...
+17:01 You gained 196 mana.
+17:01 You lose 33 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 You lose 452 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 703 hitpoints due to your attack. 
+17:01 You were healed for 352 hitpoints. 
+17:01 You gained 115 mana.
+17:01 Using one of 614 great mana potions...
+17:01 You gained 150 mana.
+17:01 Using one of 613 great mana potions...
+17:01 You lose 427 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 220 hitpoints due to your attack. 
+17:01 You were healed for 110 hitpoints. 
+17:01 You gained 36 mana.
+17:01 Katex Blood Tongue loses 383 hitpoints due to your attack. 
+17:01 You were healed for 192 hitpoints. 
+17:01 You gained 63 mana.
+17:01 You lose 76 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 You lose 475 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 You lose 454 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 187 hitpoints due to your attack. 
+17:01 You were healed for 94 hitpoints. 
+17:01 You gained 31 mana.
+17:01 Katex Blood Tongue loses 691 hitpoints due to your attack. 
+17:01 You were healed for 346 hitpoints. 
+17:01 You gained 113 mana.
+17:01 You lose 106 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 233 hitpoints due to your attack. 
+17:01 You were healed for 117 hitpoints. 
+17:01 You gained 38 mana.
+17:01 Katex Blood Tongue loses 1122 hitpoints due to your critical attack. 
+17:01 You were healed for 561 hitpoints. 
+17:01 You gained 183 mana.
+17:01 Using one of 613 great mana potions...
+17:01 You gained 200 mana.
+17:01 Katex Blood Tongue loses 396 hitpoints due to your attack. 
+17:01 You were healed for 198 hitpoints. 
+17:01 You gained 65 mana.
+17:01 Katex Blood Tongue loses 296 hitpoints due to your attack. 
+17:01 You were healed for 37 hitpoints. 
+17:01 You gained 49 mana.
+17:01 You lose 55 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 755 hitpoints due to your attack. 
+17:01 You were healed for 55 hitpoints. 
+17:01 You gained 123 mana.
+17:01 Using one of 612 great mana potions...
+17:01 You gained 155 mana.
+17:01 You lose 91 hitpoints due to an attack by Katex Blood Tongue. 
+17:01 Katex Blood Tongue loses 425 hitpoints due to your critical attack. 
+17:01 You were healed for 91 hitpoints. 
+17:01 You gained 119 mana.
+17:01 You gained 7500 experience points.
+17:01 The following items dropped by Katex Blood Tongue are available in your reward chest: 5 ultimate health potions, 12 platinum coins.
+17:01 You looted none of the dropped items. (1 corpse)
+17:02 Using one of 611 great mana potions...
+17:02 You gained 180 mana.
+17:02 Utua Stone Sting loses 148 hitpoints due to your attack. 
+17:02 You gained 25 mana.
+17:02 You lose 128 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 668 hitpoints due to your attack. 
+17:02 You were healed for 128 hitpoints. 
+17:02 You gained 109 mana.
+17:02 Using one of 610 great mana potions...
+17:02 You gained 187 mana.
+17:02 Using one of 609 great mana potions...
+17:02 You gained 169 mana.
+17:02 You lose 14 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 97 hitpoints due to your attack. 
+17:02 You were healed for 14 hitpoints. 
+17:02 You gained 16 mana.
+17:02 Utua Stone Sting loses 829 hitpoints due to your attack. 
+17:02 You gained 135 mana.
+17:02 Using one of 608 great mana potions...
+17:02 You gained 124 mana.
+17:02 You lose 38 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 361 hitpoints due to your attack. 
+17:02 You were healed for 38 hitpoints. 
+17:02 You lose 176 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Channel Server Log appended to 'C:\Users\ascal\AppData\Local\Tibia\packages\Tibia\log\Server Log.txt'.
+17:02 Utua Stone Sting loses 173 hitpoints due to your attack. 
+17:02 You were healed for 87 hitpoints. 
+17:02 Utua Stone Sting loses 458 hitpoints due to your attack. 
+17:02 You were healed for 89 hitpoints. 
+17:02 You gained 75 mana.
+17:02 Using one of 607 great mana potions...
+17:02 You gained 152 mana.
+17:02 You lose 63 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 790 hitpoints due to your attack. 
+17:02 You were healed for 55 hitpoints. 
+17:02 You gained 129 mana.
+17:02 Using one of 606 great mana potions...
+17:02 You gained 193 mana.
+17:02 You lose 474 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 253 hitpoints due to your attack. 
+17:02 You were healed for 127 hitpoints. 
+17:02 You gained 42 mana.
+17:02 You lose 41 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 713 hitpoints due to your attack. 
+17:02 You were healed for 357 hitpoints. 
+17:02 You gained 116 mana.
+17:02 Using one of 605 great mana potions...
+17:02 You gained 179 mana.
+17:02 You lose 398 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 178 hitpoints due to your attack. 
+17:02 You were healed for 89 hitpoints. 
+17:02 You gained 29 mana.
+17:02 Utua Stone Sting loses 712 hitpoints due to your attack. 
+17:02 You were healed for 332 hitpoints. 
+17:02 You gained 116 mana.
+17:02 Using one of 604 great mana potions...
+17:02 You gained 212 mana.
+17:02 You lose 69 hitpoints due to an attack by Utua Stone Sting. 
+17:02 You lose 448 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 194 hitpoints due to your attack. 
+17:02 You were healed for 97 hitpoints. 
+17:02 Utua Stone Sting loses 362 hitpoints due to your attack. 
+17:02 You were healed for 181 hitpoints. 
+17:02 You gained 59 mana.
+17:02 You lose 220 hitpoints due to an attack by Utua Stone Sting. 
+17:02 Utua Stone Sting loses 293 hitpoints due to your attack. 
+17:02 You were healed for 147 hitpoints. 
+17:02 You gained 48 mana.
+17:02 Utua Stone Sting loses 171 hitpoints due to your attack. 
+17:02 You were healed for 252 hitpoints. 
+17:02 You gained 82 mana.
+17:02 You gained 7650 experience points.
+17:02 No loot. (1 corpse)
+17:02 The following items dropped by Utua Stone Sting are available in your reward chest: 5 ultimate health potions, 4 scorpion tails, 6 platinum coins.
+17:02 Srezz Yellow Eyes loses 156 hitpoints due to your attack. 
+17:02 You were healed for 36 hitpoints. 
+17:02 You gained 26 mana.
+17:02 You lose 238 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 Srezz Yellow Eyes loses 572 hitpoints due to your attack. 
+17:02 You were healed for 238 hitpoints. 
+17:02 You gained 93 mana.
+17:02 Using one of 603 great mana potions...
+17:02 You gained 239 mana.
+17:02 Using one of 602 great mana potions...
+17:02 You gained 247 mana.
+17:02 You lose 15 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 You lose 381 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 Srezz Yellow Eyes loses 196 hitpoints due to your attack. 
+17:02 You were healed for 98 hitpoints. 
+17:02 You gained 32 mana.
+17:02 Srezz Yellow Eyes loses 906 hitpoints due to your attack. 
+17:02 You were healed for 298 hitpoints. 
+17:02 You gained 148 mana.
+17:02 You lose 76 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 Srezz Yellow Eyes loses 179 hitpoints due to your attack. 
+17:02 You were healed for 76 hitpoints. 
+17:02 You gained 30 mana.
+17:02 Srezz Yellow Eyes loses 414 hitpoints due to your attack. 
+17:02 You gained 68 mana.
+17:02 You lose 28 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 You lose 490 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 Srezz Yellow Eyes loses 692 hitpoints due to your attack. 
+17:02 You were healed for 346 hitpoints. 
+17:02 You gained 113 mana.
+17:02 Using one of 601 great mana potions...
+17:02 You gained 163 mana.
+17:02 You lose 47 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 You lose 407 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:02 Srezz Yellow Eyes loses 320 hitpoints due to your attack. 
+17:02 You were healed for 160 hitpoints. 
+17:02 You gained 52 mana.
+17:02 Srezz Yellow Eyes loses 868 hitpoints due to your attack. 
+17:02 You were healed for 434 hitpoints. 
+17:02 You gained 142 mana.
+17:02 Srezz Yellow Eyes loses 834 hitpoints due to your critical attack. 
+17:02 You were healed for 24 hitpoints. 
+17:02 You gained 136 mana.
+17:02 Srezz Yellow Eyes loses 327 hitpoints due to your attack. 
+17:02 You gained 54 mana.
+17:03 You lose 20 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:03 You lose 497 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:03 You lose 277 hitpoints due to an attack by Srezz Yellow Eyes. 
+17:03 Srezz Yellow Eyes loses 736 hitpoints due to your critical attack. 
+17:03 You were healed for 404 hitpoints. 
+17:03 You gained 117 mana.
+17:03 You gained 7200 experience points.
+17:03 The following items dropped by Srezz Yellow Eyes are available in your reward chest: a snake skin, a gold ingot, 4 ultimate health potions, 16 platinum coins.
+17:03 You looted none of the dropped items. (1 corpse)
+
+Channel Server Log saved Thu Nov 05 17:37:28 2026
+17:36 You have entered the subarea Thais City. Find 3 points of interest to fully discover it.
+17:36 During your absence you trained for 10 hours and 38 minutes.
+17:36 Your Sword Fighting skill changed from level 105 and 68.16% to 70.40%.
+17:36 Your Shielding skill changed from level 98 and 61.37% to 63.55%.
+17:36 Your last visit in Tibia: 05. Nov 2026 10:50:04 CET.
+17:36 Today's boosted creature: Sineater Inferniarch
+17:36 Today's boosted boss: Wrathful Archivist
+17:36 Ratha: The orc king stole my bottled djinn. I wonder what he used his wish for.
+17:36 You have entered the subarea Thais City. Find 3 points of interest to fully discover it.
+17:36 Goblins attack from Femor Hills!
+17:36 You have left the subarea Thais City. Return to discover its remaining secrets!
+17:36 You have entered the subarea Thais Surroundings. Find 3 points of interest to fully discover it.
+17:36 You have left the subarea Thais Surroundings. Return to discover its remaining secrets!
+17:36 You have entered the subarea Thais City. Find 3 points of interest to fully discover it.
+17:36 You have left the subarea Thais City. Return to discover its remaining secrets!
+17:37 A poison spider loses 26 hitpoints due to your attack. 
+17:37 You were healed for 3 hitpoints. 
+17:37 You gained 10 mana.
+17:37 You gained 34 experience points (Animus mastery).
+17:37 Loot of a poison spider: 2 gold coins.
+17:37 A poison spider loses 26 hitpoints due to your attack. 
+17:37 You were healed for 7 hitpoints. 
+17:37 You gained 10 mana.
+17:37 You gained 34 experience points (Animus mastery).
+17:37 Loot of a poison spider: 3 gold coins.
+17:37 Using one of 951 great mana potions...
+17:37 You gained 195 mana.
+17:37 A rotworm loses 65 hitpoints due to your attack. 
+17:37 You were healed for 3 hitpoints. 
+17:37 You gained 10 mana.
+17:37 You gained 61 experience points (Animus mastery).
+17:37 Loot of a rotworm: 3 gold coins.
+17:37 A rotworm loses 65 hitpoints due to your attack. 
+17:37 You were healed for 3 hitpoints. 
+17:37 You gained 10 mana.
+17:37 You gained 61 experience points (Animus mastery).
+17:37 Loot of a rotworm: 3 gold coins, ham.
+17:37 Using one of 950 great mana potions...
+17:37 You gained 182 mana.
+17:37 A rotworm loses 65 hitpoints due to your attack. 
+17:37 You were healed for 4 hitpoints. 
+17:37 You gained 10 mana.
+17:37 You gained 61 experience points (Animus mastery).
+17:37 Loot of a rotworm: a gold coin, meat.
+17:37 A rotworm loses 65 hitpoints due to your attack. 
+17:37 You were healed for 5 hitpoints. 
+17:37 You gained 10 mana.
+17:37 You gained 61 experience points (Animus mastery).
+17:37 Loot of a rotworm: ham.
+17:37 Using one of 949 great mana potions...
+17:37 You gained 241 mana.
+17:37 A rotworm loses 65 hitpoints due to your attack. 
+17:37 You were healed for 5 hitpoints. 
+17:37 You gained 10 mana.
+17:37 You gained 61 experience points (Animus mastery).
+17:37 Loot of a rotworm: 7 gold coins.
+17:37 Using one of 948 great mana potions...
+17:37 You gained 212 mana.
+17:37 You have entered the subarea Thais City. Find 3 points of interest to fully discover it.
+17:37 You see yourself. You are an elite knight. You are a Steward of Tibia. You are Sentinela of the Furia, which has 104 members, 4 of them online.

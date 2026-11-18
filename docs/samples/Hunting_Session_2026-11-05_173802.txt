@@ -1,0 +1,18 @@
+Session data: From 2026-11-05, 17:36:27 to 2026-11-05, 17:38:02
+Session: 00:01h
+Raw XP Gain: 251
+XP Gain: 373
+Raw XP/h: 9,489
+XP/h: 14,102
+Loot: 0
+Supplies: 632
+Balance: -632
+Damage: 377
+Damage/h: 21,926
+Healing: 0
+Healing/h: 0
+Killed Monsters:
+  2x poison spider
+  5x rotworm
+Looted Items:
+  None

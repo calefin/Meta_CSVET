@@ -1,0 +1,64 @@
+{
+    "Balance": "-57",
+    "Damage": "24,774",
+    "Damage/h": "325,450",
+    "Healing": "1,665",
+    "Healing/h": "21,872",
+    "Killed Monsters": [
+        {
+            "Count": 7,
+            "Name": "broken shaper"
+        },
+        {
+            "Count": 2,
+            "Name": "poison spider"
+        },
+        {
+            "Count": 5,
+            "Name": "rotworm"
+        },
+        {
+            "Count": 3,
+            "Name": "twisted shaper"
+        }
+    ],
+    "Loot": "3,735",
+    "Looted Items": [
+        {
+            "Count": 775,
+            "Name": "a gold coin"
+        },
+        {
+            "Count": 11,
+            "Name": "a platinum coin"
+        },
+        {
+            "Count": 4,
+            "Name": "an orichalcum pearl"
+        },
+        {
+            "Count": 2,
+            "Name": "an onyx chip"
+        },
+        {
+            "Count": 3,
+            "Name": "a cave turnip"
+        },
+        {
+            "Count": 2,
+            "Name": "an ancient belt buckle"
+        },
+        {
+            "Count": 1,
+            "Name": "a cracked alabaster vase"
+        }
+    ],
+    "Raw XP Gain": "19,001",
+    "Raw XP/h": "222,820",
+    "Session end": "2026-11-05, 17:41:34",
+    "Session length": "00:05h",
+    "Session start": "2026-11-05, 17:36:27",
+    "Supplies": "3,792",
+    "XP Gain": "28,498",
+    "XP/h": "334,189"
+}
