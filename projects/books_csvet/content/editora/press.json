@@ -1,0 +1,679 @@
+{
+  "_comment": "Configuração da editora aplicada por scripts/configure-press.php. Edite aqui e rode o script de novo. Campos vazios não são alterados no OMP. Textos longos em HTML; chaves de idioma ausentes na editora são ignoradas.",
+  "path": "editora",
+  "primaryLocale": "pt_BR",
+  "redirectSiteToPress": true,
+  "locales": {
+    "supportedLocales": [
+      "pt_BR",
+      "en",
+      "es"
+    ],
+    "supportedFormLocales": [
+      "pt_BR",
+      "en"
+    ],
+    "supportedSubmissionLocales": [
+      "pt_BR",
+      "en",
+      "es"
+    ],
+    "supportedSubmissionMetadataLocales": [
+      "pt_BR",
+      "en"
+    ]
+  },
+  "site": {
+    "title": {
+      "pt_BR": "CSVET Books",
+      "en": "CSVET Books",
+      "es": "CSVET Books"
+    },
+    "contactName": {
+      "pt_BR": "Editora CSVET",
+      "en": "Editora CSVET",
+      "es": "Editora CSVET"
+    },
+    "contactEmail": {
+      "pt_BR": "contato@csvet.com.br",
+      "en": "contato@csvet.com.br",
+      "es": "contato@csvet.com.br"
+    },
+    "themePluginPath": "csvet"
+  },
+  "siteImages": {
+    "pageHeaderTitleImage": {
+      "file": "images/logo-white.png",
+      "altText": {
+        "pt_BR": "Editora CSVET",
+        "en": "Editora CSVET",
+        "es": "Editora CSVET"
+      }
+    }
+  },
+  "settings": {
+    "name": {
+      "pt_BR": "Editora CSVET",
+      "en": "Editora CSVET",
+      "es": "Editora CSVET"
+    },
+    "acronym": {
+      "pt_BR": "CSVET",
+      "en": "CSVET",
+      "es": "CSVET"
+    },
+    "country": "BR",
+    "publisher": "CSVET Editora, Cursos e Treinamentos",
+    "location": "Americana, SP, Brasil",
+    "contactName": "Atilio Sersun Calefi",
+    "contactEmail": "calefi@csvet.com.br",
+    "contactAffiliation": {
+      "pt_BR": "Editora CSVET; Universidade Cruzeiro do Sul, São Paulo, Brasil",
+      "en": "Editora CSVET; Universidade Cruzeiro do Sul, São Paulo, Brazil"
+    },
+    "mailingAddress": "CSVET Editora, Cursos e Treinamentos (CNPJ 32.645.724/0001-89)\nAmericana, SP, Brasil\ncontato@csvet.com.br",
+    "supportName": "Editora CSVET",
+    "supportEmail": "contato@csvet.com.br",
+    "themePluginPath": "csvet",
+    "searchDescription": {
+      "pt_BR": "Livros, coletâneas e monografias de acesso aberto em medicina veterinária e zootecnia, com avaliação por pares e ISBN. Editora CSVET.",
+      "en": "Open-access books, edited volumes and monographs in veterinary medicine and animal science, peer reviewed and with ISBN. Editora CSVET."
+    },
+    "description": {
+      "pt_BR": "<p>A <strong>Editora CSVET</strong> publica livros técnico-científicos, coletâneas, manuais, anais e monografias (TCC, especialização, residência, dissertações e teses) em medicina veterinária, zootecnia e áreas afins. Todas as obras passam por avaliação editorial e por pares, recebem ISBN e são publicadas em acesso aberto.</p>",
+      "en": "<p><strong>Editora CSVET</strong> publishes scientific and technical books, edited volumes, manuals, proceedings and monographs (undergraduate, specialisation and residency monographs, master's dissertations and doctoral theses) in veterinary medicine, animal science and related fields. Every title undergoes editorial and peer review, receives an ISBN and is published open access.</p>"
+    },
+    "about": {
+      "pt_BR": "<h3>Quem somos</h3><p>A CSVET Editora, Cursos e Treinamentos (CNPJ 32.645.724/0001-89, Americana, SP) é uma editora científica dedicada à medicina veterinária e à zootecnia. Além deste portal de livros, publica periódicos científicos em <a href=\"https://journals.csvet.com.br\">journals.csvet.com.br</a>.</p><h3>O que publicamos</h3><ul><li><strong>Livros técnico-científicos</strong> autorais, de referência ou de atualização profissional.</li><li><strong>Coletâneas</strong> (obras organizadas), com capítulos de diferentes autores sob a coordenação de organizadores.</li><li><strong>Manuais e guias práticos</strong> para a rotina clínica, laboratorial, de produção ou de ensino.</li><li><strong>Monografias</strong> de graduação (TCC), especialização e residência, adaptadas ao formato de livro.</li><li><strong>Dissertações e teses</strong> aprovadas em programas de pós-graduação.</li><li><strong>Anais e resumos</strong> de eventos científicos.</li></ul><h3>Áreas</h3><p>Todas as áreas da medicina veterinária e da zootecnia e todas as espécies animais: clínica e cirurgia, diagnóstico, produção e nutrição animal, animais silvestres e aquáticos, Saúde Única, saúde pública e segurança dos alimentos, ciências básicas e educação veterinária.</p><h3>Avaliação</h3><p>As propostas passam primeiro pela <strong>avaliação interna</strong> do Conselho Editorial (adequação ao escopo, originalidade, qualidade e público) e, se aprovadas, pela <strong>avaliação por pares duplo-anônima</strong>: ao menos dois pareceristas externos para obras inéditas e ao menos um para monografias, dissertações e teses já aprovadas em banca. A decisão final é do Conselho Editorial.</p><h3>Acesso aberto e licença</h3><p>As obras são publicadas em acesso aberto sob a licença <a href=\"https://creativecommons.org/licenses/by/4.0/deed.pt-br\">Creative Commons Atribuição 4.0 (CC BY 4.0)</a>, salvo outra licença aberta acordada em contrato. Os autores mantêm os direitos autorais.</p><h3>Identificadores e preservação</h3><p>Cada obra recebe ISBN e ficha catalográfica emitidos pela Câmara Brasileira do Livro (CBL), agência oficial do ISBN no Brasil, e o depósito legal é feito na Biblioteca Nacional (Lei nº 10.994/2004). Os metadados seguem o padrão ONIX e são expostos aos buscadores (Google Livros e Google Acadêmico).</p><h3>Ética</h3><p>A editora segue as orientações do COPE (Committee on Publication Ethics). Plágio, autoplágio não declarado, fabricação ou falsificação de dados e manipulação de imagens levam à recusa da obra ou, se publicada, à sua correção ou retratação. Veja o resumo prático em <a href=\"https://books.csvet.com.br/editora/etica\">Ética e integridade (COPE)</a>.</p>",
+      "en": "<h3>Who we are</h3><p>CSVET Editora, Cursos e Treinamentos (Americana, SP, Brazil) is a scientific publisher devoted to veterinary medicine and animal science. Besides this book portal, it publishes scientific journals at <a href=\"https://journals.csvet.com.br\">journals.csvet.com.br</a>.</p><h3>What we publish</h3><ul><li><strong>Scientific and technical books</strong>: authored, reference or continuing-education titles.</li><li><strong>Edited volumes</strong> with chapters by different authors, coordinated by volume editors.</li><li><strong>Manuals and practical guides</strong> for clinical, laboratory, production or teaching practice.</li><li><strong>Monographs</strong> from undergraduate, specialisation and residency programmes, adapted to book format.</li><li><strong>Master's dissertations and doctoral theses</strong> approved by graduate programmes.</li><li><strong>Proceedings and abstracts</strong> of scientific meetings.</li></ul><h3>Subjects</h3><p>All areas of veterinary medicine and animal science and all animal species: clinical medicine and surgery, diagnostics, animal production and nutrition, wildlife and aquatic animals, One Health, public health and food safety, basic sciences and veterinary education.</p><h3>Review</h3><p>Proposals first undergo <strong>internal review</strong> by the Editorial Board (scope, originality, quality and readership) and, if approved, <strong>double-anonymous peer review</strong>: at least two external reviewers for new works and at least one for monographs, dissertations and theses already approved by an examining committee. The Editorial Board makes the final decision.</p><h3>Open access and licence</h3><p>Books are published open access under the <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 (CC BY 4.0)</a> licence, unless another open licence is agreed in the publishing contract. Authors retain copyright.</p><h3>Identifiers and preservation</h3><p>Every title receives an ISBN and a cataloguing-in-publication record issued by the Câmara Brasileira do Livro (CBL), the official ISBN agency in Brazil, and is deposited with the National Library of Brazil (legal deposit). Metadata follow the ONIX standard and are exposed to search engines (Google Books and Google Scholar).</p><h3>Ethics</h3><p>The publisher follows COPE (Committee on Publication Ethics) guidance. Plagiarism, undisclosed text recycling, data fabrication or falsification and image manipulation lead to rejection or, after publication, to correction or retraction. Practical summary: <a href=\"https://books.csvet.com.br/editora/etica\">Ethics and integrity (COPE)</a>.</p>"
+    },
+    "editorialHistory": {
+      "pt_BR": "<p>Editor-chefe: <a href=\"http://lattes.cnpq.br/4438211760493798\">Atilio Sersun Calefi</a> (Universidade Cruzeiro do Sul, São Paulo, Brasil; diretor da Editora CSVET; ORCID <a href=\"https://orcid.org/0000-0002-1859-2046\">0000-0002-1859-2046</a>), de outubro de 2026 até o presente.</p>",
+      "en": "<p>Editor-in-Chief: <a href=\"http://lattes.cnpq.br/4438211760493798\">Atilio Sersun Calefi</a> (Universidade Cruzeiro do Sul, São Paulo, Brazil; director of Editora CSVET; ORCID <a href=\"https://orcid.org/0000-0002-1859-2046\">0000-0002-1859-2046</a>), October 2026 to present.</p>"
+    },
+    "pageFooter": {
+      "pt_BR": "<p>Livros publicados pela <a href=\"https://csvet.com.br\">CSVET Editora, Cursos e Treinamentos</a> (CNPJ 32.645.724/0001-89), em acesso aberto sob a licença <a href=\"https://creativecommons.org/licenses/by/4.0/deed.pt-br\">CC BY 4.0</a>, salvo indicação em contrário. Periódicos: <a href=\"https://journals.csvet.com.br\">journals.csvet.com.br</a>. Contato: contato@csvet.com.br</p><p>Reprodução, venda ou distribuição sem autorização ou sem citação da autoria e da fonte, inclusive para treinamento de inteligência artificial em obras de direitos reservados, violam a Lei nº 9.610/1998. <a href=\"https://books.csvet.com.br/editora/etica\">Uso das obras e ética</a>.</p>",
+      "en": "<p>Books published by <a href=\"https://csvet.com.br\">CSVET Editora, Cursos e Treinamentos</a> (Brazil), open access under the <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a> licence unless otherwise stated. Journals: <a href=\"https://journals.csvet.com.br\">journals.csvet.com.br</a>. Contact: contato@csvet.com.br</p><p>Reproduction, sale or distribution without permission or without crediting authorship and source, including AI training on all-rights-reserved works, infringes Brazilian copyright law. <a href=\"https://books.csvet.com.br/editora/etica\">Use of our works and ethics</a>.</p>"
+    },
+    "additionalHomeContent": {
+      "pt_BR": "<h2>Publique seu livro ou sua monografia</h2><p>A <strong>Editora CSVET</strong> recebe propostas de livros, coletâneas, manuais, anais e monografias (TCC, especialização, residência, dissertações e teses) em medicina veterinária, zootecnia e áreas afins.</p><ul class=\"csvet-highlights\"><li><strong>Avaliação por pares duplo-anônima</strong> após a análise do Conselho Editorial, seguindo as diretrizes do COPE</li><li><strong>Acesso aberto</strong> sob CC BY 4.0; os autores mantêm os direitos autorais</li><li><strong>ISBN e ficha catalográfica (CBL)</strong> e depósito legal na Biblioteca Nacional para cada obra</li><li><strong>Sem taxa de submissão nem de avaliação</strong></li></ul><p><a class=\"cmp_button\" href=\"https://books.csvet.com.br/editora/about/submissions\">Como submeter uma proposta</a> &nbsp; <a href=\"https://books.csvet.com.br/editora/about\">Sobre a editora</a></p>",
+      "en": "<h2>Publish your book or monograph</h2><p><strong>Editora CSVET</strong> welcomes proposals for books, edited volumes, manuals, proceedings and monographs (undergraduate, specialisation and residency monographs, dissertations and theses) in veterinary medicine, animal science and related fields.</p><ul class=\"csvet-highlights\"><li><strong>Double-anonymous peer review</strong> after Editorial Board assessment, following COPE guidance</li><li><strong>Open access</strong> under CC BY 4.0; authors retain copyright</li><li><strong>ISBN and cataloguing record (CBL)</strong> and legal deposit with the National Library of Brazil for every title</li><li><strong>No submission or review fees</strong></li></ul><p><a class=\"cmp_button\" href=\"https://books.csvet.com.br/editora/about/submissions\">How to submit a proposal</a> &nbsp; <a href=\"https://books.csvet.com.br/editora/about\">About the publisher</a></p>"
+    },
+    "openAccessPolicy": {
+      "pt_BR": "<p>A Editora CSVET oferece acesso aberto imediato às obras publicadas neste portal, seguindo o princípio de que disponibilizar gratuitamente o conhecimento científico favorece sua difusão. Salvo outra licença aberta indicada na obra, os livros são publicados sob a licença Creative Commons Atribuição 4.0 Internacional (CC BY 4.0), que permite compartilhar e adaptar o conteúdo para qualquer finalidade, desde que a obra original seja devidamente citada. A versão impressa, quando houver, pode ser comercializada.</p>",
+      "en": "<p>Editora CSVET provides immediate open access to the books published on this portal, on the principle that making scientific knowledge freely available supports its dissemination. Unless another open licence is stated in the book, titles are published under the Creative Commons Attribution 4.0 International licence (CC BY 4.0), which allows sharing and adapting the content for any purpose with proper citation of the original work. Printed editions, when available, may be sold.</p>"
+    },
+    "privacyStatement": {
+      "pt_BR": "<p>Os nomes e endereços de e-mail informados neste portal são usados exclusivamente para os serviços prestados pela editora (avaliação, edição e publicação das obras) e não são cedidos a terceiros nem usados para outras finalidades. O tratamento dos dados pessoais segue a Lei Geral de Proteção de Dados (Lei nº 13.709/2018); para solicitar acesso, correção ou exclusão dos seus dados, escreva para contato@csvet.com.br.</p>",
+      "en": "<p>The names and email addresses entered on this portal are used exclusively for the publisher's services (review, editing and publication of books) and are not shared with third parties or used for any other purpose. Personal data are processed in accordance with the Brazilian General Data Protection Law (Law No. 13,709/2018); to request access to, correction or deletion of your data, write to contato@csvet.com.br.</p>"
+    },
+    "competingInterests": {
+      "pt_BR": "<p>Os pareceristas devem declarar qualquer conflito de interesses (financeiro, pessoal, acadêmico ou institucional) que possa influenciar a avaliação desta obra, incluindo colaboração recente com os autores, vínculo com a mesma instituição, participação na banca que aprovou o trabalho ou interesse comercial em produtos ou serviços citados. Havendo conflito, recuse o convite ou descreva-o aqui para que o editor decida.</p>",
+      "en": "<p>Reviewers must declare any competing interest (financial, personal, academic or institutional) that could influence their assessment of this work, including recent collaboration with the authors, working at the same institution, having served on the committee that approved the work, or a commercial interest in products or services mentioned. If such a conflict exists, decline the invitation or describe it here so that the editor can decide.</p>"
+    },
+    "internalReviewGuidelines": {
+      "pt_BR": "<p>Na avaliação interna, o membro do Conselho Editorial verifica, em até <strong>15 dias</strong>:</p><ul><li>adequação ao escopo da editora e à coleção indicada;</li><li>originalidade e contribuição em relação às obras já disponíveis sobre o tema;</li><li>qualidade geral do texto, estrutura (sumário coerente) e público-alvo bem definido;</li><li>documentação completa: declaração de originalidade e de direitos, ata de aprovação (monografias, dissertações e teses), autorizações de uso de imagens de terceiros e aprovação ética, quando aplicável;</li><li>relatório de similaridade sem sobreposição indevida com outras obras (inclusive com o próprio trabalho acadêmico depositado em repositório, que deve ser declarado).</li></ul><p>Recomendação: enviar para avaliação externa, solicitar ajustes antes da avaliação externa ou recusar (com justificativa aos autores).</p>",
+      "en": "<p>In the internal review, the Editorial Board member checks, within <strong>15 days</strong>:</p><ul><li>fit with the publisher's scope and the proposed series;</li><li>originality and contribution compared with existing books on the subject;</li><li>overall quality of the text, structure (coherent table of contents) and well-defined readership;</li><li>complete documentation: originality and rights statement, approval record (monographs, dissertations and theses), permissions for third-party images and ethics approval where applicable;</li><li>similarity report without undue overlap with other works (including the authors' own academic work in a repository, which must be disclosed).</li></ul><p>Recommendation: send to external review, request changes before external review, or decline (with reasons for the authors).</p>"
+    },
+    "reviewGuidelines": {
+      "pt_BR": "<p>Agradecemos sua colaboração como parecerista da Editora CSVET. A avaliação é duplo-anônima e deve ser concluída em até <strong>30 dias</strong> após o aceite do convite.</p><ul><li><strong>Confidencialidade.</strong> A obra é confidencial. Não a compartilhe nem a envie, no todo ou em parte, a ferramentas de inteligência artificial generativa ou a outros serviços on-line.</li><li><strong>Conteúdo.</strong> Avalie a correção técnica e científica, a atualidade da bibliografia, a coerência entre os capítulos e a contribuição da obra para a área.</li><li><strong>Público e linguagem.</strong> Avalie se a linguagem, o nível de aprofundamento e a organização são adequados ao público declarado (estudantes, profissionais, pesquisadores).</li><li><strong>Monografias, dissertações e teses.</strong> Verifique se o texto foi adaptado ao formato de livro (sem estrutura de trabalho acadêmico desnecessária, com introdução e conclusão voltadas ao leitor) e se os resultados se sustentam.</li><li><strong>Ética.</strong> Confirme se a aprovação da comissão de ética, o consentimento dos tutores e as autorizações necessárias foram informados, e aponte qualquer preocupação com o bem-estar animal, o uso de imagens ou a autoria.</li><li><strong>Parecer.</strong> Apresente um resumo, comentários gerais e por capítulo e uma recomendação (publicar, publicar com revisões menores, revisões maiores com nova avaliação, ou não publicar), com comentários confidenciais ao editor quando necessário. Seja específico e construtivo.</li><li><strong>Conflito de interesses.</strong> Recuse o convite se houver conflito de interesses com os autores ou com o tema.</li></ul><p>Os pareceristas podem receber declaração de avaliação e o reconhecimento da avaliação no ORCID.</p>",
+      "en": "<p>Thank you for reviewing for Editora CSVET. Review is double-anonymous and should be completed within <strong>30 days</strong> of accepting the invitation.</p><ul><li><strong>Confidentiality.</strong> The work is confidential. Do not share it or upload it, in whole or in part, to generative AI tools or other online services.</li><li><strong>Content.</strong> Assess technical and scientific accuracy, how current the references are, coherence across chapters and the book's contribution to the field.</li><li><strong>Readership and language.</strong> Assess whether language, depth and organisation suit the stated readership (students, practitioners, researchers).</li><li><strong>Monographs, dissertations and theses.</strong> Check that the text has been adapted to book format (no unnecessary academic-thesis structure, with an introduction and conclusion written for the reader) and that the results are sound.</li><li><strong>Ethics.</strong> Confirm that ethics approval, owner consent and required permits are reported, and flag any concern about animal welfare, image use or authorship.</li><li><strong>Report.</strong> Provide a summary, general and chapter-by-chapter comments and a recommendation (publish, publish with minor revisions, major revisions with re-review, or do not publish), with confidential comments to the editor when needed. Be specific and constructive.</li><li><strong>Conflicts of interest.</strong> Decline the invitation if you have a competing interest with the authors or the topic.</li></ul><p>Reviewers can receive a review certificate and recognition of the review on their ORCID record.</p>"
+    },
+    "submissionChecklist": {
+      "pt_BR": "<p>Todas as propostas devem atender aos requisitos abaixo. Propostas que não os atendam são devolvidas aos autores sem avaliação.</p><ul><li>A obra é original e não foi publicada como livro nem está em avaliação em outra editora. Trabalhos acadêmicos depositados em repositório institucional são aceitos e devem ser declarados.</li><li><strong>Pelo menos um autor (ou organizador) tem graduação concluída em medicina veterinária, zootecnia ou área afim</strong>, com titulação, instituição e ORCID informados. Monografias de graduação são aceitas após a conclusão do curso, com o orientador identificado.</li><li>A submissão inclui: a <strong>proposta editorial</strong> (título, coleção, público-alvo, justificativa, sumário e breve currículo dos autores), o <strong>texto completo</strong> em .docx, sem identificação dos autores no texto e nas propriedades do arquivo, e as figuras em alta resolução.</li><li>Monografias, dissertações e teses: o texto foi adaptado ao formato de livro, e a ata ou declaração de aprovação e a anuência do orientador foram enviadas.</li><li>Coletâneas: todos os autores de capítulos estão identificados e concordaram com a submissão; os organizadores se responsabilizam pela revisão prévia dos capítulos.</li><li>Estudos com animais têm aprovação de comissão de ética no uso de animais (CEUA ou equivalente) e, quando aplicável, consentimento do tutor e licenças (SISBIO, SisGen).</li><li>Imagens, tabelas e trechos de terceiros têm autorização de uso por escrito ou são de domínio público/licença aberta, com a fonte indicada.</li><li>Ferramentas de IA não constam como autoras, não há imagens geradas ou alteradas por IA (salvo quando objeto do texto), todas as referências foram conferidas pelos autores e qualquer uso de IA generativa está declarado.</li><li>Cada contribuidor foi cadastrado com o papel correto: <strong>Autor</strong>, <strong>Organizador(a)</strong>, <strong>Autor de capítulo</strong>, <strong>Orientador(a)</strong>, <strong>Coorientador(a)</strong> ou <strong>Membro da banca examinadora</strong>. Orientação e banca não são autoria.</li><li>Todos os autores aprovaram a submissão e assinarão o contrato de edição e a declaração de originalidade e de direitos.</li></ul>",
+      "en": "<p>All proposals must meet the following requirements. Proposals that do not are returned to the authors without review.</p><ul><li>The work is original and has not been published as a book or submitted to another publisher. Academic works deposited in an institutional repository are accepted and must be disclosed.</li><li><strong>At least one author (or volume editor) holds a degree in veterinary medicine, animal science or a related field</strong>, with degree, institution and ORCID provided. Undergraduate monographs are accepted after graduation, with the supervisor identified.</li><li>The submission includes the <strong>book proposal</strong> (title, series, readership, rationale, table of contents and short author biographies), the <strong>full text</strong> in .docx without author identification in the text or file properties, and high-resolution figures.</li><li>Monographs, dissertations and theses: the text has been adapted to book format, and the approval record and supervisor's consent have been provided.</li><li>Edited volumes: all chapter authors are identified and agree to the submission; volume editors are responsible for the prior review of chapters.</li><li>Studies involving animals have animal ethics committee approval (CEUA or equivalent) and, where applicable, owner consent and permits (SISBIO, SisGen).</li><li>Third-party images, tables and excerpts have written permission or are in the public domain/under an open licence, with the source stated.</li><li>AI tools are not listed as authors, no images are generated or altered by AI (unless they are the subject of the text), all references have been checked by the authors and any use of generative AI is disclosed.</li><li>Each contributor is registered with the correct role: <strong>Author</strong>, <strong>Volume editor</strong>, <strong>Chapter Author</strong>, <strong>Supervisor</strong>, <strong>Co-supervisor</strong> or <strong>Examining committee member</strong>. Supervision and examining committee are not authorship.</li><li>All authors have approved the submission and will sign the publishing contract and the originality and rights statement.</li></ul>"
+    },
+    "copyrightHolderType": "author",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "defaultReviewMode": 2,
+    "numWeeksPerReview": 4,
+    "numWeeksPerResponse": 1,
+    "_doiComment": "DOI: prefixo da ABEC (o mesmo da revista NVAS em journals.csvet.com.br). Sufixos com espaço de nomes próprio (csvet.book.) para nunca coincidir com os da revista (nvas.). Prefixo 10.54547 (ABEC). Troque enableDois para true quando o depósito na Crossref estiver pronto: na revista, depois do ISSN; nos livros, depois do ISBN de cada obra.",
+    "enableDois": false,
+    "doiPrefix": "10.54547",
+    "doiSuffixType": "customPattern",
+    "doiPublicationSuffixPattern": "csvet.book.%m",
+    "doiChapterSuffixPattern": "csvet.book.%m.c%c",
+    "doiRepresentationSuffixPattern": "csvet.book.%m.f%f",
+    "doiSubmissionFileSuffixPattern": "csvet.book.%m.s%s",
+    "enabledDoiTypes": [
+      "publication",
+      "chapter"
+    ],
+    "doiCreationTime": "copyEditCreationTime",
+    "doiVersioning": false,
+    "keywords": "require",
+    "displayFeaturedBooks": true,
+    "displayNewReleases": true,
+    "sidebar": [
+      "makesubmissionblockplugin",
+      "browseblockplugin",
+      "informationblockplugin",
+      "languagetoggleblockplugin"
+    ],
+    "coverThumbnailsMaxWidth": 320,
+    "coverThumbnailsMaxHeight": 460,
+    "reviewerSuggestionEnabled": true,
+    "reviewerSuggestionsHelp": {
+      "pt_BR": "<p>Opcional. Sugira até 3 especialistas sem conflito de interesses com os autores (não podem ser da mesma instituição, coautores nos últimos 5 anos nem membros da banca do trabalho original). A editora decide quem convida.</p>",
+      "en": "<p>Optional. Suggest up to 3 experts without conflicts of interest with the authors (not from the same institution, not co-authors in the last 5 years, not on the examining committee of the original work). The publisher decides whom to invite.</p>"
+    },
+    "currency": "BRL",
+    "paymentPluginName": "ManualPayment",
+    "paymentsEnabled": true,
+    "emailSignature": "<p>Atenciosamente,<br><strong>Editora CSVET</strong><br><a href=\"https://books.csvet.com.br\">books.csvet.com.br</a> · contato@csvet.com.br</p>"
+  },
+  "files": {
+    "authorGuidelines": "author-guidelines.{locale}.html",
+    "copyrightNotice": "termo-submissao.{locale}.html"
+  },
+  "images": {
+    "pageHeaderLogoImage": {
+      "file": "images/logo-white.png",
+      "altText": {
+        "pt_BR": "Editora CSVET",
+        "en": "Editora CSVET"
+      }
+    },
+    "favicon": {
+      "file": "images/favicon.png",
+      "altText": {
+        "pt_BR": "Editora CSVET",
+        "en": "Editora CSVET"
+      }
+    },
+    "pressThumbnail": {
+      "file": "images/thumbnail.png",
+      "altText": {
+        "pt_BR": "Editora CSVET",
+        "en": "Editora CSVET"
+      }
+    }
+  },
+  "plugins": {
+    "enable": [
+      "csvetthemeplugin",
+      "csveteditorialplugin",
+      "googlescholarplugin",
+      "dublincoremetaplugin",
+      "webfeedplugin",
+      "pdfjsviewerplugin",
+      "makesubmissionblockplugin",
+      "browseblockplugin",
+      "informationblockplugin",
+      "languagetoggleblockplugin",
+      "citationstylelanguageplugin",
+      "staticpagesplugin"
+    ],
+    "enableSite": [
+      "csvetthemeplugin"
+    ]
+  },
+  "series": [
+    {
+      "path": "tecnico-cientificos",
+      "featured": true,
+      "title": {
+        "pt_BR": "Livros Técnico-Científicos",
+        "en": "Scientific and Technical Books"
+      },
+      "description": {
+        "pt_BR": "<p>Obras autorais de referência, atualização profissional e ensino em medicina veterinária e zootecnia.</p>",
+        "en": "<p>Authored reference, continuing-education and textbook titles in veterinary medicine and animal science.</p>"
+      }
+    },
+    {
+      "path": "coletaneas",
+      "featured": true,
+      "title": {
+        "pt_BR": "Coletâneas",
+        "en": "Edited Volumes"
+      },
+      "description": {
+        "pt_BR": "<p>Obras organizadas, com capítulos de diferentes autores sobre um tema comum, sob a coordenação de organizadores.</p>",
+        "en": "<p>Edited books with chapters by different authors on a common theme, coordinated by volume editors.</p>"
+      }
+    },
+    {
+      "path": "manuais",
+      "title": {
+        "pt_BR": "Manuais e Guias Práticos",
+        "en": "Manuals and Practical Guides"
+      },
+      "description": {
+        "pt_BR": "<p>Protocolos, roteiros e guias de consulta rápida para a rotina clínica, laboratorial, de produção e de ensino.</p>",
+        "en": "<p>Protocols, step-by-step guides and quick references for clinical, laboratory, production and teaching practice.</p>"
+      }
+    },
+    {
+      "path": "monografias",
+      "featured": true,
+      "title": {
+        "pt_BR": "Monografias",
+        "en": "Monographs"
+      },
+      "description": {
+        "pt_BR": "<p>Trabalhos de conclusão de curso (graduação), especialização e residência aprovados e adaptados ao formato de livro.</p>",
+        "en": "<p>Undergraduate, specialisation and residency monographs, approved and adapted to book format.</p>"
+      }
+    },
+    {
+      "path": "dissertacoes-teses",
+      "title": {
+        "pt_BR": "Dissertações e Teses",
+        "en": "Dissertations and Theses"
+      },
+      "description": {
+        "pt_BR": "<p>Dissertações de mestrado e teses de doutorado aprovadas em programas de pós-graduação, adaptadas ao formato de livro.</p>",
+        "en": "<p>Master's dissertations and doctoral theses approved by graduate programmes, adapted to book format.</p>"
+      }
+    },
+    {
+      "path": "anais",
+      "editorRestricted": true,
+      "title": {
+        "pt_BR": "Anais e Resumos de Eventos",
+        "en": "Proceedings and Abstracts"
+      },
+      "description": {
+        "pt_BR": "<p>Anais, resumos e trabalhos completos de eventos científicos. Organizadores de eventos interessados devem contatar a editora.</p>",
+        "en": "<p>Proceedings, abstracts and full papers of scientific meetings. Event organisers should contact the publisher.</p>"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "path": "pequenos-animais",
+      "title": {
+        "pt_BR": "Clínica e cirurgia de pequenos animais",
+        "en": "Small animal medicine and surgery"
+      }
+    },
+    {
+      "path": "grandes-animais",
+      "title": {
+        "pt_BR": "Ruminantes, suínos e aves",
+        "en": "Ruminants, swine and poultry"
+      }
+    },
+    {
+      "path": "equinos",
+      "title": {
+        "pt_BR": "Equinos",
+        "en": "Equine medicine"
+      }
+    },
+    {
+      "path": "silvestres-aquaticos",
+      "title": {
+        "pt_BR": "Animais silvestres, exóticos e aquáticos",
+        "en": "Wildlife, exotic and aquatic animals"
+      }
+    },
+    {
+      "path": "diagnostico",
+      "title": {
+        "pt_BR": "Patologia e diagnóstico",
+        "en": "Pathology and diagnostics"
+      }
+    },
+    {
+      "path": "producao-nutricao",
+      "title": {
+        "pt_BR": "Produção, nutrição e bem-estar animal",
+        "en": "Animal production, nutrition and welfare"
+      }
+    },
+    {
+      "path": "saude-unica",
+      "title": {
+        "pt_BR": "Saúde Única, saúde pública e segurança dos alimentos",
+        "en": "One Health, public health and food safety"
+      }
+    },
+    {
+      "path": "ciencias-basicas",
+      "title": {
+        "pt_BR": "Ciências básicas",
+        "en": "Basic sciences"
+      }
+    },
+    {
+      "path": "educacao",
+      "title": {
+        "pt_BR": "Educação e carreira veterinária",
+        "en": "Veterinary education and career"
+      }
+    }
+  ],
+  "userGroups": [
+    {
+      "match": "Volume editor",
+      "roleId": 65536,
+      "name": {
+        "pt_BR": "Organizador(a)",
+        "en": "Volume editor",
+        "es": "Coordinador/a de obra"
+      },
+      "abbrev": {
+        "pt_BR": "Org.",
+        "en": "Ed.",
+        "es": "Coord."
+      }
+    },
+    {
+      "match": "Chapter Author",
+      "roleId": 65536,
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "match": "Supervisor",
+      "create": true,
+      "roleId": 65536,
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": {
+        "en": "Supervisor",
+        "pt_BR": "Orientador(a)",
+        "es": "Director/a de tesis"
+      },
+      "abbrev": {
+        "en": "Sup.",
+        "pt_BR": "Orient.",
+        "es": "Dir."
+      }
+    },
+    {
+      "match": "Co-supervisor",
+      "create": true,
+      "roleId": 65536,
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": {
+        "en": "Co-supervisor",
+        "pt_BR": "Coorientador(a)",
+        "es": "Codirector/a de tesis"
+      },
+      "abbrev": {
+        "en": "Co-sup.",
+        "pt_BR": "Coorient.",
+        "es": "Codir."
+      }
+    },
+    {
+      "match": "Examining committee member",
+      "create": true,
+      "roleId": 65536,
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": {
+        "en": "Examining committee member",
+        "pt_BR": "Membro da banca examinadora",
+        "es": "Miembro del tribunal"
+      },
+      "abbrev": {
+        "en": "Exam.",
+        "pt_BR": "Banca",
+        "es": "Trib."
+      }
+    },
+    {
+      "match": "Editor-in-Chief",
+      "create": true,
+      "roleId": 16,
+      "permitSettings": true,
+      "permitMetadataEdit": true,
+      "masthead": true,
+      "mastheadFirst": true,
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": {
+        "en": "Editor-in-Chief",
+        "pt_BR": "Editor-chefe",
+        "es": "Editor/a jefe"
+      },
+      "abbrev": {
+        "en": "EIC",
+        "pt_BR": "EC",
+        "es": "EIC"
+      }
+    },
+    {
+      "match": "Co-Editor-in-Chief",
+      "create": true,
+      "roleId": 16,
+      "permitSettings": true,
+      "permitMetadataEdit": true,
+      "masthead": true,
+      "mastheadFirst": true,
+      "stages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": {
+        "en": "Co-Editor-in-Chief",
+        "pt_BR": "Coeditor-chefe",
+        "es": "Coeditor/a jefe"
+      },
+      "abbrev": {
+        "en": "CoEIC",
+        "pt_BR": "CoEC",
+        "es": "CoEIC"
+      }
+    }
+  ],
+  "masthead": [
+    {
+      "email": "calefi@csvet.com.br",
+      "userGroup": "Editor-in-Chief",
+      "hideOnMastheadAs": [
+        "Press editor",
+        "Press manager"
+      ],
+      "profile": {
+        "givenName": {
+          "en": "Atilio Sersun",
+          "pt_BR": "Atilio Sersun"
+        },
+        "familyName": {
+          "en": "Calefi",
+          "pt_BR": "Calefi"
+        },
+        "affiliation": {
+          "en": "Universidade Cruzeiro do Sul",
+          "pt_BR": "Universidade Cruzeiro do Sul"
+        },
+        "country": "BR",
+        "url": "http://lattes.cnpq.br/4438211760493798",
+        "biography": {
+          "pt_BR": "<p>Médico veterinário e biólogo, mestre e doutor em Patologia Experimental e Comparada pela Faculdade de Medicina Veterinária e Zootecnia da Universidade de São Paulo (FMVZ-USP), com pós-doutorado no Departamento de Patologia da FMVZ-USP. Professor da Universidade Cruzeiro do Sul (São Paulo, Brasil), editor-chefe e diretor da Editora CSVET.</p>",
+          "en": "<p>Veterinarian (DVM) and biologist, MSc and PhD in Experimental and Comparative Pathology from the School of Veterinary Medicine and Animal Science, University of São Paulo (FMVZ-USP), with postdoctoral training in the Department of Pathology, FMVZ-USP. Professor at Universidade Cruzeiro do Sul (São Paulo, Brazil), Editor-in-Chief and director of Editora CSVET.</p>"
+        }
+      }
+    }
+  ],
+  "citationGroups": {
+    "groupAuthor": [
+      "Author"
+    ],
+    "groupEditor": [
+      "Volume editor"
+    ],
+    "groupChapterAuthor": [
+      "Chapter Author"
+    ],
+    "groupTranslator": [
+      "Translator"
+    ]
+  },
+  "staticPages": [
+    {
+      "path": "como-submeter",
+      "file": "pages/como-submeter.{locale}.html",
+      "title": {
+        "pt_BR": "Como submeter e como funciona a avaliação",
+        "en": "How to submit and how review works"
+      }
+    },
+    {
+      "path": "publicar-monografia",
+      "file": "pages/publicar-monografia.{locale}.html",
+      "title": {
+        "pt_BR": "Publicar TCC, dissertação ou tese como livro",
+        "en": "Publish your thesis or monograph as a book"
+      }
+    },
+    {
+      "path": "coletaneas",
+      "file": "pages/coletaneas.{locale}.html",
+      "title": {
+        "pt_BR": "Organize uma coletânea",
+        "en": "Edit a volume with us"
+      }
+    },
+    {
+      "path": "etica",
+      "file": "pages/etica.{locale}.html",
+      "title": {
+        "pt_BR": "Ética e integridade (COPE)",
+        "en": "Ethics and integrity (COPE)"
+      }
+    },
+    {
+      "path": "modelos-de-publicacao",
+      "file": "pages/modelos-de-publicacao.{locale}.html",
+      "title": {
+        "pt_BR": "Formatos e modelos de publicação (e-book e impresso)",
+        "en": "Formats and publishing models (e-book and print)"
+      }
+    }
+  ],
+  "menu": [
+    {
+      "key": "publique",
+      "url": "/editora/about/submissions",
+      "seq": 1,
+      "title": {
+        "pt_BR": "Publique",
+        "en": "Publish with us"
+      },
+      "children": [
+        {
+          "key": "como-submeter",
+          "page": "como-submeter",
+          "title": {
+            "pt_BR": "Como submeter (passo a passo)",
+            "en": "How to submit (step by step)"
+          }
+        },
+        {
+          "key": "instrucoes",
+          "url": "/editora/about/submissions",
+          "title": {
+            "pt_BR": "Instruções aos autores e modelos",
+            "en": "Author guidelines and templates"
+          }
+        },
+        {
+          "key": "publicar-monografia",
+          "page": "publicar-monografia",
+          "title": {
+            "pt_BR": "TCC, dissertação ou tese",
+            "en": "Theses and monographs"
+          }
+        },
+        {
+          "key": "coletaneas",
+          "page": "coletaneas",
+          "title": {
+            "pt_BR": "Organize uma coletânea",
+            "en": "Edited volumes"
+          }
+        },
+        {
+          "key": "modelos",
+          "page": "modelos-de-publicacao",
+          "title": {
+            "pt_BR": "E-book, impresso e modelos",
+            "en": "E-book, print and models"
+          }
+        },
+        {
+          "key": "etica-publique",
+          "page": "etica",
+          "title": {
+            "pt_BR": "Ética e COPE",
+            "en": "Ethics and COPE"
+          }
+        }
+      ]
+    },
+    {
+      "key": "etica",
+      "page": "etica",
+      "under": "about",
+      "seq": 5,
+      "title": {
+        "pt_BR": "Ética e integridade (COPE)",
+        "en": "Ethics and integrity (COPE)"
+      }
+    }
+  ],
+  "_payments": "Venda direta de e-books pelo OMP (Pix: chave CNPJ). No livro: Publicação > Formatos > arquivo > Disponibilidade: 'Venda direta' com o preço; preço 0 = acesso aberto. A editora recebe um e-mail a cada compra; confira o Pix e libere com php scripts/payments.php --approve=ID. Veja PLANO_EDITORIAL.md, seção 8.",
+  "pluginSettings": {
+    "manualpayment": {
+      "manualInstructions": "Obrigado pela compra! Faça o Pix do valor indicado acima para a chave Pix CNPJ 32.645.724/0001-89 (CSVET Editora, Cursos e Treinamentos) e envie o comprovante para contato@csvet.com.br informando o título do livro e o seu nome de usuário. O download é liberado na sua conta em até 1 dia útil."
+    }
+  },
+  "genres": [
+    {
+      "key": "CSVET_CONTRACT",
+      "category": 3,
+      "supplementary": true,
+      "name": {
+        "pt_BR": "Contrato de edição assinado",
+        "en": "Signed publishing contract",
+        "es": "Contrato de edición firmado"
+      }
+    },
+    {
+      "key": "CSVET_DECLARATION",
+      "category": 3,
+      "supplementary": true,
+      "name": {
+        "pt_BR": "Declarações e termos assinados",
+        "en": "Signed statements and agreements",
+        "es": "Declaraciones firmadas"
+      }
+    }
+  ]
+}

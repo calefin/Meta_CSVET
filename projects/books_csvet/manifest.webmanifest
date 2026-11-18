@@ -1,0 +1,25 @@
+{
+  "name": "Editora CSVET",
+  "short_name": "CSVET Livros",
+  "description": "Livros técnico-científicos de medicina veterinária e zootecnia da Editora CSVET: catálogo, e-books e publicação de obras.",
+  "lang": "pt-BR",
+  "id": "/editora/",
+  "start_url": "/editora/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#000080",
+  "background_color": "#ffffff",
+  "categories": ["books", "education", "medical"],
+  "icons": [
+    { "src": "/plugins/themes/csvet/images/pwa/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/plugins/themes/csvet/images/pwa/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/plugins/themes/csvet/images/pwa/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/plugins/themes/csvet/images/pwa/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Catálogo", "short_name": "Catálogo", "url": "/editora/catalog" },
+    { "name": "Publique seu livro", "short_name": "Publicar", "url": "/editora/submission" },
+    { "name": "Meu painel", "short_name": "Painel", "url": "/editora/dashboard/mySubmissions" }
+  ]
+}

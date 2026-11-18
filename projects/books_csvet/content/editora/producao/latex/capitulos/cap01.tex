@@ -1,0 +1,50 @@
+% Em coletâneas, use \capitulo[Autores do capítulo]{Título}; em obras autorais, \capitulo{Título}.
+\capitulo[Nome do Autor · Nome da Autora]{Título do primeiro capítulo}
+
+\begin{resumo}
+Até 150 palavras (coletâneas): objetivo, conteúdo principal e contribuição do capítulo.
+\end{resumo}
+\palavraschave{termo; termo; termo.}
+
+\section{Seção}
+Texto corrido em Source Serif 4, corpo 10,5 pt sobre 14,5 pt, justificado, com recuo de 5 mm na primeira linha. A
+hemogasometria\index{Hemogasometria} é usada na rotina de cães\index{Cães} e gatos\index{Gatos}. Para incluir um termo no
+índice remissivo, escreva o comando \texttt{\textbackslash index\{Termo\}} logo depois dele; para subentradas, use
+\texttt{\textbackslash index\{Acidose!metabólica\}}.
+
+Esta mancha gráfica e esta entrelinha dão de 2.000 a 2.200 caracteres por página no formato 16×23 cm, com boa leitura na tela
+e no papel. Títulos em Roboto, na cor da marca. Capítulos sempre abrem em página ímpar, sem cabeçalho.
+
+\begin{citacao}
+Citação direta com mais de três linhas, recuada 12 mm, em corpo menor e sem aspas, seguida da indicação da fonte com a página
+(Autor, 2024, p. 00).
+\end{citacao}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=\textwidth]{figura-exemplo}
+  \caption{Legenda descritiva da figura, que permita entendê-la sem ler o texto.}
+  \fonte{os autores (2026).}
+\end{figure}
+
+\begin{table}[htb]
+  \caption{Título da tabela, acima dela.}
+  \centering\small
+  \begin{tabular}{lcc}
+    \toprule
+    Variável & Grupo A & Grupo B \\
+    \midrule
+    pH & 7,38 ± 0,02 & 7,21 ± 0,05 \\
+    HCO$_3^-$ (mmol/L) & 22 ± 2 & 14 ± 3 \\
+    \bottomrule
+  \end{tabular}
+  \fonte{os autores (2026).}
+\end{table}
+
+\section{Outra seção}
+A acidose metabólica\index{Acidose!metabólica} é discutida aqui como exemplo de subentrada no índice.
+
+\begin{referencias}
+\item SOBRENOME, Nome; SOBRENOME, Nome. Título do artigo. \textbf{Nome da Revista}, v. 0, n. 0, p. 00-00, 2024. DOI: https://doi.org/10.0000/xxxx.
+\item SOBRENOME, Nome. \textbf{Título do livro}. 2. ed. Cidade: Editora, 2023.
+\end{referencias}

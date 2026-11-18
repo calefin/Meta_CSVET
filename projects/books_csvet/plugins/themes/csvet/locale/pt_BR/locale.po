@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.themes.csvet.name"
+msgstr "Tema CSVET Editora"
+
+msgid "plugins.themes.csvet.description"
+msgstr "Tema padrão personalizado com a identidade visual da CSVET Editora (navy, #00aaff, Roboto), para livros e monografias."
+
+msgid "plugins.themes.csvet.credits.supervisor"
+msgstr "Orientação"
+
+msgid "plugins.themes.csvet.credits.cosupervisor"
+msgstr "Coorientação"
+
+msgid "plugins.themes.csvet.credits.committee"
+msgstr "Banca examinadora"
+
+msgid "plugins.themes.csvet.credits.note"
+msgstr "Obra derivada de trabalho acadêmico aprovado. Orientação e banca são creditadas pela formação do trabalho original e não são autoras desta edição."
+
+msgid "plugins.themes.csvet.credits.editorsAbbrev"
+msgstr "org."
+
+msgid "plugins.themes.csvet.seo.tagline"
+msgstr "Livros e monografias em Medicina Veterinária e Zootecnia"
+
+msgid "plugins.themes.csvet.seo.catalogDescription"
+msgstr "Catálogo da Editora CSVET: livros técnico-científicos, coletâneas, manuais, monografias, dissertações e teses em medicina veterinária e zootecnia, em acesso aberto e com ISBN."
+
+msgid "plugins.themes.csvet.seo.categoryDescription"
+msgstr "Livros de acesso aberto sobre {$category} publicados pela Editora CSVET, com avaliação por pares e ISBN."

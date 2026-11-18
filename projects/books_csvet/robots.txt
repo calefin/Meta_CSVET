@@ -1,0 +1,30 @@
+User-agent: *
+Disallow: /index.php/
+Disallow: /*/login
+Disallow: /*/user/
+Disallow: /*/management/
+Disallow: /*/workflow/
+Disallow: /*/search?
+Disallow: /*/api/
+Disallow: /*/$$$call$$$/
+# CSS do tema é servido por $$$call$$$: o Google precisa dele para renderizar a página
+Allow: /*/$$$call$$$/page/page/css
+Allow: /
+
+# URL final (sem redirecionamento): o índice aponta para o sitemap de cada editora (press)
+Sitemap: https://books.csvet.com.br/index/pt_BR/sitemap
+
+# Robôs de treinamento de IA: as obras de direitos reservados não podem ser usadas para treinar modelos
+# (buscadores, inclusive os de respostas com IA que citam a fonte, continuam liberados acima)
+User-agent: GPTBot
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: anthropic-ai
+User-agent: ClaudeBot
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: meta-externalagent
+User-agent: Diffbot
+User-agent: Omgilibot
+User-agent: cohere-ai
+Disallow: /

@@ -1,0 +1,55 @@
+% Modelo de livro da Editora CSVET (LaTeX). Compile com:  latexmk livro.tex
+% Opções: [16x23] (padrão) ou [21x28]; [coletanea] para obras organizadas; [comercial] para obra sem licença aberta.
+\documentclass[16x23]{csvet-livro}
+
+\title{Título do Livro}
+\subtitulo{Subtítulo do livro}
+\autores{Nome do Autor\enspace·\enspace Nome da Autora}
+\orientacao{Prof. Dr. Nome do Orientador}          % apague em obras que não derivam de trabalho acadêmico
+\edicao{1ª edição}
+\ano{2026}
+\isbn{ISBN 978-65-00-00000-0 (PDF)\quad·\quad ISBN 978-65-00-00000-0 (impresso)}
+\doi{}                                              % ex.: https://doi.org/10.00000/xxxx
+\notadeorigem{Esta obra é uma versão revista e adaptada do Trabalho de Conclusão de Curso (Graduação em Medicina Veterinária)
+  de Nome do Autor, aprovado em 10/12/2025 na Universidade Exemplo, sob orientação de Prof. Dr. Nome do Orientador.
+  Banca examinadora: Prof.ª Dr.ª Nome (Instituição) e Prof. Me. Nome (Instituição). Orientação e banca não são autoras desta edição.}
+% Obras de membros da editora (veja a política de conflito de interesses):
+% \notaeditorial{Os autores integram a Editora CSVET. A avaliação desta obra foi conduzida de forma independente por Prof.ª Dr.ª Nome
+%   (Conselho Editorial), sem participação dos autores na escolha dos pareceristas nem na decisão editorial.}
+
+\begin{document}
+
+\paginasiniciais{%
+  \begin{expediente}
+    \papel{Editor-chefe}{Prof. Dr. Atilio Sersun Calefi – Universidade Cruzeiro do Sul, Brasil}
+    \papel{Conselho Editorial}{Prof.ª Dr.ª Nome Sobrenome – Instituição, País\newline Prof. Dr. Nome Sobrenome – Instituição, País\newline
+      Prof.ª Dr.ª Nome Sobrenome – Instituição, País\newline Prof. Dr. Nome Sobrenome – Instituição, País}
+    \papel{Pareceristas desta obra}{Prof. Dr. Nome Sobrenome – Instituição, País\newline Prof.ª Dr.ª Nome Sobrenome – Instituição, País\newline
+      {\itshape (avaliação duplo-anônima; nomes publicados após a aprovação, com autorização)}}
+    \papel{Revisão de texto}{Me. Nome Sobrenome – Letras, Instituição}
+    \papel{Normalização}{Nome Sobrenome – Bibliotecário(a), CRB-0/0000}
+    \papel{Diagramação}{Nome Sobrenome}
+    \papel{Capa}{Nome Sobrenome (imagem: fonte e licença)}
+  \end{expediente}}
+
+\chapter*{Apresentação}
+\addcontentsline{toc}{chapter}{Apresentação}
+Texto da apresentação (organizadores) ou do prefácio (convidado): objetivo do livro, público, organização dos capítulos e como usar a obra.
+
+\mainmatter
+\input{capitulos/cap01}
+\input{capitulos/cap02}
+
+\backmatter
+\chapter{Sobre os autores}
+\sobreautor{foto-autor-exemplo}{Nome Completo do Autor}
+  {Médico-veterinário, Doutor em Ciência Animal pela Universidade Exemplo. Professor da Instituição Exemplo, com atuação em clínica médica
+   de pequenos animais e medicina laboratorial. Minicurrículo de até seis linhas, em terceira pessoa.}
+  {ORCID 0000-0000-0000-0000 · Lattes http://lattes.cnpq.br/0000000000000000}
+\sobreautor{foto-autor-exemplo}{Nome Completo da Autora}
+  {Médica-veterinária, Mestra em Medicina Veterinária pela Universidade Exemplo, com atuação em patologia clínica.}
+  {ORCID 0000-0000-0000-0000 · Lattes http://lattes.cnpq.br/0000000000000000}
+
+\printindex
+\colofao
+\end{document}
