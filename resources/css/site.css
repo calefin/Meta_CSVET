@@ -1,0 +1,67 @@
+/* CSS compilado das páginas públicas (home, blog, na-mídia).
+   Substitui o cdn.tailwindcss.com, que gerava o CSS no navegador (JS de ~300KB
+   bloqueando a renderização — péssimo para LCP/SEO no celular). */
+@import 'tailwindcss' source(none);
+
+@source '../views/welcome.blade.php';
+@source '../views/exam_mirror.blade.php';
+@source '../views/na-midia.blade.php';
+@source '../views/blog/*.blade.php';
+@source '../views/research-call/*.blade.php';
+@source '../views/partials/site-*.blade.php';
+@source '../views/partials/whatsapp_widget.blade.php';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-outfit: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+
+    --color-dark-950: #030712;
+    --color-dark-900: #0b0f19;
+    --color-dark-800: #1f2937;
+    --color-dark-700: #374151;
+
+    --color-brand-teal: #14b8a6;
+    --color-brand-indigo: #6366f1;
+    --color-brand-violet: #8b5cf6;
+
+    /* usado em vários textos da home (antes não existia e caía no default) */
+    --color-slate-350: #b4bfcd;
+}
+
+@layer base {
+    /* Tailwind 4 mudou o default de border-color para currentColor; mantém o visual do v3 */
+    *, ::before, ::after { border-color: var(--color-gray-200, currentColor); }
+    button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+    [x-cloak] { display: none !important; }
+    html { scroll-padding-top: 5rem; -webkit-tap-highlight-color: transparent; }
+}
+
+.glass {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px rgba(255, 255, 255, 0.08) solid;
+}
+.glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px rgba(255, 255, 255, 0.05) solid;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (hover: hover) {
+    .glass-card:hover {
+        border-color: rgba(99, 102, 241, 0.3);
+        box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.15);
+        transform: translateY(-4px);
+    }
+}
+
+.post-content h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.5rem; color: white; margin: 2rem 0 0.75rem; }
+.post-content h3 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.25rem; color: white; margin: 1.5rem 0 0.5rem; }
+.post-content p { margin-bottom: 1.25rem; line-height: 1.8; color: #cbd5e1; }
+.post-content a { color: #14b8a6; text-decoration: underline; }
+.post-content ul, .post-content ol { margin: 0 0 1.25rem 1.5rem; color: #cbd5e1; }
+.post-content ul { list-style: disc; }
+.post-content ol { list-style: decimal; }
+.post-content blockquote { border-left: 3px solid #14b8a6; padding-left: 1rem; color: #94a3b8; font-style: italic; margin: 1.5rem 0; }

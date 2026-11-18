@@ -1,0 +1,1118 @@
+{
+  "_info": "Checklist de triagem por projeto (apoio ao aluno; não altera critérios). Cada item: q = pergunta, h = dica curta, code = código de exclusão do projeto usado quando a resposta é Não. Carregar com: php artisan metanalises:checklists",
+  "P01": [
+    {
+      "q": "São coelhos?",
+      "h": "Qualquer raça, sexo ou idade; de tutor ou de laboratório.",
+      "code": "E7"
+    },
+    {
+      "q": "Os coelhos passaram por uma CIRURGIA de verdade?",
+      "h": "Não vale dor induzida sem cirurgia (carragenina, artrite por adjuvante, teste de limiar em coelho não operado).",
+      "code": "E1"
+    },
+    {
+      "q": "Algum grupo recebeu ANALGÉSICO para a dor da cirurgia?",
+      "h": "AINE, opioide, anestésico local (bloqueio, incisional, intraperitoneal), cetamina, gabapentina, maropitant ou combinações.",
+      "code": "E8"
+    },
+    {
+      "q": "Há COMPARAÇÃO entre grupos no mesmo estudo?",
+      "h": "Placebo, sem analgésico, outro analgésico, outra dose ou duração. Estudo de um grupo só não serve.",
+      "code": "E9"
+    },
+    {
+      "q": "Mede DOR ou desfecho relacionado?",
+      "h": "Escore de dor, analgesia de resgate, consumo de alimento, produção de fezes, peso, cortisol/corticosterona ou efeitos adversos.",
+      "code": "E10"
+    },
+    {
+      "q": "É estudo ORIGINAL (não é revisão, editorial ou capítulo)?",
+      "h": "Revisão narrativa, carta e capítulo de livro são excluídos.",
+      "code": "E4"
+    }
+  ],
+  "P02": [
+    {
+      "q": "São COELHAS (fêmeas inteiras)?",
+      "h": "De estimação, criação ou laboratório.",
+      "code": "E6"
+    },
+    {
+      "q": "O útero foi examinado por HISTOPATOLOGIA?",
+      "h": "Após castração (OSH), histerectomia, biópsia ou necropsia.",
+      "code": "E7"
+    },
+    {
+      "q": "O tumor/lesão é ESPONTÂNEO (não induzido)?",
+      "h": "Tumor induzido experimentalmente ou coelha como modelo de câncer humano é excluído.",
+      "code": "E1"
+    },
+    {
+      "q": "Dá para saber QUANTAS coelhas foram examinadas no total?",
+      "h": "É preciso o denominador (todas as examinadas), não só os casos de tumor. No resumo, se não der para saber, marque 'Não dá para saber'.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa FREQUÊNCIA de adenocarcinoma, hiperplasia ou outras lesões uterinas?",
+      "h": "Prevalência, número de casos entre as examinadas, por idade.",
+      "code": "E9"
+    },
+    {
+      "q": "É série/levantamento com pelo menos 10 coelhas (não é relato de caso nem revisão)?",
+      "h": "Relato de 1 a 9 animais, revisão narrativa e capítulo são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P03": [
+    {
+      "q": "É animal EXÓTICO de companhia?",
+      "h": "Coelho, porquinho-da-índia, chinchila, hamster, furão, ouriço, marsupial, ave ou réptil. Rato e camundongo de laboratório, anfíbio, peixe, cão, gato, cavalo e animal de produção NÃO.",
+      "code": "E1"
+    },
+    {
+      "q": "Usou ALFAXALONA para sedação ou indução anestésica?",
+      "h": "Sozinha ou com outros fármacos, qualquer via. Alfaxalona só na manutenção após indução com outro fármaco não serve.",
+      "code": "E7"
+    },
+    {
+      "q": "Mede algum efeito da sedação/anestesia?",
+      "h": "Tempo de início, duração, sucesso, apneia, recuperação, frequência cardíaca/respiratória, efeitos adversos, mortalidade.",
+      "code": "E9"
+    },
+    {
+      "q": "É estudo experimental ou clínico com pelo menos 5 animais por grupo?",
+      "h": "Relato de caso, revisão e capítulo são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P04": [
+    {
+      "q": "São PORQUINHOS-DA-ÍNDIA ou COELHOS de tutor?",
+      "h": "Animais de estimação atendidos na clínica.",
+      "code": "E6"
+    },
+    {
+      "q": "Têm URÓLITO (cálculo) de verdade?",
+      "h": "Só lama urinária ou cristalúria, sem cálculo, não serve. Urolitíase induzida experimentalmente também não.",
+      "code": "E2"
+    },
+    {
+      "q": "O cálculo foi ANALISADO ou caracterizado?",
+      "h": "Composição mineral (cristalografia, infravermelho, difração de raios X, análise química) ou localização.",
+      "code": "E7"
+    },
+    {
+      "q": "Informa a COMPOSIÇÃO ou a distribuição dos cálculos?",
+      "h": "Proporção de cada mineral, localização, sexo, recidiva, mortalidade.",
+      "code": "E9"
+    },
+    {
+      "q": "É série/levantamento com pelo menos 10 cálculos ou animais?",
+      "h": "Relato de caso (menos de 10) e revisão são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P05": [
+    {
+      "q": "É animal EXÓTICO de companhia (pequeno mamífero, ave ou réptil)?",
+      "h": "Coelho, roedor, furão, ouriço, ave, réptil.",
+      "code": "E6"
+    },
+    {
+      "q": "É anestesia/sedação CLÍNICA (procedimento de rotina)?",
+      "h": "Anestesia de pesquisa em colônia de laboratório (cirurgia experimental ou terminal) é excluída.",
+      "code": "E1"
+    },
+    {
+      "q": "Informa MORTES ou complicações ligadas à anestesia?",
+      "h": "Óbito perianestésico, óbito relacionado à anestesia, complicações graves.",
+      "code": "E9"
+    },
+    {
+      "q": "É coorte, auditoria ou série com pelo menos 20 anestesias?",
+      "h": "Relato de caso e revisão são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P06": [
+    {
+      "q": "São FURÕES?",
+      "h": "Furão doméstico (Mustela putorius furo).",
+      "code": "E6"
+    },
+    {
+      "q": "Têm DOENÇA ADRENAL ou INSULINOMA?",
+      "h": "Implante de GnRH só para contracepção ou cio, sem doença adrenal, não serve.",
+      "code": "E1"
+    },
+    {
+      "q": "Descreve TRATAMENTO?",
+      "h": "Adrenalectomia, deslorelina, leuprolida, melatonina; nodulectomia ou pancreatectomia parcial, com ou sem tratamento médico.",
+      "code": "E7"
+    },
+    {
+      "q": "Informa RESULTADO do tratamento?",
+      "h": "Remissão, recidiva, sobrevida, complicações, mortalidade. Série sem resultado por tratamento é excluída.",
+      "code": "E2"
+    },
+    {
+      "q": "É estudo com pelo menos 5 furões por tratamento?",
+      "h": "Relato de caso e revisão são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P07": [
+    {
+      "q": "São AVES?",
+      "h": "Qualquer espécie: companhia, viveiro, zoológico, reabilitação ou laboratório.",
+      "code": "E5"
+    },
+    {
+      "q": "O fármaco foi dado por via INTRANASAL para SEDAÇÃO ou anestesia?",
+      "h": "Intranasal para vacina ou outro fim não serve.",
+      "code": "E1"
+    },
+    {
+      "q": "Mede efeito da sedação?",
+      "h": "Tempo de início, proporção sedada, escore de sedação, duração, recuperação, sinais vitais, efeitos adversos.",
+      "code": "E8"
+    },
+    {
+      "q": "É estudo com pelo menos 5 aves por protocolo?",
+      "h": "Relato de caso e revisão são excluídos.",
+      "code": "E9"
+    }
+  ],
+  "P08": [
+    {
+      "q": "São PSITACÍDEOS (papagaio, arara, periquito, calopsita...)?",
+      "h": "Outras aves (patos, gansos etc.) são excluídas.",
+      "code": "E3"
+    },
+    {
+      "q": "São aves de CATIVEIRO?",
+      "h": "Casa, criatório, zoológico, centro de resgate ou clínica. Aves de vida livre são excluídas.",
+      "code": "E1"
+    },
+    {
+      "q": "É infecção NATURAL (não experimental)?",
+      "h": "Estudo de infecção experimental é excluído.",
+      "code": "E2"
+    },
+    {
+      "q": "Testou bornavírus (PCR ou sorologia) ou avaliou PDD?",
+      "h": "RT-PCR, sorologia (IFA, ELISA, immunoblot), histopatologia de PDD.",
+      "code": "E8"
+    },
+    {
+      "q": "Informa QUANTAS aves foram positivas entre as testadas?",
+      "h": "Prevalência, soroprevalência, associação com PDD, genótipos.",
+      "code": "E10"
+    },
+    {
+      "q": "Testou pelo menos 15 aves (não é relato de caso nem revisão)?",
+      "h": "Levantamento, vigilância ou estudo diagnóstico.",
+      "code": "E11"
+    }
+  ],
+  "P09": [
+    {
+      "q": "São RÉPTEIS de cativeiro?",
+      "h": "Lagartos, serpentes, quelônios, crocodilianos. Répteis de vida livre são excluídos.",
+      "code": "E2"
+    },
+    {
+      "q": "Usou LÂMPADA UVB artificial?",
+      "h": "Fluorescente, compacta, vapor de mercúrio, halogênio metálico ou LED. Só luz do sol natural não serve.",
+      "code": "E1"
+    },
+    {
+      "q": "Há GRUPO DE COMPARAÇÃO?",
+      "h": "Sem UVB (sem lâmpada, lâmpada sem UVB ou filtro) ou vitamina D3 na dieta sem UVB.",
+      "code": "E8"
+    },
+    {
+      "q": "Mede vitamina D, cálcio ou saúde óssea?",
+      "h": "25(OH)D3, cálcio, fósforo, PTH, densidade óssea, crescimento, doença óssea metabólica.",
+      "code": "E9"
+    },
+    {
+      "q": "É estudo original controlado (não é revisão)?",
+      "h": "Revisão narrativa e capítulo são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P10": [
+    {
+      "q": "São PETS NÃO CONVENCIONAIS de estimação?",
+      "h": "Aves de estimação, répteis, coelhos, roedores, furões, ouriços. Animais selvagens, de zoológico, de laboratório e de produção são excluídos.",
+      "code": "E1"
+    },
+    {
+      "q": "Pesquisou bactérias produtoras de ESBL, AmpC ou carbapenemase?",
+      "h": "Enterobactérias (E. coli, Klebsiella etc.) com teste fenotípico confirmatório ou genes.",
+      "code": "E7"
+    },
+    {
+      "q": "Testou os animais SEM selecionar só isolados já resistentes?",
+      "h": "Estudo só com isolados já sabidamente resistentes é excluído.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa QUANTOS animais ou isolados foram positivos?",
+      "h": "Prevalência de portadores, proporção de multirresistentes, genes.",
+      "code": "E9"
+    },
+    {
+      "q": "Tem pelo menos 20 animais ou 20 isolados (não é relato nem revisão)?",
+      "h": "Estudo transversal ou de vigilância.",
+      "code": "E10"
+    }
+  ],
+  "P11": [
+    {
+      "q": "São PEQUENOS MAMÍFEROS EXÓTICOS de estimação?",
+      "h": "Furão, coelho, porquinho-da-índia, chinchila, degu, rato e camundongo de estimação, hamster, gerbil, ouriço, petauro. Colônia de laboratório é excluída.",
+      "code": "E6"
+    },
+    {
+      "q": "São tumores ESPONTÂNEOS?",
+      "h": "Tumor induzido, transplantado ou estudo de carcinogenicidade é excluído.",
+      "code": "E1"
+    },
+    {
+      "q": "O diagnóstico foi por HISTOPATOLOGIA?",
+      "h": "Biópsia ou necropsia, com ou sem imuno-histoquímica.",
+      "code": "E7"
+    },
+    {
+      "q": "Informa a FREQUÊNCIA de tumores ou dos tipos de tumor?",
+      "h": "Animais com neoplasia, tipos de tumor, proporção de malignos.",
+      "code": "E9"
+    },
+    {
+      "q": "É levantamento com pelo menos 20 animais ou 20 tumores da espécie?",
+      "h": "Relato de caso e revisão são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P12": [
+    {
+      "q": "São GATOS com suspeita de PIF?",
+      "h": "Peritonite infecciosa felina, efusiva ou não efusiva.",
+      "code": "E6"
+    },
+    {
+      "q": "Avaliou IMUNO-HISTOQUÍMICA ou IMUNOCITOQUÍMICA para coronavírus?",
+      "h": "Estudo só de PCR, sorologia, teste de Rivalta ou outro teste não serve.",
+      "code": "E1"
+    },
+    {
+      "q": "É infecção NATURAL (não experimental)?",
+      "h": "Infecção experimental por FCoV é excluída.",
+      "code": "E2"
+    },
+    {
+      "q": "Comparou com um diagnóstico de referência (necropsia/histopatologia)?",
+      "h": "Precisa saber quais gatos tinham PIF de fato.",
+      "code": "E8"
+    },
+    {
+      "q": "Informa acerto do teste (sensibilidade, especificidade ou números para calcular)?",
+      "h": "Quantos positivos e negativos entre gatos com e sem PIF.",
+      "code": "E9"
+    }
+  ],
+  "P13": [
+    {
+      "q": "São CÃES com LEISHMANIOSE de infecção natural?",
+      "h": "Leishmania infantum confirmada. Infecção experimental é excluída.",
+      "code": "E1"
+    },
+    {
+      "q": "O rim foi examinado por HISTOPATOLOGIA?",
+      "h": "Biópsia ou necropsia. Só exames de sangue ou urina (ureia, creatinina, proteinúria), sem histologia, não serve.",
+      "code": "E2"
+    },
+    {
+      "q": "Descreve LESÕES GLOMERULARES ou tubulointersticiais?",
+      "h": "Tipos de glomerulonefrite, nefrite intersticial.",
+      "code": "E9"
+    },
+    {
+      "q": "É estudo com pelo menos 10 cães (não é relato nem revisão)?",
+      "h": "Estudo transversal, série de casos ou coorte.",
+      "code": "E10"
+    }
+  ],
+  "P14": [
+    {
+      "q": "São EQUÍDEOS com SARCOIDE?",
+      "h": "Cavalo, jumento, mula. Lesões de gato ou de bovino são excluídas.",
+      "code": "E2"
+    },
+    {
+      "q": "Usou amostras de animais (não só lesão induzida ou cultura de células)?",
+      "h": "Estudo só com lesão induzida ou linhagem celular é excluído.",
+      "code": "E1"
+    },
+    {
+      "q": "Pesquisou DNA de PAPILOMAVÍRUS BOVINO (BPV) por PCR?",
+      "h": "PCR convencional, qPCR, nested ou digital.",
+      "code": "E7"
+    },
+    {
+      "q": "Informa em quantas amostras o BPV foi detectado?",
+      "h": "Proporção de detecção, tipos de BPV, comparação com pele normal.",
+      "code": "E9"
+    },
+    {
+      "q": "Testou pelo menos 10 sarcoides (não é relato nem revisão)?",
+      "h": "Estudo transversal, caso-controle ou série.",
+      "code": "E10"
+    }
+  ],
+  "P15": [
+    {
+      "q": "São CÃES com LINFOMA multicêntrico de alto grau?",
+      "h": "Linfoma cutâneo epiteliotrópico, só alimentar ou extranodal primário é excluído.",
+      "code": "E2"
+    },
+    {
+      "q": "Classificou o linfoma em B ou T (imunofenotipagem)?",
+      "h": "Citometria de fluxo, imuno-histoquímica, imunocitoquímica ou PARR.",
+      "code": "E6"
+    },
+    {
+      "q": "Compara SOBREVIDA ou remissão entre B e T?",
+      "h": "Sobrevida global, sobrevida livre de progressão, remissão completa.",
+      "code": "E9"
+    },
+    {
+      "q": "É coorte ou ensaio com pelo menos 10 cães por fenótipo?",
+      "h": "Relato de caso e revisão são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P16": [
+    {
+      "q": "São PEQUENOS MAMÍFEROS EXÓTICOS de estimação?",
+      "h": "Porquinho-da-índia, coelho, chinchila, degu, hamster, gerbil, ratos e camundongos de estimação, ouriço, furão. Ouriços e roedores selvagens são excluídos.",
+      "code": "E1"
+    },
+    {
+      "q": "Pesquisou DERMATÓFITOS (fungos da pele) nos animais?",
+      "h": "Cultura, PCR ou MALDI-TOF. Modelo experimental de infecção é excluído.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa QUANTOS animais foram positivos ou quais espécies de fungo?",
+      "h": "Prevalência, espécies de dermatófito, casos humanos.",
+      "code": "E9"
+    },
+    {
+      "q": "Tem pelo menos 20 animais (não é relato nem revisão)?",
+      "h": "Levantamento ou vigilância.",
+      "code": "E10"
+    }
+  ],
+  "P17": [
+    {
+      "q": "São CÃES com tumores melanocíticos (ou tumores que entram no diagnóstico diferencial)?",
+      "h": "Tumores melanocíticos de outras espécies são excluídos.",
+      "code": "E1"
+    },
+    {
+      "q": "Avaliou MARCADORES de imuno-histoquímica?",
+      "h": "Melan-A, PNL2, TRP-1, TRP-2, S100, SOX-10 ou coquetel.",
+      "code": "E7"
+    },
+    {
+      "q": "Informa QUANTOS tumores foram positivos para o marcador?",
+      "h": "Sensibilidade, especificidade ou contagem de positivos. Só intensidade de marcação, sem contagem, não serve.",
+      "code": "E2"
+    },
+    {
+      "q": "É estudo original com pelo menos 5 melanomas amelanóticos ou 10 tumores não melanocíticos?",
+      "h": "Relato de caso e revisão são excluídos.",
+      "code": "E10"
+    }
+  ],
+  "P18": [
+    {
+      "q": "São ÉGUAS com BIÓPSIA ENDOMETRIAL classificada (Kenney e Doig ou Kenney)?",
+      "h": "Classificação modificada que não dá para converter é excluída.",
+      "code": "E1"
+    },
+    {
+      "q": "Acompanhou o RESULTADO reprodutivo depois da biópsia?",
+      "h": "Taxa de parto, prenhez, perda embrionária.",
+      "code": "E9"
+    },
+    {
+      "q": "O resultado é da própria égua (não só de receptoras de embrião)?",
+      "h": "Égua só doadora de embrião, com resultado medido na receptora, fica separada.",
+      "code": "E2"
+    },
+    {
+      "q": "É coorte com pelo menos 20 éguas (não é relato nem revisão)?",
+      "h": "Estudo prospectivo ou retrospectivo.",
+      "code": "E10"
+    }
+  ],
+  "P19": [
+    {
+      "q": "São CÃES com MENINGIOMA INTRACRANIANO?",
+      "h": "Só meningioma espinhal ou orbital é excluído.",
+      "code": "E1"
+    },
+    {
+      "q": "Teve confirmação HISTOLÓGICA?",
+      "h": "Biópsia, excisão ou necropsia. Diagnóstico só por imagem é excluído.",
+      "code": "E2"
+    },
+    {
+      "q": "Relaciona GRAU histológico, mitoses ou invasão com SOBREVIDA ou recidiva?",
+      "h": "Sobrevida global, sobrevida livre de progressão, recidiva.",
+      "code": "E9"
+    },
+    {
+      "q": "É coorte com pelo menos 10 cães (não é relato nem revisão)?",
+      "h": "Estudo prospectivo ou retrospectivo.",
+      "code": "E10"
+    }
+  ],
+  "P20": [
+    {
+      "q": "São CÃES com hepatite crônica ou acúmulo de cobre no fígado?",
+      "h": "Hepatopatia tóxica aguda é excluída.",
+      "code": "E2"
+    },
+    {
+      "q": "É doença NATURAL (não sobrecarga experimental de cobre)?",
+      "h": "Estudo de sobrecarga experimental é excluído.",
+      "code": "E1"
+    },
+    {
+      "q": "Mediu o COBRE hepático e avaliou a HISTOLOGIA do fígado?",
+      "h": "Concentração de cobre (µg/g) ou escore de rodanina, junto com fibrose ou inflamação.",
+      "code": "E7"
+    },
+    {
+      "q": "Relaciona o cobre com a GRAVIDADE (fibrose, inflamação, cirrose)?",
+      "h": "Correlação, comparação entre graus.",
+      "code": "E9"
+    },
+    {
+      "q": "É estudo com pelo menos 10 cães (não é relato nem revisão)?",
+      "h": "Transversal, coorte ou série de casos.",
+      "code": "E10"
+    }
+  ],
+  "P21": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "É PEIXE (não embrião/larva com saco vitelino, não in vitro)?",
+      "h": "Zebrafish adulto, truta, carpa, koi, tilápia, peixe ornamental.",
+      "code": "E1"
+    },
+    {
+      "q": "Usa ANALGÉSICO estabelecido (anestésico local, opioide ou AINE) contra dor?",
+      "h": "Extrato de planta ou composto novo testado em modelo de zebrafish não entra. Anestésico só para o procedimento também não.",
+      "code": "E2"
+    },
+    {
+      "q": "Tem GRUPO CONTROLE com o mesmo estímulo doloroso ou procedimento?",
+      "h": "Veículo, salina, sem analgesia.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede COMPORTAMENTO de dor ou resposta fisiológica (opérculo, cortisol)?",
+      "h": "Esfregar, balançar, natação, alimentação, preferência de local.",
+      "code": "E4"
+    },
+    {
+      "q": "É EXPERIMENTO controlado com pelo menos 5 peixes por grupo?",
+      "h": "Relato de caso e série sem controle não entram (revisão e capítulo já saem na 1ª pergunta, E6).",
+      "code": "E5"
+    }
+  ],
+  "P22": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São peixes ORNAMENTAIS, de aquário ou de laboratório?",
+      "h": "Loja, importação, aquário doméstico ou público, colônia de zebrafish. Peixe de corte e humanos não.",
+      "code": "E1"
+    },
+    {
+      "q": "É infecção NATURAL por micobactéria não tuberculosa?",
+      "h": "Zebrafish infectado de propósito como modelo de tuberculose não entra.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa QUANTOS peixes foram testados e quantos deram positivo (ou a espécie isolada)?",
+      "h": "Sem denominador e sem espécie, não serve.",
+      "code": "E4"
+    },
+    {
+      "q": "Testou pelo menos 10 PEIXES (não é relato de um caso)?",
+      "h": "Relato de 1 peixe ou de 1 pessoa não entra.",
+      "code": "E5"
+    }
+  ],
+  "P23": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "A espécie é ROBALO-EUROPEU, DOURADA ou BARRAMUNDI?",
+      "h": "Dicentrarchus labrax, Sparus aurata, Lates calcarifer (Asian sea bass). Garoupa e tilápia não.",
+      "code": "E1"
+    },
+    {
+      "q": "É VACINA contra BACTÉRIA?",
+      "h": "Vibrio, Photobacterium, Tenacibaculum, Streptococcus iniae. Vacina viral (nodavírus) e imunoestimulante sem antígeno não.",
+      "code": "E2"
+    },
+    {
+      "q": "Tem GRUPO CONTROLE não vacinado ou placebo?",
+      "h": "Sem controle, não dá para calcular proteção.",
+      "code": "E3"
+    },
+    {
+      "q": "Informa MORTALIDADE após desafio ou no campo (ou RPS)?",
+      "h": "Só anticorpo ou expressão gênica, sem desafio, não entra.",
+      "code": "E4"
+    },
+    {
+      "q": "É ENSAIO controlado com pelo menos 10 peixes por grupo?",
+      "h": "Ensaio sem controle ou com menos de 10 peixes por grupo não entra (revisão e capítulo já saem na 1ª pergunta, E6).",
+      "code": "E5"
+    }
+  ],
+  "P24": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São TILÁPIAS (Oreochromis, Coptodon, Sarotherodon ou híbridos)?",
+      "h": "Outros peixes do mesmo viveiro não contam.",
+      "code": "E1"
+    },
+    {
+      "q": "É infecção NATURAL pelo TiLV?",
+      "h": "Infecção experimental e teste de vacina não entram.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa QUANTOS foram testados e QUANTOS positivos?",
+      "h": "Peixe ou pool.",
+      "code": "E4"
+    },
+    {
+      "q": "Testou pelo menos 10 PEIXES ou pools em campo?",
+      "h": "Desenvolvimento de teste sem amostra de campo não entra.",
+      "code": "E5"
+    }
+  ],
+  "P25": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São PEIXES DE VIDA LIVRE (não de laboratório nem de cultivo)?",
+      "h": "Linguado, bagre (brown bullhead), mummichog, dab, outros de fundo.",
+      "code": "E1"
+    },
+    {
+      "q": "Fez HISTOPATOLOGIA do fígado (não só exame macroscópico, não é indução experimental)?",
+      "h": "Modelo de câncer em zebrafish não entra.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa QUANTOS peixes foram examinados e QUANTOS tinham neoplasia hepática?",
+      "h": "Por local de coleta.",
+      "code": "E4"
+    },
+    {
+      "q": "Examinou pelo menos 20 PEIXES por local ou espécie?",
+      "h": "Relato de caso não entra.",
+      "code": "E5"
+    }
+  ],
+  "P26": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São PEIXES após a eclosão (não só embrião, não linhagem celular)?",
+      "h": "Tilápia, jundiá, pacu, carpa, zebrafish adulto.",
+      "code": "E1"
+    },
+    {
+      "q": "Houve EXPOSIÇÃO CONTROLADA a HERBICIDA?",
+      "h": "Glifosato (Roundup), atrazina, 2,4-D, paraquat. Coleta em rio, sem exposição controlada, não entra.",
+      "code": "E2"
+    },
+    {
+      "q": "Tem GRUPO CONTROLE sem herbicida?",
+      "h": "Água limpa ou controle do solvente.",
+      "code": "E3"
+    },
+    {
+      "q": "Fez HISTOPATOLOGIA de BRÂNQUIA ou FÍGADO com números (índice ou frequência)?",
+      "h": "Só bioquímica ou só fotos não serve.",
+      "code": "E4"
+    },
+    {
+      "q": "Pelo menos 5 PEIXES por grupo?",
+      "h": "Menos de 5 peixes por grupo não entra (revisão já sai na 1ª pergunta, E6).",
+      "code": "E5"
+    }
+  ],
+  "P27": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São ANFÍBIOS INFECTADOS por Bd ou Bsal antes do tratamento?",
+      "h": "Infecção confirmada por qPCR, histologia ou cultura.",
+      "code": "E1"
+    },
+    {
+      "q": "É TRATAMENTO para eliminar a infecção?",
+      "h": "Antifúngico, cloranfenicol, calor, sal. Vacina, imunização, probiótico preventivo e desinfecção do ambiente não.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa CURA (qPCR negativo) ou MORTALIDADE com o número de animais?",
+      "h": "Por protocolo de tratamento.",
+      "code": "E4"
+    },
+    {
+      "q": "Pelo menos 5 ANIMAIS tratados por protocolo?",
+      "h": "Relato de um animal e estudo in vitro não entram.",
+      "code": "E5"
+    }
+  ],
+  "P28": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São ANFÍBIOS VIVOS (não oócito, tecido isolado ou embrião)?",
+      "h": "Rã, sapo, salamandra, axolote, Xenopus, girino eclodido.",
+      "code": "E1"
+    },
+    {
+      "q": "AVALIA um protocolo ANESTÉSICO ou SEDATIVO definido?",
+      "h": "MS-222, eugenol, alfaxalona, isoflurano, propofol. Anestesia só como método de outro experimento não entra.",
+      "code": "E2"
+    },
+    {
+      "q": "Mede INDUÇÃO, RECUPERAÇÃO, PROFUNDIDADE ou SEGURANÇA com números?",
+      "h": "Tempo de indução, reflexos, frequência cardíaca, mortes.",
+      "code": "E4"
+    },
+    {
+      "q": "Pelo menos 5 ANIMAIS por protocolo?",
+      "h": "Relato de caso não entra.",
+      "code": "E5"
+    }
+  ],
+  "P29": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São ANFÍBIOS?",
+      "h": "Rã, sapo, salamandra, girino. Tartaruga e peixe não.",
+      "code": "E1"
+    },
+    {
+      "q": "É infecção NATURAL por RANAVÍRUS?",
+      "h": "Infecção experimental e estudo in vitro não entram.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa QUANTOS animais foram testados e QUANTOS positivos?",
+      "h": "Sem denominador, não serve.",
+      "code": "E4"
+    },
+    {
+      "q": "Testou pelo menos 10 ANIMAIS?",
+      "h": "Relato de caso não entra.",
+      "code": "E5"
+    }
+  ],
+  "P30": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São ANFÍBIOS de CATIVEIRO ou do COMÉRCIO?",
+      "h": "Loja, mercado, importação, coleção particular, zoológico, laboratório, criadouro, apreensão. Só população selvagem não.",
+      "code": "E1"
+    },
+    {
+      "q": "Pesquisou Bd ou Bsal em infecção NATURAL?",
+      "h": "Infecção experimental e ensaio de tratamento não entram.",
+      "code": "E2"
+    },
+    {
+      "q": "Informa QUANTOS foram testados e QUANTOS positivos?",
+      "h": "Separado para Bd e Bsal, se possível.",
+      "code": "E4"
+    },
+    {
+      "q": "Testou pelo menos 10 ANIMAIS?",
+      "h": "Relato de caso não entra.",
+      "code": "E5"
+    }
+  ],
+  "P31": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São PSITACÍDEOS de cativeiro (papagaio, arara, calopsita, periquito, cacatua)?",
+      "h": "Ave de produção, passeriforme, rapinante ou psitacídeo de vida livre: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Testa ENRIQUECIMENTO (forrageamento, objetos, complexidade, social, sensorial)?",
+      "h": "Só remédio ou tratamento clínico do arrancamento de penas: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com condição SEM enriquecimento ou com a linha de base?",
+      "h": "Só preferência ou uso do objeto, sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede ARRANCAMENTO DE PENAS, ESTEREOTIPIA ou comportamento em números?",
+      "h": "Escore de plumagem, tempo ou frequência de bicar penas, estereotipias, forrageamento.",
+      "code": "E4"
+    },
+    {
+      "q": "É estudo controlado ou intra-sujeito com pelo menos 3 aves?",
+      "h": "Relato de uma ave: E5.",
+      "code": "E5"
+    }
+  ],
+  "P32": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São RÉPTEIS em cativeiro (serpente, lagarto, gecko, jabuti, tartaruga, crocodiliano)?",
+      "h": "Réptil de vida livre: E1 (exceto programas de reabilitação ou head-starting em cativeiro).",
+      "code": "E1"
+    },
+    {
+      "q": "Testa ENRIQUECIMENTO ou recinto mais complexo?",
+      "h": "Só lâmpada UVB ou temperatura para vitamina D: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com recinto padrão, vazio ou com a linha de base?",
+      "h": "Só preferência pelo objeto, sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede COMPORTAMENTO, glicocorticoide, condição corporal ou cérebro em números?",
+      "h": "Tentativas de fuga, estereotipia, exploração, corticosterona.",
+      "code": "E4"
+    },
+    {
+      "q": "É estudo controlado ou intra-sujeito com pelo menos 3 animais?",
+      "h": "Relato de um animal: E5.",
+      "code": "E5"
+    }
+  ],
+  "P33": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São COELHOS de laboratório, companhia ou abrigo?",
+      "h": "Coelho de corte (produção de carne ou pele), coelho selvagem: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Testa ALOJAMENTO SOCIAL (dupla, grupo) ou ENRIQUECIMENTO/gaiola maior?",
+      "h": "Só temperatura, luz ou piso: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com coelho SOZINHO, sem enriquecimento ou com a linha de base?",
+      "h": "Sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede COMPORTAMENTO, ferimento ou fisiologia em números?",
+      "h": "Estereotipia, agressão, ferida, cortisol, peso, exames.",
+      "code": "E4"
+    },
+    {
+      "q": "Pelo menos 4 coelhos por condição?",
+      "h": "Menos de 4 por condição ou relato de caso: E5.",
+      "code": "E5"
+    }
+  ],
+  "P34": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São PRIMATAS NÃO HUMANOS em cativeiro (laboratório, zoológico, santuário)?",
+      "h": "Primata de vida livre: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Testa ALOJAMENTO SOCIAL (dupla ou grupo, contínuo, intermitente ou contato protegido)?",
+      "h": "Só condição de criação do filhote (separação materna, berçário) ou hierarquia: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com o animal SOZINHO (alojamento individual)?",
+      "h": "Sem grupo ou fase individual: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede COMPORTAMENTO, cortisol, sono ou ferimentos em números?",
+      "h": "Estereotipia, autolesão, cortisol, sono, ferida.",
+      "code": "E4"
+    },
+    {
+      "q": "É estudo controlado ou antes-depois com pelo menos 4 animais?",
+      "h": "Relato de um animal: E5.",
+      "code": "E5"
+    }
+  ],
+  "P35": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São animais SILVESTRES em cativeiro ou de laboratório (exceto rato e camundongo)?",
+      "h": "Cão, gato, cavalo, animal de produção, rato ou camundongo de laboratório: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Usa TREINAMENTO POR REFORÇO POSITIVO para manejo ou procedimento veterinário?",
+      "h": "Tarefa operante só para estudar cognição ou drogas: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com animal NÃO treinado, com antes do treino ou com contenção convencional?",
+      "h": "Sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede CORTISOL, leucograma de estresse, frequência cardíaca, comportamento ou sucesso do procedimento?",
+      "h": "Em números, para cada condição.",
+      "code": "E4"
+    },
+    {
+      "q": "É estudo controlado ou antes-depois com pelo menos 3 animais?",
+      "h": "Relato de um animal: E5.",
+      "code": "E5"
+    }
+  ],
+  "P36": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São animais SILVESTRES em cativeiro ou de laboratório (exceto rato e camundongo)?",
+      "h": "Cão, gato, cavalo, animal de produção, rato ou camundongo: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Usa MÚSICA ou SONS NATURAIS como enriquecimento?",
+      "h": "Ruído como fator de estresse ou estudo de percepção e ritmo: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com SILÊNCIO, sem som ou com a linha de base?",
+      "h": "Sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede COMPORTAMENTO ou glicocorticoide em números?",
+      "h": "Estereotipia, agitação, atividade, cortisol.",
+      "code": "E4"
+    },
+    {
+      "q": "É estudo controlado ou intra-sujeito com pelo menos 3 animais?",
+      "h": "Relato de um animal: E5.",
+      "code": "E5"
+    }
+  ],
+  "P37": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São CETÁCEOS ou PINÍPEDES sob cuidado humano (golfinho, orca, beluga, leão-marinho, foca, morsa)?",
+      "h": "Animal de vida livre, peixe-boi, lontra ou urso-polar: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Testa ENRIQUECIMENTO (objetos, forrageamento, olfativo, cognitivo, recinto)?",
+      "h": "Só treino ou apresentação ao público: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com condição SEM enriquecimento ou linha de base?",
+      "h": "Sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede COMPORTAMENTO ou fisiologia em números?",
+      "h": "Estereotipia, brincadeira, exploração, cortisol.",
+      "code": "E4"
+    },
+    {
+      "q": "Pelo menos 2 animais?",
+      "h": "Relato de um animal: E5.",
+      "code": "E5"
+    }
+  ],
+  "P38": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São peixes de AQUICULTURA ou criados em incubatório (truta, salmão, tilápia, bagre, robalo, dourada, bacalhau)?",
+      "h": "Zebrafish, medaka, guppy, betta ou peixe ornamental: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Testa ENRIQUECIMENTO ESTRUTURAL (abrigo, substrato, planta artificial, estrutura no tanque)?",
+      "h": "Só aditivo de ração, luz ou som: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com tanque VAZIO (sem estrutura) nas mesmas condições?",
+      "h": "Sem controle: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede NADADEIRA, cortisol, crescimento, sobrevivência, comportamento ou cérebro em números?",
+      "h": "Para cada grupo.",
+      "code": "E4"
+    },
+    {
+      "q": "Tem pelo menos 2 tanques por tratamento ou 10 peixes por tratamento?",
+      "h": "Menos que isso: E5.",
+      "code": "E5"
+    }
+  ],
+  "P39": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São CARNÍVOROS em cativeiro (felino, urso, lobo, raposa, mustelídeo, hiena)?",
+      "h": "Cão ou gato doméstico, pinípede, animal de vida livre: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Testa ENRIQUECIMENTO (alimentar, olfativo, estrutural, cognitivo, social)?",
+      "h": "Só levantamento de fatores de risco: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com condição SEM enriquecimento ou linha de base?",
+      "h": "Sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede ESTEREOTIPIA (pacing) ou outro comportamento em números?",
+      "h": "Proporção de tempo, frequência, metabólitos de glicocorticoide.",
+      "code": "E4"
+    },
+    {
+      "q": "Pelo menos 2 animais?",
+      "h": "Estudo de um único animal: E5.",
+      "code": "E5"
+    }
+  ],
+  "P40": [
+    {
+      "q": "É ESTUDO ORIGINAL, com dados próprios? (não é revisão, editorial, carta, comentário, capítulo, errata nem resumo de congresso sem dados)",
+      "h": "Revisão, editorial, carta, capítulo ou errata: E6. Resumo de congresso sem métodos e dados: E7. Mesmos animais de outro artigo: E8. Responda isto ANTES das outras perguntas.",
+      "code": "E6"
+    },
+    {
+      "q": "São COELHOS, pequenos mamíferos exóticos (cobaia, chinchila, hamster, gerbil, furão, ouriço) ou PSITACÍDEOS?",
+      "h": "Rato ou camundongo de laboratório, cão, gato, coelho de corte, ave de vida livre: E1.",
+      "code": "E1"
+    },
+    {
+      "q": "Estuda MANEJO/CONTENÇÃO (pegar, segurar, conter) ou um MÉTODO de manejo mais gentil?",
+      "h": "Só sedação, anestesia, transporte ou abate: E2.",
+      "code": "E2"
+    },
+    {
+      "q": "Compara com a LINHA DE BASE, com animal não manipulado ou com o manejo convencional?",
+      "h": "Sem comparação: E3.",
+      "code": "E3"
+    },
+    {
+      "q": "Mede CORTICOSTERONA/CORTISOL, frequência cardíaca ou respiratória, temperatura ocular ou comportamento?",
+      "h": "Em números, para cada condição.",
+      "code": "E4"
+    },
+    {
+      "q": "Pelo menos 5 animais?",
+      "h": "Menos de 5 ou relato de caso: E5.",
+      "code": "E5"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "profatilio-sr/1",
+  "project": "01_Meloxicam_Lagomorfos",
+  "generated_at": "2026-10-15T10:00:00",
+  "search": {
+    "date": "2026-10-15",
+    "query": "(\"meloxicam\" OR \"metacam\") AND (\"rabbit\" OR \"Oryctolagus cuniculus\")",
+    "searches": [
+      {
+        "database": "PubMed/MEDLINE",
+        "platform": "NCBI E-utilities",
+        "query": "(\"meloxicam\" OR \"metacam\") AND (\"rabbit\" OR \"Oryctolagus cuniculus\")",
+        "date": "2026-10-15",
+        "results": 152,
+        "filters": "nenhum",
+        "notes": ""
+      },
+      {
+        "database": "Scopus",
+        "platform": "Elsevier",
+        "query": "TITLE-ABS-KEY((meloxicam OR metacam) AND (rabbit*))",
+        "date": "2026-10-15",
+        "results": 201,
+        "filters": "nenhum",
+        "notes": "exportado em RIS"
+      }
+    ],
+    "sources": {
+      "PubMed/MEDLINE": 152,
+      "Scopus": 201
+    },
+    "duplicates_removed": 98,
+    "doi_completed_crossref": 7,
+    "rejected": 1
+  },
+  "records": [
+    {
+      "record_id": "PMID:12345678",
+      "title": "Analgesic efficacy of meloxicam in rabbits after ovariohysterectomy",
+      "abstract": "Background: ... Methods: ... Results: ... Conclusions: ...",
+      "authors": "Silva, Ana B; Souza, Carlos D",
+      "year": "2021",
+      "journal": "Journal of Exotic Pet Medicine",
+      "volume": "38",
+      "issue": "2",
+      "pages": "45-52",
+      "issn": "1557-5063",
+      "doi": "10.1016/j.jepm.2021.01.001",
+      "pmid": "12345678",
+      "pmcid": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12345678/",
+      "language": "eng",
+      "publication_type": "Journal Article; Randomized Controlled Trial",
+      "keywords": "rabbit; analgesia; NSAID; grimace scale",
+      "sources": [
+        "PubMed/MEDLINE",
+        "Scopus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2059 @@
+{
+  "fisiologia_ii": {
+    "package_id": "2026_2__FISIOLOGIA_II__A2_1",
+    "disciplina": "Fisiologia Animal II",
+    "avaliacao": "Avaliação A2/1 (Prova Presencial)",
+    "semestre": "2026.2",
+    "escala": "20 Questões Objetivas × 0,175 pt = 3,50 pontos",
+    "tipo": "avaliacao",
+    "tem_discursiva": false,
+    "turmas": {
+      "PTA_MAT": {
+        "turma": "PTA — Paulista · Matutino",
+        "data": "05/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "熊猫 (xióngmāo — panda)",
+            "label": "Versão 1 / KEY A — 熊猫 (xióngmāo — panda)",
+            "total_questoes": 20,
+            "valor_questao": 0.175,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Pressão intrapleural e pneumotórax",
+                "comentario": "Pressão intrapleural subatmosférica; pneumotórax iguala pressões e o pulmão retrai."
+              },
+              {
+                "q": 2,
+                "gab": "B",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Resistência de vias aéreas e expiração",
+                "comentario": "Expiração de repouso é passiva; ↑resistência → expiração ativa."
+              },
+              {
+                "q": 3,
+                "gab": "E",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Surfactante pulmonar e Lei de Laplace",
+                "comentario": "Surfactante reduz a tensão superficial, principalmente em alvéolos pequenos (Laplace)."
+              },
+              {
+                "q": 4,
+                "gab": "D",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Transporte sanguíneo de CO2",
+                "comentario": "≈70% do CO2 é transportado como HCO3-, formado pela anidrase carbônica eritrocitária."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Reflexo de insuflação de Hering-Breuer",
+                "comentario": "Hering-Breuer: estiramento → aferência vagal → interrompe inspiração; sem vago, inspirações mais longas."
+              },
+              {
+                "q": 6,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Interpretação de hemogasometria (alcalose respiratória)",
+                "comentario": "pH alto + PaCO2 baixa (causa) + HCO3- baixo (compensação renal)."
+              },
+              {
+                "q": 7,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Curva de dissociação da Hb e Efeito Bohr",
+                "comentario": "Efeito Bohr: ↑temperatura, ↑PCO2 e ↑H+ reduzem a afinidade da Hb pelo O2 e aumentam a liberação nos tecidos."
+              },
+              {
+                "q": 8,
+                "gab": "C",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Sistema nervoso entérico e aganglionose ileocólica",
+                "comentario": "Aganglionose ileocólica: sem plexo mioentérico não há peristaltismo coordenado."
+              },
+              {
+                "q": 9,
+                "gab": "E",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Fases da deglutição e proteção das vias aéreas",
+                "comentario": "Depressão do centro bulbar compromete a proteção das vias aéreas na fase faríngea."
+              },
+              {
+                "q": 10,
+                "gab": "A",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Células parietais (HCl e fator intrínseco / vitamina B12)",
+                "comentario": "Células parietais: HCl e fator intrínseco; B12 absorvida no íleo ligada ao fator intrínseco."
+              },
+              {
+                "q": 11,
+                "gab": "B",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Fases cefálica e gástrica da secreção gástrica",
+                "comentario": "Cefálica (vagal) abolida pela vagotomia; gástrica tem componentes locais e hormonais."
+              },
+              {
+                "q": 12,
+                "gab": "B",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Zimogênios pancreáticos e fisiopatologia da pancreatite",
+                "comentario": "Normalmente enzimas saem como zimogênios e a enterocinase ativa a tripsina só no lúmen."
+              },
+              {
+                "q": 13,
+                "gab": "D",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Fisiologia da reidratação oral (cotransporte SGLT1)",
+                "comentario": "Cotransporte Na+-glicose (SGLT1) na membrana apical do enterócito."
+              },
+              {
+                "q": 14,
+                "gab": "E",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Reflexo da goteira esofágica em ruminantes lactentes",
+                "comentario": "Goteira esofágica é reflexa (associada ao ato de mamar); falha → leite no rúmen e fermentação patológica."
+              },
+              {
+                "q": 15,
+                "gab": "D",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Mecanismos de ação hormonal (receptores de membrana vs intracelulares)",
+                "comentario": "Peptídeos: membrana e segundos mensageiros; esteroides/tireoidianos: receptores intracelulares e transcrição."
+              },
+              {
+                "q": 16,
+                "gab": "E",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Eixo hipotálamo-hipófise-adrenal e atrofia iatrogênica",
+                "comentario": "Feedback negativo por corticoide exógeno → supressão de CRH/ACTH → atrofia adrenal iatrogênica."
+              },
+              {
+                "q": 17,
+                "gab": "B",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Diagnóstico diferencial de hipotireoidismo primário vs secundário",
+                "comentario": "Primário: ↓T4, ↑TSH; secundário: ↓T4, TSH baixo/normal."
+              },
+              {
+                "q": 18,
+                "gab": "C",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Homeostase do cálcio, PTH e hipocalcemia puerperal",
+                "comentario": "PTH: ↑reabsorção óssea, ↑reabsorção tubular de Ca e ↑síntese renal de calcitriol."
+              },
+              {
+                "q": 19,
+                "gab": "C",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Hipoglicemia e hormônios contrarreguladores",
+                "comentario": "Hipoglicemia estimula catecolaminas e glucagon (glicogenólise e gliconeogênese hepática)."
+              },
+              {
+                "q": 20,
+                "gab": "D",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Diabetes insípido central vs nefrogênico e resposta à desmopressina",
+                "comentario": "ADH produzido no hipotálamo e liberado pela neuro-hipófise; resposta à desmopressina confirma rim responsivo."
+              }
+            ]
+          },
+          "B": {
+            "key": "B",
+            "codinome": "猴子 (hóuzi — macaco)",
+            "label": "Versão 2 / KEY B — 猴子 (hóuzi — macaco)",
+            "total_questoes": 20,
+            "valor_questao": 0.175,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Controle químico da ventilação (CO2/H+ e hipocapnia)",
+                "comentario": "CO2 (via H+) é o estímulo primário dos quimiorreceptores centrais; hipocapnia induz apneia."
+              },
+              {
+                "q": 2,
+                "gab": "D",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Mecânica respiratória das aves (sacos aéreos e parabrônquios)",
+                "comentario": "Sacos aéreos ventilam; troca gasosa ocorre nos parabrônquios com fluxo unidirecional."
+              },
+              {
+                "q": 3,
+                "gab": "E",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Aldosterona e fisiopatologia do hipoadrenocorticismo",
+                "comentario": "Aldosterona: secretada pela zona glomerulosa; estimulada por angiotensina II e por hipercalemia."
+              },
+              {
+                "q": 4,
+                "gab": "E",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Transporte de O2 e conteúdo arterial na anemia",
+                "comentario": "O2 é transportado dissolvido (PaO2) e ligado à Hb; na anemia o conteúdo arterial cai mesmo com PaO2 normal."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Controle farmacológico da secreção ácida gástrica",
+                "comentario": "Histamina (ECL) potencializa gastrina e ACh; bomba de prótons (H+/K+-ATPase) é a via final comum."
+              },
+              {
+                "q": 6,
+                "gab": "C",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Ventilação alveolar e espaço morto anatômico/mecânico",
+                "comentario": "Ventilação alveolar = volume-minuto menos a ventilação do espaço morto; espaço morto mecânico ↑ → PaCO2 ↑."
+              },
+              {
+                "q": 7,
+                "gab": "A",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Absorção intestinal de colostro e janela de fechamento",
+                "comentario": "Absorção de imunoglobulinas intactas por pinocitose no neonato, com janela temporal limitada."
+              },
+              {
+                "q": 8,
+                "gab": "C",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Compensação respiratória na acidose metabólica",
+                "comentario": "Acidose metabólica estimula quimiorreceptores → hiperventilação compensatória → ↓PaCO2."
+              },
+              {
+                "q": 9,
+                "gab": "B",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Lei de Fick da difusão e solubilidade do CO2 vs O2",
+                "comentario": "Difusão ∝ área/espessura e solubilidade; CO2 é ≈20× mais solúvel que o O2."
+              },
+              {
+                "q": 10,
+                "gab": "B",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Metabolismo do cálcio e hiperparatireoidismo secundário nutricional",
+                "comentario": "Dieta pobre em cálcio ou com excesso de fósforo induz hiperparatireoidismo secundário nutricional."
+              },
+              {
+                "q": 11,
+                "gab": "E",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Fisiopatologia do bócio por deficiência de iodo",
+                "comentario": "↓Síntese de T3/T4 → perda de feedback negativo → ↑TSH crônico → hiperplasia tireoidiana (bócio)."
+              },
+              {
+                "q": 12,
+                "gab": "C",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "GH, progestágenos e resistência insulínica (acromegalia)",
+                "comentario": "Acromegalia e diabetes resistentes induzidos por progestágenos (secreção mamária de GH na cadela)."
+              },
+              {
+                "q": 13,
+                "gab": "B",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Fração hormonal livre vs ligada a proteínas plasmáticas",
+                "comentario": "Apenas a fração livre é biologicamente ativa; estrógenos aumentam proteínas carreadoras (TBG)."
+              },
+              {
+                "q": 14,
+                "gab": "D",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Regulação enterogástrica do esvaziamento gástrico",
+                "comentario": "Fatores intestinais inibitórios: reflexos neurais enterogástricos e hormônios duodenais (CCK, secretina, GIP)."
+              },
+              {
+                "q": 15,
+                "gab": "D",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Secreção salivar alcalina e tamponamento ruminal",
+                "comentario": "Saliva de ruminantes: grande volume diário e alto poder tampão (bicarbonato e fosfato)."
+              },
+              {
+                "q": 16,
+                "gab": "B",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Digestão/absorção de lipídios, quilomícrons e linfangiectasia",
+                "comentario": "Micelas → enterócito → ressintetizados em quilomícrons → vasos lactíferos linfáticos."
+              },
+              {
+                "q": 17,
+                "gab": "D",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Complacência pulmonar e padrão ventilatório restritivo",
+                "comentario": "Complacência = ΔV/ΔP; padrão rápido e superficial reduz trabalho elástico, embora piore a ventilação alveolar."
+              },
+              {
+                "q": 18,
+                "gab": "A",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Circulação êntero-hepática de sais biliares no íleo",
+                "comentario": "≈90% dos sais biliares secretados são reabsorvidos ativamente no íleo terminal e retornam via porta."
+              },
+              {
+                "q": 19,
+                "gab": "A",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Hiperglicemia de estresse e ação das catecolaminas",
+                "comentario": "Catecolaminas exercem efeitos hiperglicemiantes semelhantes ao glucagon e opostos à insulina."
+              },
+              {
+                "q": 20,
+                "gab": "E",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Controle autonômico da motilidade e íleo paralítico",
+                "comentario": "Sistema simpático (noradrenalina) inibe a motilidade intestinal; parassimpático (ACh) estimula."
+              }
+            ]
+          }
+        }
+      },
+      "PTA_NOT": {
+        "turma": "PTA — Paulista · Noturno",
+        "data": "06/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "狮子 (shīzi — leão)",
+            "label": "Versão 1 / KEY A — 狮子 (shīzi — leão)",
+            "total_questoes": 20,
+            "valor_questao": 0.175,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Transporte de O2 e conteúdo arterial na anemia",
+                "comentario": "O2 é transportado dissolvido (PaO2) e ligado à Hb; na anemia o conteúdo arterial cai mesmo com PaO2 normal."
+              },
+              {
+                "q": 2,
+                "gab": "E",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Ventilação alveolar e espaço morto anatômico/mecânico",
+                "comentario": "Ventilação alveolar = volume-minuto menos a ventilação do espaço morto; espaço morto mecânico ↑ → PaCO2 ↑."
+              },
+              {
+                "q": 3,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Complacência pulmonar e padrão ventilatório restritivo",
+                "comentario": "Complacência = ΔV/ΔP; padrão rápido e superficial reduz trabalho elástico, embora piore a ventilação alveolar."
+              },
+              {
+                "q": 4,
+                "gab": "D",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Lei de Fick da difusão e solubilidade do CO2 vs O2",
+                "comentario": "Difusão ∝ área/espessura e solubilidade; CO2 é ≈20× mais solúvel que o O2."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Controle químico da ventilação (CO2/H+ e hipocapnia)",
+                "comentario": "CO2 (via H+) é o estímulo primário dos quimiorreceptores centrais; hipocapnia induz apneia."
+              },
+              {
+                "q": 6,
+                "gab": "B",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Compensação respiratória na acidose metabólica",
+                "comentario": "Acidose metabólica estimula quimiorreceptores → hiperventilação compensatória → ↓PaCO2."
+              },
+              {
+                "q": 7,
+                "gab": "C",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Mecânica respiratória das aves (sacos aéreos e parabrônquios)",
+                "comentario": "Sacos aéreos ventilam; troca gasosa ocorre nos parabrônquios com fluxo unidirecional."
+              },
+              {
+                "q": 8,
+                "gab": "A",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Controle autonômico da motilidade e íleo paralítico",
+                "comentario": "Sistema simpático (noradrenalina) inibe a motilidade intestinal; parassimpático (ACh) estimula."
+              },
+              {
+                "q": 9,
+                "gab": "B",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Secreção salivar alcalina e tamponamento ruminal",
+                "comentario": "Saliva de ruminantes: grande volume diário e alto poder tampão (bicarbonato e fosfato)."
+              },
+              {
+                "q": 10,
+                "gab": "E",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Controle farmacológico da secreção ácida gástrica",
+                "comentario": "Histamina (ECL) potencializa gastrina e ACh; bomba de prótons (H+/K+-ATPase) é a via final comum."
+              },
+              {
+                "q": 11,
+                "gab": "D",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Regulação enterogástrica do esvaziamento gástrico",
+                "comentario": "Fatores intestinais inibitórios: reflexos neurais enterogástricos e hormônios duodenais (CCK, secretina, GIP)."
+              },
+              {
+                "q": 12,
+                "gab": "E",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Circulação êntero-hepática de sais biliares no íleo",
+                "comentario": "≈90% dos sais biliares secretados são reabsorvidos ativamente no íleo terminal e retornam via porta."
+              },
+              {
+                "q": 13,
+                "gab": "B",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Digestão/absorção de lipídios, quilomícrons e linfangiectasia",
+                "comentario": "Micelas → enterócito → ressintetizados em quilomícrons → vasos lactíferos linfáticos."
+              },
+              {
+                "q": 14,
+                "gab": "A",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Absorção intestinal de colostro e janela de fechamento",
+                "comentario": "Absorção de imunoglobulinas intactas por pinocitose no neonato, com janela temporal limitada."
+              },
+              {
+                "q": 15,
+                "gab": "E",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Fração hormonal livre vs ligada a proteínas plasmáticas",
+                "comentario": "Apenas a fração livre é biologicamente ativa; estrógenos aumentam proteínas carreadoras (TBG)."
+              },
+              {
+                "q": 16,
+                "gab": "B",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Fisiopatologia do bócio por deficiência de iodo",
+                "comentario": "↓Síntese de T3/T4 → perda de feedback negativo → ↑TSH crônico → hiperplasia tireoidiana (bócio)."
+              },
+              {
+                "q": 17,
+                "gab": "C",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Metabolismo do cálcio e hiperparatireoidismo secundário nutricional",
+                "comentario": "Dieta pobre em cálcio ou com excesso de fósforo induz hiperparatireoidismo secundário nutricional."
+              },
+              {
+                "q": 18,
+                "gab": "D",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Aldosterona e fisiopatologia do hipoadrenocorticismo",
+                "comentario": "Aldosterona: secretada pela zona glomerulosa; estimulada por angiotensina II e por hipercalemia."
+              },
+              {
+                "q": 19,
+                "gab": "D",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Hiperglicemia de estresse e ação das catecolaminas",
+                "comentario": "Catecolaminas exercem efeitos hiperglicemiantes semelhantes ao glucagon e opostos à insulina."
+              },
+              {
+                "q": 20,
+                "gab": "C",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "GH, progestágenos e resistência insulínica (acromegalia)",
+                "comentario": "Acromegalia e diabetes resistentes induzidos por progestágenos (secreção mamária de GH na cadela)."
+              }
+            ]
+          },
+          "B": {
+            "key": "B",
+            "codinome": "老虎 (lǎohǔ — tigre)",
+            "label": "Versão 2 / KEY B — 老虎 (lǎohǔ — tigre)",
+            "total_questoes": 20,
+            "valor_questao": 0.175,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "B",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Resistência de vias aéreas e expiração",
+                "comentario": "Expiração de repouso é passiva; ↑resistência → expiração ativa."
+              },
+              {
+                "q": 2,
+                "gab": "C",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Zimogênios pancreáticos e fisiopatologia da pancreatite",
+                "comentario": "Normalmente enzimas saem como zimogênios e a enterocinase ativa a tripsina só no lúmen."
+              },
+              {
+                "q": 3,
+                "gab": "B",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Mecanismos de ação hormonal (receptores de membrana vs intracelulares)",
+                "comentario": "Peptídeos: membrana e segundos mensageiros; esteroides/tireoidianos: receptores intracelulares e transcrição."
+              },
+              {
+                "q": 4,
+                "gab": "D",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Fisiologia da reidratação oral (cotransporte SGLT1)",
+                "comentario": "Cotransporte Na+-glicose (SGLT1) na membrana apical do enterócito."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Reflexo da goteira esofágica em ruminantes lactentes",
+                "comentario": "Goteira esofágica é reflexa (associada ao ato de mamar); falha → leite no rúmen e fermentação patológica."
+              },
+              {
+                "q": 6,
+                "gab": "B",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Curva de dissociação da Hb e Efeito Bohr",
+                "comentario": "Efeito Bohr: ↑temperatura, ↑PCO2 e ↑H+ reduzem a afinidade da Hb pelo O2 e aumentam a liberação nos tecidos."
+              },
+              {
+                "q": 7,
+                "gab": "A",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Sistema nervoso entérico e aganglionose ileocólica",
+                "comentario": "Aganglionose ileocólica: sem plexo mioentérico não há peristaltismo coordenado."
+              },
+              {
+                "q": 8,
+                "gab": "A",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Diagnóstico diferencial de hipotireoidismo primário vs secundário",
+                "comentario": "Primário: ↓T4, ↑TSH; secundário: ↓T4, TSH baixo/normal."
+              },
+              {
+                "q": 9,
+                "gab": "D",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Surfactante pulmonar e Lei de Laplace",
+                "comentario": "Surfactante reduz a tensão superficial, principalmente em alvéolos pequenos (Laplace)."
+              },
+              {
+                "q": 10,
+                "gab": "D",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Fases da deglutição e proteção das vias aéreas",
+                "comentario": "Depressão do centro bulbar compromete a proteção das vias aéreas na fase faríngea."
+              },
+              {
+                "q": 11,
+                "gab": "E",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Pressão intrapleural e pneumotórax",
+                "comentario": "Pressão intrapleural subatmosférica; pneumotórax iguala pressões e o pulmão retrai."
+              },
+              {
+                "q": 12,
+                "gab": "B",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Fases cefálica e gástrica da secreção gástrica",
+                "comentario": "Cefálica (vagal) abolida pela vagotomia; gástrica tem componentes locais e hormonais."
+              },
+              {
+                "q": 13,
+                "gab": "E",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Homeostase do cálcio, PTH e hipocalcemia puerperal",
+                "comentario": "PTH: ↑reabsorção óssea, ↑reabsorção tubular de Ca e ↑síntese renal de calcitriol."
+              },
+              {
+                "q": 14,
+                "gab": "E",
+                "eixo": "Fisiologia Digestória",
+                "tema": "Células parietais (HCl e fator intrínseco / vitamina B12)",
+                "comentario": "Células parietais: HCl e fator intrínseco; B12 absorvida no íleo ligada ao fator intrínseco."
+              },
+              {
+                "q": 15,
+                "gab": "D",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Transporte sanguíneo de CO2",
+                "comentario": "≈70% do CO2 é transportado como HCO3-, formado pela anidrase carbônica eritrocitária."
+              },
+              {
+                "q": 16,
+                "gab": "E",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Hipoglicemia e hormônios contrarreguladores",
+                "comentario": "Hipoglicemia estimula catecolaminas e glucagon (glicogenólise e gliconeogênese hepática)."
+              },
+              {
+                "q": 17,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Interpretação de hemogasometria (alcalose respiratória)",
+                "comentario": "pH alto + PaCO2 baixa (causa) + HCO3- baixo (compensação renal)."
+              },
+              {
+                "q": 18,
+                "gab": "C",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Diabetes insípido central vs nefrogênico e resposta à desmopressina",
+                "comentario": "ADH produzido no hipotálamo e liberado pela neuro-hipófise; resposta à desmopressina confirma rim responsivo."
+              },
+              {
+                "q": 19,
+                "gab": "A",
+                "eixo": "Fisiologia Respiratória",
+                "tema": "Reflexo de insuflação de Hering-Breuer",
+                "comentario": "Hering-Breuer: estiramento → aferência vagal → interrompe inspiração; sem vago, inspirações mais longas."
+              },
+              {
+                "q": 20,
+                "gab": "C",
+                "eixo": "Fisiologia Endócrina",
+                "tema": "Eixo hipotálamo-hipófise-adrenal e atrofia iatrogênica",
+                "comentario": "Feedback negativo por corticoide exógeno → supressão de CRH/ACTH → atrofia adrenal iatrogênica."
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "silvestres_p2": {
+    "package_id": "2026_2__SILVESTRES__P2",
+    "disciplina": "Medicina dos Animais Silvestres",
+    "avaliacao": "Avaliação P2 (A2/2)",
+    "semestre": "2026.2",
+    "escala": "15 Questões Objetivas (1,50 pt) + 1 Questão Discursiva (1,00 pt) = 2,50 pontos",
+    "tipo": "avaliacao",
+    "tem_discursiva": true,
+    "turmas": {
+      "PTA_MAT": {
+        "turma": "PTA — Paulista · Matutino",
+        "data": "03/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "蝴蝶 (húdié — borboleta)",
+            "label": "Versão 1 / KEY A — 蝴蝶 (húdié — borboleta)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "A",
+                "tema": "Aves — respiração e anestesia inalatória",
+                "comentario": "I, III e IV corretas. II é falsa: os pulmões das aves são rígidos e quase não mudam de volume; o ar é movido pelos sacos aéreos, que dependem da movimentação do esterno e das costelas — por isso a contenção que a impede pode causar apneia."
+              },
+              {
+                "q": 2,
+                "gab": "D",
+                "tema": "Aves — interpretação das excretas",
+                "comentario": "Aves excretam biliverdina (pouca bilirrubina; bilirrubina sérica é pouco útil). Fezes verde-escuras de jejum alteram a porção fecal, não os uratos. Uratos verdes = biliverdinúria → hepatopatia."
+              },
+              {
+                "q": 3,
+                "gab": "E",
+                "tema": "Aves — AST, CK e ácidos biliares",
+                "comentario": "AST não é hepatoespecífica; CK muito alta aponta lesão muscular (contenção, injeção IM). ALT tem pouco valor em aves. Ácidos biliares avaliam a função hepática."
+              },
+              {
+                "q": 4,
+                "gab": "B",
+                "tema": "Aves — plano de fluidoterapia",
+                "comentario": "Sinais graves (enoftalmia, pele persistente, mucosa seca, hipoperfusão) ≈ 10%. Déficit = 1,0 × 0,10 = 100 mL → 50 mL no 1º dia e 50 mL no 2º; manutenção = 50 mL/dia → 100 mL no 1º dia e 100 mL no 2º. Hipoperfusão: IV/IO; SC absorve mal."
+              },
+              {
+                "q": 5,
+                "gab": "B",
+                "tema": "Aves — hipovitaminose A",
+                "comentario": "I, II e IV corretas. III é falsa: a vitamina A é lipossolúvel e acumula (hipervitaminose A é possível); a injeção é medida pontual, e a correção definitiva é a dieta."
+              },
+              {
+                "q": 6,
+                "gab": "A",
+                "tema": "Aves — hemocromatose",
+                "comentario": "Ranfastídeos e mainás: doença de armazenamento de ferro. Vitamina C (cítricos) aumenta a absorção de ferro. Diagnóstico por biópsia hepática; dieta pobre em ferro e flebotomia."
+              },
+              {
+                "q": 7,
+                "gab": "E",
+                "tema": "Aves — hiperparatireoidismo nutricional secundário",
+                "comentario": "I, III e IV corretas. II é falsa: a causa é a deficiência de cálcio com excesso de fósforo; D3 isolada não corrige a dieta e pode agravar a reabsorção."
+              },
+              {
+                "q": 8,
+                "gab": "C",
+                "tema": "Aves — PCR para circovírus em ave sem sinais",
+                "comentario": "Aves expostas podem ter viremia transitória; teste pareado (~90 dias). Aciclovir é usado na doença de Pacheco (herpesvírus), não no circovírus; não há vacina comercial no Brasil."
+              },
+              {
+                "q": 9,
+                "gab": "D",
+                "tema": "Aves — constrição por anilha",
+                "comentario": "Anilha apertada (edema, hiperqueratose, crescimento) causa constrição e isquemia distal: removê-la com cortador adequado, com a ave contida e o membro estabilizado (risco de fratura do tarsometatarso); registrar a numeração e emitir laudo. A viabilidade distal só se define nos dias seguintes; deslizar à força agrava a lesão."
+              },
+              {
+                "q": 10,
+                "gab": "D",
+                "tema": "Aves — atoxoplasmose em canários",
+                "comentario": "Atoxoplasmose: Isospora com fase sistêmica em mononucleares; hepatomegalia visível em filhotes; adultos portadores; tratamento do plantel + higiene."
+              },
+              {
+                "q": 11,
+                "gab": "E",
+                "tema": "Aves — Dermanyssus",
+                "comentario": "Dermanyssus: hematófago noturno que vive no ambiente → anemia e agitação noturna; tratamento ambiental obrigatório."
+              },
+              {
+                "q": 12,
+                "gab": "C",
+                "tema": "Aves — retenção de ovo",
+                "comentario": "Hipocalcemia reduz a contratilidade do oviduto: estabilizar (calor, umidade, fluido, cálcio, analgesia) antes de intervir; ocitocina só após cálcio e sem obstrução; ovocentese se não houver progressão."
+              },
+              {
+                "q": 13,
+                "gab": "A",
+                "tema": "Aves — trauma cranioencefálico",
+                "comentario": "TCE: reduzir estímulos, evitar aumento da pressão intracraniana (jugulares, cabeça elevada), O2, analgesia. Hipertermia agrava a lesão encefálica."
+              },
+              {
+                "q": 14,
+                "gab": "B",
+                "tema": "Fluidoterapia — plano de 48 horas em ave",
+                "comentario": "Sinais moderados ≈ 8%. Déficit = 0,3 × 0,08 = 24 mL → 12 mL/dia nos dois dias; manutenção = 15 mL/dia → 27 mL no 1º e 27 mL no 2º dia. 39/15 = déficit todo no 1º dia; 12/12 = sem manutenção; 22,5 = grau leve; 30 = grau grave."
+              },
+              {
+                "q": 15,
+                "gab": "C",
+                "tema": "Fluidoterapia — limite de volume em répteis",
+                "comentario": "Sinais graves ≈ 10%: déficit = 300 mL → 150 mL + manutenção 60 mL = 210 mL = 70 mL/kg/dia, acima de 40 mL/kg/dia (120 mL). Répteis: grandes volumes → sobrecarga e edema pulmonar; distribuir o déficit em mais dias, fracionar, aquecer o animal e o fluido; sem dextrose."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Calopsita com conjuntivite e uratos esverdeados (Clamidiose / Psitacose)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico correto: Clamidiose / Psitacose por Chlamydia psittaci (0,15) + dois achados pertinentes do caso: conjuntivite/secreção nasal, uratos verdes/biliverdinúria, ácidos biliares/AST altos, hepatoesplenomegalia, leucocitose/heterofilia com monocitose, tutor febril/zoonose (0,05 cada).",
+                "b": "0,55 pt = Fármaco antimicrobiano: Doxiciclina suspensão oral 10 mg/mL ou Enrofloxacino 25 mg/mL (0,15 — sem desconto pelo uso de enrofloxacina, registrando-se a orientação de priorizar doxiciclina); dose calculada para 90 g (0,09 kg) e convertida em mL (0,15; cálculo certo com conversão errada = 0,05); via VO, frequência e duração compatíveis (0,10); estrutura técnica da receita (0,10 — sem descontar nomes fictícios/endereço/CRMV); cuidados de administração (0,05 — a não retirada do osso de siba/cálcio não desconta pontos, sendo apontada como observação educativa).",
+                "c": "0,20 pt = Medida pertinente de Saúde Única/manejo: tutor sintomático procurar médico, limpeza úmida com desinfetante sem varrer a seco, uso de EPI (máscara/luvas), isolamento da ave (0,10) + justificativa pelo mecanismo epidemiológico: transmissão zoonótica por aerossol de excretas secas (0,10)."
+              }
+            }
+          },
+          "B": {
+            "key": "B",
+            "codinome": "蜜蜂 (mìfēng — abelha)",
+            "label": "Versão 2 / KEY B — 蜜蜂 (mìfēng — abelha)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "A",
+                "tema": "Aves — AST, CK e ácidos biliares",
+                "comentario": "AST não é hepatoespecífica; CK muito alta aponta lesão muscular (contenção, injeção IM). ALT tem pouco valor em aves. Ácidos biliares avaliam a função hepática."
+              },
+              {
+                "q": 2,
+                "gab": "A",
+                "tema": "Fluidoterapia — limite de volume em répteis",
+                "comentario": "Sinais graves ≈ 10%: déficit = 300 mL → 150 mL + manutenção 60 mL = 210 mL = 70 mL/kg/dia, acima de 40 mL/kg/dia (120 mL). Répteis: grandes volumes → sobrecarga e edema pulmonar; distribuir o déficit em mais dias, fracionar, aquecer o animal e o fluido; sem dextrose."
+              },
+              {
+                "q": 3,
+                "gab": "D",
+                "tema": "Aves — Dermanyssus",
+                "comentario": "Dermanyssus: hematófago noturno que vive no ambiente → anemia e agitação noturna; tratamento ambiental obrigatório."
+              },
+              {
+                "q": 4,
+                "gab": "A",
+                "tema": "Aves — retenção de ovo",
+                "comentario": "Hipocalcemia reduz a contratilidade do oviduto: estabilizar (calor, umidade, fluido, cálcio, analgesia) antes de intervir; ocitocina só após cálcio e sem obstrução; ovocentese se não houver progressão."
+              },
+              {
+                "q": 5,
+                "gab": "E",
+                "tema": "Aves — hipovitaminose A",
+                "comentario": "I, II e IV corretas. III é falsa: a vitamina A é lipossolúvel e acumula (hipervitaminose A é possível); a injeção é medida pontual, e a correção definitiva é a dieta."
+              },
+              {
+                "q": 6,
+                "gab": "C",
+                "tema": "Aves — interpretação das excretas",
+                "comentario": "Aves excretam biliverdina (pouca bilirrubina; bilirrubina sérica é pouco útil). Fezes verde-escuras de jejum alteram a porção fecal, não os uratos. Uratos verdes = biliverdinúria → hepatopatia."
+              },
+              {
+                "q": 7,
+                "gab": "E",
+                "tema": "Aves — plano de fluidoterapia",
+                "comentario": "Sinais graves (enoftalmia, pele persistente, mucosa seca, hipoperfusão) ≈ 10%. Déficit = 1,0 × 0,10 = 100 mL → 50 mL no 1º dia e 50 mL no 2º; manutenção = 50 mL/dia → 100 mL no 1º dia e 100 mL no 2º. Hipoperfusão: IV/IO; SC absorve mal."
+              },
+              {
+                "q": 8,
+                "gab": "D",
+                "tema": "Aves — atoxoplasmose em canários",
+                "comentario": "Atoxoplasmose: Isospora com fase sistêmica em mononucleares; hepatomegalia visível em filhotes; adultos portadores; tratamento do plantel + higiene."
+              },
+              {
+                "q": 9,
+                "gab": "D",
+                "tema": "Aves — constrição por anilha",
+                "comentario": "Anilha apertada (edema, hiperqueratose, crescimento) causa constrição e isquemia distal: removê-la com cortador adequado, com a ave contida e o membro estabilizado (risco de fratura do tarsometatarso); registrar a numeração e emitir laudo. A viabilidade distal só se define nos dias seguintes; deslizar à força agrava a lesão."
+              },
+              {
+                "q": 10,
+                "gab": "B",
+                "tema": "Aves — hiperparatireoidismo nutricional secundário",
+                "comentario": "I, III e IV corretas. II é falsa: a causa é a deficiência de cálcio com excesso de fósforo; D3 isolada não corrige a dieta e pode agravar a reabsorção."
+              },
+              {
+                "q": 11,
+                "gab": "C",
+                "tema": "Aves — hemocromatose",
+                "comentario": "Ranfastídeos e mainás: doença de armazenamento de ferro. Vitamina C (cítricos) aumenta a absorção de ferro. Diagnóstico por biópsia hepática; dieta pobre em ferro e flebotomia."
+              },
+              {
+                "q": 12,
+                "gab": "B",
+                "tema": "Fluidoterapia — plano de 48 horas em ave",
+                "comentario": "Sinais moderados ≈ 8%. Déficit = 0,3 × 0,08 = 24 mL → 12 mL/dia nos dois dias; manutenção = 15 mL/dia → 27 mL no 1º e 27 mL no 2º dia. 39/15 = déficit todo no 1º dia; 12/12 = sem manutenção; 22,5 = grau leve; 30 = grau grave."
+              },
+              {
+                "q": 13,
+                "gab": "E",
+                "tema": "Aves — trauma cranioencefálico",
+                "comentario": "TCE: reduzir estímulos, evitar aumento da pressão intracraniana (jugulares, cabeça elevada), O2, analgesia. Hipertermia agrava a lesão encefálica."
+              },
+              {
+                "q": 14,
+                "gab": "B",
+                "tema": "Aves — respiração e anestesia inalatória",
+                "comentario": "I, III e IV corretas. II é falsa: os pulmões das aves são rígidos e quase não mudam de volume; o ar é movido pelos sacos aéreos, que dependem da movimentação do esterno e das costelas — por isso a contenção que a impede pode causar apneia."
+              },
+              {
+                "q": 15,
+                "gab": "C",
+                "tema": "Aves — PCR para circovírus em ave sem sinais",
+                "comentario": "Aves expostas podem ter viremia transitória; teste pareado (~90 dias). Aciclovir é usado na doença de Pacheco (herpesvírus), não no circovírus; não há vacina comercial no Brasil."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Calopsita com conjuntivite e uratos esverdeados (Clamidiose / Psitacose)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico correto: Clamidiose / Psitacose por Chlamydia psittaci (0,15) + dois achados pertinentes do caso: conjuntivite/secreção nasal, uratos verdes/biliverdinúria, ácidos biliares/AST altos, hepatoesplenomegalia, leucocitose/heterofilia com monocitose, tutor febril/zoonose (0,05 cada).",
+                "b": "0,55 pt = Fármaco antimicrobiano: Doxiciclina suspensão oral 10 mg/mL ou Enrofloxacino 25 mg/mL (0,15 — sem desconto pelo uso de enrofloxacina, registrando-se a orientação de priorizar doxiciclina); dose calculada para 90 g (0,09 kg) e convertida em mL (0,15; cálculo certo com conversão errada = 0,05); via VO, frequência e duração compatíveis (0,10); estrutura técnica da receita (0,10 — sem descontar nomes fictícios/endereço/CRMV); cuidados de administração (0,05 — a não retirada do osso de siba/cálcio não desconta pontos, sendo apontada como observação educativa).",
+                "c": "0,20 pt = Medida pertinente de Saúde Única/manejo: tutor sintomático procurar médico, limpeza úmida com desinfetante sem varrer a seco, uso de EPI (máscara/luvas), isolamento da ave (0,10) + justificativa pelo mecanismo epidemiológico: transmissão zoonótica por aerossol de excretas secas (0,10)."
+              }
+            }
+          }
+        }
+      },
+      "PTA_NOT": {
+        "turma": "PTA — Paulista · Noturno",
+        "data": "03/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "青蛙 (qīngwā — rã)",
+            "label": "Versão 1 / KEY A — 青蛙 (qīngwā — rã)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "A",
+                "tema": "Aves — ossos pneumáticos",
+                "comentario": "I, II e III corretas. IV é falsa: a cortical dos ossos pneumáticos é fina e quebradiça (alto teor mineral), o que dificulta a fixação de implantes e favorece fraturas cominutivas."
+              },
+              {
+                "q": 2,
+                "gab": "E",
+                "tema": "Aves — obstrução de via aérea",
+                "comentario": "A siringe fica na bifurcação traqueal, dentro do tórax: traqueostomia cervical fica acima da obstrução. Saco aéreo caudal (torácico caudal/abdominal) canulado pelo flanco ventila os parabrônquios."
+              },
+              {
+                "q": 3,
+                "gab": "B",
+                "tema": "Aves — leucograma",
+                "comentario": "Heterofilia com toxicidade + monocitose + hiperproteinemia = inflamação crônica/granulomatosa. Estresse não causa alterações tóxicas."
+              },
+              {
+                "q": 4,
+                "gab": "E",
+                "tema": "Aves — ácido úrico pós-prandial em rapinantes",
+                "comentario": "Em carnívoros, o ácido úrico sobe após a refeição. Ácido úrico é secretado nos túbulos; ureia é o marcador sensível de desidratação. Alopurinol pode ser tóxico em rapinantes."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "tema": "Aves — sementes, ração extrusada e suplementos",
+                "comentario": "I e II corretas. III é falsa: suplementar ração completa causa excessos (ex.: hipervitaminose D3). IV é falsa: frutas têm baixa densidade de nutrientes, pouco cálcio e proteína."
+              },
+              {
+                "q": 6,
+                "gab": "D",
+                "tema": "Aves — nectarívoros",
+                "comentario": "Água com açúcar fornece só energia; beija-flores obtêm proteína de artrópodes. Néctar completo + insetos."
+              },
+              {
+                "q": 7,
+                "gab": "A",
+                "tema": "Aves — hipervitaminose D3",
+                "comentario": "Suplementar dieta completa → excesso de D3 → hipercalcemia e mineralização de tecidos moles (vasos, rins). Araras são sensíveis."
+              },
+              {
+                "q": 8,
+                "gab": "E",
+                "tema": "Aves — botulismo em aves aquáticas",
+                "comentario": "Botulismo tipo C: paralisia flácida (asas, membros pélvicos, região cervical 'mole', membrana nictitante); a toxina é produzida em carcaças e matéria orgânica em água quente e rasa (ciclo carcaça–larva–ave). Não se transmite entre aves. Controle: retirar carcaças; suporte (hidratação, alimentação, ambiente seco); antitoxina se disponível."
+              },
+              {
+                "q": 9,
+                "gab": "A",
+                "tema": "Aves — doença de Pacheco",
+                "comentario": "Pacheco: morte súbita em aves em boa condição, hepatite necrosante com inclusões intranucleares; conures patagônicos e nanday são portadores assintomáticos. Aciclovir nas expostas."
+              },
+              {
+                "q": 10,
+                "gab": "C",
+                "tema": "Aves — Newcastle e influenza",
+                "comentario": "notificação: Suspeita de Newcastle/influenza: notificação imediata ao serviço oficial; não transportar aves nem carcaças; psitacídeos também são suscetíveis."
+              },
+              {
+                "q": 11,
+                "gab": "D",
+                "tema": "Aves — ascaridíase em viveiro",
+                "comentario": "Ascaridia: ciclo direto, ovos resistentes no ambiente → tratar o plantel, repetir e mudar o substrato. Minhocas são intermediárias de algumas Capillaria."
+              },
+              {
+                "q": 12,
+                "gab": "B",
+                "tema": "Aves — pododermatite",
+                "comentario": "Pododermatite: pressão contínua no mesmo ponto (poleiro liso de diâmetro único), obesidade e sedentarismo. Sem corrigir o manejo, recidiva."
+              },
+              {
+                "q": 13,
+                "gab": "C",
+                "tema": "Aves — arrancamento de penas",
+                "comentario": "I, II e IV corretas. III é falsa: o colar só impede o acesso às penas; não trata a causa clínica nem a comportamental."
+              },
+              {
+                "q": 14,
+                "gab": "B",
+                "tema": "Fluidoterapia — análise de um plano de 48 horas",
+                "comentario": "Sinais moderados ≈ 8%: déficit = 0,6 × 0,08 = 48 mL → 24 mL/dia; manutenção = 30 mL/dia → 54 mL no 1º e no 2º dia. O colega deu 48 + 30 = 78 mL no 1º dia (déficit inteiro) e só a manutenção no 2º. 45 = grau leve; 60 = grau grave; 24 = sem manutenção."
+              },
+              {
+                "q": 15,
+                "gab": "D",
+                "tema": "Fluidoterapia — escolha do fluido em aves",
+                "comentario": "Cristaloide isotônico balanceado, aquecido; via conforme perfusão (IV/IO no choque; SC/oral no estável), fracionado. Glicose 5% é hipotônica (não repõe volume); coloides têm benefício improvável em aves; fluido frio agrava a hipotermia; volume oral fracionado (risco de regurgitação e aspiração)."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Periquito que emagrece comendo bem (Macrorhabdiose / Megabacteriose)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Macrorhabdiose ('megabacteriose' / proventriculite por Macrorhabdus ornithogaster) (0,15) + dois achados: emagrecimento com apetite preservado, regurgitação/sementes inteiras nas fezes, bastonetes grandes Gram+ nas fezes, espécie/plantel (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Anfotericina B suspensão 10 mg/mL (0,15); dose para 35 g (0,035 kg × 100 mg/kg = 3,5 mg -> 0,35 mL) (0,15); VO a cada 12h por 30 dias (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução específica: dar direto no bico (ação por contato no proventrículo) e pesar semanalmente (0,05).",
+                "c": "0,20 pt = Medida no plantel: transmissão fecal-oral -> examinar/tratar positivos, higienizar comedouros/bebedouros, alimento de fácil digestão (0,10) + justificativa epidemiológica (0,10)."
+              }
+            }
+          },
+          "B": {
+            "key": "B",
+            "codinome": "鲸鱼 (jīngyú — baleia)",
+            "label": "Versão 2 / KEY B — 鲸鱼 (jīngyú — baleia)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "E",
+                "tema": "Aves — leucograma",
+                "comentario": "Heterofilia com toxicidade + monocitose + hiperproteinemia = inflamação crônica/granulomatosa. Estresse não causa alterações tóxicas."
+              },
+              {
+                "q": 2,
+                "gab": "C",
+                "tema": "Aves — sementes, ração extrusada e suplementos",
+                "comentario": "I e II corretas. III é falsa: suplementar ração completa causa excessos (ex.: hipervitaminose D3). IV é falsa: frutas têm baixa densidade de nutrientes, pouco cálcio e proteína."
+              },
+              {
+                "q": 3,
+                "gab": "C",
+                "tema": "Fluidoterapia — escolha do fluido em aves",
+                "comentario": "Cristaloide isotônico balanceado, aquecido; via conforme perfusão (IV/IO no choque; SC/oral no estável), fracionado. Glicose 5% é hipotônica (não repõe volume); coloides têm benefício improvável em aves; fluido frio agrava a hipotermia; volume oral fracionado (risco de regurgitação e aspiração)."
+              },
+              {
+                "q": 4,
+                "gab": "A",
+                "tema": "Aves — nectarívoros",
+                "comentario": "Água com açúcar fornece só energia; beija-flores obtêm proteína de artrópodes. Néctar completo + insetos."
+              },
+              {
+                "q": 5,
+                "gab": "D",
+                "tema": "Aves — pododermatite",
+                "comentario": "Pododermatite: pressão contínua no mesmo ponto (poleiro liso de diâmetro único), obesidade e sedentarismo. Sem corrigir o manejo, recidiva."
+              },
+              {
+                "q": 6,
+                "gab": "E",
+                "tema": "Aves — obstrução de via aérea",
+                "comentario": "A siringe fica na bifurcação traqueal, dentro do tórax: traqueostomia cervical fica acima da obstrução. Saco aéreo caudal (torácico caudal/abdominal) canulado pelo flanco ventila os parabrônquios."
+              },
+              {
+                "q": 7,
+                "gab": "D",
+                "tema": "Aves — doença de Pacheco",
+                "comentario": "Pacheco: morte súbita em aves em boa condição, hepatite necrosante com inclusões intranucleares; conures patagônicos e nanday são portadores assintomáticos. Aciclovir nas expostas."
+              },
+              {
+                "q": 8,
+                "gab": "C",
+                "tema": "Aves — botulismo em aves aquáticas",
+                "comentario": "Botulismo tipo C: paralisia flácida (asas, membros pélvicos, região cervical 'mole', membrana nictitante); a toxina é produzida em carcaças e matéria orgânica em água quente e rasa (ciclo carcaça–larva–ave). Não se transmite entre aves. Controle: retirar carcaças; suporte (hidratação, alimentação, ambiente seco); antitoxina se disponível."
+              },
+              {
+                "q": 9,
+                "gab": "A",
+                "tema": "Aves — ácido úrico pós-prandial em rapinantes",
+                "comentario": "Em carnívoros, o ácido úrico sobe após a refeição. Ácido úrico é secretado nos túbulos; ureia é o marcador sensível de desidratação. Alopurinol pode ser tóxico em rapinantes."
+              },
+              {
+                "q": 10,
+                "gab": "E",
+                "tema": "Aves — ossos pneumáticos",
+                "comentario": "I, II e III corretas. IV é falsa: a cortical dos ossos pneumáticos é fina e quebradiça (alto teor mineral), o que dificulta a fixação de implantes e favorece fraturas cominutivas."
+              },
+              {
+                "q": 11,
+                "gab": "B",
+                "tema": "Aves — arrancamento de penas",
+                "comentario": "I, II e IV corretas. III é falsa: o colar só impede o acesso às penas; não trata a causa clínica nem a comportamental."
+              },
+              {
+                "q": 12,
+                "gab": "D",
+                "tema": "Aves — Newcastle e influenza",
+                "comentario": "notificação: Suspeita de Newcastle/influenza: notificação imediata ao serviço oficial; não transportar aves nem carcaças; psitacídeos também são suscetíveis."
+              },
+              {
+                "q": 13,
+                "gab": "A",
+                "tema": "Aves — ascaridíase em viveiro",
+                "comentario": "Ascaridia: ciclo direto, ovos resistentes no ambiente → tratar o plantel, repetir e mudar o substrato. Minhocas são intermediárias de algumas Capillaria."
+              },
+              {
+                "q": 14,
+                "gab": "B",
+                "tema": "Aves — hipervitaminose D3",
+                "comentario": "Suplementar dieta completa → excesso de D3 → hipercalcemia e mineralização de tecidos moles (vasos, rins). Araras são sensíveis."
+              },
+              {
+                "q": 15,
+                "gab": "B",
+                "tema": "Fluidoterapia — análise de um plano de 48 horas",
+                "comentario": "Sinais moderados ≈ 8%: déficit = 0,6 × 0,08 = 48 mL → 24 mL/dia; manutenção = 30 mL/dia → 54 mL no 1º e no 2º dia. O colega deu 48 + 30 = 78 mL no 1º dia (déficit inteiro) e só a manutenção no 2º. 45 = grau leve; 60 = grau grave; 24 = sem manutenção."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Periquito que emagrece comendo bem (Macrorhabdiose / Megabacteriose)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Macrorhabdiose ('megabacteriose' / proventriculite por Macrorhabdus ornithogaster) (0,15) + dois achados: emagrecimento com apetite preservado, regurgitação/sementes inteiras nas fezes, bastonetes grandes Gram+ nas fezes, espécie/plantel (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Anfotericina B suspensão 10 mg/mL (0,15); dose para 35 g (0,035 kg × 100 mg/kg = 3,5 mg -> 0,35 mL) (0,15); VO a cada 12h por 30 dias (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução específica: dar direto no bico (ação por contato no proventrículo) e pesar semanalmente (0,05).",
+                "c": "0,20 pt = Medida no plantel: transmissão fecal-oral -> examinar/tratar positivos, higienizar comedouros/bebedouros, alimento de fácil digestão (0,10) + justificativa epidemiológica (0,10)."
+              }
+            }
+          }
+        }
+      },
+      "GRU_MAT": {
+        "turma": "GRU — Guarulhos · Matutino",
+        "data": "04/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "袋鼠 (dàishǔ — canguru)",
+            "label": "Versão 1 / KEY A — 袋鼠 (dàishǔ — canguru)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "B",
+                "tema": "Aves — contenção e exame clínico",
+                "comentario": "I, II e III corretas. IV é falsa: respiração com o bico aberto durante a contenção indica interromper o procedimento, devolver a ave à caixa ou incubadora com oxigênio e retomar depois da recuperação."
+              },
+              {
+                "q": 2,
+                "gab": "A",
+                "tema": "Aves — via intramuscular e sistema porta-renal",
+                "comentario": "Aves também têm sistema porta-renal: fármacos aplicados no membro pélvico podem passar pelos rins (nefrotoxicidade, excreção antes da distribuição). Peitoral = maior massa muscular."
+              },
+              {
+                "q": 3,
+                "gab": "D",
+                "tema": "Aves — poliúria versus diarreia",
+                "comentario": "Avaliar fezes, urina e uratos separadamente: fezes formadas + muito líquido claro = poliúria (renal, endócrina, dieta, estresse)."
+              },
+              {
+                "q": 4,
+                "gab": "C",
+                "tema": "Aves — colheita de sangue",
+                "comentario": "Jugular direita: maior calibre na maioria das aves. Ulnar forma hematomas facilmente em aves pequenas; o corte de garra contamina e altera a amostra. 35 g × 1% = 0,35 g ≈ 0,35 mL."
+              },
+              {
+                "q": 5,
+                "gab": "E",
+                "tema": "Aves — hipocalcemia em papagaio-cinzento",
+                "comentario": "Papagaios-cinzentos são predispostos à hipocalcemia (dieta de sementes + ausência de UVB). Crise: cálcio; longo prazo: dieta e UVB/D3."
+              },
+              {
+                "q": 6,
+                "gab": "B",
+                "tema": "Aves — insetívoros e cálcio",
+                "comentario": "Insetos comerciais têm pouco cálcio e relação Ca:P baixa → doença óssea metabólica. Gut loading e polvilhamento."
+              },
+              {
+                "q": 7,
+                "gab": "E",
+                "tema": "Aves — piscívoras e tiamina",
+                "comentario": "Tiaminase em peixes armazenados → deficiência de B1 em piscívoros (sinais neurológicos). Suplementar tiamina (e vitamina E)."
+              },
+              {
+                "q": 8,
+                "gab": "E",
+                "tema": "Aves — criptococose e Saúde Única",
+                "comentario": "Criptococose e clamidiose: inalação de poeira de excretas secas; maior risco em imunossuprimidos. Umedecer antes de limpar + EPI respiratório."
+              },
+              {
+                "q": 9,
+                "gab": "A",
+                "tema": "Aves — poliomavírus",
+                "comentario": "Poliomavírus: mortalidade de filhotes (hemorragias, distensão abdominal) e 'muda francesa' nos sobreviventes; adultos portadores."
+              },
+              {
+                "q": 10,
+                "gab": "A",
+                "tema": "Aves — giardíase em calopsitas",
+                "comentario": "Giardia em calopsitas: eliminação intermitente; trofozoítos degeneram — amostra fresca, exame direto, repetir."
+              },
+              {
+                "q": 11,
+                "gab": "B",
+                "tema": "Aves — malária aviária em pinguins",
+                "comentario": "Malária aviária: Plasmodium transmitido por mosquitos; pinguins são altamente suscetíveis (anemia, esplenomegalia, edema pulmonar)."
+              },
+              {
+                "q": 12,
+                "gab": "C",
+                "tema": "Aves — imobilização de fratura de asa",
+                "comentario": "Fraturas distais à articulação umerorradioulnar: bandagem em oito (± ao corpo). Bandagem apertada no tórax compromete a ventilação."
+              },
+              {
+                "q": 13,
+                "gab": "D",
+                "tema": "Aves — postura crônica e celomite",
+                "comentario": "I, II e III corretas. IV é falsa: líquido amarelado com gordura é compatível com celomite por gema (frequentemente estéril no início)."
+              },
+              {
+                "q": 14,
+                "gab": "D",
+                "tema": "Fluidoterapia — reposição prolongada em répteis",
+                "comentario": "Sinais graves ≈ 10%: déficit = 2 × 0,10 = 200 mL. Teto = 40 × 2 = 80 mL/dia; manutenção = 30 mL/dia → sobram 50 mL/dia para o déficit → 200/50 = 4 dias a 80 mL/dia. O esquema de aves (metade em 24 h + manutenção = 130 mL/dia) excede o teto e arrisca edema pulmonar. 3 dias = esqueceu que a manutenção ocupa parte do teto; 50 mL = esqueceu a manutenção."
+              },
+              {
+                "q": 15,
+                "gab": "C",
+                "tema": "Fluidoterapia — sobrecarga de volume em répteis",
+                "comentario": "Répteis toleram mal grandes volumes: sobrecarga → edema pulmonar e periférico. Suspender/reduzir, O2, reavaliar dentro de 10–40 mL/kg/dia."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Filhote de calopsita com inglúvio que não esvazia (Candidíase de inglúvio)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Candidíase oral/ingluvial (Candida albicans) secundária a antibiótico e manejo da papa (0,15) + dois achados: placas brancas, estase/odor azedo, uso prévio de enrofloxacino, leveduras em brotamento/pseudo-hifas (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Nistatina suspensão oral 100.000 UI/mL (0,15); dose para 60 g (0,060 kg × 300.000 UI/kg = 18.000 UI -> 0,18 mL) (0,15); VO a cada 8–12h por 7–14 dias (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: aplicar direto na cavidade oral antes da papa (ação local) e suspender enrofloxacino (0,05).",
+                "c": "0,20 pt = Manejo da papa: preparar fresca, aferir temperatura (38–41 °C), não usar micro-ondas, alimentar só com inglúvio vazio, higienizar utensílios (0,10) + justificativa: papa fria/contaminada gera estase e fermentação favorecendo Candida (0,10)."
+              }
+            }
+          },
+          "B": {
+            "key": "B",
+            "codinome": "刺猬 (cìwei — ouriço)",
+            "label": "Versão 2 / KEY B — 刺猬 (cìwei — ouriço)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "C",
+                "tema": "Aves — insetívoros e cálcio",
+                "comentario": "Insetos comerciais têm pouco cálcio e relação Ca:P baixa → doença óssea metabólica. Gut loading e polvilhamento."
+              },
+              {
+                "q": 2,
+                "gab": "B",
+                "tema": "Aves — criptococose e Saúde Única",
+                "comentario": "Criptococose e clamidiose: inalação de poeira de excretas secas; maior risco em imunossuprimidos. Umedecer antes de limpar + EPI respiratório."
+              },
+              {
+                "q": 3,
+                "gab": "D",
+                "tema": "Aves — hipocalcemia em papagaio-cinzento",
+                "comentario": "Papagaios-cinzentos são predispostos à hipocalcemia (dieta de sementes + ausência de UVB). Crise: cálcio; longo prazo: dieta e UVB/D3."
+              },
+              {
+                "q": 4,
+                "gab": "E",
+                "tema": "Aves — via intramuscular e sistema porta-renal",
+                "comentario": "Aves também têm sistema porta-renal: fármacos aplicados no membro pélvico podem passar pelos rins (nefrotoxicidade, excreção antes da distribuição). Peitoral = maior massa muscular."
+              },
+              {
+                "q": 5,
+                "gab": "D",
+                "tema": "Aves — colheita de sangue",
+                "comentario": "Jugular direita: maior calibre na maioria das aves. Ulnar forma hematomas facilmente em aves pequenas; o corte de garra contamina e altera a amostra. 35 g × 1% = 0,35 g ≈ 0,35 mL."
+              },
+              {
+                "q": 6,
+                "gab": "C",
+                "tema": "Aves — imobilização de fratura de asa",
+                "comentario": "Fraturas distais à articulação umerorradioulnar: bandagem em oito (± ao corpo). Bandagem apertada no tórax compromete a ventilação."
+              },
+              {
+                "q": 7,
+                "gab": "B",
+                "tema": "Aves — malária aviária em pinguins",
+                "comentario": "Malária aviária: Plasmodium transmitido por mosquitos; pinguins são altamente suscetíveis (anemia, esplenomegalia, edema pulmonar)."
+              },
+              {
+                "q": 8,
+                "gab": "E",
+                "tema": "Aves — piscívoras e tiamina",
+                "comentario": "Tiaminase em peixes armazenados → deficiência de B1 em piscívoros (sinais neurológicos). Suplementar tiamina (e vitamina E)."
+              },
+              {
+                "q": 9,
+                "gab": "A",
+                "tema": "Aves — poliúria versus diarreia",
+                "comentario": "Avaliar fezes, urina e uratos separadamente: fezes formadas + muito líquido claro = poliúria (renal, endócrina, dieta, estresse)."
+              },
+              {
+                "q": 10,
+                "gab": "A",
+                "tema": "Fluidoterapia — sobrecarga de volume em répteis",
+                "comentario": "Répteis toleram mal grandes volumes: sobrecarga → edema pulmonar e periférico. Suspender/reduzir, O2, reavaliar dentro de 10–40 mL/kg/dia."
+              },
+              {
+                "q": 11,
+                "gab": "D",
+                "tema": "Fluidoterapia — reposição prolongada em répteis",
+                "comentario": "Sinais graves ≈ 10%: déficit = 2 × 0,10 = 200 mL. Teto = 40 × 2 = 80 mL/dia; manutenção = 30 mL/dia → sobram 50 mL/dia para o déficit → 200/50 = 4 dias a 80 mL/dia. O esquema de aves (metade em 24 h + manutenção = 130 mL/dia) excede o teto e arrisca edema pulmonar. 3 dias = esqueceu que a manutenção ocupa parte do teto; 50 mL = esqueceu a manutenção."
+              },
+              {
+                "q": 12,
+                "gab": "E",
+                "tema": "Aves — contenção e exame clínico",
+                "comentario": "I, II e III corretas. IV é falsa: respiração com o bico aberto durante a contenção indica interromper o procedimento, devolver a ave à caixa ou incubadora com oxigênio e retomar depois da recuperação."
+              },
+              {
+                "q": 13,
+                "gab": "C",
+                "tema": "Aves — giardíase em calopsitas",
+                "comentario": "Giardia em calopsitas: eliminação intermitente; trofozoítos degeneram — amostra fresca, exame direto, repetir."
+              },
+              {
+                "q": 14,
+                "gab": "A",
+                "tema": "Aves — postura crônica e celomite",
+                "comentario": "I, II e III corretas. IV é falsa: líquido amarelado com gordura é compatível com celomite por gema (frequentemente estéril no início)."
+              },
+              {
+                "q": 15,
+                "gab": "B",
+                "tema": "Aves — poliomavírus",
+                "comentario": "Poliomavírus: mortalidade de filhotes (hemorragias, distensão abdominal) e 'muda francesa' nos sobreviventes; adultos portadores."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Filhote de calopsita com inglúvio que não esvazia (Candidíase de inglúvio)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Candidíase oral/ingluvial (Candida albicans) secundária a antibiótico e manejo da papa (0,15) + dois achados: placas brancas, estase/odor azedo, uso prévio de enrofloxacino, leveduras em brotamento/pseudo-hifas (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Nistatina suspensão oral 100.000 UI/mL (0,15); dose para 60 g (0,060 kg × 300.000 UI/kg = 18.000 UI -> 0,18 mL) (0,15); VO a cada 8–12h por 7–14 dias (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: aplicar direto na cavidade oral antes da papa (ação local) e suspender enrofloxacino (0,05).",
+                "c": "0,20 pt = Manejo da papa: preparar fresca, aferir temperatura (38–41 °C), não usar micro-ondas, alimentar só com inglúvio vazio, higienizar utensílios (0,10) + justificativa: papa fria/contaminada gera estase e fermentação favorecendo Candida (0,10)."
+              }
+            }
+          }
+        }
+      },
+      "GRU_NOT": {
+        "turma": "GRU — Guarulhos · Noturno",
+        "data": "04/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "猫头鹰 (māotóuyīng — coruja)",
+            "label": "Versão 1 / KEY A — 猫头鹰 (māotóuyīng — coruja)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "E",
+                "tema": "Aves — intubação e anestesia",
+                "comentario": "I, III e IV corretas. II é falsa: a glote das aves fica na base da língua e é facilmente visualizada com a abertura do bico."
+              },
+              {
+                "q": 2,
+                "gab": "B",
+                "tema": "Aves — hemograma",
+                "comentario": "Células nucleadas (hemácias, trombócitos) inviabilizam contadores de mamíferos; usar contagem manual."
+              },
+              {
+                "q": 3,
+                "gab": "A",
+                "tema": "Aves — ureia e ácido úrico",
+                "comentario": "Aves são uricotélicas; o ácido úrico é secretado nos túbulos (pouco afetado pela TFG). A ureia é reabsorvida na desidratação e é marcador sensível de azotemia pré-renal."
+              },
+              {
+                "q": 4,
+                "gab": "C",
+                "tema": "Aves — hipertermia",
+                "comentario": "Aves não suam; ofegam e afastam as asas. Resfriamento gradual (vasoconstrição e hipotermia de rebote com gelo); hipertermia não é febre."
+              },
+              {
+                "q": 5,
+                "gab": "D",
+                "tema": "Aves — gota",
+                "comentario": "Excesso proteico/nefropatia → hiperuricemia → deposição de urato (cristais em agulha) nas articulações."
+              },
+              {
+                "q": 6,
+                "gab": "C",
+                "tema": "Aves — bócio",
+                "comentario": "Bócio em periquitos com dieta pobre em iodo: tireoides na entrada do tórax comprimem siringe e esôfago."
+              },
+              {
+                "q": 7,
+                "gab": "E",
+                "tema": "Aves — alteração da cera em periquito macho",
+                "comentario": "Cera azul = macho; cera marrom e hiperqueratótica em macho = feminização por estrógeno (tumor de células de Sertoli). Tumores gonadais e renais comprimem o nervo isquiático, que passa pelos rins → claudicação unilateral. Confirmar por imagem."
+              },
+              {
+                "q": 8,
+                "gab": "C",
+                "tema": "Aves — salmonelose em pombos",
+                "comentario": "Paratifo dos pombos: formas entérica, articular (artrite umerorradioulnar — 'asa caída'), nervosa e mortalidade de filhotes; portadores."
+              },
+              {
+                "q": 9,
+                "gab": "D",
+                "tema": "Aves — bouba aviária",
+                "comentario": "Poxvírus: lesões em áreas sem penas; mosquitos como vetores (sazonalidade)."
+              },
+              {
+                "q": 10,
+                "gab": "B",
+                "tema": "Aves — sarcocistose",
+                "comentario": "S. falcatula: gambá (Didelphis) é hospedeiro definitivo; psitacídeos do Velho Mundo são muito suscetíveis (pneumonia hemorrágica aguda)."
+              },
+              {
+                "q": 11,
+                "gab": "E",
+                "tema": "Aves — micobacteriose",
+                "comentario": "Micobacteriose: curso crônico, monocitose, granulomas (fígado, intestino); BAAR; risco a imunocomprometidos."
+              },
+              {
+                "q": 12,
+                "gab": "A",
+                "tema": "Aves — prolapso de cloaca",
+                "comentario": "Prolapso cloacal em cacatuas criadas à mão: componentes comportamentais (estímulo sexual, retenção de fezes) são centrais."
+              },
+              {
+                "q": 13,
+                "gab": "D",
+                "tema": "Aves — fratura e soltura",
+                "comentario": "I, II e IV corretas. III é falsa: soltura exige função de voo integral; ave com voo limitado não sobrevive nem em área urbana."
+              },
+              {
+                "q": 14,
+                "gab": "A",
+                "tema": "Fluidoterapia — dois graus de desidratação",
+                "comentario": "A: sinais leves ≈ 5% → déficit 25 mL → 12,5 + manutenção 25 = 37,5 mL. B: sinais graves com hipoperfusão ≈ 10% → déficit 50 mL → 25 + 25 = 50 mL, IV/IO (SC absorve mal na hipoperfusão). 50/75 = déficit inteiro no 1º dia; 25/25 = só manutenção; 45 = A classificado como moderado."
+              },
+              {
+                "q": 15,
+                "gab": "B",
+                "tema": "Fluidoterapia — réptil hipotérmico desidratado",
+                "comentario": "Ectotérmicos: aquecer à faixa ótima (absorção e distribuição dependem da temperatura); CIB aquecido, sem dextrose; fracionar respeitando 10–40 mL/kg/dia; absorção cloacal não é terapia."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Pombo jovem com placas na orofaringe (Tricomoníase)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Tricomoníase ('cancro'/'goga') por Trichomonas gallinae (0,15) + dois achados: placas caseosas amarelas na orofaringe, disfagia/regurgitação, flagelados piriformes móveis no exame a fresco, adultos portadores (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Metronidazol suspensão oral 40 mg/mL (0,15); dose para 300 g (0,3 kg × 50 mg/kg = 15 mg -> 0,375 / 0,38 mL) (0,15); VO a cada 24h por 5 dias (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: não arrancar placas à força (risco de hemorragia) e alimentar por sonda se necessário (0,05).",
+                "c": "0,20 pt = Manejo do pombal: adultos são portadores assintomáticos e transmitem pelo leite do inglúvio e água -> tratar plantel, desinfetar bebedouros diariamente, isolar doentes e barrar pombos de vida livre (0,10) + justificativa (0,10)."
+              }
+            }
+          },
+          "B": {
+            "key": "B",
+            "codinome": "天鹅 (tiān'é — cisne)",
+            "label": "Versão 2 / KEY B — 天鹅 (tiān'é — cisne)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "A",
+                "tema": "Aves — micobacteriose",
+                "comentario": "Micobacteriose: curso crônico, monocitose, granulomas (fígado, intestino); BAAR; risco a imunocomprometidos."
+              },
+              {
+                "q": 2,
+                "gab": "D",
+                "tema": "Aves — hipertermia",
+                "comentario": "Aves não suam; ofegam e afastam as asas. Resfriamento gradual (vasoconstrição e hipotermia de rebote com gelo); hipertermia não é febre."
+              },
+              {
+                "q": 3,
+                "gab": "A",
+                "tema": "Aves — sarcocistose",
+                "comentario": "S. falcatula: gambá (Didelphis) é hospedeiro definitivo; psitacídeos do Velho Mundo são muito suscetíveis (pneumonia hemorrágica aguda)."
+              },
+              {
+                "q": 4,
+                "gab": "C",
+                "tema": "Fluidoterapia — réptil hipotérmico desidratado",
+                "comentario": "Ectotérmicos: aquecer à faixa ótima (absorção e distribuição dependem da temperatura); CIB aquecido, sem dextrose; fracionar respeitando 10–40 mL/kg/dia; absorção cloacal não é terapia."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "tema": "Aves — bócio",
+                "comentario": "Bócio em periquitos com dieta pobre em iodo: tireoides na entrada do tórax comprimem siringe e esôfago."
+              },
+              {
+                "q": 6,
+                "gab": "E",
+                "tema": "Aves — intubação e anestesia",
+                "comentario": "I, III e IV corretas. II é falsa: a glote das aves fica na base da língua e é facilmente visualizada com a abertura do bico."
+              },
+              {
+                "q": 7,
+                "gab": "D",
+                "tema": "Fluidoterapia — dois graus de desidratação",
+                "comentario": "A: sinais leves ≈ 5% → déficit 25 mL → 12,5 + manutenção 25 = 37,5 mL. B: sinais graves com hipoperfusão ≈ 10% → déficit 50 mL → 25 + 25 = 50 mL, IV/IO (SC absorve mal na hipoperfusão). 50/75 = déficit inteiro no 1º dia; 25/25 = só manutenção; 45 = A classificado como moderado."
+              },
+              {
+                "q": 8,
+                "gab": "A",
+                "tema": "Aves — hemograma",
+                "comentario": "Células nucleadas (hemácias, trombócitos) inviabilizam contadores de mamíferos; usar contagem manual."
+              },
+              {
+                "q": 9,
+                "gab": "B",
+                "tema": "Aves — fratura e soltura",
+                "comentario": "I, II e IV corretas. III é falsa: soltura exige função de voo integral; ave com voo limitado não sobrevive nem em área urbana."
+              },
+              {
+                "q": 10,
+                "gab": "D",
+                "tema": "Aves — ureia e ácido úrico",
+                "comentario": "Aves são uricotélicas; o ácido úrico é secretado nos túbulos (pouco afetado pela TFG). A ureia é reabsorvida na desidratação e é marcador sensível de azotemia pré-renal."
+              },
+              {
+                "q": 11,
+                "gab": "E",
+                "tema": "Aves — gota",
+                "comentario": "Excesso proteico/nefropatia → hiperuricemia → deposição de urato (cristais em agulha) nas articulações."
+              },
+              {
+                "q": 12,
+                "gab": "C",
+                "tema": "Aves — prolapso de cloaca",
+                "comentario": "Prolapso cloacal em cacatuas criadas à mão: componentes comportamentais (estímulo sexual, retenção de fezes) são centrais."
+              },
+              {
+                "q": 13,
+                "gab": "B",
+                "tema": "Aves — bouba aviária",
+                "comentario": "Poxvírus: lesões em áreas sem penas; mosquitos como vetores (sazonalidade)."
+              },
+              {
+                "q": 14,
+                "gab": "B",
+                "tema": "Aves — salmonelose em pombos",
+                "comentario": "Paratifo dos pombos: formas entérica, articular (artrite umerorradioulnar — 'asa caída'), nervosa e mortalidade de filhotes; portadores."
+              },
+              {
+                "q": 15,
+                "gab": "E",
+                "tema": "Aves — alteração da cera em periquito macho",
+                "comentario": "Cera azul = macho; cera marrom e hiperqueratótica em macho = feminização por estrógeno (tumor de células de Sertoli). Tumores gonadais e renais comprimem o nervo isquiático, que passa pelos rins → claudicação unilateral. Confirmar por imagem."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Pombo jovem com placas na orofaringe (Tricomoníase)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Tricomoníase ('cancro'/'goga') por Trichomonas gallinae (0,15) + dois achados: placas caseosas amarelas na orofaringe, disfagia/regurgitação, flagelados piriformes móveis no exame a fresco, adultos portadores (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Metronidazol suspensão oral 40 mg/mL (0,15); dose para 300 g (0,3 kg × 50 mg/kg = 15 mg -> 0,375 / 0,38 mL) (0,15); VO a cada 24h por 5 dias (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: não arrancar placas à força (risco de hemorragia) e alimentar por sonda se necessário (0,05).",
+                "c": "0,20 pt = Manejo do pombal: adultos são portadores assintomáticos e transmitem pelo leite do inglúvio e água -> tratar plantel, desinfetar bebedouros diariamente, isolar doentes e barrar pombos de vida livre (0,10) + justificativa (0,10)."
+              }
+            }
+          }
+        }
+      },
+      "SM_MAT": {
+        "turma": "SM — São Miguel · Matutino",
+        "data": "05/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "蜗牛 (wōniú — caracol)",
+            "label": "Versão 1 / KEY A — 蜗牛 (wōniú — caracol)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "B",
+                "tema": "Aves — sacos aéreos e tóxicos inalados",
+                "comentario": "I, II e III corretas. IV é falsa: as aves são muito mais sensíveis (sentinelas); morrem antes que as pessoas tenham sinais."
+              },
+              {
+                "q": 2,
+                "gab": "D",
+                "tema": "Aves — sondagem do inglúvio",
+                "comentario": "Glote na base da língua; esôfago à direita na região cervical; sonda rígida (metálica com ponta romba) e confirmação por palpação no inglúvio."
+              },
+              {
+                "q": 3,
+                "gab": "B",
+                "tema": "Aves — pena de sangue",
+                "comentario": "A pena em crescimento tem polpa vascularizada; quebrada, continua sangrando. A extração remove a fonte; comprimir o folículo."
+              },
+              {
+                "q": 4,
+                "gab": "E",
+                "tema": "Aves — plano de fluidoterapia",
+                "comentario": "Sinais moderados ≈ 8%. Déficit = 0,45 × 0,08 = 36 mL → 18 mL/dia; manutenção = 22,5 mL/dia → 40,5 mL no 1º dia (e 40,5 mL no 2º). Perfusão adequada: SC/oral fracionado. 58,5 = déficit todo no 1º dia; 33,75 = grau leve."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "tema": "Aves — raquitismo",
+                "comentario": "Papa caseira de frutas/grãos: pobre em cálcio e D3 → raquitismo em filhotes. Aves não digerem lactose (leite de vaca)."
+              },
+              {
+                "q": 6,
+                "gab": "C",
+                "tema": "Aves — pigmentação em canários",
+                "comentario": "Pigmentos vermelhos/laranja são carotenoides dietéticos depositados na pena em formação; pena pronta não muda de cor."
+              },
+              {
+                "q": 7,
+                "gab": "A",
+                "tema": "Aves — abacate",
+                "comentario": "Persina (abacate): cardiotoxicidade (necrose miocárdica, ICC, hidropericárdio) em aves."
+              },
+              {
+                "q": 8,
+                "gab": "B",
+                "tema": "Aves — fratura de tibiotarso em ave pequena",
+                "comentario": "Aves pequenas: tala de fita adesiva leve, imobilizando as articulações proximal e distal ao foco; consolidação rápida (2–3 semanas); gaiola sem poleiros altos. Robert-Jones é pesado demais; bandagem ao tórax compromete a ventilação."
+              },
+              {
+                "q": 9,
+                "gab": "C",
+                "tema": "Aves — doença do bico e das penas (PBFD)",
+                "comentario": "Circovírus: distrofia de penas e bico + imunossupressão (infecções secundárias). PCR; isolamento."
+              },
+              {
+                "q": 10,
+                "gab": "E",
+                "tema": "Aves — hemoparasitas incidentais",
+                "comentario": "Haemoproteus: só gametócitos no sangue periférico; comum e subclínico em pombos. Plasmodium apresenta formas assexuadas (esquizontes) no sangue."
+              },
+              {
+                "q": 11,
+                "gab": "D",
+                "tema": "Aves — quarentena",
+                "comentario": "I, II e IV corretas. III é falsa: vários agentes (circovírus, clamídia) se disseminam por poeira de penas e excretas em aerossol; a quarentena exige ambiente separado."
+              },
+              {
+                "q": 12,
+                "gab": "A",
+                "tema": "Aves — hipotermia anestésica",
+                "comentario": "Aves pequenas perdem calor muito rápido; o isoflurano é eliminado pela respiração. Jejum longo é perigoso em aves pequenas."
+              },
+              {
+                "q": 13,
+                "gab": "D",
+                "tema": "Aves — corte de penas de voo",
+                "comentario": "Corte excessivo elimina o planeio → quedas e trauma de quilha."
+              },
+              {
+                "q": 14,
+                "gab": "A",
+                "tema": "Fluidoterapia — reavaliação no 2º dia",
+                "comentario": "Sinais graves ≈ 10%: déficit = 0,1 × 0,10 = 10 mL → 5 mL/dia; manutenção = 5 mL/dia → 10 mL em cada dia. Restabelecida a perfusão, pode-se passar para SC/oral, fracionado (volume oral único → regurgitação e aspiração). 5 mL = déficit todo no 1º dia."
+              },
+              {
+                "q": 15,
+                "gab": "E",
+                "tema": "Fluidoterapia — répteis",
+                "comentario": "I, II e IV corretas. III é falsa: dextrose causa hiperglicemia persistente em répteis; usar cristaloide isotônico balanceado."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Periquito com crostas no bico e nos tarsometatarsos (Sarna knemidocóptica)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Sarna knemidocóptica (Knemidokoptes pilae) (0,15) + dois achados: crostas porosas em 'favo de mel' na cera/bico/tarsometatarsos, hipercrescimento/deformidade do bico, ácaros arredondados de patas curtas no raspado, contactante com lesão (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Ivermectina 0,1 mg/mL em propilenoglicol manipulada (0,15); dose para 35 g (0,035 kg × 0,2 mg/kg = 0,007 mg -> 0,07 mL) (0,15); tópica na pele sem penas ou VO, a cada 14 dias, 2 a 3 aplicações (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: medir em seringa de insulina (7 UI), não usar produto concentrado sem diluir, tratar contactantes (0,05).",
+                "c": "0,20 pt = Manejo: tratar todas as aves contactantes, limpar/desinfetar gaiola e poleiros, corrigir dieta/fatores imunossupressores (0,10) + justificativa: transmissão por contato direto prolongado (0,10)."
+              }
+            }
+          },
+          "B": {
+            "key": "B",
+            "codinome": "河马 (hémǎ — hipopótamo)",
+            "label": "Versão 2 / KEY B — 河马 (hémǎ — hipopótamo)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "D",
+                "tema": "Fluidoterapia — reavaliação no 2º dia",
+                "comentario": "Sinais graves ≈ 10%: déficit = 0,1 × 0,10 = 10 mL → 5 mL/dia; manutenção = 5 mL/dia → 10 mL em cada dia. Restabelecida a perfusão, pode-se passar para SC/oral, fracionado (volume oral único → regurgitação e aspiração). 5 mL = déficit todo no 1º dia."
+              },
+              {
+                "q": 2,
+                "gab": "D",
+                "tema": "Aves — fratura de tibiotarso em ave pequena",
+                "comentario": "Aves pequenas: tala de fita adesiva leve, imobilizando as articulações proximal e distal ao foco; consolidação rápida (2–3 semanas); gaiola sem poleiros altos. Robert-Jones é pesado demais; bandagem ao tórax compromete a ventilação."
+              },
+              {
+                "q": 3,
+                "gab": "E",
+                "tema": "Fluidoterapia — répteis",
+                "comentario": "I, II e IV corretas. III é falsa: dextrose causa hiperglicemia persistente em répteis; usar cristaloide isotônico balanceado."
+              },
+              {
+                "q": 4,
+                "gab": "B",
+                "tema": "Aves — sondagem do inglúvio",
+                "comentario": "Glote na base da língua; esôfago à direita na região cervical; sonda rígida (metálica com ponta romba) e confirmação por palpação no inglúvio."
+              },
+              {
+                "q": 5,
+                "gab": "A",
+                "tema": "Aves — quarentena",
+                "comentario": "I, II e IV corretas. III é falsa: vários agentes (circovírus, clamídia) se disseminam por poeira de penas e excretas em aerossol; a quarentena exige ambiente separado."
+              },
+              {
+                "q": 6,
+                "gab": "C",
+                "tema": "Aves — sacos aéreos e tóxicos inalados",
+                "comentario": "I, II e III corretas. IV é falsa: as aves são muito mais sensíveis (sentinelas); morrem antes que as pessoas tenham sinais."
+              },
+              {
+                "q": 7,
+                "gab": "A",
+                "tema": "Aves — plano de fluidoterapia",
+                "comentario": "Sinais moderados ≈ 8%. Déficit = 0,45 × 0,08 = 36 mL → 18 mL/dia; manutenção = 22,5 mL/dia → 40,5 mL no 1º dia (e 40,5 mL no 2º). Perfusão adequada: SC/oral fracionado. 58,5 = déficit todo no 1º dia; 33,75 = grau leve."
+              },
+              {
+                "q": 8,
+                "gab": "C",
+                "tema": "Aves — pena de sangue",
+                "comentario": "A pena em crescimento tem polpa vascularizada; quebrada, continua sangrando. A extração remove a fonte; comprimir o folículo."
+              },
+              {
+                "q": 9,
+                "gab": "B",
+                "tema": "Aves — abacate",
+                "comentario": "Persina (abacate): cardiotoxicidade (necrose miocárdica, ICC, hidropericárdio) em aves."
+              },
+              {
+                "q": 10,
+                "gab": "E",
+                "tema": "Aves — hemoparasitas incidentais",
+                "comentario": "Haemoproteus: só gametócitos no sangue periférico; comum e subclínico em pombos. Plasmodium apresenta formas assexuadas (esquizontes) no sangue."
+              },
+              {
+                "q": 11,
+                "gab": "E",
+                "tema": "Aves — doença do bico e das penas (PBFD)",
+                "comentario": "Circovírus: distrofia de penas e bico + imunossupressão (infecções secundárias). PCR; isolamento."
+              },
+              {
+                "q": 12,
+                "gab": "A",
+                "tema": "Aves — hipotermia anestésica",
+                "comentario": "Aves pequenas perdem calor muito rápido; o isoflurano é eliminado pela respiração. Jejum longo é perigoso em aves pequenas."
+              },
+              {
+                "q": 13,
+                "gab": "B",
+                "tema": "Aves — raquitismo",
+                "comentario": "Papa caseira de frutas/grãos: pobre em cálcio e D3 → raquitismo em filhotes. Aves não digerem lactose (leite de vaca)."
+              },
+              {
+                "q": 14,
+                "gab": "C",
+                "tema": "Aves — pigmentação em canários",
+                "comentario": "Pigmentos vermelhos/laranja são carotenoides dietéticos depositados na pena em formação; pena pronta não muda de cor."
+              },
+              {
+                "q": 15,
+                "gab": "D",
+                "tema": "Aves — corte de penas de voo",
+                "comentario": "Corte excessivo elimina o planeio → quedas e trauma de quilha."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Periquito com crostas no bico e nos tarsometatarsos (Sarna knemidocóptica)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Sarna knemidocóptica (Knemidokoptes pilae) (0,15) + dois achados: crostas porosas em 'favo de mel' na cera/bico/tarsometatarsos, hipercrescimento/deformidade do bico, ácaros arredondados de patas curtas no raspado, contactante com lesão (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Ivermectina 0,1 mg/mL em propilenoglicol manipulada (0,15); dose para 35 g (0,035 kg × 0,2 mg/kg = 0,007 mg -> 0,07 mL) (0,15); tópica na pele sem penas ou VO, a cada 14 dias, 2 a 3 aplicações (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: medir em seringa de insulina (7 UI), não usar produto concentrado sem diluir, tratar contactantes (0,05).",
+                "c": "0,20 pt = Manejo: tratar todas as aves contactantes, limpar/desinfetar gaiola e poleiros, corrigir dieta/fatores imunossupressores (0,10) + justificativa: transmissão por contato direto prolongado (0,10)."
+              }
+            }
+          },
+          "B_GRU": {
+            "key": "B_GRU",
+            "codinome": "刺猬 (cìwei — ouriço — aplicada em GRU)",
+            "label": "Versão 2 / KEY B — 刺猬 (cìwei — ouriço — aplicada em GRU)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "C",
+                "tema": "Aves — insetívoros e cálcio",
+                "comentario": "Insetos comerciais têm pouco cálcio e relação Ca:P baixa → doença óssea metabólica. Gut loading e polvilhamento."
+              },
+              {
+                "q": 2,
+                "gab": "B",
+                "tema": "Aves — criptococose e Saúde Única",
+                "comentario": "Criptococose e clamidiose: inalação de poeira de excretas secas; maior risco em imunossuprimidos. Umedecer antes de limpar + EPI respiratório."
+              },
+              {
+                "q": 3,
+                "gab": "D",
+                "tema": "Aves — hipocalcemia em papagaio-cinzento",
+                "comentario": "Papagaios-cinzentos são predispostos à hipocalcemia (dieta de sementes + ausência de UVB). Crise: cálcio; longo prazo: dieta e UVB/D3."
+              },
+              {
+                "q": 4,
+                "gab": "E",
+                "tema": "Aves — via intramuscular e sistema porta-renal",
+                "comentario": "Aves também têm sistema porta-renal: fármacos aplicados no membro pélvico podem passar pelos rins (nefrotoxicidade, excreção antes da distribuição). Peitoral = maior massa muscular."
+              },
+              {
+                "q": 5,
+                "gab": "D",
+                "tema": "Aves — colheita de sangue",
+                "comentario": "Jugular direita: maior calibre na maioria das aves. Ulnar forma hematomas facilmente em aves pequenas; o corte de garra contamina e altera a amostra. 35 g × 1% = 0,35 g ≈ 0,35 mL."
+              },
+              {
+                "q": 6,
+                "gab": "C",
+                "tema": "Aves — imobilização de fratura de asa",
+                "comentario": "Fraturas distais à articulação umerorradioulnar: bandagem em oito (± ao corpo). Bandagem apertada no tórax compromete a ventilação."
+              },
+              {
+                "q": 7,
+                "gab": "B",
+                "tema": "Aves — malária aviária em pinguins",
+                "comentario": "Malária aviária: Plasmodium transmitido por mosquitos; pinguins são altamente suscetíveis (anemia, esplenomegalia, edema pulmonar)."
+              },
+              {
+                "q": 8,
+                "gab": "E",
+                "tema": "Aves — piscívoras e tiamina",
+                "comentario": "Tiaminase em peixes armazenados → deficiência de B1 em piscívoros (sinais neurológicos). Suplementar tiamina (e vitamina E)."
+              },
+              {
+                "q": 9,
+                "gab": "A",
+                "tema": "Aves — poliúria versus diarreia",
+                "comentario": "Avaliar fezes, urina e uratos separadamente: fezes formadas + muito líquido claro = poliúria (renal, endócrina, dieta, estresse)."
+              },
+              {
+                "q": 10,
+                "gab": "A",
+                "tema": "Fluidoterapia — sobrecarga de volume em répteis",
+                "comentario": "Répteis toleram mal grandes volumes: sobrecarga → edema pulmonar e periférico. Suspender/reduzir, O2, reavaliar dentro de 10–40 mL/kg/dia."
+              },
+              {
+                "q": 11,
+                "gab": "D",
+                "tema": "Fluidoterapia — reposição prolongada em répteis",
+                "comentario": "Sinais graves ≈ 10%: déficit = 2 × 0,10 = 200 mL. Teto = 40 × 2 = 80 mL/dia; manutenção = 30 mL/dia → sobram 50 mL/dia para o déficit → 200/50 = 4 dias a 80 mL/dia. O esquema de aves (metade em 24 h + manutenção = 130 mL/dia) excede o teto e arrisca edema pulmonar. 3 dias = esqueceu que a manutenção ocupa parte do teto; 50 mL = esqueceu a manutenção."
+              },
+              {
+                "q": 12,
+                "gab": "E",
+                "tema": "Aves — contenção e exame clínico",
+                "comentario": "I, II e III corretas. IV é falsa: respiração com o bico aberto durante a contenção indica interromper o procedimento, devolver a ave à caixa ou incubadora com oxigênio e retomar depois da recuperação."
+              },
+              {
+                "q": 13,
+                "gab": "C",
+                "tema": "Aves — giardíase em calopsitas",
+                "comentario": "Giardia em calopsitas: eliminação intermitente; trofozoítos degeneram — amostra fresca, exame direto, repetir."
+              },
+              {
+                "q": 14,
+                "gab": "A",
+                "tema": "Aves — postura crônica e celomite",
+                "comentario": "I, II e III corretas. IV é falsa: líquido amarelado com gordura é compatível com celomite por gema (frequentemente estéril no início)."
+              },
+              {
+                "q": 15,
+                "gab": "B",
+                "tema": "Aves — poliomavírus",
+                "comentario": "Poliomavírus: mortalidade de filhotes (hemorragias, distensão abdominal) e 'muda francesa' nos sobreviventes; adultos portadores."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Filhote de calopsita com inglúvio que não esvazia (Candidíase de inglúvio)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Candidíase oral/ingluvial (Candida albicans) secundária a antibiótico e manejo da papa (0,15) + dois achados: placas brancas, estase/odor azedo, uso prévio de enrofloxacino, leveduras em brotamento/pseudo-hifas (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Nistatina suspensão oral 100.000 UI/mL (0,15); dose para 60 g (0,060 kg × 300.000 UI/kg = 18.000 UI -> 0,18 mL) (0,15); VO a cada 8–12h por 7–14 dias (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: aplicar direto na cavidade oral antes da papa (ação local) e suspender enrofloxacino (0,05).",
+                "c": "0,20 pt = Manejo da papa: preparar fresca, aferir temperatura (38–41 °C), não usar micro-ondas, alimentar só com inglúvio vazio, higienizar utensílios (0,10) + justificativa: papa fria/contaminada gera estase e fermentação favorecendo Candida (0,10)."
+              }
+            }
+          }
+        }
+      },
+      "SM_NOT": {
+        "turma": "SM — São Miguel · Noturno",
+        "data": "05/11/2026",
+        "versoes": {
+          "A": {
+            "key": "A",
+            "codinome": "长颈鹿 (chángjǐnglù — girafa)",
+            "label": "Versão 1 / KEY A — 长颈鹿 (chángjǐnglù — girafa)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "D",
+                "tema": "Aves — decúbito e ventilação na anestesia",
+                "comentario": "I, III e IV corretas. II é falsa: a anestesia reduz o volume corrente; a frequência pode parecer normal com hipoventilação."
+              },
+              {
+                "q": 2,
+                "gab": "B",
+                "tema": "Aves — excretas de nectarívoros",
+                "comentario": "Contexto da dieta: nectarívoros produzem excretas aquosas; ave ativa e com bom peso."
+              },
+              {
+                "q": 3,
+                "gab": "A",
+                "tema": "Aves — osso medular",
+                "comentario": "Hiperostose poliostótica fisiológica (osso medular) em fêmeas em atividade reprodutiva."
+              },
+              {
+                "q": 4,
+                "gab": "E",
+                "tema": "Fluidoterapia — estimativa do grau de desidratação",
+                "comentario": "30 mL = grau leve (5%: déficit 20 → 10 + manutenção 20). Sinais graves (prostração, enoftalmia acentuada, pele persistente, mucosa seca, extremidades frias) ≈ 10%: déficit 40 mL → 20 + 20 = 40 mL no 1º dia; hipoperfusão → IV/IO. 60 = déficit inteiro no 1º dia. Glicose 5% é hipotônica e não repõe volume."
+              },
+              {
+                "q": 5,
+                "gab": "C",
+                "tema": "Aves — aterosclerose",
+                "comentario": "Amazonas e cinzentos idosos com dieta gordurosa e sedentarismo: aterosclerose (dispneia, fraqueza, síncope)."
+              },
+              {
+                "q": 6,
+                "gab": "D",
+                "tema": "Aves — grit",
+                "comentario": "Psitacídeos descascam as sementes: grit é desnecessário; consumo excessivo em ave doente → impactação."
+              },
+              {
+                "q": 7,
+                "gab": "A",
+                "tema": "Aves — hipoglicemia em rapinantes",
+                "comentario": "Rapinantes pequenos: pouca reserva; perda de peso rápida + frio + exercício → hipoglicemia."
+              },
+              {
+                "q": 8,
+                "gab": "C",
+                "tema": "Aves — enfisema subcutâneo",
+                "comentario": "Crepitação + reenchimento após punção = ar: ruptura de saco aéreo (cervicocefálico/clavicular) após trauma. Punções repetidas; nas recidivas, stent cutâneo (fístula controlada) até o saco cicatrizar. Bandagem torácica compromete a ventilação."
+              },
+              {
+                "q": 9,
+                "gab": "D",
+                "tema": "Aves — doença da dilatação proventricular",
+                "comentario": "DDP/bornavírus: ganglioneurite do trato GI (sementes inteiras, dilatação) e sinais neurológicos; suporte + AINE."
+              },
+              {
+                "q": 10,
+                "gab": "C",
+                "tema": "Aves — Capillaria",
+                "comentario": "Ovos bioperculados em barril = Capillaria; algumas espécies têm minhoca como intermediário."
+              },
+              {
+                "q": 11,
+                "gab": "B",
+                "tema": "Aves — doença mascarada e pesagem",
+                "comentario": "Aves (presas) escondem sinais até a descompensação; quilha saliente e perda de 25% do peso indicam processo crônico. Pesagem regular em gramas detecta a doença precocemente."
+              },
+              {
+                "q": 12,
+                "gab": "E",
+                "tema": "Aves — lipoma",
+                "comentario": "Lipomas esternais em periquitos obesos com dieta de sementes; citologia + dieta. A uropigiana é dorsal à base da cauda."
+              },
+              {
+                "q": 13,
+                "gab": "B",
+                "tema": "Aves — regurgitação de corte",
+                "comentario": "Regurgitação de corte é comum em machos; contexto (espelho, ave saudável) orienta antes de tratar."
+              },
+              {
+                "q": 14,
+                "gab": "E",
+                "tema": "Fluidoterapia — ave e réptil de mesmo peso",
+                "comentario": "Sinais graves ≈ 10%: déficit de 100 mL em cada animal. Arara: 50 + 50 = 100 mL. Jabuti: 50 + 20 = 70 mL (70 mL/kg) > teto de 40 mL/kg → 40 mL/dia (20 de manutenção + 20 de déficit), estendendo a reposição (risco de edema pulmonar). Aves toleram volumes maiores."
+              },
+              {
+                "q": 15,
+                "gab": "A",
+                "tema": "Fluidoterapia — monitoração da reidratação",
+                "comentario": "Exame físico é impreciso em exóticos: peso diário + Ht/PT + excretas + sinais clínicos."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Papagaio apreendido com mudança de voz e intolerância ao exercício (Aspergilose)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Aspergilose (Aspergillus spp.) de sacos aéreos/siringe (0,15) + dois achados: ambiente úmido/sementes mofadas, estresse de apreensão, mudança de voz/dispneia/balanço de cauda, heterofilia com monocitose, lesões em sacos aéreos, hifas septadas com ramificação em 45° (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Itraconazol suspensão 10 mg/mL (ou voriconazol) (0,15; dexametasona zera o item fármaco); dose para 400 g (0,4 kg × 5–10 mg/kg = 2–4 mg -> 0,2–0,4 mL) (0,15); VO a cada 12h por semanas a meses (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: tratamento prolongado sem interromper por conta própria e reavaliação periódica (0,05).",
+                "c": "0,20 pt = Manejo ambiental: descartar sementes mofadas, melhorar ventilação/reduzir umidade, corrigir hipovitaminose A e estresse (0,10) + justificativa: infecção fúngica oportunista adquirida por inalação ambiental de conídios (não contagiosa entre aves) (0,10)."
+              }
+            }
+          },
+          "B": {
+            "key": "B",
+            "codinome": "犀牛 (xīniú — rinoceronte)",
+            "label": "Versão 2 / KEY B — 犀牛 (xīniú — rinoceronte)",
+            "total_questoes": 15,
+            "valor_questao": 0.1,
+            "questoes": [
+              {
+                "q": 1,
+                "gab": "B",
+                "tema": "Aves — excretas de nectarívoros",
+                "comentario": "Contexto da dieta: nectarívoros produzem excretas aquosas; ave ativa e com bom peso."
+              },
+              {
+                "q": 2,
+                "gab": "B",
+                "tema": "Aves — lipoma",
+                "comentario": "Lipomas esternais em periquitos obesos com dieta de sementes; citologia + dieta. A uropigiana é dorsal à base da cauda."
+              },
+              {
+                "q": 3,
+                "gab": "E",
+                "tema": "Aves — enfisema subcutâneo",
+                "comentario": "Crepitação + reenchimento após punção = ar: ruptura de saco aéreo (cervicocefálico/clavicular) após trauma. Punções repetidas; nas recidivas, stent cutâneo (fístula controlada) até o saco cicatrizar. Bandagem torácica compromete a ventilação."
+              },
+              {
+                "q": 4,
+                "gab": "A",
+                "tema": "Aves — osso medular",
+                "comentario": "Hiperostose poliostótica fisiológica (osso medular) em fêmeas em atividade reprodutiva."
+              },
+              {
+                "q": 5,
+                "gab": "B",
+                "tema": "Fluidoterapia — ave e réptil de mesmo peso",
+                "comentario": "Sinais graves ≈ 10%: déficit de 100 mL em cada animal. Arara: 50 + 50 = 100 mL. Jabuti: 50 + 20 = 70 mL (70 mL/kg) > teto de 40 mL/kg → 40 mL/dia (20 de manutenção + 20 de déficit), estendendo a reposição (risco de edema pulmonar). Aves toleram volumes maiores."
+              },
+              {
+                "q": 6,
+                "gab": "A",
+                "tema": "Aves — aterosclerose",
+                "comentario": "Amazonas e cinzentos idosos com dieta gordurosa e sedentarismo: aterosclerose (dispneia, fraqueza, síncope)."
+              },
+              {
+                "q": 7,
+                "gab": "D",
+                "tema": "Aves — doença da dilatação proventricular",
+                "comentario": "DDP/bornavírus: ganglioneurite do trato GI (sementes inteiras, dilatação) e sinais neurológicos; suporte + AINE."
+              },
+              {
+                "q": 8,
+                "gab": "E",
+                "tema": "Aves — hipoglicemia em rapinantes",
+                "comentario": "Rapinantes pequenos: pouca reserva; perda de peso rápida + frio + exercício → hipoglicemia."
+              },
+              {
+                "q": 9,
+                "gab": "D",
+                "tema": "Aves — grit",
+                "comentario": "Psitacídeos descascam as sementes: grit é desnecessário; consumo excessivo em ave doente → impactação."
+              },
+              {
+                "q": 10,
+                "gab": "C",
+                "tema": "Aves — doença mascarada e pesagem",
+                "comentario": "Aves (presas) escondem sinais até a descompensação; quilha saliente e perda de 25% do peso indicam processo crônico. Pesagem regular em gramas detecta a doença precocemente."
+              },
+              {
+                "q": 11,
+                "gab": "D",
+                "tema": "Aves — decúbito e ventilação na anestesia",
+                "comentario": "I, III e IV corretas. II é falsa: a anestesia reduz o volume corrente; a frequência pode parecer normal com hipoventilação."
+              },
+              {
+                "q": 12,
+                "gab": "E",
+                "tema": "Fluidoterapia — estimativa do grau de desidratação",
+                "comentario": "30 mL = grau leve (5%: déficit 20 → 10 + manutenção 20). Sinais graves (prostração, enoftalmia acentuada, pele persistente, mucosa seca, extremidades frias) ≈ 10%: déficit 40 mL → 20 + 20 = 40 mL no 1º dia; hipoperfusão → IV/IO. 60 = déficit inteiro no 1º dia. Glicose 5% é hipotônica e não repõe volume."
+              },
+              {
+                "q": 13,
+                "gab": "A",
+                "tema": "Fluidoterapia — monitoração da reidratação",
+                "comentario": "Exame físico é impreciso em exóticos: peso diário + Ht/PT + excretas + sinais clínicos."
+              },
+              {
+                "q": 14,
+                "gab": "C",
+                "tema": "Aves — Capillaria",
+                "comentario": "Ovos bioperculados em barril = Capillaria; algumas espécies têm minhoca como intermediário."
+              },
+              {
+                "q": 15,
+                "gab": "C",
+                "tema": "Aves — regurgitação de corte",
+                "comentario": "Regurgitação de corte é comum em machos; contexto (espelho, ave saudável) orienta antes de tratar."
+              }
+            ],
+            "discursiva": {
+              "titulo": "Papagaio apreendido com mudança de voz e intolerância ao exercício (Aspergilose)",
+              "rubrica": {
+                "a": "0,25 pt = Diagnóstico: Aspergilose (Aspergillus spp.) de sacos aéreos/siringe (0,15) + dois achados: ambiente úmido/sementes mofadas, estresse de apreensão, mudança de voz/dispneia/balanço de cauda, heterofilia com monocitose, lesões em sacos aéreos, hifas septadas com ramificação em 45° (0,05 cada).",
+                "b": "0,55 pt = Fármaco: Itraconazol suspensão 10 mg/mL (ou voriconazol) (0,15; dexametasona zera o item fármaco); dose para 400 g (0,4 kg × 5–10 mg/kg = 2–4 mg -> 0,2–0,4 mL) (0,15); VO a cada 12h por semanas a meses (0,10); estrutura técnica sem descontar nomes fictícios/endereço (0,10); instrução: tratamento prolongado sem interromper por conta própria e reavaliação periódica (0,05).",
+                "c": "0,20 pt = Manejo ambiental: descartar sementes mofadas, melhorar ventilação/reduzir umidade, corrigir hipovitaminose A e estresse (0,10) + justificativa: infecção fúngica oportunista adquirida por inalação ambiental de conídios (não contagiosa entre aves) (0,10)."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
