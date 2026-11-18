@@ -1,0 +1,15 @@
+flutter_native_splash:
+  # Cor de fundo (aquele marrom bonito do seu tema)
+  color: "#5D4037"
+  
+  # O logo que vai aparecer no centro
+  image: "assets/logo.png"
+
+  # (Opcional) Se quiser imagem diferente para modo escuro/claro:
+  # color_dark: "#121212"
+  # image_dark: "assets/logo.png"
+
+  # Mantém a imagem em tela cheia no Android 12+
+  android_12:
+    color: "#5D4037"
+    image: "assets/logo.png"

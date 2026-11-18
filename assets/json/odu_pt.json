@@ -1,0 +1,114 @@
+[
+  {
+    "id": "1",
+    "nome": "Ògbè",
+    "descricao": "Ògbè representa abertura, vitalidade e movimento. É o princípio da criação e da expansão.",
+    "simbolo": "ogbe.png",
+    "quedas": ["Ògbè Méjì", "Ògbè Òyèkú", "Ògbè Ìwòrì", "Ògbè Òdí"]
+  },
+  {
+    "id": "2",
+    "nome": "Òyèkú",
+    "descricao": "Òyèkú simboliza recolhimento, silêncio e profundidade. Está ligado ao mistério e ao interior.",
+    "simbolo": "oyeku.png",
+    "quedas": ["Òyèkú Méjì", "Òyèkú Ògbè", "Òyèkú Ìwòrì", "Òyèkú Òdí"]
+  },
+  {
+    "id": "3",
+    "nome": "Ìwòrì",
+    "descricao": "Ìwòrì fala de observação, análise e percepção. É o Odù da reflexão e da estratégia.",
+    "simbolo": "iwori.png",
+    "quedas": ["Ìwòrì Méjì", "Ìwòrì Ògbè", "Ìwòrì Òyèkú", "Ìwòrì Òdí"]
+  },
+  {
+    "id": "4",
+    "nome": "Òdí",
+    "descricao": "Òdí representa transformação, ruptura e mudança de direção. É o Odù que quebra padrões.",
+    "simbolo": "odi.png",
+    "quedas": ["Òdí Méjì", "Òdí Ògbè", "Òdí Òyèkú", "Òdí Ìwòrì"]
+  },
+  {
+    "id": "5",
+    "nome": "Ìròsùn",
+    "descricao": "Ìròsùn é o Odù da intuição, dos sinais e da sensibilidade espiritual.",
+    "simbolo": "irosun.png",
+    "quedas": ["Ìròsùn Méjì", "Ìròsùn Ògbè", "Ìròsùn Òyèkú", "Ìròsùn Òdí"]
+  },
+  {
+    "id": "6",
+    "nome": "Òwónrín",
+    "descricao": "Òwónrín fala de instabilidade, movimento rápido e adaptação constante.",
+    "simbolo": "owonrin.png",
+    "quedas": ["Òwónrín Méjì", "Òwónrín Ògbè", "Òwónrín Òyèkú", "Òwónrín Ìwòrì"]
+  },
+  {
+    "id": "7",
+    "nome": "Òbàrà",
+    "descricao": "Òbàrà representa comunicação, expressão e criatividade. É o Odù da palavra.",
+    "simbolo": "obara.png",
+    "quedas": ["Òbàrà Méjì", "Òbàrà Ògbè", "Òbàrà Òyèkú", "Òbàrà Òdí"]
+  },
+  {
+    "id": "8",
+    "nome": "Òkànràn",
+    "descricao": "Òkànràn simboliza intensidade, força e impulsividade. É o Odù da ação direta.",
+    "simbolo": "okanran.png",
+    "quedas": ["Òkànràn Méjì", "Òkànràn Ògbè", "Òkànràn Òyèkú", "Òkànràn Ìwòrì"]
+  },
+  {
+    "id": "9",
+    "nome": "Ògúndá",
+    "descricao": "Ògúndá fala de luta, coragem e superação. É o Odù da persistência.",
+    "simbolo": "ogunda.png",
+    "quedas": ["Ògúndá Méjì", "Ògúndá Ògbè", "Ògúndá Òyèkú", "Ògúndá Òdí"]
+  },
+  {
+    "id": "10",
+    "nome": "Òsá",
+    "descricao": "Òsá representa movimento inesperado, revelações e mudanças súbitas.",
+    "simbolo": "osa.png",
+    "quedas": ["Òsá Méjì", "Òsá Ògbè", "Òsá Òyèkú", "Òsá Ìwòrì"]
+  },
+  {
+    "id": "11",
+    "nome": "Ìká",
+    "descricao": "Ìká é o Odù da disciplina, da ordem e da precisão. Fala de foco e estrutura.",
+    "simbolo": "ika.png",
+    "quedas": ["Ìká Méjì", "Ìká Ògbè", "Ìká Òyèkú", "Ìká Òdí"]
+  },
+  {
+    "id": "12",
+    "nome": "Òtúrópòn",
+    "descricao": "Òtúrópòn simboliza profundidade emocional, sensibilidade e revelações internas.",
+    "simbolo": "oturupon.png",
+    "quedas": ["Òtúrópòn Méjì", "Òtúrópòn Ògbè", "Òtúrópòn Òyèkú", "Òtúrópòn Ìwòrì"]
+  },
+  {
+    "id": "13",
+    "nome": "Òtúrá",
+    "descricao": "Òtúrá fala de sabedoria, aprendizado e orientação. É o Odù do conhecimento.",
+    "simbolo": "otura.png",
+    "quedas": ["Òtúrá Méjì", "Òtúrá Ògbè", "Òtúrá Òyèkú", "Òtúrá Òdí"]
+  },
+  {
+    "id": "14",
+    "nome": "Ìretè",
+    "descricao": "Ìretè representa caminho, destino e escolhas importantes.",
+    "simbolo": "irete.png",
+    "quedas": ["Ìretè Méjì", "Ìretè Ògbè", "Ìretè Òyèkú", "Ìretè Ìwòrì"]
+  },
+  {
+    "id": "15",
+    "nome": "Òṣé",
+    "descricao": "Òṣé é o Odù da harmonia, beleza e equilíbrio. Fala de cura e alinhamento.",
+    "simbolo": "ose.png",
+    "quedas": ["Òṣé Méjì", "Òṣé Ògbè", "Òṣé Òyèkú", "Òṣé Òdí"]
+  },
+  {
+    "id": "16",
+    "nome": "Òfún",
+    "descricao": "Òfún simboliza clareza, iluminação e expansão espiritual.",
+    "simbolo": "ofun.png",
+    "quedas": ["Òfún Méjì", "Òfún Ògbè", "Òfún Òyèkú", "Òfún Ìwòrì"]
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "1",
+    "nome": "Ogbe",
+    "descricao": "Ogbe represents openness, vitality and expansion. It is the principle of creation.",
+    "simbolo": "ogbe.png",
+    "quedas": ["Ogbe Meji", "Ogbe Oyeku", "Ogbe Iwori", "Ogbe Odi"]
+  },
+  {
+    "id": "2",
+    "nome": "Oyeku",
+    "descricao": "Oyeku symbolizes silence, depth and introspection. It is linked to mystery and the inner world.",
+    "simbolo": "oyeku.png",
+    "quedas": ["Oyeku Meji", "Oyeku Ogbe", "Oyeku Iwori", "Oyeku Odi"]
+  },
+  {
+    "id": "3",
+    "nome": "Iwori",
+    "descricao": "Iwori speaks of observation, analysis and perception. It is the Odu of strategy.",
+    "simbolo": "iwori.png",
+    "quedas": ["Iwori Meji", "Iwori Ogbe", "Iwori Oyeku", "Iwori Odi"]
+  },
+  {
+    "id": "4",
+    "nome": "Odi",
+    "descricao": "Odi represents transformation and rupture. It breaks patterns and opens new paths.",
+    "simbolo": "odi.png",
+    "quedas": ["Odi Meji", "Odi Ogbe", "Odi Oyeku", "Odi Iwori"]
+  },
+  {
+    "id": "5",
+    "nome": "Irosun",
+    "descricao": "Irosun is the Odu of intuition, signs and spiritual sensitivity.",
+    "simbolo": "irosun.png",
+    "quedas": ["Irosun Meji", "Irosun Ogbe", "Irosun Oyeku", "Irosun Odi"]
+  },
+  {
+    "id": "6",
+    "nome": "Owonrin",
+    "descricao": "Owonrin speaks of instability, rapid movement and constant adaptation.",
+    "simbolo": "owonrin.png",
+    "quedas": ["Owonrin Meji", "Owonrin Ogbe", "Owonrin Oyeku", "Owonrin Iwori"]
+  },
+  {
+    "id": "7",
+    "nome": "Obara",
+    "descricao": "Obara represents communication, expression and creativity.",
+    "simbolo": "obara.png",
+    "quedas": ["Obara Meji", "Obara Ogbe", "Obara Oyeku", "Obara Odi"]
+  },
+  {
+    "id": "8",
+    "nome": "Okanran",
+    "descricao": "Okanran symbolizes intensity, force and impulsiveness.",
+    "simbolo": "okanran.png",
+    "quedas": ["Okanran Meji", "Okanran Ogbe", "Okanran Oyeku", "Okanran Iwori"]
+  },
+  {
+    "id": "9",
+    "nome": "Ogunda",
+    "descricao": "Ogunda speaks of struggle, courage and perseverance.",
+    "simbolo": "ogunda.png",
+    "quedas": ["Ogunda Meji", "Ogunda Ogbe", "Ogunda Oyeku", "Ogunda Odi"]
+  },
+  {
+    "id": "10",
+    "nome": "Osa",
+    "descricao": "Osa represents unexpected movement, revelations and sudden changes.",
+    "simbolo": "osa.png",
+    "quedas": ["Osa Meji", "Osa Ogbe", "Osa Oyeku", "Osa Iwori"]
+  },
+  {
+    "id": "11",
+    "nome": "Ika",
+    "descricao": "Ika is the Odu of discipline, order and precision.",
+    "simbolo": "ika.png",
+    "quedas": ["Ika Meji", "Ika Ogbe", "Ika Oyeku", "Ika Odi"]
+  },
+  {
+    "id": "12",
+    "nome": "Oturupon",
+    "descricao": "Oturupon symbolizes emotional depth and inner revelations.",
+    "simbolo": "oturupon.png",
+    "quedas": ["Oturupon Meji", "Oturupon Ogbe", "Oturupon Oyeku", "Oturupon Iwori"]
+  },
+  {
+    "id": "13",
+    "nome": "Otura",
+    "descricao": "Otura speaks of wisdom, learning and guidance.",
+    "simbolo": "otura.png",
+    "quedas": ["Otura Meji", "Otura Ogbe", "Otura Oyeku", "Otura Odi"]
+  },
+  {
+    "id": "14",
+    "nome": "Irete",
+    "descricao": "Irete represents destiny, path and important choices.",
+    "simbolo": "irete.png",
+    "quedas": ["Irete Meji", "Irete Ogbe", "Irete Oyeku", "Irete Iwori"]
+  },
+  {
+    "id": "15",
+    "nome": "Oshe",
+    "descricao": "Oshe is the Odu of harmony, beauty and balance.",
+    "simbolo": "ose.png",
+    "quedas": ["Oshe Meji", "Oshe Ogbe", "Oshe Oyeku", "Oshe Odi"]
+  },
+  {
+    "id": "16",
+    "nome": "Ofun",
+    "descricao": "Ofun symbolizes clarity, illumination and spiritual expansion.",
+    "simbolo": "ofun.png",
+    "quedas": ["Ofun Meji", "Ofun Ogbe", "Ofun Oyeku", "Ofun Iwori"]
+  }
+]
