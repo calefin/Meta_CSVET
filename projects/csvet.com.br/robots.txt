@@ -1,0 +1,7 @@
+# csvet.com.br: tudo liberado para rastreamento.
+# As rotas curtas de redirecionamento (/vetrank, /index.php?go=...) não são bloqueadas aqui de propósito:
+# elas enviam "noindex" (meta e cabeçalho X-Robots-Tag) e o robô precisa acessá-las para ver isso.
+User-agent: *
+Allow: /
+
+Sitemap: https://csvet.com.br/sitemap.xml

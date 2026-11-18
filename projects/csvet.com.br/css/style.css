@@ -1,0 +1,469 @@
+/* CSVET Editora - identidade compartilhada com csvet.app e journals.csvet.com.br
+   Navy #000080 / #000067, cinza da marca #c6c6c6, destaque #00aaff, Roboto. */
+
+/* Roboto servida localmente (Apache 2.0, fonts/LICENSE.txt): sem Google Fonts, nenhum dado do visitante vai a terceiros. */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('../fonts/roboto-300.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/roboto-400.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/roboto-500.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/roboto-700.woff2') format('woff2');
+}
+
+:root {
+    --navy: #000080;
+    --navy-dark: #000067;
+    --navy-deep: #00003d;
+    --accent: #00aaff;
+    --accent-dark: #0088cc;
+    --gray-brand: #c6c6c6;
+    --bg: #ffffff;
+    --bg-tint: #f4f6fb;
+    --text: #1d2233;
+    --text-secondary: #545b70;
+    --text-muted: #8a8a8a;
+    --border: #e3e6ef;
+    --font: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --radius: 12px;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 61, 0.08);
+    --shadow-md: 0 12px 32px rgba(0, 0, 61, 0.12);
+    --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    color-scheme: light;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a { color: var(--navy); }
+img { max-width: 100%; }
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------- Botões ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.98rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
+
+.btn-ghost { border-color: rgba(255, 255, 255, 0.85); color: #fff; }
+.btn-ghost:hover { background: #fff; color: var(--navy); transform: translateY(-2px); }
+
+.btn-outline { border-color: var(--navy); color: var(--navy); background: transparent; }
+.btn-outline:hover { background: var(--navy); color: #fff; transform: translateY(-2px); }
+
+/* ---------- Cabeçalho ---------- */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 72px;
+}
+
+.header-logo { display: block; height: 44px; width: auto; }
+
+.header-nav { display: flex; align-items: center; gap: 1.6rem; }
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.95rem;
+    transition: color 0.25s;
+}
+.header-nav a:hover { color: var(--accent); }
+.header-nav .btn-nav {
+    background: var(--accent);
+    padding: 0.45rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.header-nav .btn-nav:hover { background: var(--accent-dark); color: #fff; }
+
+/* ---------- Hero ---------- */
+.hero {
+    background:
+        linear-gradient(100deg, rgba(0, 0, 103, 0.94) 0%, rgba(0, 0, 128, 0.82) 55%, rgba(0, 0, 128, 0.55) 100%),
+        url('../img/fundo.webp') center / cover no-repeat;
+    color: #fff;
+    padding: 6.5rem 0 7rem;
+}
+
+.hero-inner { max-width: 1140px; }
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gray-brand);
+    margin-bottom: 1rem;
+}
+.eyebrow-dark { color: var(--accent-dark); }
+
+.hero-title {
+    font-size: clamp(2rem, 4.6vw, 3.25rem);
+    line-height: 1.15;
+    font-weight: 700;
+    max-width: 17ch;
+    margin-bottom: 1.25rem;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.02rem, 1.6vw, 1.2rem);
+    font-weight: 300;
+    max-width: 60ch;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.25rem;
+}
+.hero-subtitle strong { font-weight: 500; color: #fff; }
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+
+/* ---------- Seções ---------- */
+.section { padding: 5rem 0; }
+.section-tint { background: var(--bg-tint); }
+
+.section-head { max-width: 720px; margin-bottom: 2.75rem; }
+
+.section-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    line-height: 1.2;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.section-lead { color: var(--text-secondary); font-size: 1.05rem; }
+.section-lead a { font-weight: 500; }
+
+/* ---------- Pilares da editora ---------- */
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.pillar {
+    padding: 1.75rem;
+    border-left: 4px solid var(--accent);
+    background: var(--bg-tint);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+.pillar h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 0.5rem; }
+.pillar p { color: var(--text-secondary); font-size: 0.95rem; }
+
+/* ---------- Periódico em destaque ---------- */
+.journal-feature {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.25rem;
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.25rem;
+    box-shadow: var(--shadow-sm);
+}
+.journal-feature + .journal-feature { margin-top: 1.5rem; }
+
+.journal-mark {
+    width: 148px;
+    height: 148px;
+    border-radius: 30px;
+    background: var(--navy);
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+.journal-mark svg { width: 96px; height: 96px; }
+
+.journal-kicker {
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+.journal-title { font-size: clamp(1.35rem, 2.5vw, 1.8rem); color: var(--navy); line-height: 1.2; margin-bottom: 0.75rem; }
+.journal-desc { color: var(--text-secondary); max-width: 62ch; margin-bottom: 1.5rem; }
+.journal-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* ---------- Grid de plataformas ---------- */
+.portal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.portal-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--theme-color);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-smooth);
+}
+.portal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--theme-color-op20);
+    border-top-color: var(--theme-color);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.card-icon-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--theme-color-op10);
+    color: var(--theme-color);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+.card-icon-container svg { width: 26px; height: 26px; }
+#card-journals .card-icon-container { background: var(--navy); color: #fff; }
+
+.badge {
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    background: var(--bg-tint);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.card-title { font-size: 1.3rem; color: var(--navy); margin-bottom: 0.5rem; }
+.card-description { color: var(--text-secondary); font-size: 0.95rem; flex-grow: 1; margin-bottom: 1.5rem; }
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--theme-color);
+}
+.card-footer span { filter: brightness(0.8); }
+.card-footer svg { width: 18px; height: 18px; transition: transform 0.3s ease; }
+.portal-card:hover .card-footer svg { transform: translateX(5px); }
+
+/* ---------- Rodapé ---------- */
+.site-footer {
+    margin-top: auto;
+    background: var(--navy-deep);
+    color: var(--gray-brand);
+    padding: 3rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-content { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
+.footer-logo { height: 40px; width: auto; opacity: 0.95; }
+.footer-text a { color: var(--accent); text-decoration: none; }
+.footer-text a:hover { text-decoration: underline; }
+
+.social-links { display: flex; gap: 0.75rem; }
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    transition: var(--transition-smooth);
+}
+.social-btn:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-3px); }
+.social-btn svg { width: 18px; height: 18px; }
+
+.footer-legal { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; }
+.footer-legal a { color: #fff; text-decoration: none; font-weight: 500; }
+.footer-legal a:hover { color: var(--accent); }
+
+/* ---------- Páginas institucionais (privacidade, termos) ---------- */
+.legal-hero { background: var(--navy); color: #fff; padding: 3.5rem 0 3rem; }
+.legal-hero h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; line-height: 1.2; }
+.legal-hero p { color: var(--gray-brand); margin-top: 0.5rem; }
+.legal { max-width: 800px; padding-block: 3rem 4.5rem; }
+.legal h2 { color: var(--navy); font-size: 1.35rem; margin: 2.5rem 0 0.75rem; scroll-margin-top: 90px; }
+.legal h2:first-of-type { margin-top: 0; }
+.legal h3 { color: var(--text); font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+.legal p, .legal li { color: var(--text-secondary); }
+.legal p + p { margin-top: 0.75rem; }
+.legal ul { padding-left: 1.25rem; margin: 0.5rem 0 0.75rem; }
+.legal li { margin-bottom: 0.4rem; }
+.legal strong { color: var(--text); }
+.legal-toc { background: var(--bg-tint); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; margin-bottom: 2.5rem; }
+.legal-toc ol { padding-left: 1.25rem; columns: 2 240px; }
+.legal-toc a { text-decoration: none; }
+.legal-toc a:hover { text-decoration: underline; }
+.legal-table-wrap { overflow-x: auto; margin: 0.75rem 0 1rem; }
+.legal table { width: 100%; border-collapse: collapse; font-size: 0.93rem; }
+.legal th, .legal td { text-align: left; vertical-align: top; padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+.legal th { color: var(--navy); background: var(--bg-tint); font-weight: 500; }
+
+/* ---------- Tela de redirecionamento ---------- */
+.is-redirect { background: var(--bg-tint); }
+
+.redirect-main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 20px;
+}
+
+.redirect-container {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--theme-color);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.redirect-logo { height: 46px; width: auto; margin-bottom: 2rem; }
+
+.redirect-icon-large {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1.25rem;
+    border-radius: 18px;
+    background: var(--theme-color-op10);
+    color: var(--theme-color);
+    display: grid;
+    place-items: center;
+}
+.redirect-icon-large svg { width: 38px; height: 38px; }
+
+.redirect-title { color: var(--navy); font-size: 1.6rem; margin-bottom: 0.5rem; }
+.redirect-subtitle { color: var(--text-secondary); margin-bottom: 2rem; }
+.redirect-subtitle strong { color: var(--text); }
+
+.loader-wrapper { position: relative; width: 96px; height: 96px; margin: 0 auto 2rem; }
+.loader-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.loader-track { fill: none; stroke: var(--border); stroke-width: 6; }
+.loader-bar {
+    fill: none;
+    stroke: var(--theme-color);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 0;
+    animation: countdown 3s linear forwards;
+}
+.loader-text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+@keyframes countdown { to { stroke-dashoffset: 283; } }
+
+.btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 760px) {
+    .header-inner { flex-direction: column; padding-top: 0.8rem; padding-bottom: 0.8rem; gap: 0.6rem; }
+    .header-logo { height: 36px; }
+    .header-nav { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    html { scroll-padding-top: 130px; }
+    .hero { padding: 4rem 0 4.5rem; }
+    .section { padding: 3.5rem 0; }
+    .journal-feature { grid-template-columns: 1fr; padding: 1.5rem; gap: 1.5rem; }
+    .journal-mark { width: 96px; height: 96px; border-radius: 22px; }
+    .journal-mark svg { width: 62px; height: 62px; }
+    .portal-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation-duration: 0.01ms !important; }
+}
