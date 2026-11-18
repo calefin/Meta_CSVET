@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Emblema Ìjọ Ifá Èjìogbè">
+    <circle cx="256" cy="256" r="248" fill="#FFFFFF"/>
+
+    <circle cx="256" cy="256" r="232" fill="none" stroke="#7B4F2E" stroke-width="3" stroke-dasharray="2 10"/>
+
+    <g fill="none" stroke="#7B4F2E" stroke-width="6">
+        <circle cx="256" cy="256" r="196"/>
+    </g>
+
+    <polygon points="416,256 369.1,369.1 256,416 142.9,369.1 96,256 142.9,142.9 256,96 369.1,142.9"
+        fill="none" stroke="#2D6A4F" stroke-width="5"/>
+
+    <g>
+        <circle cx="416" cy="256" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+        <circle cx="369.1" cy="369.1" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+        <circle cx="256" cy="416" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+        <circle cx="142.9" cy="369.1" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+        <circle cx="96" cy="256" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+        <circle cx="142.9" cy="142.9" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+        <circle cx="256" cy="96" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+        <circle cx="369.1" cy="142.9" r="26" fill="#7B4F2E" stroke="#2D6A4F" stroke-width="4"/>
+    </g>
+
+    <circle cx="256" cy="256" r="54" fill="#2D6A4F"/>
+    <circle cx="256" cy="256" r="54" fill="none" stroke="#7B4F2E" stroke-width="4"/>
+</svg>

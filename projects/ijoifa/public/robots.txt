@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /entrar
+Disallow: /registro
+Disallow: /esqueci-senha
+Disallow: /redefinir-senha
+Disallow: /admin
+Disallow: /iniciado
+Disallow: /consulente
+Disallow: /perfil
+Disallow: /meus-dados
+Disallow: /cursos
+Disallow: /aulas
+Disallow: /orcamentos
+Disallow: /consultas
+Disallow: /api
+Disallow: /auth
+Disallow: /email/verificar
+Disallow: /pagar
+
+Sitemap: https://ijoifa.com/sitemap.xml

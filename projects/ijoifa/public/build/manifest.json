@@ -1,0 +1,51 @@
+{
+  "node_modules/pdfjs-dist/build/pdf.worker.min.mjs": {
+    "file": "assets/pdf.worker.min-yatZIOMy.mjs",
+    "src": "node_modules/pdfjs-dist/build/pdf.worker.min.mjs"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DfoeRy-U.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/admin.js": {
+    "file": "assets/admin-DtttDWRc.js",
+    "name": "admin",
+    "src": "resources/js/admin.js",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DIlBW2-j.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/editor.js": {
+    "file": "assets/editor-CjCuU2yH.js",
+    "name": "editor",
+    "src": "resources/js/editor.js",
+    "isEntry": true,
+    "css": [
+      "assets/editor-CQ7DNbul.css"
+    ]
+  },
+  "resources/js/library-viewer.js": {
+    "file": "assets/library-viewer-BrYfQ62J.js",
+    "name": "library-viewer",
+    "src": "resources/js/library-viewer.js",
+    "isEntry": true,
+    "assets": [
+      "assets/pdf.worker.min-yatZIOMy.mjs"
+    ]
+  },
+  "resources/js/pwa-install.js": {
+    "file": "assets/pwa-install-D-vPeC9K.js",
+    "name": "pwa-install",
+    "src": "resources/js/pwa-install.js",
+    "isEntry": true
+  }
+}
