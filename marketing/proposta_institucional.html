@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposta Institucional — VetRank</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Georgia&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Montserrat', 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0d1a14 0%, #064e3b 100%);
+      padding: 36px 48px 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .header-icon {
+      flex-shrink: 0;
+    }
+
+    .header-icon svg {
+      width: 64px;
+      height: 64px;
+    }
+
+    .header-text h1 {
+      font-family: 'Georgia', serif;
+      font-size: 28px;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .header-text h1 span {
+      color: #10b981;
+    }
+
+    .header-text p {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: #6ee7b7;
+      margin-top: 6px;
+      text-transform: uppercase;
+    }
+
+    /* ── Meta ── */
+    .meta {
+      background: #f1f5f9;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 16px 48px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .meta-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #94a3b8;
+      text-transform: uppercase;
+    }
+
+    .meta-value {
+      font-size: 13px;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .meta-value.highlight {
+      color: #10b981;
+    }
+
+    /* ── Body ── */
+    .body {
+      padding: 40px 48px;
+    }
+
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #10b981;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e2e8f0;
+    }
+
+    .section p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #475569;
+    }
+
+    .section p + p {
+      margin-top: 10px;
+    }
+
+    /* ── Formatos ── */
+    .formats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .format-tag {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #064e3b;
+      text-align: center;
+    }
+
+    /* ── Tabela de planos ── */
+    .plans {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 13px;
+    }
+
+    .plans thead tr {
+      background: #0d1a14;
+      color: #6ee7b7;
+    }
+
+    .plans thead th {
+      padding: 12px 16px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .plans tbody tr {
+      border-bottom: 1px solid #f1f5f9;
+      transition: background 0.15s;
+    }
+
+    .plans tbody tr:last-child { border-bottom: none; }
+
+    .plans tbody tr:hover { background: #f8fafc; }
+
+    .plans tbody td {
+      padding: 14px 16px;
+      color: #334155;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .plans tbody td:first-child {
+      font-weight: 700;
+      color: #0f172a;
+      white-space: nowrap;
+    }
+
+    .plans tbody td:last-child {
+      font-weight: 700;
+      color: #10b981;
+      white-space: nowrap;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fde68a;
+      border-radius: 20px;
+      padding: 2px 8px;
+      font-size: 10px;
+      font-weight: 700;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* ── Stats ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, #0d1a14, #064e3b);
+      border-radius: 12px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 26px;
+      font-weight: 800;
+      color: #10b981;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: #6ee7b7;
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ── CTA ── */
+    .cta {
+      background: linear-gradient(135deg, #0d1a14, #064e3b);
+      border-radius: 12px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .cta-text h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .cta-text p {
+      font-size: 13px;
+      color: #6ee7b7;
+      line-height: 1.5;
+    }
+
+    .cta-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .contact-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: rgba(16,185,129,0.2);
+      border: 1px solid rgba(16,185,129,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 1px solid #e2e8f0;
+      padding: 20px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      font-size: 12px;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+
+    .footer-left strong {
+      color: #334155;
+    }
+
+    .footer-url {
+      font-size: 12px;
+      font-weight: 700;
+      color: #10b981;
+      text-decoration: none;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: white; padding: 0; }
+      .page { box-shadow: none; border-radius: 0; }
+    }
+
+    @media (max-width: 600px) {
+      .header { padding: 24px; flex-direction: column; gap: 16px; }
+      .meta { padding: 16px 24px; }
+      .body { padding: 28px 24px; }
+      .formats { grid-template-columns: repeat(2, 1fr); }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .footer { padding: 16px 24px; }
+      .cta { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="30 18 100 128">
+        <defs>
+          <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#10B981"/>
+            <stop offset="100%" stop-color="#047857"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(30, 15)">
+          <path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/>
+          <path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+          <path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/>
+          <polygon points="50,10 95,27 50,44 5,27" fill="url(#g)"/>
+          <polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/>
+          <path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/>
+          <circle cx="92" cy="63" r="3.5" fill="#F59E0B"/>
+        </g>
+      </svg>
+    </div>
+    <div class="header-text">
+      <h1>Vet<span>Rank</span> para Instituições</h1>
+      <p>Banco de Questões Veterinárias com IA</p>
+    </div>
+  </div>
+
+  <!-- Meta -->
+  <div class="meta">
+    <div class="meta-item">
+      <span class="meta-label">Para</span>
+      <span class="meta-value">Prof. [Nome] — [Instituição]</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">De</span>
+      <span class="meta-value">Prof. A.S. Calefi · VetRank</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Data</span>
+      <span class="meta-value">Maio de 2026</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Amostra</span>
+      <span class="meta-value highlight">30 questões gratuitas</span>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+
+    <!-- Problema -->
+    <div class="section">
+      <div class="section-title">O problema</div>
+      <p>
+        Elaborar questões de qualidade para provas, simulados e avaliações consome horas de trabalho
+        docente — tempo que poderia estar em pesquisa, orientação e sala de aula. A maioria dos bancos
+        disponíveis no mercado traz questões genéricas, desatualizadas ou sem fundamentação bibliográfica clara.
+      </p>
+    </div>
+
+    <!-- O que é -->
+    <div class="section">
+      <div class="section-title">O que desenvolvemos</div>
+      <p>
+        Um banco de questões de medicina veterinária gerado a partir das principais referências da área
+        — <strong>Jubb, Kennedy &amp; Palmer</strong> (Patologia), <strong>Dukes</strong> (Fisiologia) e outras —
+        estruturado em 8 formatos compatíveis com ENADE, CFMV e provas de residência. Cada questão inclui
+        <strong>gabarito comentado com fundamentação fisiopatológica</strong>, nível de dificuldade e tag de assunto.
+      </p>
+      <div class="formats">
+        <div class="format-tag">Múltipla escolha</div>
+        <div class="format-tag">Caso clínico</div>
+        <div class="format-tag">Asserção-razão</div>
+        <div class="format-tag">Assertivas I–IV</div>
+        <div class="format-tag">Lacuna (cloze)</div>
+        <div class="format-tag">Associação</div>
+        <div class="format-tag">Completar frase</div>
+        <div class="format-tag">Exceto / Não</div>
+      </div>
+    </div>
+
+    <!-- Volume -->
+    <div class="section">
+      <div class="section-title">Volume atual</div>
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-number">9.000+</div>
+          <div class="stat-label">questões disponíveis hoje</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8</div>
+          <div class="stat-label">formatos de questão</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">25.000</div>
+          <div class="stat-label">meta até dez/2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Planos -->
+    <div class="section">
+      <div class="section-title">Modalidades de contratação</div>
+      <table class="plans">
+        <thead>
+          <tr>
+            <th>Modalidade</th>
+            <th>O que inclui</th>
+            <th>Investimento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Banco por disciplina</td>
+            <td>500–1.000 questões de uma disciplina, entregues em formato compatível com seu AVA (Moodle, Blackboard ou planilha)</td>
+            <td>R$ 1.800</td>
+          </tr>
+          <tr>
+            <td>Banco completo <span class="badge">Mais vantajoso</span></td>
+            <td>Acesso ao banco integral da plataforma, atualizado continuamente, com novas questões incluídas ao longo do ano</td>
+            <td>R$ 6.000/ano</td>
+          </tr>
+          <tr>
+            <td>Questões sob demanda</td>
+            <td>Envie o PDF de referência da sua disciplina e receba questões calibradas para o seu conteúdo em até 5 dias úteis</td>
+            <td>R$ 800 / 200 questões</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Por que confiar -->
+    <div class="section">
+      <div class="section-title">Por que confiar no conteúdo</div>
+      <p>
+        As questões são geradas a partir dos livros-texto de referência das disciplinas e revisadas por
+        protocolo de validação automática. O modelo de geração prioriza <strong>raciocínio clínico-patológico</strong>,
+        não memorização de definições — o mesmo padrão cobrado nas provas de residência das grandes universidades brasileiras.
+      </p>
+      <p>
+        O projeto é desenvolvido e curado por professor universitário de Medicina Veterinária, garantindo
+        aderência ao currículo e relevância clínica do conteúdo.
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <div class="cta-text">
+        <h3>Próximo passo: amostra gratuita</h3>
+        <p>
+          Envio 30 questões da disciplina de sua preferência,<br>
+          sem custo, para avaliação do conteúdo e formato.
+        </p>
+      </div>
+      <div class="cta-contacts">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <span>seu@email.com.br</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <span>(XX) XXXXX-XXXX</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-left">
+      <strong>VetRank — Portal de Estudos Veterinários</strong><br>
+      Desenvolvido por professor universitário de Medicina Veterinária
+    </div>
+    <a href="https://vetrank.com.br" class="footer-url">vetrank.com.br</a>
+  </div>
+
+</div>
+</body>
+</html>

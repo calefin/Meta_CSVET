@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/migrate_backup.js)",
+      "Bash(node scripts/migrate_backup.cjs)",
+      "Bash(node --input-type=commonjs)",
+      "PowerShell(& \"C:\\\\xampp\\\\mysql\\\\bin\\\\mysql.exe\" -u root -e \"SELECT VERSION\\(\\); SHOW DATABASES;\" 2>&1)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

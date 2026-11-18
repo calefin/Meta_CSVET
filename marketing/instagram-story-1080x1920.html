@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>VetRank — Instagram Story 1080×1920</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1920px; overflow: hidden; background: #060e09; font-family: 'Montserrat', sans-serif; }
+
+  .card {
+    width: 1080px; height: 1920px;
+    background: linear-gradient(160deg, #060e09 0%, #0a1a10 40%, #060e09 100%);
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column; align-items: center;
+  }
+
+  .top-bar { width: 100%; height: 6px; background: linear-gradient(90deg, #10b981 0%, #34d399 50%, #f59e0b 100%); flex-shrink: 0; }
+
+  .glow-top { position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 900px; height: 700px; background: radial-gradient(ellipse, rgba(16,185,129,0.3) 0%, transparent 65%); pointer-events: none; }
+  .glow-mid { position: absolute; top: 800px; right: -200px; width: 700px; height: 700px; background: radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 65%); pointer-events: none; }
+  .glow-bottom { position: absolute; bottom: 0; left: -150px; width: 600px; height: 500px; background: radial-gradient(circle, rgba(16,185,129,0.15) 0%, transparent 65%); pointer-events: none; }
+
+  .dots-tr { position: absolute; top: 100px; right: 80px; display: grid; grid-template-columns: repeat(5,1fr); gap: 14px; }
+  .dots-bl { position: absolute; bottom: 200px; left: 80px; display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+  .dot { width: 7px; height: 7px; background: #0d3322; border-radius: 50%; }
+
+  /* Logo */
+  .logo-section { display: flex; align-items: center; gap: 18px; margin-top: 90px; position: relative; z-index: 1; }
+  .logo-section svg { width: 72px; height: 72px; }
+  .logo-name { font-size: 54px; font-weight: 900; letter-spacing: -1.5px; }
+  .logo-name .vet { font-family: Georgia, serif; color: #fff; }
+  .logo-name .rank { color: #10b981; }
+
+  .tagline { font-size: 24px; color: #6ee7b7; margin-top: 12px; font-weight: 600; position: relative; z-index: 1; letter-spacing: 1px; text-transform: uppercase; }
+
+  .divider-line { width: 80px; height: 3px; background: linear-gradient(90deg, #10b981, #34d399); border-radius: 2px; margin: 52px 0; position: relative; z-index: 1; }
+
+  /* Hero */
+  .hero { text-align: center; padding: 0 80px; position: relative; z-index: 1; }
+  .hero-eyebrow { font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 28px; }
+  .hero-title { font-size: 100px; font-weight: 900; color: #f8fafc; line-height: 1.0; letter-spacing: -3px; margin-bottom: 32px; }
+  .hero-title em { font-style: normal; background: linear-gradient(90deg, #10b981 0%, #34d399 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero-sub { font-size: 28px; color: #94a3b8; font-weight: 500; line-height: 1.5; }
+
+  /* Stats */
+  .stats { display: flex; gap: 28px; margin-top: 56px; position: relative; z-index: 1; }
+  .stat { background: rgba(10,28,18,0.7); border: 1px solid #0d3322; border-radius: 20px; padding: 28px 32px; text-align: center; min-width: 200px; }
+  .stat-num { font-size: 48px; font-weight: 900; color: #10b981; line-height: 1; }
+  .stat-label { font-size: 18px; color: #64748b; margin-top: 6px; font-weight: 500; line-height: 1.3; }
+
+  /* Features */
+  .features { display: flex; flex-direction: column; gap: 22px; padding: 0 72px; width: 100%; margin-top: 60px; position: relative; z-index: 1; }
+  .feat { background: rgba(10,28,18,0.7); border: 1px solid #0d3322; border-radius: 20px; padding: 30px 34px; display: flex; align-items: center; gap: 26px; }
+  .feat-icon { width: 64px; height: 64px; background: rgba(6,78,59,0.9); border: 1px solid rgba(16,185,129,0.3); border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .feat-content { flex: 1; }
+  .feat-title { font-size: 26px; font-weight: 700; color: #f8fafc; margin-bottom: 5px; }
+  .feat-desc { font-size: 20px; color: #64748b; }
+
+  /* CTA */
+  .cta-section { display: flex; flex-direction: column; align-items: center; gap: 22px; margin-top: 72px; position: relative; z-index: 1; }
+  .cta-button { background: linear-gradient(90deg, #10b981 0%, #34d399 100%); color: #052e16; font-size: 32px; font-weight: 900; padding: 28px 80px; border-radius: 16px; letter-spacing: -0.5px; }
+  .cta-sub { font-size: 22px; color: #475569; font-weight: 500; }
+  .website { font-size: 26px; font-weight: 700; color: #6ee7b7; margin-top: 20px; }
+
+  .bottom-bar { position: absolute; bottom: 0; width: 100%; height: 6px; background: linear-gradient(90deg, #f59e0b 0%, #34d399 50%, #10b981 100%); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div>
+  <div class="glow-top"></div><div class="glow-mid"></div><div class="glow-bottom"></div>
+  <div class="dots-tr"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <div class="dots-bl"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+
+  <div class="logo-section">
+    <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+      <g transform="translate(30,15)">
+        <path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/>
+        <path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+        <path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/>
+        <polygon points="50,10 95,27 50,44 5,27" fill="url(#g2)"/>
+        <polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/>
+        <path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/>
+        <circle cx="92" cy="63" r="3.5" fill="#F59E0B"/>
+      </g>
+    </svg>
+    <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+  </div>
+  <div class="tagline">Portal de Estudos Veterinários</div>
+  <div class="divider-line"></div>
+
+  <div class="hero">
+    <div class="hero-eyebrow">Estude com método</div>
+    <div class="hero-title">Passe com<br><em>confiança.</em></div>
+    <div class="hero-sub">O único portal feito para quem<br>quer ir além do básico na Vet.</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-num">9k+</div><div class="stat-label">questões no banco</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">formatos de questão</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">dias grátis</div></div>
+  </div>
+
+  <div class="features">
+    <div class="feat">
+      <div class="feat-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="20" rx="3" stroke="#10b981" stroke-width="2"/><path d="M4 12H28" stroke="#10b981" stroke-width="2"/><path d="M10 18H16" stroke="#10b981" stroke-width="2" stroke-linecap="round"/><path d="M10 22H20" stroke="#10b981" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <div class="feat-content"><div class="feat-title">Banco de Questões</div><div class="feat-desc">Por banca, disciplina e dificuldade</div></div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11" stroke="#10b981" stroke-width="2"/><path d="M16 9V16L20 20" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="feat-content"><div class="feat-title">Simulados Cronometrados</div><div class="feat-desc">Gabarito detalhado e estatísticas</div></div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 26L10 6L16 20L20 14L26 26Z" stroke="#10b981" stroke-width="2" stroke-linejoin="round"/></svg></div>
+      <div class="feat-content"><div class="feat-title">Trilhas de Estudo</div><div class="feat-desc">Roteiro semanal para cada edital</div></div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4L18.5 11H26L20 15.5L22.5 23L16 18L9.5 23L12 15.5L6 11H13.5Z" stroke="#10b981" stroke-width="2" stroke-linejoin="round"/></svg></div>
+      <div class="feat-content"><div class="feat-title">XP e Liga Semanal</div><div class="feat-desc">Gamificação que mantém a sequência</div></div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-button">Comece grátis por 7 dias</div>
+    <div class="cta-sub">Sem cartão de crédito necessário</div>
+    <div class="website">vetrank.com.br</div>
+  </div>
+
+  <div class="bottom-bar"></div>
+</div>
+</body>
+</html>

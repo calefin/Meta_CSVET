@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `mpPreapprovalId` varchar(128);

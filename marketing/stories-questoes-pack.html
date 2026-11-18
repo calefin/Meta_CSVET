@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>VetRank — Pack 15 Stories Questões</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1920px; overflow:hidden; font-family:'Montserrat',sans-serif; background:#000; }
+
+  /* Nav overlay */
+  .nav {
+    position:fixed; top:0; left:0; width:100%; height:100%; z-index:999;
+    display:flex; align-items:center; justify-content:space-between;
+    pointer-events:none;
+  }
+  .nav-btn {
+    width:80px; height:80px; border-radius:50%;
+    background:rgba(16,185,129,0.2); border:2px solid rgba(16,185,129,0.5);
+    color:#10b981; font-size:32px; font-weight:900; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    pointer-events:all; margin:0 24px; transition:background 0.2s;
+    user-select:none;
+  }
+  .nav-btn:hover { background:rgba(16,185,129,0.4); }
+  .counter {
+    position:fixed; top:36px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,0.5); border:1px solid #0d3322;
+    border-radius:100px; padding:8px 22px; font-size:14px;
+    font-weight:700; color:#6ee7b7; z-index:1000;
+  }
+
+  .slide { width:1080px; height:1920px; display:none; position:relative; overflow:hidden; }
+  .slide.active { display:flex; flex-direction:column; }
+
+  /* Common structure */
+  .top-bar { width:100%; height:6px; flex-shrink:0; }
+  .bottom-bar { position:absolute; bottom:0; left:0; width:100%; height:6px; }
+  .glow1,.glow2 { position:absolute; pointer-events:none; border-radius:50%; }
+
+  .s-header { display:flex; align-items:center; justify-content:space-between; padding:52px 72px 0; position:relative; z-index:1; }
+  .logo { display:flex; align-items:center; gap:12px; }
+  .logo svg { width:44px; height:44px; }
+  .logo-name { font-size:32px; font-weight:900; }
+  .logo-name .vet { font-family:Georgia,serif; color:#fff; }
+  .logo-name .rank { color:#10b981; }
+
+  .q-label { padding:36px 72px 0; position:relative; z-index:1; }
+  .label-row { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .lbl-num { background:#10b981; color:#052e16; font-size:12px; font-weight:800; padding:4px 14px; border-radius:100px; letter-spacing:1px; }
+  .lbl-area { font-size:14px; color:#6ee7b7; font-weight:700; }
+  .lbl-esp { font-size:12px; color:#f59e0b; font-weight:700; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.3); border-radius:100px; padding:3px 12px; }
+  .lbl-dif { font-size:12px; color:#94a3b8; font-weight:600; }
+
+  .enunciado-box { margin:16px 72px 0; background:rgba(10,28,18,0.85); border:1px solid #0d3322; border-radius:20px; padding:34px 36px; position:relative; z-index:1; }
+  .enunciado-text { font-size:22px; color:#e2e8f0; line-height:1.65; font-weight:500; }
+
+  .alternativas { display:flex; flex-direction:column; gap:13px; margin:22px 72px 0; position:relative; z-index:1; }
+  .alt { background:rgba(10,28,18,0.6); border:1px solid #0d3322; border-radius:13px; padding:18px 24px; display:flex; align-items:flex-start; gap:16px; font-size:20px; color:#94a3b8; line-height:1.5; }
+  .alt.ok { background:rgba(16,185,129,0.1); border-color:rgba(16,185,129,0.5); color:#d1fae5; }
+  .alt-l { font-size:18px; font-weight:800; color:#475569; flex-shrink:0; width:24px; }
+  .alt.ok .alt-l { color:#10b981; }
+
+  .gab-section { margin:24px 72px 0; position:relative; z-index:1; }
+  .gab-head { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+  .gab-badge { background:#10b981; color:#052e16; font-size:12px; font-weight:800; padding:5px 16px; border-radius:100px; }
+  .gab-sub { font-size:14px; color:#6ee7b7; font-weight:600; }
+  .exp { background:rgba(16,185,129,0.07); border:1px solid rgba(16,185,129,0.2); border-radius:14px; padding:22px 26px; font-size:18px; color:#94a3b8; line-height:1.65; }
+
+  .s-footer { margin:28px 72px 0; display:flex; align-items:center; justify-content:space-between; position:relative; z-index:1; }
+  .s-footer-l { font-size:15px; color:#475569; line-height:1.5; }
+  .s-footer-l strong { color:#6ee7b7; display:block; font-size:13px; margin-bottom:3px; }
+  .s-cta { background:linear-gradient(90deg,#10b981,#34d399); color:#052e16; font-size:16px; font-weight:900; padding:14px 28px; border-radius:11px; white-space:nowrap; }
+
+  /* Background per slide */
+  .bg-green { background:linear-gradient(160deg,#060e09 0%,#0a1a10 50%,#060e09 100%); }
+  .bg-teal  { background:linear-gradient(160deg,#06100e 0%,#0a1c1a 50%,#06100e 100%); }
+  .bg-amber { background:linear-gradient(160deg,#0e0a04 0%,#1a1208 50%,#0e0a04 100%); }
+  .bar-green { background:linear-gradient(90deg,#10b981,#34d399,#f59e0b); }
+  .bar-teal  { background:linear-gradient(90deg,#14b8a6,#34d399,#10b981); }
+  .bar-amber { background:linear-gradient(90deg,#f59e0b,#fbbf24,#10b981); }
+  .glow-g1  { top:-120px;right:-120px; width:500px;height:500px; background:radial-gradient(circle,rgba(16,185,129,0.22) 0%,transparent 65%); }
+  .glow-g2  { bottom:150px;left:-80px; width:420px;height:420px; background:radial-gradient(circle,rgba(245,158,11,0.1) 0%,transparent 65%); }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <button class="nav-btn" onclick="prev()">&#8592;</button>
+  <button class="nav-btn" onclick="next()">&#8594;</button>
+</div>
+<div class="counter" id="ctr">1 / 15</div>
+
+<!-- SHIELD SVG REUTILIZÁVEL via <use> não funciona cross-slide, repetimos inline -->
+<!-- ════════════════════════════════════ SLIDE 1 ════════════════════════════════════ -->
+<div class="slide active bg-green">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-green"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ga" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#ga)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#1</span><span class="lbl-area">Patologia Cardiovascular</span><span class="lbl-esp">🐕 Cão</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Um Cavalier King Charles Spaniel, 11 anos, apresenta sopro sistólico apical e sinais de insuficiência cardíaca esquerda há 2 anos. Na necropsia, as cúspides da valva mitral estão espessadas, nodulares e opacas. O histopatológico revela acúmulo de glicosaminoglicanos na camada esponjosa com perda da arquitetura fibrosa.<br><br>Qual é o diagnóstico anatomopatológico?</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Endocardite bacteriana com vegetações fibrinossupurativas</div>
+    <div class="alt ok"><span class="alt-l">B</span>Degeneração mixomatosa valvar (endocardiose)</div>
+    <div class="alt"><span class="alt-l">C</span>Calcificação distrófica da camada fibrosa valvar</div>
+    <div class="alt"><span class="alt-l">D</span>Displasia valvar congênita por defeito de colágeno tipo I</div>
+    <div class="alt"><span class="alt-l">E</span>Fibrose de substituição pós-isquemia valvar crônica</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: B</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A endocardiose é a cardiopatia mais comum em cães de raças pequenas. O acúmulo de GAGs na camada esponjosa gera degeneração mixoide progressiva, enfraquecimento valvar e insuficiência mitral. Diferencie de endocardite (vegetações irregulares, processo infeccioso) e de calcificação (mineralização distrófica sem acúmulo de GAGs).</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>+9.000 questões no banco</strong>Estude com método, passe com confiança</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-green"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 2 ════════════════════════════════════ -->
+<div class="slide bg-teal">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-teal"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gb" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gb)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#2</span><span class="lbl-area">Patologia Respiratória</span><span class="lbl-esp">🐄 Bovino</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Bovinos jovens em confinamento apresentam febre, tosse produtiva e dispneia. Na necropsia, os pulmões exibem consolidação cranioventral com coloração vermelho-acinzentada, aderências pleurais e exsudato fibrinoso na cavidade torácica. A histologia mostra exsudato fibrinossupurativo intra-alveolar e necrose coagulativa.<br><br>O agente etiológico mais provável e o diagnóstico são:</div></div>
+  <div class="alternativas">
+    <div class="alt ok"><span class="alt-l">A</span>Mannheimia haemolytica — pneumonia fibrinosa (mannheimiose bovina)</div>
+    <div class="alt"><span class="alt-l">B</span>Mycoplasma bovis — pneumonia intersticial com fibrose difusa</div>
+    <div class="alt"><span class="alt-l">C</span>Dictyocaulus viviparus — pneumonia verminótica com hemorragia</div>
+    <div class="alt"><span class="alt-l">D</span>Vírus BHV-1 — traqueíte necrótica sem consolidação pulmonar</div>
+    <div class="alt"><span class="alt-l">E</span>Pasteurella multocida — rinite supurativa com atrofia dos cornetos</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: A</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A mannheimiose bovina (septicemia hemorrágica) é a principal causa de pneumonia fatal em bovinos em confinamento. A leucotoxina produzida por M. haemolytica destrói macrófagos alveolares, gerando consolidação fibrinossupurativa cranioventral e pleurite fibrinosa. Mycoplasma bovis causa lesões intersticiais crônicas sem o padrão fibrinoso agudo.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Simulados por edital</strong>Residência, CFMV, ENARE</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-teal"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 3 ════════════════════════════════════ -->
+<div class="slide bg-green">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-green"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gc" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gc)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#3</span><span class="lbl-area">Patologia Hepática</span><span class="lbl-esp">🐈 Gato</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Uma gata persa, 6 anos, obesa, apresenta anorexia há 10 dias após mudança de ambiente. Icterícia intensa, letargia e hepatomegalia ao exame. Os exames revelam hiperbilirrubinemia, ALT elevada e lipemia. À necropsia, o fígado tem coloração amarelo-alaranjada, superfície lisa e consistência friável. A histologia mostra vacuolização maciça de hepatócitos por lipídeos.<br><br>Este quadro é compatível com:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Hepatite crônica ativa com degeneração hidrópica difusa</div>
+    <div class="alt"><span class="alt-l">B</span>Colangiohepatite linfocítica com infiltrado portal</div>
+    <div class="alt"><span class="alt-l">C</span>Hepatite vacuolar por hipercortisolismo iatrogênico</div>
+    <div class="alt ok"><span class="alt-l">D</span>Lipidose hepática felina (hepatic lipidosis)</div>
+    <div class="alt"><span class="alt-l">E</span>Amiloidose hepática com depósito de proteína AA</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: D</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A lipidose hepática felina é a hepatopatia mais comum em gatos, precipitada por anorexia em animais obesos. A mobilização maciça de ácidos graxos supera a capacidade hepática de oxidação/exportação, causando acúmulo de triglicerídeos nos hepatócitos. O fígado fica amarelo e friável. Tratamento: suporte nutricional intensivo.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Trilhas por disciplina</strong>Do zero à aprovação</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-green"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 4 ════════════════════════════════════ -->
+<div class="slide bg-amber">
+  <div class="glow1" style="top:-120px;right:-120px;width:500px;height:500px;background:radial-gradient(circle,rgba(245,158,11,0.18) 0%,transparent 65%);position:absolute;border-radius:50%;"></div>
+  <div class="glow2" style="bottom:150px;left:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(16,185,129,0.12) 0%,transparent 65%);position:absolute;border-radius:50%;"></div>
+  <div class="top-bar bar-amber"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gd" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gd)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#4</span><span class="lbl-area">Patologia Nervosa</span><span class="lbl-esp">🐄 Bovino</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Bovinos confinados com dieta rica em concentrados apresentam sinais nervosos: cegueira cortical, andar em círculos, pressão da cabeça contra obstáculos e convulsões. A necropsia revela amolecimento do córtex cerebral. A histologia mostra necrose lamelar do córtex com espongiose e focos de mineralização de neurônios necróticos.<br><br>Qual a etiologia e o mecanismo desta lesão?</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Intoxicação por chumbo — desmielinização segmentar por inibição enzimática</div>
+    <div class="alt"><span class="alt-l">B</span>Listeriose — encefalite focal de tronco encefálico por Listeria monocytogenes</div>
+    <div class="alt"><span class="alt-l">C</span>Enterotoxemia — ação de épsilon-toxina de Clostridium perfringens tipo D</div>
+    <div class="alt ok"><span class="alt-l">D</span>Polioencefalomalacia — deficiência de tiamina com necrose cortical por acúmulo de piruvato</div>
+    <div class="alt"><span class="alt-l">E</span>Babesiose cerebral — sequestro de eritrócitos parasitados em capilares cerebrais</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: D</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A polioencefalomalacia resulta da deficiência funcional de tiamina (por destruição bacteriana no rúmen em dietas com alto concentrado), impedindo o metabolismo aeróbico neuronal. Os neurônios corticais, altamente dependentes de glicose, entram em necrose isquêmica. O tratamento precoce com tiamina IV pode reverter o quadro.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Gabarito comentado</strong>Em todas as questões do banco</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-amber"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 5 ════════════════════════════════════ -->
+<div class="slide bg-green">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-green"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="ge2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#ge2)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#5</span><span class="lbl-area">Patologia Musculoesquelética</span><span class="lbl-esp">🐑 Ovino</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Cordeiros de 2-4 semanas, criados em região com pastagens deficientes em selênio, apresentam relutância em se mover, tremores musculares, decúbito e morte. Na necropsia, os músculos esqueléticos dos membros e do coração exibem áreas esbranquiçadas, em estrias paralelas às fibras. A histologia confirma necrose hialina multifocal de fibras musculares.<br><br>Este quadro é compatível com:</div></div>
+  <div class="alternativas">
+    <div class="alt ok"><span class="alt-l">A</span>Miopatia nutricional (doença do músculo branco) por deficiência de selênio/vitamina E</div>
+    <div class="alt"><span class="alt-l">B</span>Intoxicação por ionóforos (lasalocida) com necrose mitocondrial de miócitos</div>
+    <div class="alt"><span class="alt-l">C</span>Miosite por Clostridium chauvoei (carbúnculo sintomático) com gás nos tecidos</div>
+    <div class="alt"><span class="alt-l">D</span>Hipocalcemia puerperal com tetania por disfunção neuromuscular</div>
+    <div class="alt"><span class="alt-l">E</span>Rabdomiólise por esforço com mioglobinúria e insuficiência renal aguda</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: A</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A miopatia nutricional (doença do músculo branco) ocorre por deficiência de selênio e/ou vitamina E, micronutrientes antioxidantes essenciais. Sem proteção antioxidante, radicais livres lesam membranas musculares, gerando necrose hialina de fibras. As estrias brancas macroscópicas resultam da coagulação proteica. Afeta cordeiros, bezerros e potros. Tratamento: selenito de sódio + vitamina E.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Dashboard de desempenho</strong>Veja onde melhorar</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-green"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 6 ════════════════════════════════════ -->
+<div class="slide bg-teal">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-teal"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gf" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gf)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#6</span><span class="lbl-area">Patologia Urinária</span><span class="lbl-esp">🐕 Cão</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Um cão pastor-alemão, 4 anos, apresenta febre, icterícia, hematúria, poliúria e insuficiência renal aguda. O histórico inclui contato com água alagada. A necropsia revela rins aumentados com petéquias subcapsulares e hemorragias cortical e medular. A histologia mostra nefrite intersticial com túbulos dilatados, cilindros de hemoglobina e espiroquetas nos capilares peritubulares.<br><br>O agente e o mecanismo de lesão renal são:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Ehrlichia canis — vasculite imunomediada com deposição de imunocomplexos</div>
+    <div class="alt"><span class="alt-l">B</span>Toxoplasma gondii — nefrite granulomatosa com taquizoítas intratubulares</div>
+    <div class="alt ok"><span class="alt-l">C</span>Leptospira spp. — nefrite intersticial por toxinas e resposta inflamatória direta</div>
+    <div class="alt"><span class="alt-l">D</span>Borrelia burgdorferi — glomerulonefrite membranoproliferativa crônica</div>
+    <div class="alt"><span class="alt-l">E</span>Neospora caninum — nefrite piogranulomatosa com bradizoítas no interstício</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: C</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A leptospirose causa nefrite intersticial aguda por ação direta das espiroquetas e suas toxinas no epitélio tubular. A colonização dos capilares peritubulares e a hemólise intravascular geram cilindros de hemoglobina, obstrução tubular e insuficiência renal aguda. A icterícia resulta da hepatite concomitante. Reservatórios: roedores. Transmissão: contato com urina contaminada ou água.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>XP e Ranking Semanal</strong>Estude em sequência</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-teal"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 7 ════════════════════════════════════ -->
+<div class="slide bg-green">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-green"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gg)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#7</span><span class="lbl-area">Patologia Hematopoiética</span><span class="lbl-esp">🐕 Cão</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Um cão sem raça definida, 5 anos, apresenta mucosas pálidas e ictéricas, esplenomegalia e fraqueza progressiva. Hemograma: anemia normocítica normocrômica regenerativa, esferócitos no esfregaço e teste de Coombs direto positivo. A necropsia (caso fatal) revela baço aumentado com polpa vermelha expandida e eritrofagocitose maciça pelos macrófagos esplênicos.<br><br>O mecanismo patogênico central desta anemia é:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Hemólise intravascular por toxinas bacterianas circulantes</div>
+    <div class="alt"><span class="alt-l">B</span>Destruição medular por infiltração neoplásica de células linfoides</div>
+    <div class="alt"><span class="alt-l">C</span>Sequestro hepático de eritrócitos parasitados por Babesia canis</div>
+    <div class="alt"><span class="alt-l">D</span>Deficiência de ferro por hemorragia gastrointestinal crônica</div>
+    <div class="alt ok"><span class="alt-l">E</span>Opsonização de eritrócitos por IgG e destruição extravascular esplênica</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: E</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">Na AHIM (anemia hemolítica imunomediada), autoanticorpos IgG se ligam à superfície dos eritrócitos. Os macrófagos esplênicos reconhecem a Fc da IgG e fagocitam os eritrócitos opsonizados (hemólise extravascular). A remoção parcial da membrana gera esferócitos. O Coombs positivo confirma a presença de imunoglobulinas na superfície eritrocitária.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Missões diárias</strong>Mantenha sua sequência de estudos</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-green"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 8 ════════════════════════════════════ -->
+<div class="slide bg-teal">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-teal"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gh" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gh)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#8</span><span class="lbl-area">Patologia Endócrina</span><span class="lbl-esp">🐈 Gato</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Um gato macho castrado, 12 anos, apresenta hiperatividade, polifagia com perda de peso, pelagem ressecada e taquicardia. A palpação cervical revela nódulo bilateral na região da tireoide. Exame laboratorial: T4 total = 9,2 µg/dL (ref. 0,8–4,0). À necropsia, ambos os lobos tireoidianos estão aumentados com áreas nodulares de coloração avermelhada e textura heterogênea.<br><br>A alteração histológica mais provável neste caso é:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Tireoidite linfocítica autoimune com destruição folicular e fibrose</div>
+    <div class="alt ok"><span class="alt-l">B</span>Adenoma funcional com folículos de tamanho variável, epitélio colunar hiperplásico e colóide escasso</div>
+    <div class="alt"><span class="alt-l">C</span>Carcinoma tireoidiano com invasão vascular e metástase pulmonar</div>
+    <div class="alt"><span class="alt-l">D</span>Hiperplasia difusa tireoidiana por deficiência crônica de iodo na dieta</div>
+    <div class="alt"><span class="alt-l">E</span>Bócio coloide com distensão folicular maciça e epitélio achatado inativo</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: B</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">O hipertireoidismo felino é causado em 98% dos casos por adenoma tireoidiano funcional (benigno). Histologicamente, folículos de tamanho variável com epitélio colunar hiperplásico e escassez de colóide refletem hipersecreção autônoma de T4. A localização bilateral é comum. Diferencia-se do carcinoma (raro, &lt;2%) pela ausência de invasão vascular e metástases.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Banco filtrado por espécie</strong>Cão, gato, bovino, equino e mais</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-teal"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 9 ════════════════════════════════════ -->
+<div class="slide bg-green">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-green"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gi" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gi)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#9</span><span class="lbl-area">Patologia do Reprodutor</span><span class="lbl-esp">🐄 Bovino</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Uma vaca mestiça, 4 anos, no 6º mês de gestação, apresenta aborto. O feto é autolisado e a placenta exibe cotiledôneas com áreas de necrose e exsudato fibrinossupurativo. Microscopicamente, há necrose de vilosidades com infiltrado neutrofílico e colônias bacterianas Gram-negativas intracelulares em macrófagos placentários. A vaca é soronegativa para leptospirose e DVB.<br><br>O diagnóstico mais provável é:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Rinotraqueíte infecciosa bovina (IBR) por BHV-1 com necrose cotiledonar</div>
+    <div class="alt ok"><span class="alt-l">B</span>Brucelose bovina por Brucella abortus com placentite necrossupurativa</div>
+    <div class="alt"><span class="alt-l">C</span>Campilobacteriose por Campylobacter fetus com endometrite catarral</div>
+    <div class="alt"><span class="alt-l">D</span>Tricomonose por Tritrichomonas foetus com morte embrionária precoce</div>
+    <div class="alt"><span class="alt-l">E</span>Neosporose por Neospora caninum com encefalite fetal não supurativa</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: B</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A brucelose bovina causa placentite necrossupurativa com bactérias Gram-negativas (Brucella abortus) em macrófagos do espaço interplacentomal. O aborto ocorre tipicamente no 2º trimestre. A bactéria é intracelular facultativa, resistindo à fagocitose. Zoonose importante: transmissão por contato com fetos, placentas e secreções vaginais. Notificação obrigatória.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>+9.000 questões disponíveis</strong>Grátis por 7 dias</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-green"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 10 ════════════════════════════════════ -->
+<div class="slide bg-amber">
+  <div class="glow1" style="top:-120px;right:-120px;width:500px;height:500px;background:radial-gradient(circle,rgba(245,158,11,0.18) 0%,transparent 65%);position:absolute;border-radius:50%;"></div>
+  <div class="glow2" style="bottom:150px;left:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(16,185,129,0.12) 0%,transparent 65%);position:absolute;border-radius:50%;"></div>
+  <div class="top-bar bar-amber"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gj" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gj)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#10</span><span class="lbl-area">Patologia Cardiovascular</span><span class="lbl-esp">🐖 Suíno</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Leitões de 6–8 semanas encontrados mortos subitamente sem sinais prévios. A necropsia revela coração com epicárdio coberto por extensas hemorragias petequiais e equimóticas, conferindo aspecto de "coração de amora". A cavidade pericárdica contém líquido serossanguinolento. A histologia demonstra necrose fibrinóide de arteríolas intramurais e necrose de coagulação de cardiomiócitos.<br><br>A condição e seu mecanismo são:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Miocardite por Encefalomiocardite viral (EMCV) com infiltrado linfocítico e necrose focal</div>
+    <div class="alt ok"><span class="alt-l">B</span>Doença do coração de amora por deficiência de vitamina E/selênio com vasculite fibrinóide</div>
+    <div class="alt"><span class="alt-l">C</span>Intoxicação por monensina com necrose mitocondrial de miócitos e fígado</div>
+    <div class="alt"><span class="alt-l">D</span>Septicemia por Streptococcus suis com endocardite e êmbolos sépticos</div>
+    <div class="alt"><span class="alt-l">E</span>Cardiomiopatia dilatada hereditária com parede ventricular fina e fibrose</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: B</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A "doença do coração de amora" (mulberry heart disease) ocorre em leitões jovens de crescimento rápido com deficiência de vitamina E/selênio. Sem proteção antioxidante, dano endotelial mediado por radicais livres leva à necrose fibrinóide de arteríolas coronárias, isquemia miocárdica e hemorragia maciça. O aspecto macroscópico "moteado vermelho-escuro" é patognomônico.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Nível CFMV/Residência</strong>Questões de alta complexidade</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-amber"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 11 ════════════════════════════════════ -->
+<div class="slide bg-green">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-green"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gk" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gk)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#11</span><span class="lbl-area">Patologia Tegumentar</span><span class="lbl-esp">🐄 Bovino</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Em um rebanho bovino no período chuvoso, vários animais apresentam lesões crostosas no dorso, pescoço e membros. As crostas têm aspecto "pintado de tinta" e aderem à pelagem. Ao remover as crostas, observa-se exsudato serossanguinolento e hiperemia. A citologia da lesão revela filamentos ramificados Gram-positivos entre as células epidérmicas.<br><br>O diagnóstico e o agente são:</div></div>
+  <div class="alternativas">
+    <div class="alt ok"><span class="alt-l">A</span>Dermatofilose por Dermatophilus congolensis — actinomiceto Gram-positivo filamentoso</div>
+    <div class="alt"><span class="alt-l">B</span>Dermatofitose por Trichophyton verrucosum — fungo com hifas septadas intra/peripilares</div>
+    <div class="alt"><span class="alt-l">C</span>Sarna sarcóptica por Sarcoptes scabiei — ácaros em galerias na camada córnea</div>
+    <div class="alt"><span class="alt-l">D</span>Fotossensibilização hepatógena com necrose de epiderme despigmentada</div>
+    <div class="alt"><span class="alt-l">E</span>Impetigo contagioso por Staphylococcus aureus com pústulas subcórneas</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: A</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A dermatofilose é causada por Dermatophilus congolensis, actinomiceto que penetra na epiderme umedecida. Os filamentos ramificados formam estruturas características em "fila de vagões" na citologia. As crostas estratificadas ("paint-brush lesions") resultam da proliferação do agente entre camadas epidérmicas sucessivas. O controle inclui manejar a umidade e tratar com penicilina/estreptomicina.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Patologia Tegumentar</strong>No banco VetRank</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-green"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 12 ════════════════════════════════════ -->
+<div class="slide bg-teal">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-teal"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gl" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gl)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#12</span><span class="lbl-area">Patologia Pancreática</span><span class="lbl-esp">🐕 Cão</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Um cão Schnauzer miniatura, 7 anos, obeso, desenvolve vômito, dor abdominal intensa e depressão após ingerir refeição gordurosa. Laboratorial: lipase sérica muito elevada, leucocitose com desvio à esquerda. A necropsia revela pâncreas aumentado, com áreas de necrose gordurosa peripancreática amarelada e saponificação do mesentério.<br><br>O mecanismo central desta lesão é:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Isquemia pancreática por trombose da artéria celíaca com necrose de coagulação</div>
+    <div class="alt"><span class="alt-l">B</span>Invasão bacteriana ascendente pelo ducto pancreático com supuração focal</div>
+    <div class="alt ok"><span class="alt-l">C</span>Ativação prematura de zimogênios intrapancreáticos com autodigestão enzimática</div>
+    <div class="alt"><span class="alt-l">D</span>Reação de hipersensibilidade tipo III com deposição de imunocomplexos no parênquima</div>
+    <div class="alt"><span class="alt-l">E</span>Infiltração neoplásica de carcinoma ductal com obstrução e dilatação dos ácinos</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: C</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">Na pancreatite aguda, a ativação prematura de tripsinogênio em tripsina dentro dos ácinos desencadeia uma cascata de ativação de outros zimogênios (lipase, elastase, fosfolipase A2). A lipase ativa hidrolisa triglicerídeos do tecido adiposo peripancreático, gerando ácidos graxos livres que saponificam com cálcio — formando as áreas brancas-amareladas características ("necrose gordurosa").</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>8 formatos de questão</strong>Do múltipla escolha ao caso clínico</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-teal"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 13 ════════════════════════════════════ -->
+<div class="slide bg-green">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-green"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gm" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gm)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#13</span><span class="lbl-area">Patologia Nervosa</span><span class="lbl-esp">🐕 Cão</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Um cão sem raça definida, 8 meses, não vacinado, apresenta corrimento nasal mucopurulento, tosse, conjuntivite, seguidos de mioclonias, convulsões e paraparesia. A histologia do SNC revela desmielinização com gliose e, em neurônios e astrócitos, corpúsculos de inclusão intranucleares e intracitoplasmáticos eosinofílicos.<br><br>O agente e as inclusões características são:</div></div>
+  <div class="alternativas">
+    <div class="alt ok"><span class="alt-l">A</span>Vírus da cinomose (Morbillivirus) — inclusões de Lentz em neurônios e astrócitos</div>
+    <div class="alt"><span class="alt-l">B</span>Vírus da raiva (Lyssavirus) — corpúsculos de Negri em neurônios do hipocampo</div>
+    <div class="alt"><span class="alt-l">C</span>Herpesvírus canino tipo 1 — necrose focal com inclusões intranucleares de Cowdry A</div>
+    <div class="alt"><span class="alt-l">D</span>Parvovírus canino tipo 2 — inclusões intranucleares em células de Purkinje do cerebelo</div>
+    <div class="alt"><span class="alt-l">E</span>Toxoplasma gondii — taquizoítas livres e bradizoítas em cistos no parênquima cerebral</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: A</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A cinomose canina é causada por Morbillivirus (Paramyxoviridae). Os corpúsculos de Lentz são inclusões virais eosinofílicas intranucleares e/ou intracitoplasmáticas encontradas em neurônios e astrócitos, patognomônicas da doença. A desmielinização resulta da infecção de células gliais e da resposta imune. Mioclonias são sequela frequente por destruição de interneurônios do corno ventral medular.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Patologia Nervosa</strong>No banco VetRank</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-green"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 14 ════════════════════════════════════ -->
+<div class="slide bg-teal">
+  <div class="glow1 glow-g1"></div><div class="glow2 glow-g2"></div>
+  <div class="top-bar bar-teal"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gn" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#gn)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#14</span><span class="lbl-area">Patologia Digestória</span><span class="lbl-esp">🐄 Bovino</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Uma vaca adulta apresenta paraplegia progressiva, disfagia e sialorréia. À necropsia, o tronco encefálico exibe micro-abscessos com infiltrado predominantemente mononuclear ao redor de pequenos vasos. Cultivo do tecido: bastonetes Gram-positivos móveis catalase-positivos. A vaca havia sido alimentada com silagem mal fermentada.<br><br>O diagnóstico e a lesão característica são:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Babesiose cerebral — sequestro de eritrócitos em capilares cerebrais com malária-like</div>
+    <div class="alt ok"><span class="alt-l">B</span>Listeriose por Listeria monocytogenes — rombencefalite com microabscessos perivasculares</div>
+    <div class="alt"><span class="alt-l">C</span>Polioencefalomalacia — necrose laminar cortical por deficiência de tiamina</div>
+    <div class="alt"><span class="alt-l">D</span>Meningoencefalite por Histophilus somni — vasculite trombótica com infartos hemorrágicos</div>
+    <div class="alt"><span class="alt-l">E</span>Raiva — encefalite difusa com corpúsculos de Negri em neurônios de Purkinje</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: B</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A listeriose bovina manifesta-se como rombencefalite (encefalite de tronco encefálico) após ingestão de L. monocytogenes presente em silagem mal fermentada (pH elevado). Os micro-abscessos perivasculares com mononucleares no tronco encefálico são patognomônicos. A disfagia resulta do comprometimento dos núcleos dos nervos cranianos V, VII e XII. Zoonose importante em humanos imunossuprimidos.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>Patologia Digestória</strong>No banco VetRank</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-teal"></div>
+</div>
+
+<!-- ════════════════════════════════════ SLIDE 15 ════════════════════════════════════ -->
+<div class="slide bg-amber">
+  <div class="glow1" style="top:-120px;right:-120px;width:500px;height:500px;background:radial-gradient(circle,rgba(245,158,11,0.18) 0%,transparent 65%);position:absolute;border-radius:50%;"></div>
+  <div class="glow2" style="bottom:150px;left:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(16,185,129,0.12) 0%,transparent 65%);position:absolute;border-radius:50%;"></div>
+  <div class="top-bar bar-amber"></div>
+  <div class="s-header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="go" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><g transform="translate(30,15)"><path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/><path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/><path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/><polygon points="50,10 95,27 50,44 5,27" fill="url(#go)"/><polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/><path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/><circle cx="92" cy="63" r="3.5" fill="#F59E0B"/></g></svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.4);border-radius:100px;padding:8px 20px;font-size:15px;font-weight:800;color:#fbbf24;">Questão do Dia</span>
+  </div>
+  <div class="q-label"><div class="label-row"><span class="lbl-num">#15</span><span class="lbl-area">Patologia dos Sentidos</span><span class="lbl-esp">🐴 Equino</span><span class="lbl-dif">⚡ Difícil</span></div></div>
+  <div class="enunciado-box"><div class="enunciado-text">Um cavalo quarto de milha, 8 anos, apresenta episódios recorrentes de fotofobia, lacrimejamento, epífora e blefarospasmo no olho esquerdo desde os 3 anos. Ao exame: flare aquoso, sinéquias posteriores e opacidade do cristalino (catarata). A histologia da úvea mostra infiltrado linfocítico difuso com formação de folículos linfoides e plasmócitos perivasculares.<br><br>Este quadro é compatível com:</div></div>
+  <div class="alternativas">
+    <div class="alt"><span class="alt-l">A</span>Queratoconjuntivite seca por deficiência de IgA secretora com ulceração corneana</div>
+    <div class="alt"><span class="alt-l">B</span>Glaucoma primário por bloqueio do ângulo iridocorneano com degeneração de células ganglionares</div>
+    <div class="alt"><span class="alt-l">C</span>Melanoma uveal com proliferação de melanócitos atípicos e hemorragia vítrea</div>
+    <div class="alt"><span class="alt-l">D</span>Coriorretinite granulomatosa por Toxoplasma gondii com necrose focal da retina</div>
+    <div class="alt ok"><span class="alt-l">E</span>Uveíte recorrente equina (URE) — uveíte linfocítica autoimune mediada por antígenos de Leptospira</div>
+  </div>
+  <div class="gab-section"><div class="gab-head"><span class="gab-badge">Gabarito: E</span><span class="gab-sub">Veja a explicação completa no VetRank</span></div><div class="exp">A URE (moon blindness) é a principal causa de cegueira adquirida em equinos. A resposta imune cruzada entre antígenos de Leptospira spp. e proteínas da úvea desencadeia uveíte linfocítica recorrente. Cada episódio inflamatório progressivamente destrói estruturas oculares, evoluindo para sinéquias, catarata e glaucoma secundário. O infiltrado linfocítico com plasmócitos e folículos linfoides é característico.</div></div>
+  <div class="s-footer"><div class="s-footer-l"><strong>15 áreas de Patologia</strong>Cubra todo o edital</div><div class="s-cta">vetrank.com.br</div></div>
+  <div class="bottom-bar bar-amber"></div>
+</div>
+
+<script>
+  let cur = 0;
+  const slides = document.querySelectorAll('.slide');
+  const ctr = document.getElementById('ctr');
+  function show(n) {
+    slides[cur].classList.remove('active');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    ctr.textContent = (cur + 1) + ' / ' + slides.length;
+  }
+  function next() { show(cur + 1); }
+  function prev() { show(cur - 1); }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') next();
+    if (e.key === 'ArrowLeft')  prev();
+  });
+</script>
+</body>
+</html>

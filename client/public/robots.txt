@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /coordinator
+Disallow: /teacher
+Disallow: /profile
+Disallow: /dashboard
+Disallow: /payment/
+Disallow: /exam
+Disallow: /practice
+Disallow: /caderno-de-erros
+Disallow: /discursive
+Disallow: /trails
+Disallow: /referrals
+Disallow: /subscription
+Disallow: /shop
+Disallow: /liga
+Disallow: /missions
+Disallow: /cursos/*/aula
+
+Sitemap: https://vetrank.com.br/sitemap.xml
