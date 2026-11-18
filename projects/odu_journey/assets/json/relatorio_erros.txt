@@ -1,0 +1,408 @@
+RELATÓRIO DE ERROS E AUDITORIA
+
+==================================
+
+ODU: Ògbè Méjì
+  [IBI CORTADO]: Ọgbẹ Mẹjì Ìbì: Traição, raiva, falsidade, desajuste emocional, falta de
+----------------------------------
+ODU: Ògbè Òdí
+  [IBI CORTADO]: Ọgbẹ Ọdì Ìbì: Caminho abertos a mudanças insensatas. (Este Ọdú fala da
+----------------------------------
+ODU: Ògbè Òwónrín
+  [IRE CORTADO]: Um caminho aberto a encontrar os Caos inesperados,
+----------------------------------
+ODU: Ògbè Òsá
+  [IBI CORTADO]: Ọgbẹ Òṣà Ìbì: Caminho abertos leva a decepção. (Este Ọdú fala do perigo de
+----------------------------------
+ODU: Ògbè Òtúrá
+  [IRE CORTADO]: Caminho aberto à para visão mística. (Este Ọdú fala da
+  [IBI CORTADO]: Ọgbẹ Ọtùrà Ìbì: Caminho aberto à ilusão. (Este Ọdú fala da possibilidade de
+----------------------------------
+ODU: Ògbè Ìretè
+  [IRE CORTADO]: Um caminho aberto requer Determinação. (Este Ọdú fala da
+----------------------------------
+ODU: Òyèkú Méjì
+  [IRE CORTADO]: Pode indicar principalmente mudanças para melhor, fim de
+  [IBI CORTADO]: Ọyẹkù em Ìbì: Quando Ìbì este Ọdú indicar principalmente ineficiência,
+----------------------------------
+ODU: Òyèkú Ìwòrì
+  [IBI CORTADO]: Ọyẹkù Ìwọrì Ìbì: Fim de ciclo conduz a conflitos. (Este Ọdú fala da
+----------------------------------
+ODU: Òyèkú Òdí
+  [IRE CORTADO]: Fim de conduz de ciclo para renascimento. (Este Ọdú fala de
+----------------------------------
+ODU: Òyèkú Ìròsùn
+  [IBI CORTADO]: Ọyẹkù Ìrọṣùn Ìbì: Fim prematuro de ciclo que conduz à perda de
+----------------------------------
+ODU: Òyèkú Òbàrà
+  [IRE CORTADO]: Fim de ciclo conduz a Transformação. (Este Ọdú fala da
+  [IBI CORTADO]: Ọyẹkù Ọbàrà Ìbì: Fim de ciclo conduz ao egotismo. (Este Ọdú fala de
+----------------------------------
+ODU: Òyèkú Òsá
+  [IBI CORTADO]: Ọyẹkù Ọṣà Ìbì: Fim de ciclo conduz a Instabilidade mental. (Este Ọdú fala do
+----------------------------------
+ODU: Òyèkú Ìká
+  [IRE CORTADO]: Fim de ciclo conduz a autoafirmação. (Este Ọdú fala da
+  [IBI CORTADO]: Ọyẹkù Ìká Ìbì: Fim de ciclo conduz a se subestimar. (Este Ọdú fala da
+----------------------------------
+ODU: Òyèkú Òtúrá
+  [IRE CORTADO]: Fim de ciclo conduz a Visão mística. (Este Ọdú fala da
+  [IBI CORTADO]: Ọyẹkù Ọtùrà Ìbì: Fim de ciclo leva ao egoísmo. (Este Ọdú fala da
+----------------------------------
+ODU: Òyèkú Òṣé
+  [IRE CORTADO]: Fim de ciclo conduz a abundância. (Este Ọdú fala da
+----------------------------------
+ODU: Òyèkú Òfún
+  [IRE CORTADO]: Fim de ciclo conduz a milagres. (Este Ọdú fala da cura de
+----------------------------------
+ODU: Ìwòrì Òbàrà
+  [IRE CORTADO]: A Transformação conduz a elevação. (Este Ọdú fala da
+----------------------------------
+ODU: Ìwòrì Òsá
+  [IRE CORTADO]: Uma Transformação conduz Abundância. (Este Ọdú fala da
+----------------------------------
+ODU: Ìwòrì Ìká
+  [IRE CORTADO]: Transformação conduz aumentou poder (Este Ọdú fala do
+----------------------------------
+ODU: Ìwòrì Ìretè
+  [IRE CORTADO]: Transformação conduz a Determinação. (Este Ọdú fala da
+  [IBI CORTADO]: Ìwọrì Ìrẹtẹ Ìbì: Conflito conduz a teimosia. Leis do efeito em ego de
+----------------------------------
+ODU: Ìwòrì Òfún
+  [IRE CORTADO]: Transformação conduz a milagres. (Este Ọdú fala da
+----------------------------------
+ODU: Òdí Ògbè
+  [IBI CORTADO]: Ọdì Ọgbẹ Ìbì: Um Renascimento conduz a arrogância. (Este Ọdú fala da
+----------------------------------
+ODU: Òdí Ìwòrì
+  [IRE CORTADO]: Renascimento conduz a transformação. (Este Ọdú fala da
+----------------------------------
+ODU: Òdí Ìròsùn
+  [IBI CORTADO]: Ọdì Ìrọṣùn Ìbì: mudança Arbitrária conduz Resistência. (Este Ọdú um fala da
+----------------------------------
+ODU: Òdí Òwónrín
+  [IBI CORTADO]: Ọdì Ọwọnrín Ìbì: Mudança arbitrária conduz a caos. (Este Ọdú fala da
+----------------------------------
+ODU: Òdí Òbàrà
+  [IRE CORTADO]: Renascimento conduz a elevação. (Este Ọdú fala da
+  [IBI CORTADO]: Ọdì Ọbàrà Ìbì: Renascimento conduz ao egoísmo. (Este Ọdú fala da
+----------------------------------
+ODU: Òdí Òkànràn
+  [IRE CORTADO]: Renascimento conduz a novos caminhos. (Este Ọdú fala da
+----------------------------------
+ODU: Òdí Ìretè
+  [IRE CORTADO]: Renascimento que conduz a determinação. (Este Ọdú fala de
+----------------------------------
+ODU: Òdí Òṣé
+  [IRE CORTADO]: Renascimento que conduz a abundância. (Este Ọdú fala do
+  [IBI CORTADO]: Ọdì Ọṣẹ Ìbì: Resistência a um renascimento cria Cobiça. (Este Ọdú fala da
+----------------------------------
+ODU: Ìròsùn Òyèkú
+  [IBI CORTADO]: Ìrọṣùn Ọyẹkù Ìbì: Resistência ao destino conduz a perda. (Este Ọdú fala de
+----------------------------------
+ODU: Ìròsùn Méjì
+  [IBI CORTADO]: Ìrọsùn em Ìbì: Ofensas, calúnias, perigo de acidente derramamento de
+----------------------------------
+ODU: Ìròsùn Òwónrín
+  [IRE CORTADO]: Realização de potencial que conduz a preparação para
+----------------------------------
+ODU: Ìròsùn Ògúndá
+  [IRE CORTADO]: Realização de potencial que conduz a remoção de
+----------------------------------
+ODU: Ìròsùn Òṣé
+  [IBI CORTADO]: Ìrọṣùn Ọṣẹ Ìbì: Resistência ao Destino gera inveja. (Este Ọdú fala da
+----------------------------------
+ODU: Ìròsùn Òfún
+  [IBI CORTADO]: Ìrọṣùn Ọfùn Ìbì: Resistência ao Destino gera Disfunção. (Este Ọdú fala da
+----------------------------------
+ODU: Òwónrín Ògbè
+  [IRE CORTADO]: Caos Inesperado conduz à boa sorte. (Este Ọdú fala da
+  [IBI CORTADO]: Ọwọnrín Ọgbẹ Ìbì: Caos Inesperado conduz à Arrogância. (Este Ọdú fala da
+----------------------------------
+ODU: Òwónrín Òyèkú
+  [IBI CORTADO]: Ọwọnrín Ọyẹkù Ìbì: Caos conduz a perda. (Este Ọdú fala da possibilidade de
+----------------------------------
+ODU: Òwónrín Ìwòrì
+  [IBI CORTADO]: Ọwọnrín Ìwọrì Ìbì: O inesperado conduz a conflitos. (Este Ọdú fala do
+----------------------------------
+ODU: Òwónrín Ìròsùn
+  [IRE CORTADO]: mudança Inesperada que conduz a realização de
+----------------------------------
+ODU: Òwónrín Òtúrópòn
+  [IRE CORTADO]: Mudança inesperada que conduz a necessidade de
+----------------------------------
+ODU: Òbàrà Òdí
+  [IRE CORTADO]: Elevação que conduz a um renascimento. (Este Ọdú fala da
+----------------------------------
+ODU: Òbàrà Méjì
+  [IBI CORTADO]: Ọbàrà em Ìbì: Fala da instabilidade, desorganização, desequilíbrio,
+----------------------------------
+ODU: Òbàrà Òkànràn
+  [IBI CORTADO]: Ọbàrà Ọkànràn Ìbì: Egoísmo que conduz ao isolamento. (Este Ọdú fala da
+----------------------------------
+ODU: Òbàrà Ògúndá
+  [IRE CORTADO]: Transformação interna que conduz a remoção de
+----------------------------------
+ODU: Òbàrà Òtúrópòn
+  [IBI CORTADO]: Ọbàrà Ọtùrùpọn Ìbì: Egoísmo que conduz a doença. (Este Ọdú fala da
+----------------------------------
+ODU: Òbàrà Òtúrá
+  [IBI CORTADO]: Ọbàrà Ọtùrà Ìbì: Egoísmo que conduz a decepção. (Este Ọdú fala da
+----------------------------------
+ODU: Òbàrà Ìretè
+  [IBI CORTADO]: Ọbàrà Ìrẹtẹ Ìbì: Egoísmo que conduz a subordinação. (Este Ọdú fala da
+----------------------------------
+ODU: Òbàrà Òfún
+  [IBI CORTADO]: Ọbàrà Ọfùn Ìbì: Egoísmo que conduz a uma disfunção. (Este Ọdú fala da
+----------------------------------
+ODU: Òkànràn Òyèkú
+  [IRE CORTADO]: Nova direção conduz a conclusão. (Este Ọdú fala da
+  [IBI CORTADO]: Ọkànràn Ọyẹkù Ìbì: Nova direção conduz a perda. (Este Ọdú fala que
+----------------------------------
+ODU: Òkànràn Ìwòrì
+  [IRE CORTADO]: Nova Direção conduz a realização. (Este Ọdú fala da
+----------------------------------
+ODU: Òkànràn Méjì
+  [IBI CORTADO]: Ọkànràn em Ìbì: Fala também de saturação. Quando Ìbì sua mãe tem que
+----------------------------------
+ODU: Òkànràn Òtúrópòn
+  [IBI CORTADO]: Ọkànràn Ọtùrùpọn Ìbì: Isolamento que conduz a doenças. (Este Ọdú fala da
+----------------------------------
+ODU: Òkànràn Òtúrá
+  [IBI CORTADO]: Ọkànràn Ọtùrà Ìbì: Isolamento que conduz a decepção. (Este Ọdú fala da
+----------------------------------
+ODU: Òkànràn Òfún
+  [IRE CORTADO]: Novo caminho que conduz milagre. (Este Ọdú fala da
+----------------------------------
+ODU: Ògúndá Ìròsùn
+  [IRE CORTADO]: Remoção de obstáculos conduz a realização do
+----------------------------------
+ODU: Ògúndá Òkànràn
+  [IBI CORTADO]: Ọgùndà Ọkànràn Ìbì: Conflito que gera isolamento. (Este Ọdú fala da
+----------------------------------
+ODU: Ògúndá Méjì
+  [IBI CORTADO]: Ọgùndà em Ìbì: Em Ìbì este Ọdú pode indicar: Violência imposta ou sofrida,
+----------------------------------
+ODU: Ògúndá Ìká
+  [IBI CORTADO]: Ọgùndà Ìká Ìbì: Conflito leva a condutas impróprias. (Este Ọdú fala da
+----------------------------------
+ODU: Ògúndá Òfún
+  [IBI CORTADO]: Ọgùndà Ọfùn Ìbì: Conflito que conduz a disfunção. (Este Ọdú fala da
+----------------------------------
+ODU: Òsá Ògbè
+  [IRE CORTADO]: Abundância cria um caminho aberta. (Este Ọdú fala da
+----------------------------------
+ODU: Òsá Òdí
+  [IRE CORTADO]: mudança Súbita conduz a renascimento. (Este Ọdú fala da
+  [IBI CORTADO]: Ọṣà Ọdì Ìbì: mudança Súbita conduz a decisão arbitrária. (Este Ọdú fala da
+----------------------------------
+ODU: Òsá Òwónrín
+  [IBI CORTADO]: Ọṣà Ọwọnrín Ìbì: Instabilidade conduz ao caos. (Este Ọdú fala da
+----------------------------------
+ODU: Òsá Ògúndá
+  [IRE CORTADO]: Abundância, e à remoção de obstáculos. (Este Ọdú fala da
+  [IBI CORTADO]: Ọṣà Ọgùndà Ìbì: Instabilidade mental conduz a conflito. (Este Ọdú fala da
+----------------------------------
+ODU: Òsá Ìká
+  [IBI CORTADO]: Ọṣà Ìká Ìbì: Instabilidade mental leva a conduta impropria. (Este Ọdú fala de
+----------------------------------
+ODU: Òsá Òtúrópòn
+  [IBI CORTADO]: Ọṣà Ọtùrùpọn Ìbì: Instabilidade mental que gera doença. (Este Ọdú fala de
+----------------------------------
+ODU: Òsá Òtúrá
+  [IRE CORTADO]: Abundância que conduz à visão espiritual. (Esse Ọdú fala da
+----------------------------------
+ODU: Òsá Ìretè
+  [IRE CORTADO]: Abundância que conduz à determinação. (Este Ọdú fala da
+  [IBI CORTADO]: Ọṣà Ìrẹtẹ Ìbì: Instabilidade mental que leva a teimosia. (Este Ọdú fala da
+----------------------------------
+ODU: Òsá Òṣé
+  [IRE CORTADO]: A abundância gera mais abundância. (Este Ọdú fala da
+----------------------------------
+ODU: Òsá Òfún
+  [IRE CORTADO]: Abundância que conduz a milagres. (Este Ọdú fala da
+----------------------------------
+ODU: Ìká Òyèkú
+  [IRE CORTADO]: Delineação leva a conclusão de um ciclo. (Este Ọdú fala da
+----------------------------------
+ODU: Ìká Ìròsùn
+  [IRE CORTADO]: Aumento de poder pessoal que conduz a realização de
+----------------------------------
+ODU: Ìká Òwónrín
+  [IBI CORTADO]: Ìká Ọwọnrín Ìbì: Conduta impropria que conduz ao caos. (Este Ọdú fala da
+----------------------------------
+ODU: Ìká Òbàrà
+  [IBI CORTADO]: Ìká Ọbàrà Ìbì: Conduta imprópria que conduz ao Egoísmo. (Este Ọdú fala da
+----------------------------------
+ODU: Ìká Méjì
+  [IBI CORTADO]: Ìká Mẹjì Ìbì: Tumultos, envolvimento com polícia, inimigos declarados e
+----------------------------------
+ODU: Ìká Òtúrópòn
+  [IBI CORTADO]: Ìká Ọtùrùpọn Ìbì: Conduta imprópria que leva à doença. (Este Ọdú fala da
+----------------------------------
+ODU: Ìká Òtúrá
+  [IBI CORTADO]: Ìká Ọtùrà Ìbì: Conduta imprópria que conduz à decepção. (Este Ọdú fala de
+----------------------------------
+ODU: Ìká Ìretè
+  [IBI CORTADO]: Ìká Ìrẹtẹ Ìbì: Conduta imprópria que conduz à teimosia. (Este Ọdú fala de
+----------------------------------
+ODU: Ìká Òfún
+  [IBI CORTADO]: Ìká Ọfùn Ìbì: Conduta imprópria que gera disfunção. (Este Ọdú fala de
+----------------------------------
+ODU: Òtúrópòn Ògbè
+  [IBI CORTADO]: Ọtùrùpòn Ọgbẹ Ìbì: Enfermidade conduz a uma falsa sensação de
+----------------------------------
+ODU: Òtúrópòn Ìwòrì
+  [IRE CORTADO]: Enfermidade conduz a transformação. (Este Ọdú fala da
+  [IBI CORTADO]: Ọtùrùpọn Ìwọrì Ìbì: Enfermidade conduz para um conflito. (Este Ọdú fala de
+----------------------------------
+ODU: Òtúrópòn Ìròsùn
+  [IRE CORTADO]: Prevenção de doenças que conduz a realização de
+----------------------------------
+ODU: Òtúrópòn Òwónrín
+  [IBI CORTADO]: Ọtùrùpọn Ọwọnrín Ìbì: Doença gera caos. (Este Ọdú fala da necessidade de
+----------------------------------
+ODU: Òtúrópòn Ògúndá
+  [IRE CORTADO]: Proteção contra doença evita a criação de
+----------------------------------
+ODU: Òtúrópòn Òsá
+  [IRE CORTADO]: Boa saúde gera abundância. (Este Ọdú fala da
+  [IBI CORTADO]: Ọtùrùpọn Ọṣà Ìbì: Doença física gera doença mental. (Este Ọdú fala da
+----------------------------------
+ODU: Òtúrópòn Ìká
+  [IBI CORTADO]: Ọtùrùpọn Ìká Ìbì: Doença conduz à conduta imprópria. (Este Ọdú fala de
+----------------------------------
+ODU: Oturopon Méjì
+  [IBI CORTADO]: Ọtùrùpọn Ìbì: Pode indicar: possibilidade de aborto ou parto prematuro,
+----------------------------------
+ODU: Òtúrópòn Òtúrá
+  [IRE CORTADO]: Boa Saúde conduz a visão mística. (Esse Ọdú fala da
+  [IBI CORTADO]: Ọtùrùpọn Ọtùrà Ìbì: Doença leva a autodestruição. (Este Ọdú fala de
+----------------------------------
+ODU: Òtúrópòn Òṣé
+  [IRE CORTADO]: Boa saúde que conduz a abundância. (Este Ọdú fala da
+  [IBI CORTADO]: Ọtùrùpọn Ọṣẹ Ìbì: Doença que conduz a cobiça. (Esse Ọdú fala da
+----------------------------------
+ODU: Òtúrópòn Òfún
+  [IBI CORTADO]: Ọtùrùpọn Ọfùn Ìbì: Doença conduz a disfunção. (Este Ọdú fala de
+----------------------------------
+ODU: Òtúrá Ògbè
+  [IBI CORTADO]: Ọtùrà Ọgbẹ Ìbì: A visão Mística conduz a arrogância. (Este Ọdú fala do
+----------------------------------
+ODU: Òtúrá Òyèkú
+  [IRE CORTADO]: A Visão Mística conduz a conclusão. (Este Ọdú fala da
+----------------------------------
+ODU: Òtúrá Ìwòrì
+  [IRE CORTADO]: A Visão Mística conduz à transformação. (Este Ọdú fala da
+----------------------------------
+ODU: Òtúrá Òdí
+  [IRE CORTADO]: visão Mística que conduz a renascimento. (Este Ọdú fala da
+----------------------------------
+ODU: Òtúrá Òbàrà
+  [IBI CORTADO]: Ọtùrà Ọbàrà Ìbì: A decepção que conduz ao egoísmo. (Este Ọdú fala de
+----------------------------------
+ODU: Òtúrá Òsá
+  [IRE CORTADO]: Visão Mística conduz à abundância. (Este Ọdú fala da
+----------------------------------
+ODU: Òtúrá Ìretè
+  [IRE CORTADO]: Visão mística que conduz a determinação (Este Ọdú fala da
+----------------------------------
+ODU: Òtúrá Òṣé
+  [IRE CORTADO]: Visão mística leva a abundância. (Este Ọdú fala da
+----------------------------------
+ODU: Òtúrá Òfún
+  [IBI CORTADO]: Ọtùrà Ọfùn Iré Ìbì: Decepção leva a disfunção. (Esse Ọdú fala de
+----------------------------------
+ODU: Ìretè Òyèkú
+  [IRE CORTADO]: Determinação conduz a uma Conclusão. (Este Ọdú fala da
+----------------------------------
+ODU: Ìretè Ìwòrì
+  [IRE CORTADO]: Determinação conduz a transformação. (Este Ọdú fala da
+----------------------------------
+ODU: Ìretè Òdí
+  [IRE CORTADO]: Determinação que conduz a renascimento. (Este Ọdú fala de
+  [IBI CORTADO]: Ìrẹtẹ Ọdì Ìbì: Teimosia cria resistência ao renascimento. (Este Ọdú fala da
+----------------------------------
+ODU: Ìretè Òwónrín
+  [IBI CORTADO]: Ìrẹtẹ Ọwọnrín Ìbì: Subordinação gera o caos. (Este Ọdú fala de
+----------------------------------
+ODU: Ìretè Òsá
+  [IRE CORTADO]: Determinação que conduz a abundância. (Este Ọdú fala da
+  [IBI CORTADO]: Ìrẹtẹ Ọṣà Ìbì: Teimosia que conduz a instabilidade mental. (Este Ọdú fala de
+----------------------------------
+ODU: Ìretè Ìká
+  [IBI CORTADO]: Ìrẹtẹ Ìká Ìbì: Teimosia que conduz à conduta imprópria. (Este Ọdú fala de
+----------------------------------
+ODU: Ìretè Méjì
+  [IRE CORTADO]: Amor correspondido, domínio absoluto de uma situação,
+  [IBI CORTADO]: trânsito até o outro mundo. Em Ìbì: Impotência sexual atrofia muscular,
+----------------------------------
+ODU: Ìretè Òfún
+  [IRE CORTADO]: Determinação que conduz a milagres. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Ògbè
+  [IBI CORTADO]: Ọṣẹ Ọgbẹ Ìbì: Dirija para abundância conduz cobiça. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Òyèkú
+  [IRE CORTADO]: Abundância conduz ao termino de ciclo. (Este Ọdú fala do
+  [IBI CORTADO]: Ọṣẹ Ọyẹkù Ìbì: Cobiça conduz a perda. (Este Ọdú fala das consequências do
+----------------------------------
+ODU: Òṣé Ìwòrì
+  [IRE CORTADO]: Abundância conduz Transformação. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Òdí
+  [IRE CORTADO]: Abundância que conduz a renascimento. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Òwónrín
+  [IBI CORTADO]: Ọṣẹ Ọwọnrín Ìbì: Cobiça conduz ao caos. (Este Ọdú fala da possibilidade de
+----------------------------------
+ODU: Òṣé Òkànràn
+  [IBI CORTADO]: Ọṣẹ Ọkànràn Ìbì: Cobiça que conduz ao isolamento. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Òsá
+  [IRE CORTADO]: Abundância gera mais abundância. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Ìká
+  [IBI CORTADO]: Ọṣẹ Ìká Ìbì: Cobiça que conduz a conduta imprópria. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Òtúrópòn
+  [IRE CORTADO]: Abundancia que conduz a boa saúde. (Esse Ọdú fala da
+----------------------------------
+ODU: Òṣé Òtúrá
+  [IRE CORTADO]: Abundancia que leva a visão mística. (Esse Ọdú fala da
+----------------------------------
+ODU: Òṣé Ìretè
+  [IRE CORTADO]: Abundancia leva a determinação. (Este Ọdú fala da
+----------------------------------
+ODU: Òṣé Méjì
+  [IBI CORTADO]: Ọṣẹ Mẹjì Ìbì: Este Ọdú pode indicar: Perdas de todos os tipos desperdício e
+----------------------------------
+ODU: Òṣé Òfún
+  [IRE CORTADO]: Abundancia que conduz a milagres. (Este Ọdú fala da
+----------------------------------
+ODU: Òfún Òdí
+  [IRE CORTADO]: Milagres que conduzem a renascimento. (Este Ọdú fala da
+----------------------------------
+ODU: Òfún Òbàrà
+  [IBI CORTADO]: Ọfùn Ọbàrà Ìbì: Disfunção que gera o egoísmo. (Este Ọdú fala da
+----------------------------------
+ODU: Òfún Òkànràn
+  [IBI CORTADO]: Ọfùn Ọkànràn Ìbì: Disfunção que conduz ao isolamento. (Este Ọdú fala da
+----------------------------------
+ODU: Òfún Ògúndá
+  [IBI CORTADO]: Ọgùndà Ọfùn Ìbì: Conflito que conduz a disfunção. (Este Ọdú fala da
+----------------------------------
+ODU: Òfún Òsá
+  [IRE CORTADO]: Milagres levam à abundância. (Este Ọdú fala da chegada de
+  [IBI CORTADO]: Ọfùn Ọṣà Ìbì: Disfunção que gera instabilidade mental. (Este Ọdú fala da
+----------------------------------
+ODU: Òfún Ìká
+  [IBI CORTADO]: Ọfùn Ìká Ìbì: Disfunção que gera conduta imprópria. (Este Ọdú fala de
+----------------------------------
+
+RESUMO:
+Odùs processados: 256
+Campos limpos automaticamente (Prefixos removidos): 251
+Possíveis erros de texto cortado: 147
+
+Verifique o arquivo 'odu_unificado_limpo.json' e use-o para a tradução.
