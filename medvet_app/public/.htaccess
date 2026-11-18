@@ -1,0 +1,42 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Força HTTPS e o host canônico "www" (evita conteúdo duplicado no Google)
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} !^www\.medvetlegal\.com\.br$ [NC]
+    RewriteRule ^ https://www.medvetlegal.com.br%{REQUEST_URI} [L,R=301]
+
+    # Páginas legadas do site antigo (pré-Laravel): evita erros 404 no Search Console
+    # e consolida toda a autoridade de links antigos nas rotas oficiais do Laravel.
+    RewriteRule ^blog\.php$ /blog [L,R=301]
+    RewriteRule ^artigo-01\.php$ /blog/como-comprovar-intoxicacao-por-chumbinho-carbamatos-processos-judiciais [L,R=301]
+    RewriteRule ^(artigo|artigos|artigo-0[2-9])\.php$ /blog [L,R=301]
+    RewriteRule ^(default|index)\.html$ / [L,R=301]
+    RewriteRule ^(home|sobre|servicos|contato)\.php$ / [L,R=301]
+
+    # Scripts legados descontinuados (substituídos pelo Laravel): removem
+    # superfície de ataque e evitam indexação de páginas mortas.
+    RewriteRule ^(config|enviar_email)\.php$ / [L,R=301]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle X-XSRF-Token Header
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

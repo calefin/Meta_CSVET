@@ -1,0 +1,13 @@
+[29-May-2026 17:17:39 America/Fortaleza] PHP Parse error:  syntax error, unexpected identifier "Direciona", expecting ";" in /home2/atilio12/medvet_app/bootstrap/app.php on line 23
+[29-May-2026 17:17:44 America/Fortaleza] PHP Parse error:  syntax error, unexpected identifier "Direciona", expecting ";" in /home2/atilio12/medvet_app/bootstrap/app.php on line 23
+[29-May-2026 17:17:49 America/Fortaleza] PHP Parse error:  syntax error, unexpected identifier "Direciona", expecting ";" in /home2/atilio12/medvet_app/bootstrap/app.php on line 23
+[29-May-2026 17:26:24 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Configuration\ApplicationBuilder::usePublicPath() in /home2/atilio12/medvet_app/bootstrap/app.php:22
+Stack trace:
+#0 /home2/atilio12/medvet_app/artisan(14): require_once()
+#1 {main}
+  thrown in /home2/atilio12/medvet_app/bootstrap/app.php on line 22
+[29-May-2026 17:27:32 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Configuration\ApplicationBuilder::usePublicPath() in /home2/atilio12/medvet_app/bootstrap/app.php:22
+Stack trace:
+#0 /home2/atilio12/medvet_app/artisan(14): require_once()
+#1 {main}
+  thrown in /home2/atilio12/medvet_app/bootstrap/app.php on line 22

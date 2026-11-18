@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /tickets/acompanhar/
+Disallow: /enviar_email.php
+
+# Sitemap (Mapa do site para o Google)
+Sitemap: https://www.medvetlegal.com.br/sitemap.xml

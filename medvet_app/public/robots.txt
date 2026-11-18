@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /tickets/acompanhar/
+
+Sitemap: https://www.medvetlegal.com.br/sitemap.xml
