@@ -1,0 +1,47 @@
+# ==============================================================================
+# MedVetLegal - Requisitos de Sistema e Dependências
+# ==============================================================================
+
+# 1. Requisitos do Servidor / Interpretador
+PHP >= 8.2
+Composer >= 2.2
+Node.js >= 18.0
+NPM >= 9.0
+
+# 2. Extensões PHP Obrigatórias (PHP Extensions)
+ext-bcmath
+ext-ctype
+ext-curl
+ext-dom
+ext-fileinfo
+ext-filter
+ext-hash
+ext-json
+ext-mbstring
+ext-openssl
+ext-pcre
+ext-pdo
+ext-pdo_sqlite
+ext-session
+ext-tokenizer
+ext-xml
+ext-xmlwriter
+
+# 3. Bancos de Dados Suportados
+SQLite >= 3.35 (Padrão de desenvolvimento local)
+MySQL >= 5.7 / MariaDB >= 10.3 (Recomendado para produção)
+
+# 4. Principais Pacotes PHP (Composer Dependencies)
+laravel/framework: ^11.0
+laravel/tinker: ^2.9
+laravel/ui: ^4.5
+admin-lte: ^3.2
+dompdf/dompdf: ^2.0 (Planejado para certificados)
+
+# 5. Dependências de Front-end (NPM Packages)
+bootstrap: ^4.6.2 (Painel Admin)
+bootstrap: ^5.3.0 (Site Público e Blog)
+font-awesome: ^6.4.0
+jquery: ^3.6.0
+admin-lte: ^3.2
+vite: ^5.0

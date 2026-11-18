@@ -1,0 +1,29 @@
+[28-May-2026 23:33:48 America/Fortaleza] PHP Warning:  require(/home2/atilio12/public_html/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/atilio12/public_html/public/index.php on line 14
+[28-May-2026 23:33:48 America/Fortaleza] PHP Warning:  require(/home2/atilio12/public_html/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/atilio12/public_html/public/index.php on line 14
+[28-May-2026 23:33:48 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/atilio12/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home2/atilio12/public_html/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home2/atilio12/public_html/public/index.php on line 14
+[29-May-2026 17:22:31 America/Fortaleza] PHP Parse error:  syntax error, unexpected identifier "Direciona", expecting ";" in /home2/atilio12/medvet_app/bootstrap/app.php on line 23
+[29-May-2026 17:24:01 America/Fortaleza] PHP Parse error:  syntax error, unexpected identifier "Direciona", expecting ";" in /home2/atilio12/medvet_app/bootstrap/app.php on line 23
+[29-May-2026 17:24:34 America/Fortaleza] PHP Parse error:  syntax error, unexpected identifier "Direciona", expecting ";" in /home2/atilio12/medvet_app/bootstrap/app.php on line 23
+[29-May-2026 17:26:27 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Configuration\ApplicationBuilder::usePublicPath() in /home2/atilio12/medvet_app/bootstrap/app.php:22
+Stack trace:
+#0 /home2/atilio12/public_html/index.php(19): require_once()
+#1 {main}
+  thrown in /home2/atilio12/medvet_app/bootstrap/app.php on line 22
+[29-May-2026 17:26:29 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Configuration\ApplicationBuilder::usePublicPath() in /home2/atilio12/medvet_app/bootstrap/app.php:22
+Stack trace:
+#0 /home2/atilio12/public_html/index.php(19): require_once()
+#1 {main}
+  thrown in /home2/atilio12/medvet_app/bootstrap/app.php on line 22
+[29-May-2026 17:26:39 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Configuration\ApplicationBuilder::usePublicPath() in /home2/atilio12/medvet_app/bootstrap/app.php:22
+Stack trace:
+#0 /home2/atilio12/public_html/index.php(19): require_once()
+#1 {main}
+  thrown in /home2/atilio12/medvet_app/bootstrap/app.php on line 22
+[29-May-2026 17:27:36 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Illuminate\Foundation\Configuration\ApplicationBuilder::usePublicPath() in /home2/atilio12/medvet_app/bootstrap/app.php:22
+Stack trace:
+#0 /home2/atilio12/public_html/index.php(19): require_once()
+#1 {main}
+  thrown in /home2/atilio12/medvet_app/bootstrap/app.php on line 22
