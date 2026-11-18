@@ -1,0 +1,46 @@
+name: Weekly Scientific Blog Post Generation
+
+on:
+#   schedule:
+#     # Executa todas as segundas-feiras às 09:00 UTC (06:00 BRT)
+#     - cron: '0 9 * * 1'
+  workflow_dispatch:
+    # Permite disparar manualmente pelo painel do GitHub Actions
+    inputs:
+      topic:
+        description: 'Tópico opcional para forçar a geração de um tema específico'
+        required: false
+        type: string
+
+jobs:
+  generate_post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Blog Post Generation API
+        run: |
+          echo "Disparando a geração automática de artigo científico..."
+          
+          # Corpo do POST (se um tópico manual foi fornecido)
+          if [ -n "${{ github.event.inputs.topic }}" ]; then
+            JSON_BODY="{\"topic\": \"${{ github.event.inputs.topic }}\"}"
+          else
+            JSON_BODY="{}"
+          fi
+          
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            -H "Content-Type: application/json" \
+            -d "$JSON_BODY" \
+            https://vetrank.com.br/api/scheduled/generate-blog-post)
+            
+          HTTP_STATUS=$(echo "$RESPONSE" | tail -n 1)
+          RESPONSE_BODY=$(echo "$RESPONSE" | head -n -1)
+          
+          echo "Status de resposta HTTP: $HTTP_STATUS"
+          echo "Retorno: $RESPONSE_BODY"
+          
+          if [ "$HTTP_STATUS" -ne 200 ]; then
+            echo "Erro: A chamada de API falhou com status $HTTP_STATUS"
+            exit 1
+          fi
+          
+          echo "Sucesso: O novo artigo científico foi gerado com sucesso em produção!"

@@ -1,0 +1,695 @@
+import { TRPCError } from "@trpc/server";
+import { z } from "zod";
+import { storagePut } from "../storage";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const sharp = require("sharp") as any;
+import {
+  createQuestion,
+  deleteQuestion,
+  getAllDisciplines,
+  getAllSubjects,
+  getAllTopics,
+  getDisciplines,
+  getTopicsBySubject,
+  getDistinctAuthors,
+  getDistinctBancas,
+  getDistinctInstituicoes,
+  getDistinctCargos,
+  getDistinctCarreiras,
+  getDistinctAreasFormacao,
+  getDistinctYears,
+  getQuestionById,
+  getQuestions,
+  getRandomQuestions,
+  getSubjectsByDiscipline,
+  updateQuestion,
+  createDiscursiveQuestion,
+  updateDiscursiveQuestion,
+  deleteDiscursiveQuestion,
+  getDiscursiveQuestions,
+  getDiscursiveQuestionById,
+  getSavedFilters,
+  saveFilter,
+  deleteSavedFilter,
+  getAssertivas,
+  upsertAssertivas,
+  getMatchingData,
+  upsertMatchingData,
+  getQuestionGroup,
+  upsertQuestionGroup,
+  updateGroupQuestionCount,
+  getDb,
+} from "../db";
+import { questions, users, exams, importBatches, subjects, disciplines, announcements } from "../../drizzle/schema";
+import { eq, sql, desc, inArray } from "drizzle-orm";
+import { protectedProcedure, publicProcedure, router } from "../_core/trpc";
+
+// Posts an "update" announcement on the mural whenever a batch of questions is imported,
+// so users see the question bank is constantly growing.
+async function announceNewQuestions(db: NonNullable<Awaited<ReturnType<typeof getDb>>>, authorId: number, disciplineIds: number[], count: number) {
+  if (count === 0) return;
+  const uniqueIds = [...new Set(disciplineIds)];
+  if (uniqueIds.length === 0) return;
+  const rows = await db
+    .select({ namePt: disciplines.namePt, nameEn: disciplines.nameEn })
+    .from(disciplines)
+    .where(inArray(disciplines.id, uniqueIds));
+  if (rows.length === 0) return;
+
+  const namesPt = rows.map((r) => r.namePt).join(", ");
+  const namesEn = rows.map((r) => r.nameEn).join(", ");
+  const plural = count === 1;
+  const wordPt = plural ? "questão" : "questões";
+  const wordEn = plural ? "question" : "questions";
+
+  await db.insert(announcements).values({
+    authorId,
+    titlePt: `📚 ${count} nova${plural ? "" : "s"} ${wordPt} de ${namesPt}!`,
+    titleEn: `📚 ${count} new ${wordEn} in ${namesEn}!`,
+    bodyPt: `Acabamos de adicionar ${count} nova${plural ? "" : "s"} ${wordPt} de ${namesPt} ao banco de questões. Confira agora e continue evoluindo nos estudos!`,
+    bodyEn: `We just added ${count} new ${wordEn} in ${namesEn} to the question bank. Check them out and keep leveling up your studies!`,
+    type: "update",
+    pinned: false,
+  });
+}
+
+const questionTypeEnum = z.enum([
+  "multiple_choice",
+  "assertion_reason",
+  "complex_multiple_choice",
+  "matching",
+  "true_false",
+  "ordering",
+  "cloze",
+  "clinical_case",
+  "image_analysis",
+  "interpretation",
+  "discursive",
+]);
+
+// formatData schema — flexible JSON for each question type
+const formatDataSchema = z.any().optional();
+
+export const questionsRouter = router({
+  // Public stats for Home page counters
+  publicStats: publicProcedure.query(async () => {
+    const db = await getDb();
+    if (!db) return { totalQuestions: 0, totalUsers: 0, totalExams: 0, avgAccuracy: 78 };
+    const [qCount, uCount, eCount, accRow] = await Promise.all([
+      db.select({ count: sql<number>`count(*)` }).from(questions).where(eq(questions.active, true)),
+      db.select({ count: sql<number>`count(*)` }).from(users),
+      db.select({ count: sql<number>`count(*)` }).from(exams).where(eq(exams.status, "completed")),
+      db.select({ avg: sql<number>`AVG(score)` }).from(exams).where(eq(exams.status, "completed")),
+    ]);
+    return {
+      totalQuestions: Number(qCount[0]?.count ?? 0),
+      totalUsers: Number(uCount[0]?.count ?? 0),
+      totalExams: Number(eCount[0]?.count ?? 0),
+      avgAccuracy: Math.round(Number(accRow[0]?.avg ?? 78)),
+    };
+  }),
+  list: publicProcedure
+    .input(
+      z.object({
+        // Basic
+        disciplineId: z.number().optional(),
+        subjectId: z.number().optional(),
+        topicId: z.number().optional(),
+        search: z.string().optional(),
+        // Classification
+        questionType: questionTypeEnum.optional(),
+        difficulty: z.enum(["very_easy", "easy", "medium", "hard", "very_hard"]).optional(),
+        year: z.number().optional(),
+        yearFrom: z.number().optional(),
+        yearTo: z.number().optional(),
+        author: z.string().optional(),
+        banca: z.string().optional(),
+        instituicao: z.string().optional(),
+        cargo: z.string().optional(),
+        carreira: z.string().optional(),
+        areaFormacao: z.string().optional(),
+        escolaridade: z.enum(["fundamental", "medio", "superior"]).optional(),
+        // Status (admin)
+        status: z.enum(["pending", "approved", "rejected"]).optional(),
+        isValidated: z.boolean().optional(),
+        // Flags
+        includeAnuladas: z.boolean().optional(),
+        includeDesatualizadas: z.boolean().optional(),
+        hasExplanation: z.boolean().optional(),
+        excludeDiscursive: z.boolean().optional(), // exclude questionType='discursive'
+        // User activity
+        myAnswers: z.enum(["answered", "unanswered", "correct", "incorrect"]).optional(),
+        // Sorting & pagination
+        orderBy: z.enum(["newest", "oldest", "year_desc", "year_asc"]).optional(),
+        page: z.number().default(1),
+        limit: z.number().default(20),
+      })
+    )
+    .query(async ({ input, ctx }) => {
+      const isPremium = ctx.user ? undefined : false;
+      const userId = ctx.user?.id;
+      return getQuestions({ ...input, isPremium, userId });
+    }),
+  byId: publicProcedure
+    .input(z.object({ id: z.number() }))
+    .query(async ({ input }) => {
+      const q = await getQuestionById(input.id);
+      if (!q) throw new TRPCError({ code: "NOT_FOUND" });
+      return q;
+    }),
+  disciplines: publicProcedure.query(() => getDisciplines()),
+  allDisciplines: publicProcedure.query(() => getAllDisciplines()),
+  subjects: publicProcedure
+    .input(z.object({ disciplineId: z.number() }))
+    .query(({ input }) => getSubjectsByDiscipline(input.disciplineId)),
+  allSubjects: publicProcedure.query(() => getAllSubjects()),
+  topics: publicProcedure
+    .input(z.object({ subjectId: z.number() }))
+    .query(({ input }) => getTopicsBySubject(input.subjectId)),
+  allTopics: publicProcedure.query(() => getAllTopics()),
+  distinctAuthors: publicProcedure.query(() => getDistinctAuthors()),
+  distinctYears: publicProcedure.query(() => getDistinctYears()),
+  distinctBancas: publicProcedure.query(() => getDistinctBancas()),
+  distinctInstituicoes: publicProcedure.query(() => getDistinctInstituicoes()),
+  distinctCargos: publicProcedure.query(() => getDistinctCargos()),
+  distinctCarreiras: publicProcedure.query(() => getDistinctCarreiras()),
+  distinctAreasFormacao: publicProcedure.query(() => getDistinctAreasFormacao()),
+
+  // Saved filters (requires auth)
+  savedFilters: protectedProcedure.query(({ ctx }) => getSavedFilters(ctx.user!.id)),
+  saveFilter: protectedProcedure
+    .input(z.object({ name: z.string().min(1).max(128), filters: z.record(z.string(), z.any()) }))
+    .mutation(({ input, ctx }) => saveFilter(ctx.user!.id, input.name, input.filters)),
+  deleteSavedFilter: protectedProcedure
+    .input(z.object({ id: z.number() }))
+    .mutation(({ input, ctx }) => deleteSavedFilter(input.id, ctx.user!.id)),
+
+  // Admin procedures
+  create: protectedProcedure
+    .input(
+      z.object({
+        disciplineId: z.number(),
+        subjectId: z.number().optional(),
+        difficulty: z.enum(["very_easy", "easy", "medium", "hard", "very_hard"]),
+        year: z.number().optional(),
+        questionType: questionTypeEnum.default("multiple_choice"),
+        modelId: z.string().max(4).optional(),   // M1–M10
+        grupoId: z.string().max(64).optional(),  // M10 block id
+        posicaoBloco: z.number().optional(),     // M10 position in block
+        subjectTag: z.string().optional(),
+        author: z.string().optional(),
+        banca: z.string().optional(),
+        instituicao: z.string().optional(),
+        cargo: z.string().optional(),
+        carreira: z.string().optional(),
+        areaFormacao: z.string().optional(),
+        escolaridade: z.enum(["fundamental", "medio", "superior"]).optional(),
+        textPt: z.string().min(5),
+        textEn: z.string().optional(),
+        options: z.array(
+          z.object({ id: z.string(), textPt: z.string(), textEn: z.string().optional() })
+        ),
+        correctOption: z.string(),
+        explanationPt: z.string().optional(),
+        explanationEn: z.string().optional(),
+        assertion1: z.string().optional(),
+        assertion2: z.string().optional(),
+        formatData: formatDataSchema,
+        isPremium: z.boolean().default(false),
+        isAnulada: z.boolean().default(false),
+        isDesatualizada: z.boolean().default(false),
+        imageUrl: z.string().optional(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin" && ctx.user.role !== "teacher") throw new TRPCError({ code: "FORBIDDEN" });
+      const id = await createQuestion(input as any);
+      return { id };
+    }),
+
+  update: protectedProcedure
+    .input(
+      z.object({
+        id: z.number(),
+        disciplineId: z.number().optional(),
+        subjectId: z.number().optional(),
+        difficulty: z.enum(["very_easy", "easy", "medium", "hard", "very_hard"]).optional(),
+        year: z.number().optional(),
+        questionType: questionTypeEnum.optional(),
+        modelId: z.string().max(4).optional(),
+        grupoId: z.string().max(64).optional(),
+        posicaoBloco: z.number().optional(),
+        subjectTag: z.string().optional(),
+        author: z.string().optional(),
+        banca: z.string().optional(),
+        instituicao: z.string().optional(),
+        cargo: z.string().optional(),
+        carreira: z.string().optional(),
+        areaFormacao: z.string().optional(),
+        escolaridade: z.enum(["fundamental", "medio", "superior"]).optional(),
+        textPt: z.string().optional(),
+        textEn: z.string().optional(),
+        options: z.array(z.object({ id: z.string(), textPt: z.string(), textEn: z.string().optional() })).optional(),
+        correctOption: z.string().optional(),
+        explanationPt: z.string().optional(),
+        explanationEn: z.string().optional(),
+        assertion1: z.string().optional(),
+        assertion2: z.string().optional(),
+        formatData: formatDataSchema,
+        isPremium: z.boolean().optional(),
+        isAnulada: z.boolean().optional(),
+        isDesatualizada: z.boolean().optional(),
+        active: z.boolean().optional(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin" && ctx.user.role !== "teacher") throw new TRPCError({ code: "FORBIDDEN" });
+      const { id, ...data } = input;
+      await updateQuestion(id, data as any);
+      return { success: true };
+    }),
+
+  delete: protectedProcedure
+    .input(z.object({ id: z.number() }))
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin") throw new TRPCError({ code: "FORBIDDEN" });
+      await deleteQuestion(input.id);
+      return { success: true };
+    }),
+
+  importCsv: protectedProcedure
+    .input(
+      z.object({
+        csv: z.string(),
+        batchName: z.string().optional(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin") throw new TRPCError({ code: "FORBIDDEN" });
+      const db = await getDb();
+      if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
+
+      const lines = input.csv.split("\n").filter((l) => l.trim() && !l.startsWith("textPt"));
+      let imported = 0;
+      const importedDisciplineIds: number[] = [];
+
+      const batchName = input.batchName || `Importação CSV ${new Date().toLocaleString("pt-BR")}`;
+      const [batchResult] = await db.insert(importBatches).values({
+        name: batchName,
+        source: "csv",
+        importedBy: ctx.user.id,
+        questionCount: 0,
+      });
+      const batchId = batchResult.insertId;
+
+      for (const line of lines) {
+        const cols = line.split(",").map((c) => c.trim().replace(/^"|"$/g, ""));
+        const [textPt, textEn, disciplineId, difficulty, optA, optB, optC, optD, optE, correctOption, explanationPt, year, isPremium, subjectTag, author] = cols;
+        if (!textPt || !disciplineId || !difficulty || !optA) continue;
+        const options = [
+          { id: "A", textPt: optA, textEn: optA },
+          { id: "B", textPt: optB || "", textEn: optB || "" },
+          { id: "C", textPt: optC || "", textEn: optC || "" },
+          { id: "D", textPt: optD || "", textEn: optD || "" },
+          ...(optE ? [{ id: "E", textPt: optE, textEn: optE }] : []),
+        ];
+        await createQuestion({
+          textPt, textEn: textEn || undefined,
+          disciplineId: parseInt(disciplineId),
+          difficulty: (difficulty as "easy" | "medium" | "hard"),
+          options, correctOption: correctOption || "A",
+          explanationPt: explanationPt || undefined,
+          year: year ? parseInt(year) : undefined,
+          isPremium: isPremium === "true",
+          subjectTag: subjectTag || undefined,
+          author: author || undefined,
+          questionType: "multiple_choice",
+          batchId,
+        } as any);
+        imported++;
+        importedDisciplineIds.push(parseInt(disciplineId));
+      }
+
+      await db.update(importBatches).set({ questionCount: imported }).where(eq(importBatches.id, batchId));
+
+      await announceNewQuestions(db, ctx.user.id, importedDisciplineIds, imported);
+
+      return { imported, batchId };
+    }),
+
+  bulkImport: protectedProcedure
+    .input(
+      z.object({
+        batchName: z.string().min(1).max(256).optional(),
+        source: z.enum(["json", "csv", "manual"]).optional(),
+        questions: z.array(
+          z.object({
+            disciplineId: z.number(),
+            subjectId: z.number().optional(),
+            topicId: z.number().optional(),
+            difficulty: z.enum(["very_easy", "easy", "medium", "hard", "very_hard"]),
+            year: z.number().optional(),
+            questionType: questionTypeEnum.optional(),
+            modelId: z.string().max(4).optional(),
+            questionModel: z.enum(["standard", "enade", "true_false", "assertion_reason"]).optional(),
+            subjectTag: z.string().optional(),
+            author: z.string().optional(),
+            banca: z.string().optional(),
+            instituicao: z.string().optional(),
+            cargo: z.string().optional(),
+            carreira: z.string().optional(),
+            areaFormacao: z.string().optional(),
+            escolaridade: z.enum(["fundamental", "medio", "superior"]).optional(),
+            textPt: z.string(),
+            textEn: z.string().optional(),
+            options: z.array(z.object({ id: z.string(), textPt: z.string(), textEn: z.string().optional() })),
+            correctOption: z.string(),
+            explanationPt: z.string().optional(),
+            explanationEn: z.string().optional(),
+            assertion1: z.string().optional(),
+            assertion2: z.string().optional(),
+            a1Verdadeira: z.boolean().optional(),
+            a2Verdadeira: z.boolean().optional(),
+            relacaoCausal: z.boolean().optional(),
+            isPremium: z.boolean().default(true),
+            status: z.enum(["pending", "approved", "rejected"]).default("approved"),
+            imageUrl: z.string().optional(),
+          })
+        ),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin" && ctx.user.role !== "teacher" && ctx.user.role !== "coordinator" && ctx.user.role !== "superuser") throw new TRPCError({ code: "FORBIDDEN" });
+      const db = await getDb();
+      if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
+
+      // Create batch record
+      const batchName = input.batchName || `Importação ${new Date().toLocaleString("pt-BR")}`;
+      const batchSource = input.source || "json";
+      const [batchResult] = await db.insert(importBatches).values({
+        name: batchName,
+        source: batchSource,
+        importedBy: ctx.user.id,
+        questionCount: input.questions.length,
+      });
+      const batchId = batchResult.insertId;
+
+      let imported = 0;
+      for (const q of input.questions) {
+        await createQuestion({ ...q, batchId } as any);
+        imported++;
+      }
+
+      await announceNewQuestions(db, ctx.user.id, input.questions.map((q) => q.disciplineId), imported);
+
+      return { imported, batchId };
+    }),
+
+  listImportBatches: protectedProcedure.query(async ({ ctx }) => {
+    if (ctx.user.role !== "admin" && ctx.user.role !== "superuser") throw new TRPCError({ code: "FORBIDDEN" });
+    const db = await getDb();
+    if (!db) return [];
+    const batches = await db
+      .select({
+        id: importBatches.id,
+        name: importBatches.name,
+        source: importBatches.source,
+        questionCount: importBatches.questionCount,
+        createdAt: importBatches.createdAt,
+        importedByName: users.name,
+      })
+      .from(importBatches)
+      .leftJoin(users, eq(importBatches.importedBy, users.id))
+      .orderBy(desc(importBatches.createdAt));
+    return batches;
+  }),
+
+  deleteImportBatch: protectedProcedure
+    .input(z.object({ batchId: z.number() }))
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin" && ctx.user.role !== "superuser") throw new TRPCError({ code: "FORBIDDEN" });
+      const db = await getDb();
+      if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR" });
+      await db.update(questions).set({ active: false }).where(eq(questions.batchId, input.batchId));
+      await db.delete(importBatches).where(eq(importBatches.id, input.batchId));
+      return { success: true };
+    }),
+
+  // ── M3: Assertivas ────────────────────────────────────────────────────────────
+
+  getAssertivas: publicProcedure
+    .input(z.object({ questionId: z.number() }))
+    .query(({ input }) => getAssertivas(input.questionId)),
+
+  upsertAssertivas: protectedProcedure
+    .input(z.object({
+      questionId: z.number(),
+      assertivas: z.array(z.object({
+        label:   z.string().max(4),
+        textPt:  z.string().min(1),
+        textEn:  z.string().optional(),
+        correta: z.boolean(),
+      })),
+    }))
+    .mutation(async ({ input, ctx }) => {
+      if (!["admin", "teacher", "coordinator", "superuser"].includes(ctx.user.role))
+        throw new TRPCError({ code: "FORBIDDEN" });
+      await upsertAssertivas(input.questionId, input.assertivas);
+      return { success: true };
+    }),
+
+  // ── M8: Associação / Colunas ──────────────────────────────────────────────
+
+  getMatchingData: publicProcedure
+    .input(z.object({ questionId: z.number() }))
+    .query(({ input }) => getMatchingData(input.questionId)),
+
+  upsertMatchingData: protectedProcedure
+    .input(z.object({
+      questionId: z.number(),
+      esquerda: z.array(z.object({ label: z.string(), textPt: z.string(), textEn: z.string().optional() })),
+      direita:  z.array(z.object({ label: z.string(), textPt: z.string(), textEn: z.string().optional() })),
+      pairs: z.array(z.object({ esquerdaOrdem: z.number(), direitaOrdem: z.number() })),
+    }))
+    .mutation(async ({ input, ctx }) => {
+      if (!["admin", "teacher", "coordinator", "superuser"].includes(ctx.user.role))
+        throw new TRPCError({ code: "FORBIDDEN" });
+      await upsertMatchingData(input.questionId, input.esquerda, input.direita, input.pairs);
+      return { success: true };
+    }),
+
+  // ── M10: Grupos de Alternativas Constantes ────────────────────────────────
+
+  getQuestionGroup: publicProcedure
+    .input(z.object({ grupoId: z.string() }))
+    .query(({ input }) => getQuestionGroup(input.grupoId)),
+
+  upsertQuestionGroup: protectedProcedure
+    .input(z.object({
+      grupoId:     z.string().min(1).max(64),
+      titulo:      z.string().optional(),
+      textBasePt:  z.string().min(1),
+      textBaseEn:  z.string().optional(),
+      alternativas: z.record(z.string(), z.string()), // {A:"...", B:"...", ...}
+    }))
+    .mutation(async ({ input, ctx }) => {
+      if (!["admin", "teacher", "coordinator", "superuser"].includes(ctx.user.role))
+        throw new TRPCError({ code: "FORBIDDEN" });
+      await upsertQuestionGroup(input.grupoId, input);
+      return { success: true };
+    }),
+
+  updateGroupCount: protectedProcedure
+    .input(z.object({ grupoId: z.string() }))
+    .mutation(async ({ input, ctx }) => {
+      if (!["admin", "teacher", "coordinator", "superuser"].includes(ctx.user.role))
+        throw new TRPCError({ code: "FORBIDDEN" });
+      await updateGroupQuestionCount(input.grupoId);
+      return { success: true };
+    }),
+
+  // Upload and optimize a question image → 3 responsive WebP variants (sm/md/lg)
+  uploadImage: protectedProcedure
+    .input(
+      z.object({
+        base64: z.string(),           // data:[mime];base64,... or raw base64
+        filename: z.string().optional(),
+        questionId: z.number().optional(),
+        questionType: z.enum(["mc", "discursive"]).default("mc"),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      const allowed = ["admin", "teacher", "coordinator", "superuser"];
+      if (!allowed.includes(ctx.user.role)) throw new TRPCError({ code: "FORBIDDEN" });
+
+      const base64Data = input.base64.replace(/^data:[^;]+;base64,/, "");
+      const inputBuffer = Buffer.from(base64Data, "base64");
+
+      // Generate 3 responsive variants in parallel
+      const [smBuf, mdBuf, lgBuf] = await Promise.all([
+        sharp(inputBuffer).resize({ width: 480,  withoutEnlargement: true }).webp({ quality: 75 }).toBuffer(),
+        sharp(inputBuffer).resize({ width: 960,  withoutEnlargement: true }).webp({ quality: 80 }).toBuffer(),
+        sharp(inputBuffer).resize({ width: 1440, withoutEnlargement: true }).webp({ quality: 85 }).toBuffer(),
+      ]);
+
+      const slug = (input.filename ?? "question").replace(/\.[^.]+$/, "").replace(/[^a-z0-9_-]/gi, "_");
+      const base = `questions/images/${slug}_${Date.now()}`;
+
+      // Upload all 3 variants in parallel
+      const [smRes, mdRes, lgRes] = await Promise.all([
+        storagePut(`${base}_sm.webp`, smBuf, "image/webp"),
+        storagePut(`${base}_md.webp`, mdBuf, "image/webp"),
+        storagePut(`${base}_lg.webp`, lgBuf, "image/webp"),
+      ]);
+
+      // Primary URL is the md variant (960px) — renderer derives sm/lg by suffix replacement
+      const imageUrl = mdRes.url;
+
+      if (input.questionId) {
+        if (input.questionType === "discursive") {
+          await updateDiscursiveQuestion(input.questionId, { imageUrl } as any);
+        } else {
+          await updateQuestion(input.questionId, { imageUrl } as any);
+        }
+      }
+
+      return {
+        url: imageUrl,          // primary (md)
+        urls: { sm: smRes.url, md: mdRes.url, lg: lgRes.url },
+        sizes: { sm: smBuf.length, md: mdBuf.length, lg: lgBuf.length },
+      };
+    }),
+
+  dailyQuestion: publicProcedure.query(async () => {
+    const db = await getDb();
+    if (!db) return null;
+    const [q] = await getRandomQuestions({ count: 1 });
+    if (!q) return null;
+    const subjectRow = q.subjectId
+      ? await db.select({ namePt: subjects.namePt }).from(subjects).where(eq(subjects.id, q.subjectId)).limit(1)
+      : [];
+    return { ...q, subjectName: subjectRow[0]?.namePt ?? null };
+  }),
+});
+
+// ─── Discursive Questions Router ──────────────────────────────────────────────
+export const discursiveRouter = router({
+  list: publicProcedure
+    .input(
+      z.object({
+        disciplineId: z.number().optional(),
+        subjectId: z.number().optional(),
+        difficulty: z.enum(["easy", "medium", "hard"]).optional(),
+        search: z.string().optional(),
+        page: z.number().default(1),
+        limit: z.number().default(20),
+      })
+    )
+    .query(async ({ input, ctx }) => {
+      const isPremium = ctx.user ? undefined : false;
+      return getDiscursiveQuestions({ ...input, isPremium });
+    }),
+
+  byId: publicProcedure
+    .input(z.object({ id: z.number() }))
+    .query(async ({ input, ctx }) => {
+      const q = await getDiscursiveQuestionById(input.id);
+      if (!q) throw new TRPCError({ code: "NOT_FOUND" });
+      // Gate answer behind premium/trial
+      if (!ctx.user || (ctx.user.plan === "free" && ctx.user.role === "user")) {
+        return { ...q, expectedAnswerPt: null, expectedAnswerEn: null };
+      }
+      return q;
+    }),
+
+  create: protectedProcedure
+    .input(
+      z.object({
+        disciplineId: z.number(),
+        subjectId: z.number().optional(),
+        subjectTag: z.string().optional(),
+        author: z.string().optional(),
+        difficulty: z.enum(["easy", "medium", "hard"]),
+        year: z.number().optional(),
+        textPt: z.string().min(5),
+        textEn: z.string().optional(),
+        expectedAnswerPt: z.string().min(5),
+        expectedAnswerEn: z.string().optional(),
+        isPremium: z.boolean().default(true),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin" && ctx.user.role !== "teacher") throw new TRPCError({ code: "FORBIDDEN" });
+      const id = await createDiscursiveQuestion({ ...input, createdBy: ctx.user.id } as any);
+      return { id };
+    }),
+
+  bulkImport: protectedProcedure
+    .input(
+      z.object({
+        questions: z.array(
+          z.object({
+            disciplineId: z.number(),
+            subjectId: z.number().optional(),
+            subjectTag: z.string().optional(),
+            author: z.string().optional(),
+            difficulty: z.enum(["very_easy", "easy", "medium", "hard", "very_hard"])
+              .transform((val) => (val === "very_easy" ? "easy" : val === "very_hard" ? "hard" : val) as "easy" | "medium" | "hard"),
+            year: z.number().optional(),
+            textPt: z.string(),
+            textEn: z.string().optional(),
+            expectedAnswerPt: z.string(),
+            expectedAnswerEn: z.string().optional(),
+            isPremium: z.boolean().default(true),
+          })
+        ),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin" && ctx.user.role !== "teacher" && ctx.user.role !== "coordinator" && ctx.user.role !== "superuser") {
+        throw new TRPCError({ code: "FORBIDDEN" });
+      }
+      let imported = 0;
+      for (const q of input.questions) {
+        await createDiscursiveQuestion({ ...q, createdBy: ctx.user.id } as any);
+        imported++;
+      }
+      return { imported };
+    }),
+
+
+  update: protectedProcedure
+    .input(
+      z.object({
+        id: z.number(),
+        disciplineId: z.number().optional(),
+        subjectId: z.number().optional(),
+        subjectTag: z.string().optional(),
+        author: z.string().optional(),
+        difficulty: z.enum(["easy", "medium", "hard"]).optional(),
+        year: z.number().optional(),
+        textPt: z.string().optional(),
+        textEn: z.string().optional(),
+        expectedAnswerPt: z.string().optional(),
+        expectedAnswerEn: z.string().optional(),
+        isPremium: z.boolean().optional(),
+        active: z.boolean().optional(),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin" && ctx.user.role !== "teacher") throw new TRPCError({ code: "FORBIDDEN" });
+      const { id, ...data } = input;
+      await updateDiscursiveQuestion(id, data as any);
+      return { success: true };
+    }),
+
+  delete: protectedProcedure
+    .input(z.object({ id: z.number() }))
+    .mutation(async ({ input, ctx }) => {
+      if (ctx.user.role !== "admin") throw new TRPCError({ code: "FORBIDDEN" });
+      await deleteDiscursiveQuestion(input.id);
+      return { success: true };
+    }),
+});

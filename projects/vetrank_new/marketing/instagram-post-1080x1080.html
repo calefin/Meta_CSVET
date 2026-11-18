@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>VetRank — Instagram Post 1080×1080</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1080px; overflow: hidden; font-family: 'Montserrat', sans-serif; }
+
+  .card {
+    width: 1080px; height: 1080px;
+    background: linear-gradient(150deg, #060e09 0%, #0a1a10 55%, #060e09 100%);
+    position: relative; overflow: hidden;
+    padding: 64px 68px;
+    display: flex; flex-direction: column;
+  }
+
+  .glow-tr {
+    position: absolute; top: -180px; right: -180px;
+    width: 620px; height: 620px;
+    background: radial-gradient(circle, rgba(16,185,129,0.25) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .glow-bl {
+    position: absolute; bottom: -120px; left: -100px;
+    width: 520px; height: 520px;
+    background: radial-gradient(circle, rgba(245,158,11,0.10) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .dots {
+    position: absolute; top: 64px; right: 68px;
+    display: grid; grid-template-columns: repeat(6,1fr); gap: 13px;
+  }
+  .dot { width: 6px; height: 6px; background: #0d3322; border-radius: 50%; }
+
+  /* Header */
+  .header {
+    display: flex; align-items: center; justify-content: space-between;
+    position: relative; z-index: 1;
+  }
+  .logo { display: flex; align-items: center; gap: 14px; }
+  .logo svg { width: 56px; height: 56px; }
+  .logo-name { font-size: 40px; font-weight: 900; letter-spacing: -1px; }
+  .logo-name .vet { font-family: Georgia, serif; color: #fff; }
+  .logo-name .rank { color: #10b981; }
+
+  .badge {
+    background: rgba(16,185,129,0.12);
+    border: 1.5px solid rgba(16,185,129,0.4);
+    border-radius: 100px; padding: 10px 26px;
+    font-size: 19px; font-weight: 700; color: #6ee7b7; letter-spacing: 0.3px;
+  }
+
+  /* Headline */
+  .headline-section { margin: 52px 0 44px; position: relative; z-index: 1; }
+  .eyebrow {
+    font-size: 18px; font-weight: 800; color: #10b981;
+    letter-spacing: 4px; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .headline {
+    font-size: 74px; font-weight: 900; color: #f8fafc;
+    line-height: 1.0; letter-spacing: -2.5px;
+  }
+  .headline em {
+    font-style: normal;
+    background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+  .sub { font-size: 24px; color: #64748b; font-weight: 500; margin-top: 16px; line-height: 1.5; }
+
+  /* Grid */
+  .grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+    flex: 1; position: relative; z-index: 1;
+  }
+  .feat {
+    background: rgba(10,28,18,0.7); border: 1px solid #0d3322;
+    border-radius: 20px; padding: 28px 26px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .feat-icon {
+    width: 50px; height: 50px; border-radius: 13px;
+    background: rgba(6,78,59,0.8); border: 1px solid rgba(16,185,129,0.3);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .feat-title { font-size: 24px; font-weight: 700; color: #f1f5f9; line-height: 1.2; }
+  .feat-desc { font-size: 18px; color: #475569; line-height: 1.4; }
+
+  /* Bottom */
+  .divider { height: 1px; background: #0d3322; margin: 24px 0 20px; position: relative; z-index: 1; }
+  .bottom { display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; }
+  .cta {
+    background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+    color: #052e16; font-size: 21px; font-weight: 900;
+    padding: 18px 42px; border-radius: 13px; letter-spacing: -0.3px;
+  }
+  .cta-note { font-size: 16px; color: #475569; font-weight: 500; margin-left: 18px; }
+  .website { font-size: 19px; font-weight: 700; color: #6ee7b7; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="glow-tr"></div><div class="glow-bl"></div>
+  <div class="dots">
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+  </div>
+
+  <div class="header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+        <g transform="translate(30,15)">
+          <path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/>
+          <path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+          <path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/>
+          <polygon points="50,10 95,27 50,44 5,27" fill="url(#g1)"/>
+          <polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/>
+          <path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/>
+          <circle cx="92" cy="63" r="3.5" fill="#F59E0B"/>
+        </g>
+      </svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <span class="badge">7 dias grátis</span>
+  </div>
+
+  <div class="headline-section">
+    <div class="eyebrow">Prepare-se de verdade</div>
+    <div class="headline">Estude com <em>método.</em><br>Passe com confiança.</div>
+    <div class="sub">A plataforma completa para Residência, CFMV e ENARE.</div>
+  </div>
+
+  <div class="grid">
+    <div class="feat">
+      <div class="feat-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <rect x="3" y="4" width="20" height="18" rx="2.5" stroke="#10b981" stroke-width="1.8"/>
+          <path d="M3 10H23" stroke="#10b981" stroke-width="1.8"/>
+          <path d="M8 15H12" stroke="#10b981" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M8 18.5H16" stroke="#10b981" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="feat-title">+9.000 Questões</div>
+      <div class="feat-desc">Por banca, disciplina e nível de dificuldade</div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <circle cx="13" cy="13" r="9.5" stroke="#10b981" stroke-width="1.8"/>
+          <path d="M13 7.5V13L17 16" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="feat-title">Simulados</div>
+      <div class="feat-desc">Cronometrados com gabarito e análise de erros</div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <polyline points="3,19 8,12 13,15 18,7 23,10" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="18" cy="7" r="2.5" fill="#10b981"/>
+        </svg>
+      </div>
+      <div class="feat-title">Trilhas de Estudo</div>
+      <div class="feat-desc">Roteiro semanal para cada edital</div>
+    </div>
+    <div class="feat">
+      <div class="feat-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <path d="M13 3L15.5 9.5H22.5L17 13.5L19.5 20L13 16L6.5 20L9 13.5L3.5 9.5H10.5Z" stroke="#10b981" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="feat-title">XP e Ranking</div>
+      <div class="feat-desc">Gamificação com streaks e liga semanal</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="bottom">
+    <div style="display:flex;align-items:center">
+      <div class="cta">Comece grátis agora</div>
+      <span class="cta-note">Sem cartão de crédito</span>
+    </div>
+    <span class="website">vetrank.com.br</span>
+  </div>
+</div>
+</body>
+</html>

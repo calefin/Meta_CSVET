@@ -1,0 +1,11 @@
+node_modules
+dist
+.env.local
+.env.development
+.env.development.local
+.env.test
+.git
+*.log
+.manus
+.manus-logs
+db_manus

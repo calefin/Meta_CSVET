@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>VetRank — Story Questão do Dia 1080×1920</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Montserrat', sans-serif; }
+
+  .card {
+    width: 1080px; height: 1920px;
+    background: linear-gradient(160deg, #060e09 0%, #0a1a10 50%, #060e09 100%);
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column;
+    padding: 0 72px;
+  }
+
+  .top-bar { position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: linear-gradient(90deg, #10b981, #34d399, #f59e0b); }
+  .bottom-bar { position: absolute; bottom: 0; left: 0; width: 100%; height: 6px; background: linear-gradient(90deg, #f59e0b, #34d399, #10b981); }
+
+  .glow1 { position: absolute; top: -100px; right: -100px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(16,185,129,0.2) 0%, transparent 65%); pointer-events: none; }
+  .glow2 { position: absolute; bottom: 200px; left: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(245,158,11,0.1) 0%, transparent 65%); pointer-events: none; }
+
+  /* Header */
+  .header { display: flex; align-items: center; justify-content: space-between; margin-top: 56px; position: relative; z-index: 1; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo svg { width: 48px; height: 48px; }
+  .logo-name { font-size: 36px; font-weight: 900; }
+  .logo-name .vet { font-family: Georgia, serif; color: #fff; }
+  .logo-name .rank { color: #10b981; }
+  .header-badge { background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.4); border-radius: 100px; padding: 8px 22px; font-size: 16px; font-weight: 800; color: #fbbf24; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* Questão label */
+  .questao-label { margin-top: 60px; position: relative; z-index: 1; }
+  .label-row { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .label-tag { background: #10b981; color: #052e16; font-size: 13px; font-weight: 800; padding: 5px 16px; border-radius: 100px; letter-spacing: 1px; text-transform: uppercase; }
+  .label-disc { font-size: 15px; color: #6ee7b7; font-weight: 600; }
+  .label-diff { font-size: 13px; color: #f59e0b; font-weight: 700; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); border-radius: 100px; padding: 3px 12px; }
+
+  /* Enunciado */
+  .enunciado-box {
+    background: rgba(10,28,18,0.8); border: 1px solid #0d3322;
+    border-radius: 20px; padding: 40px 38px;
+    margin-top: 20px; position: relative; z-index: 1;
+  }
+  .enunciado-text { font-size: 24px; color: #e2e8f0; line-height: 1.65; font-weight: 500; }
+
+  /* Alternativas */
+  .alternativas { display: flex; flex-direction: column; gap: 16px; margin-top: 32px; position: relative; z-index: 1; }
+  .alt {
+    background: rgba(10,28,18,0.6); border: 1px solid #0d3322;
+    border-radius: 14px; padding: 22px 28px;
+    display: flex; align-items: flex-start; gap: 18px;
+    font-size: 22px; color: #94a3b8; line-height: 1.5;
+  }
+  .alt.correct { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.5); color: #d1fae5; }
+  .alt-letter { font-size: 20px; font-weight: 800; color: #475569; flex-shrink: 0; width: 28px; }
+  .alt.correct .alt-letter { color: #10b981; }
+
+  /* Gabarito / explicação */
+  .gabarito-section { margin-top: 36px; position: relative; z-index: 1; }
+  .gabarito-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .gabarito-badge { background: #10b981; color: #052e16; font-size: 13px; font-weight: 800; padding: 6px 18px; border-radius: 100px; letter-spacing: 0.5px; }
+  .gabarito-sub { font-size: 16px; color: #6ee7b7; font-weight: 600; }
+  .explicacao { background: rgba(16,185,129,0.07); border: 1px solid rgba(16,185,129,0.2); border-radius: 16px; padding: 28px 30px; font-size: 19px; color: #94a3b8; line-height: 1.65; }
+
+  /* Footer CTA */
+  .footer-cta { margin-top: 40px; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 1; padding-bottom: 52px; }
+  .footer-left { font-size: 17px; color: #475569; line-height: 1.5; }
+  .footer-left strong { color: #6ee7b7; display: block; font-size: 15px; margin-bottom: 4px; }
+  .footer-cta-btn { background: linear-gradient(90deg, #10b981, #34d399); color: #052e16; font-size: 18px; font-weight: 900; padding: 16px 32px; border-radius: 12px; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top-bar"></div><div class="bottom-bar"></div>
+  <div class="glow1"></div><div class="glow2"></div>
+
+  <div class="header">
+    <div class="logo">
+      <svg viewBox="30 18 100 128" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10B981"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs>
+        <g transform="translate(30,15)">
+          <path d="M20,45 L80,45 L80,85 C80,108 50,125 50,125 C50,125 20,108 20,85 Z" fill="#0F172A"/>
+          <path d="M26,51 L74,51 L74,83 C74,101 50,114 50,114 C50,114 26,101 26,83 Z" fill="none" stroke="#10B981" stroke-width="2" opacity="0.5"/>
+          <path d="M43,62 h14 v10 h10 v14 h-10 v10 h-14 v-10 h-10 v-14 h10 z" fill="#10B981"/>
+          <polygon points="50,10 95,27 50,44 5,27" fill="url(#g5)"/>
+          <polygon points="50,16 85,27 50,38 15,27" fill="#064E3B" opacity="0.3"/>
+          <path d="M50,27 L92,40 L92,60" fill="none" stroke="#F59E0B" stroke-width="2"/>
+          <circle cx="92" cy="63" r="3.5" fill="#F59E0B"/>
+        </g>
+      </svg>
+      <span class="logo-name"><span class="vet">Vet</span><span class="rank">Rank</span></span>
+    </div>
+    <div class="header-badge">Questão do Dia</div>
+  </div>
+
+  <div class="questao-label">
+    <div class="label-row">
+      <span class="label-tag">Patologia</span>
+      <span class="label-disc">Sistema Cardiovascular</span>
+      <span class="label-diff">⚡ Difícil</span>
+    </div>
+  </div>
+
+  <div class="enunciado-box">
+    <div class="enunciado-text">
+      Um cão da raça Cavalier King Charles Spaniel, 10 anos, apresenta sopro sistólico e insuficiência cardíaca esquerda crônica. Na necropsia, as cúspides da valva atrioventricular esquerda estão espessadas, nodulares e brilhantes. O histopatológico revela acúmulo de glicosaminoglicanos na camada esponjosa, com perda da arquitetura fibrosa normal.<br><br>
+      Este achado é característico de:
+    </div>
+  </div>
+
+  <div class="alternativas">
+    <div class="alt"><span class="alt-letter">A</span>Endocardite bacteriana com vegetações fibrinossupurativas</div>
+    <div class="alt correct"><span class="alt-letter">B</span>Degeneração mixomatosa valvar (endocardiose)</div>
+    <div class="alt"><span class="alt-letter">C</span>Calcificação distrófica da camada fibrosa valvar</div>
+    <div class="alt"><span class="alt-letter">D</span>Displasia valvar congênita por defeito de colágeno</div>
+    <div class="alt"><span class="alt-letter">E</span>Fibrose de substituição pós-isquemia valvar</div>
+  </div>
+
+  <div class="gabarito-section">
+    <div class="gabarito-header">
+      <span class="gabarito-badge">Gabarito: B</span>
+      <span class="gabarito-sub">Veja a explicação completa no VetRank</span>
+    </div>
+    <div class="explicacao">
+      A endocardiose é a cardiopatia mais comum em cães de raças pequenas. O acúmulo de glicosaminoglicanos na camada esponjosa gera degeneração mixoide, enfraquecimento da estrutura valvar e insuficiência mitral progressiva. Diferencie de endocardite (vegetações, sem degeneração mixoide) e calcificação (mineralização, não acúmulo de GAGs).
+    </div>
+  </div>
+
+  <div class="footer-cta">
+    <div class="footer-left">
+      <strong>+9.000 questões no banco</strong>
+      Resolva questões como esta todos os dias
+    </div>
+    <div class="footer-cta-btn">vetrank.com.br</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,552 @@
+# VetRank — Gerador de Questões: Medicina de Animais Selvagens e Pets Exóticos (Silvestres/Não Convencionais)
+# Processa PDFs de D:\pdfs\Silvestres\Capitulos e gera JSON prontos para importação.
+#
+# Env vars (.env):
+#   DEEPSEEK_API_KEY=sk-...
+#   SILVESTRES_DIR=D:/pdfs/Silvestres/Capitulos
+#   OUTPUT_DIR=D:/vetrank/Livro/questoes
+#   SILVESTRES_DISCIPLINE_ID=30006
+#   SILVESTRES_SUBJECT_ID=30045
+#   SILVESTRES_TOPIC_ID=0
+#   SILVESTRES_TARGET_QUESTIONS=625
+#   SILVESTRES_ROUNDS=5
+#   SILVESTRES_MODELS_PER_CHUNK=8
+#   SILVESTRES_CHUNK_SIZE=25000
+#   SILVESTRES_MAX_QPM=6
+#   SILVESTRES_MIN_QPM=2
+#   SILVESTRES_DEEPSEEK_MODEL=deepseek-chat
+#   SILVESTRES_YEAR=2026
+#
+# Uso:
+#   python scripts/extrator_silvestres.py              → todos os PDFs
+#   python scripts/extrator_silvestres.py <filtro>     → filtra pelo nome do arquivo ou capítulo
+#
+# Pós-processamento e normalização recomendados:
+#   node scripts/normalize_questions_json.mjs D:/vetrank/Livro/questoes/questoes_silvestres_<slug>.json D:/vetrank/Livro/questoes/questoes_silvestres_<slug>_normalizado.json "<Assunto/Tag>"
+
+import os, sys, json, time, re, math, concurrent.futures, unicodedata
+import openai
+import fitz  # PyMuPDF
+from tenacity import retry, stop_after_attempt, wait_exponential
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# ── Configuração ──────────────────────────────────────────────────────────────
+SILVESTRES_DIR   = os.getenv("SILVESTRES_DIR",   "D:/pdfs/Silvestres/Capitulos")
+OUTPUT_DIR       = os.getenv("OUTPUT_DIR",       "D:/vetrank/Livro/questoes")
+DISCIPLINE_ID    = int(os.getenv("SILVESTRES_DISCIPLINE_ID", "30006"))
+SUBJECT_ID       = int(os.getenv("SILVESTRES_SUBJECT_ID",   "30045"))
+TOPIC_ID         = int(os.getenv("SILVESTRES_TOPIC_ID",     "0"))
+TARGET_QUESTIONS = int(os.getenv("SILVESTRES_TARGET_QUESTIONS", "625"))
+ROUNDS           = int(os.getenv("SILVESTRES_ROUNDS",           "5"))
+MODELS_PER_CHUNK = int(os.getenv("SILVESTRES_MODELS_PER_CHUNK", "8"))
+CHUNK_SIZE       = int(os.getenv("SILVESTRES_CHUNK_SIZE",    "25000"))
+MAX_QPM          = int(os.getenv("SILVESTRES_MAX_QPM",       "6"))
+MIN_QPM          = int(os.getenv("SILVESTRES_MIN_QPM",       "2"))
+DEEPSEEK_MODEL   = os.getenv("SILVESTRES_DEEPSEEK_MODEL",    "deepseek-chat")
+YEAR             = int(os.getenv("SILVESTRES_YEAR",           "2026"))
+
+QUESTION_MODELS = ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8']
+
+if DISCIPLINE_ID == 0 or SUBJECT_ID == 0:
+    sys.exit("ERRO: defina SILVESTRES_DISCIPLINE_ID e SILVESTRES_SUBJECT_ID no .env.")
+
+# Mapeamento: stem do PDF → subjectTag amigável
+CHAPTER_TAGS = {
+    "Capitulo_01_1_Ferrets": "Ferrets (Furões)",
+    "Capitulo_02_2_Rabbits": "Coelhos",
+    "Capitulo_03_3_Guinea_pigs,_chinchillas,_and_degus": "Roedores de Médio Porte (Porquinho-da-Índia, Chinchila e Degu)",
+    "Capitulo_04_4_Small_rodents": "Pequenos Roedores",
+    "Capitulo_05_5_Common_or_cotton-eared_marmosets": "Primatas (Saguins)",
+    "Capitulo_06_6_Hedgehogs": "Hedgehogs (Ouriços-pigmeus-africanos)",
+    "Capitulo_07_7_Sugar_gliders": "Sugar Gliders (Petauros-do-açúcar)",
+    "Capitulo_08_8_Parrots_and_related_species": "Aves (Psitacídeos - Papagaios e Calopsitas)",
+    "Capitulo_09_9_Songbirds_and_softbills": "Aves (Passeriformes e Aves Canoras)",
+    "Capitulo_10_10_Lizards": "Répteis (Lagartos)",
+    "Capitulo_11_11_Snakes": "Répteis (Serpentes)",
+    "Capitulo_12_12_Tortoises_and_turtles": "Répteis (Quelônios - Jabutis e Cágados)",
+    "Capitulo_13_13_Amphibians": "Anfíbios",
+    "Capitulo_14_14_Goldfish_and_koi": "Peixes Ornamentais (Kinguio e Carpa)",
+    "Capitulo_15_15_Tropical_freshwater_fish": "Peixes Tropicais de Água Doce",
+    "Capitulo_16_16_Tropical_marine_fish": "Peixes Tropicais Marinhos"
+}
+
+# Opções fixas do M5 — nunca geradas pela IA
+M5_OPTIONS = [
+    {"id": "A", "textPt": "As asserções I e II são verdadeiras, e a II é justificativa correta da I."},
+    {"id": "B", "textPt": "As asserções I e II são verdadeiras, mas a II não é justificativa correta da I."},
+    {"id": "C", "textPt": "A asserção I é verdadeira, e a II é falsa."},
+    {"id": "D", "textPt": "A asserção I é falsa, e a II é verdadeira."},
+    {"id": "E", "textPt": "As asserções I e II são falsas."},
+]
+
+client = openai.OpenAI(
+    api_key=os.getenv("DEEPSEEK_API_KEY"),
+    base_url="https://api.deepseek.com",
+)
+
+# ── Regras por modelo ─────────────────────────────────────────────────────────
+def model_rules(model: str) -> str:
+    rules = {
+        'M1': (
+            'modelId: "M1", questionType: "multiple_choice"\n'
+            '  - Enunciado rico (mínimo 3 linhas): espécie/raça, quadro clínico, particularidades anatômicas, metabólicas ou manejo antes de perguntar.\n'
+            '  - 5 alternativas (A–E). Distratores baseados em espécies ou condições fisiológicas semelhantes.\n'
+            '  - Exija raciocínio clínico aplicado — nunca memorização simples.'
+        ),
+        'M2': (
+            'modelId: "M2", questionType: "multiple_choice"\n'
+            '  - textPt é afirmação técnica incompleta terminando em ":" ou "...".\n'
+            '  - Contexto (2+ linhas) antes da lacuna descrevendo a particularidade biológica, afecção ou procedimento específico de animais silvestres/exóticos.\n'
+            '  - Alternativas completam a frase com termos clínicos precisos.'
+        ),
+        'M3': (
+            'modelId: "M3", questionType: "complex_multiple_choice"\n'
+            '  - textPt contém 4 assertivas (I–IV) técnicas, completas e profundas.\n'
+            '  - Alternativas são combinações: "Apenas I e III", "I, II e IV", etc.\n'
+            '  - Formato: "Sobre [tema], analise as seguintes assertivas:\\n\\nI. [asserção I]\\nII. [asserção II]\\nIII. [asserção III]\\nIV. [asserção IV]\\n\\nSão CORRETAS apenas:"'
+        ),
+        'M4': (
+            'modelId: "M4", questionType: "multiple_choice"\n'
+            '  - textPt DEVE conter "EXCETO", "NÃO" ou "INCORRETO" em MAIÚSCULAS.\n'
+            '  - Descreva a espécie/procedimento/particularidade biológica em detalhe antes da negativa.\n'
+            '  - 4 alternativas perfeitamente verdadeiras e 1 falsa (gabarito).'
+        ),
+        'M5': (
+            'modelId: "M5", questionType: "assertion_reason"\n'
+            '  - textPt: "ASSERÇÃO I: [proposição clínica/fisiológica, 2+ linhas].\\n\\nPORQUE\\n\\nASSERÇÃO II: [mecanismo/justificativa biológica, 2+ linhas]."\n'
+            '  - Inclua "assertion1" e "assertion2" como campos separados no JSON.\n'
+            '  - correctOptionLetter: A=ambas V+II justifica I | B=ambas V sem relação | C=I V II F | D=I F II V | E=ambas F\n'
+            '  - NÃO inclua "options" no JSON — injetado automaticamente.'
+        ),
+        'M6': (
+            'modelId: "M6", questionType: "cloze"\n'
+            '  - textPt: trecho técnico com lacuna(s) marcadas [___] ou [1], [2].\n'
+            '  - Contexto clínico ou zootécnico de silvestres antes da lacuna: mínimo 3 linhas.\n'
+            '  - OBRIGATÓRIO: EXATAMENTE 5 alternativas (A, B, C, D, E).'
+        ),
+        'M7': (
+            'modelId: "M7", questionType: "clinical_case"\n'
+            '  - textPt DEVE começar com "[CASO CLÍNICO]".\n'
+            '  - Inclua: espécie (nome comum e científico), sexo, idade, anamnese com erros de manejo, sinais clínicos, achados do exame físico ou laboratoriais (valores reais).\n'
+            '  - Mínimo 5 dados clínicos antes da pergunta. Exija diagnóstico, tratamento ou prognóstico contextualizado.'
+        ),
+        'M8': (
+            'modelId: "M8", questionType: "matching"\n'
+            '  - Associe itens da Coluna I com características da Coluna II.\n'
+            '  - Formato: "Relacione os itens da Coluna I com os da Coluna II:\\n\\nCOLUNA I\\n1. [item]\\n2. ...\\n\\nCOLUNA II\\na) [característica]\\nb) ...\\n\\nA associação CORRETA é:"\n'
+            '  - 4 itens na Coluna I, 5 na Coluna II (1 distrator). Alternativas: "1-a / 2-c / 3-b / 4-d".\n'
+            '  - OBRIGATÓRIO: EXATAMENTE 5 alternativas (A, B, C, D, E).'
+        ),
+    }
+    return rules.get(model, '')
+
+# ── Pós-processamento — garante formato correto para importação ───────────────
+def post_process(q: dict, model_type: str, subject_tag: str,
+                 discipline_id: int, subject_id: int) -> dict:
+    out = dict(q)
+
+    # Campos de identificação / metadados
+    out['disciplineId'] = discipline_id
+    out['subjectId']    = subject_id
+    out['topicId']      = TOPIC_ID
+    out['subjectTag']   = subject_tag
+    out['year']         = YEAR
+    out['author']       = 'VetRank'
+    out['isPremium']    = True
+    out['status']       = 'approved'
+    out['modelId']      = model_type
+
+    # Tipo da questão
+    if model_type == 'M5':
+        out['questionType'] = 'assertion_reason'
+        out['options']      = [dict(o) for o in M5_OPTIONS]
+    elif model_type == 'M3':
+        out['questionType'] = 'complex_multiple_choice'
+    elif model_type == 'M6':
+        out['questionType'] = 'cloze'
+    elif model_type == 'M7':
+        out['questionType'] = 'clinical_case'
+    elif model_type == 'M8':
+        out['questionType'] = 'matching'
+    else:
+        out.setdefault('questionType', 'multiple_choice')
+
+    # Normalizar alternatives → options
+    if 'options' not in out and 'alternatives' in out:
+        letters = ['A', 'B', 'C', 'D', 'E']
+        out['options'] = [
+            {'id': letters[i], 'textPt': str(t).strip()}
+            for i, t in enumerate(out['alternatives'])
+        ]
+    out.pop('alternatives', None)
+
+    # Normalizar objetos de options
+    if isinstance(out.get('options'), list):
+        letters = ['A', 'B', 'C', 'D', 'E']
+        normalized = []
+        for i, o in enumerate(out['options']):
+            if isinstance(o, str):
+                normalized.append({
+                    'id': letters[i] if i < 5 else chr(65 + i),
+                    'textPt': re.sub(r'^[A-E][).]\s*', '', o, flags=re.IGNORECASE).strip()
+                })
+            elif isinstance(o, dict):
+                obj = dict(o)
+                if 'id' not in obj and 'label' in obj:
+                    obj['id'] = obj.pop('label')
+                if 'textPt' not in obj and 'text' in obj:
+                    obj['textPt'] = obj.pop('text')
+                normalized.append(obj)
+        out['options'] = normalized
+
+    # Normalizar difficulty
+    VALID_DIFF = {'very_easy', 'easy', 'medium', 'hard', 'very_hard'}
+    diff_map = {
+        'difícil': 'hard', 'dificil': 'hard', 'difficult': 'hard',
+        'muito difícil': 'very_hard', 'muito dificil': 'very_hard',
+        'very difficult': 'very_hard', 'very_difficult': 'very_hard',
+        'médio': 'medium', 'medio': 'medium', 'moderate': 'medium',
+        'fácil': 'easy', 'facil': 'easy', 'simple': 'easy',
+        'muito fácil': 'very_easy', 'very easy': 'very_easy',
+    }
+    raw_diff = str(out.get('difficulty', '')).lower().strip()
+    out['difficulty'] = raw_diff if raw_diff in VALID_DIFF else diff_map.get(raw_diff, 'hard')
+
+    # Normalizar correctOptionLetter
+    def _safe_letter(value) -> str | None:
+        s = str(value).upper().strip() if value is not None else ''
+        return s[0] if s and s[0] in 'ABCDE' else None
+
+    if 'correctOptionLetter' not in out or out.get('correctOptionLetter') is None:
+        for alias in ('correctAlternative', 'correctOption', 'gabarito'):
+            letter = _safe_letter(out.get(alias))
+            if letter:
+                out['correctOptionLetter'] = letter
+                break
+
+    if 'correctOptionLetter' in out:
+        letter = _safe_letter(out['correctOptionLetter'])
+        if letter:
+            out['correctOptionLetter'] = letter
+        else:
+            del out['correctOptionLetter']
+
+    # Remover campos desnecessários / internos
+    for campo in ('id', 'correctAlternative', 'answer', 'correct', 'questionModel'):
+        out.pop(campo, None)
+
+    return out
+
+# ── Extração de texto do PDF (PyMuPDF) ────────────────────────────────────────
+def extract_text(pdf_path: str) -> str:
+    full_text = ""
+    try:
+        with fitz.open(pdf_path) as doc:
+            total = len(doc)
+            for i, page in enumerate(doc, 1):
+                full_text += page.get_text() + " "
+                if i % 30 == 0:
+                    print(f"   [PDF] {i}/{total} paginas")
+    except Exception as e:
+        print(f"   [ERRO] Erro ao ler PDF com PyMuPDF: {e}.")
+        return ""
+    text = full_text.strip()
+    print(f"   [OK] {len(text):,} chars | {total} paginas")
+    return text
+
+# ── Prompt de instrução ───────────────────────────────────────────────────────
+def build_user_prompt(model_type: str, num_q: int, subject_tag: str) -> str:
+    is_m5 = model_type == 'M5'
+
+    example = (
+        '{\n'
+        '  "textPt": "ASSERÇÃO I: [proposição com 2+ linhas].\\n\\nPORQUE\\n\\nASSERÇÃO II: [mecanismo/justificativa com 2+ linhas].",\n'
+        '  "assertion1": "texto completo da Asserção I sem o prefixo ASSERÇÃO I:",\n'
+        '  "assertion2": "texto completo da Asserção II sem o prefixo ASSERÇÃO II:",\n'
+        '  "correctOptionLetter": "A",\n'
+        '  "explanationPt": "explicação detalhada — mínimo 6 linhas",\n'
+        '  "difficulty": "hard"\n'
+        '}'
+    ) if is_m5 else (
+        '{\n'
+        '  "textPt": "Enunciado contextualizado com 3+ linhas",\n'
+        '  "options": [\n'
+        '    {"id": "A", "textPt": "alternativa A"},\n'
+        '    {"id": "B", "textPt": "alternativa B"},\n'
+        '    {"id": "C", "textPt": "alternativa C"},\n'
+        '    {"id": "D", "textPt": "alternativa D"},\n'
+        '    {"id": "E", "textPt": "alternativa E"}\n'
+        '  ],\n'
+        '  "correctOptionLetter": "B",\n'
+        '  "explanationPt": "explicação com fundamentação e particularidades de animais não convencionais — mínimo 6 linhas",\n'
+        '  "difficulty": "hard"\n'
+        '}'
+    )
+
+    return (
+        f"Use o TEXTO FONTE acima para gerar exatamente {num_q} questão(ões) de "
+        f"MEDICINA DE ANIMAIS SELVAGENS E PETS EXÓTICOS (ANIMAIS NÃO CONVENCIONAIS) — área: {subject_tag}.\n\n"
+        f"REGRAS OBRIGATÓRIAS:\n"
+        f"- Nível Residência Veterinária / CFMV / Concursos Públicos. Dificuldade preferencialmente 'hard' ou 'medium'.\n"
+        f"- Contextualize: mencione a espécie com seu nome científico e comum (ex: Mustela putorius furo [ferret], Oryctolagus cuniculus [coelho], "
+        f"Cavia porcellus [porquinho-da-índia], Chinchilla lanigera [chinchila], Nymphicus hollandicus [calopsita], Amazona aestiva [papagaio-verdadeiro], "
+        f"Iguana iguana [iguana], Python regius [píton-real], Phrynops geoffroanus [cágado-de-barbicha], etc.), quadro clínico, particularidades metabólicas, anatômicas ou manejo.\n"
+        f"- PROIBIDO: 'segundo o texto', 'de acordo com o texto', 'no capítulo', 'conforme descrito', "
+        f"ou qualquer referência à fonte, ao livro ou ao capítulo.\n"
+        f"- PROIBIDO: perguntas de definição simples que um estudante de 1º ano responderia.\n"
+        f"- Distratores plausíveis: doses inadequadas para a espécie, particularidades fisiológicas confundidas com outras ordens/classes, "
+        f"diagnósticos diferenciais comuns, erros de manejo nutricional ou ambiental.\n"
+        f"- explanationPt EXTENSA (mínimo 6 linhas): explique detalhadamente a fisiopatologia da afecção, a justificativa da alternativa correta "
+        f"com base nas características biológicas únicas da espécie/grupo tratado, e o erro detalhado de cada alternativa incorreta.\n\n"
+        f"MODELO {model_type}:\n{model_rules(model_type)}\n\n"
+        f"OBRIGATÓRIO: EXATAMENTE 5 alternativas (A, B, C, D, E). Nunca 3 ou 4.\n\n"
+        f"Retorne APENAS um array JSON válido com {num_q} objeto(s). Sem markdown, sem texto extra.\n"
+        f"Exemplo de um objeto:\n{example}"
+    )
+
+# ── Gerar lote via API ────────────────────────────────────────────────────────
+@retry(wait=wait_exponential(multiplier=1, min=2, max=10), stop=stop_after_attempt(3))
+def generate_batch(chunk_idx: int, model_type: str, system_msg: str,
+                   num_q: int, subject_tag: str,
+                   discipline_id: int, subject_id: int) -> list:
+    try:
+        response = client.chat.completions.create(
+            model=DEEPSEEK_MODEL,
+            messages=[
+                {"role": "system", "content": system_msg},
+                {"role": "user",   "content": build_user_prompt(model_type, num_q, subject_tag)},
+            ],
+            temperature=0.75,
+            timeout=120.0,
+        )
+
+        usage = response.usage
+        hit  = getattr(usage, 'prompt_cache_hit_tokens',  0)
+        miss = getattr(usage, 'prompt_tokens', 0) - hit
+        print(f"   [Cache] In={usage.prompt_tokens}(hit={hit} miss={miss}) Out={usage.completion_tokens}")
+
+        raw = (response.choices[0].message.content or "[]").strip()
+        raw = re.sub(r'^```(?:json)?\s*', '', raw, flags=re.IGNORECASE)
+        raw = re.sub(r'\s*```$', '', raw).strip()
+
+        start = raw.find('[')
+        if start == -1:
+            start = raw.find('{')
+            if start != -1:
+                raw = '[' + raw[start:] + ']'
+        else:
+            depth, in_str, esc = 0, False, False
+            end = start
+            for i, ch in enumerate(raw[start:], start):
+                if esc:           esc = False; continue
+                if ch == '\\' and in_str: esc = True; continue
+                if ch == '"' and not esc: in_str = not in_str; continue
+                if in_str:        continue
+                if ch == '[':     depth += 1
+                elif ch == ']':
+                    depth -= 1
+                    if depth == 0: end = i; break
+            raw = raw[start:end + 1]
+
+        parsed = json.loads(raw)
+        if not isinstance(parsed, list):
+            parsed = [parsed]
+
+        return [post_process(q, model_type, subject_tag, discipline_id, subject_id)
+                for q in parsed]
+
+    except Exception as e:
+        print(f"   [ERRO] Erro ao gerar lote para o modelo {model_type} (chunk {chunk_idx}): {e}")
+        raise e
+
+# ── Calcular questões por modelo ──────────────────────────────────────────────
+def calc_qpm(num_chunks: int, target: int) -> int:
+    if num_chunks == 0:
+        return MIN_QPM
+    raw = math.ceil(target / (num_chunks * MODELS_PER_CHUNK))
+    return max(MIN_QPM, min(MAX_QPM, raw))
+
+# ── Processar um PDF ──────────────────────────────────────────────────────────
+def process_pdf(filename: str, subject_tag: str,
+                discipline_id: int, subject_id: int, rounds: int) -> int:
+    pdf_path = os.path.join(SILVESTRES_DIR, filename)
+
+    original_stem = os.path.splitext(filename)[0]
+    safe_original_stem = unicodedata.normalize('NFKD', original_stem).encode('ascii', 'ignore').decode('ascii')
+    safe_original_stem = re.sub(r'[^\w\s-]', '', safe_original_stem).strip().lower()
+    safe_original_stem = re.sub(r'[-\s]+', '_', safe_original_stem)
+
+    output_path = os.path.join(OUTPUT_DIR, f"questoes_silvestres_{safe_original_stem}.json")
+
+    print(f"\n" + "=" * 65)
+    print(f"Processando capitulo: {subject_tag}")
+    print(f"   Arquivo original: {filename}")
+    print(f"   disciplineId={discipline_id} | subjectId={subject_id}")
+    print(f"   Arquivo de saida: {os.path.basename(output_path)}")
+
+    if not os.path.exists(pdf_path):
+        print(f"   [AVISO] PDF nao encontrado — pulando.")
+        return 0
+
+    print(f"\n[Text] Extraindo texto...")
+    pdf_text = extract_text(pdf_path)
+    if not pdf_text:
+        print(f"   [FAIL] Nao foi possivel extrair texto de {filename}. Pulando.")
+        return 0
+
+    chunks = [pdf_text[i:i + CHUNK_SIZE] for i in range(0, len(pdf_text), CHUNK_SIZE)]
+    num_chunks = len(chunks)
+    
+    round_target = math.ceil(TARGET_QUESTIONS / rounds)
+    qpm = calc_qpm(num_chunks, round_target)
+    models_ativo = QUESTION_MODELS[:MODELS_PER_CHUNK]
+    estimativa = num_chunks * qpm * len(models_ativo) * rounds
+
+    print(f"\n[Info] {num_chunks} chunks x {qpm} q x {len(models_ativo)} modelos x {rounds} rodadas = {estimativa} questoes (meta total: {TARGET_QUESTIONS})")
+
+    # Retomada: se arquivo já existe, continua de onde parou
+    all_questions = []
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                existing = json.load(f)
+            if isinstance(existing, list) and existing:
+                all_questions = existing
+                print(f"   [Retomando] {len(all_questions)} questoes existentes")
+        except Exception:
+            pass
+
+    for r in range(1, rounds + 1):
+        print(f"\n" + "-" * 65)
+        print(f"Rodada {r}/{rounds}")
+        
+        for i, chunk in enumerate(chunks):
+            system_msg = (
+                f"Voce e especialista em elaboracao de questoes de MEDICINA DE ANIMAIS SELVAGENS E PETS EXOTICOS "
+                f"(ANIMAIS NAO CONVENCIONAIS) para concursos de Residencia Veterinaria e CFMV. "
+                f"Topico atual: {subject_tag}. "
+                f"Responda APENAS com um array JSON valido, sem markdown, sem texto extra.\n\n"
+                f"TEXTO FONTE:\n\"\"\"\n{chunk}\n\"\"\""
+            )
+
+            print(f"\n" + "-" * 65)
+            print(f"[Chunk] {i + 1}/{num_chunks} ({len(chunk):,} chars)")
+
+            chunk_total = 0
+            with concurrent.futures.ThreadPoolExecutor(max_workers=len(models_ativo)) as executor:
+                future_to_model = {
+                    executor.submit(
+                        generate_batch, i + 1, model_type, system_msg, qpm,
+                        subject_tag, discipline_id, subject_id
+                    ): model_type
+                    for model_type in models_ativo
+                }
+
+                for future in concurrent.futures.as_completed(future_to_model):
+                    model_type = future_to_model[future]
+                    try:
+                        questions = future.result()
+                        if questions:
+                            all_questions.extend(questions)
+                            chunk_total += len(questions)
+                            print(f"   [OK] Modelo {model_type} retornou {len(questions)} questoes.")
+                    except Exception as exc:
+                        print(f"   [FAIL] Modelo {model_type} gerou uma excecao apos retentativas: {exc}")
+
+            if chunk_total > 0:
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    json.dump(all_questions, f, ensure_ascii=False, indent=2)
+                print(f"   [Save] +{chunk_total} neste chunk | Total: {len(all_questions)}")
+            else:
+                print(f"   [Warning] Nenhuma questao gerada neste chunk.")
+
+            if i < num_chunks - 1:
+                time.sleep(2)
+
+    print(f"\n[Success] {filename}: {len(all_questions)} questoes -> {output_path}")
+    return len(all_questions)
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    print(f"\n" + "=" * 65)
+    print(f"VetRank — Animais Selvagens e Pets Exoticos")
+    print(f"=" * 65)
+    discipline_id = DISCIPLINE_ID
+    subject_id    = SUBJECT_ID
+
+    print(f"   disciplineId={discipline_id} | subjectId={subject_id}")
+    print(f"   Modelo DeepSeek: {DEEPSEEK_MODEL}")
+    print(f"   Meta: ~{TARGET_QUESTIONS} questoes por PDF em {ROUNDS} rodadas | Modelos: {MODELS_PER_CHUNK}")
+
+    if not os.path.isdir(SILVESTRES_DIR):
+        print(f"\n[Error] Pasta nao encontrada: {SILVESTRES_DIR}")
+        return
+
+    filter_arg = sys.argv[1].lower() if len(sys.argv) > 1 else None
+
+    def normalize_key(s: str) -> str:
+        s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
+        return re.sub(r'[^a-z0-9]', '', s.lower())
+
+    normalized_tags = {normalize_key(k): v for k, v in CHAPTER_TAGS.items()}
+
+    pdfs_to_run = []
+    for filename in sorted(os.listdir(SILVESTRES_DIR)):
+        if not filename.lower().endswith('.pdf'):
+            continue
+        stem = filename[:-4]
+
+        # Tenta encontrar correspondência normalizada
+        n_stem = normalize_key(stem)
+        tag = normalized_tags.get(n_stem)
+
+        if not tag:
+            # Fallback amigável
+            clean_stem = re.sub(r'^cap[ií]tulo[_\s-]*\d+[_\s-]*\d*[_\s-]*', '', stem, flags=re.IGNORECASE)
+            tag = re.sub(r'[_\s]+', ' ', clean_stem).strip()
+
+        if filter_arg and filter_arg not in filename.lower() and filter_arg not in tag.lower():
+            continue
+        pdfs_to_run.append({'file': filename, 'tag': tag})
+
+    if not pdfs_to_run:
+        print(f"\nNenhum PDF para o filtro '{filter_arg}'.")
+        return
+
+    print(f"\n   PDFs a processar: {len(pdfs_to_run)}")
+    for p in pdfs_to_run:
+        print(f"      * {p['file']} (Tag do assunto: {p['tag']})")
+
+    grand_total = 0
+    results = []
+
+    for idx, pdf_info in enumerate(pdfs_to_run):
+        count = process_pdf(
+            pdf_info['file'], pdf_info['tag'],
+            discipline_id, subject_id, ROUNDS
+        )
+        grand_total += count
+        results.append({"file": pdf_info['file'], "tag": pdf_info['tag'], "questoes": count})
+
+        if idx < len(pdfs_to_run) - 1:
+            print(f"\n[Info] 5s antes do proximo PDF...")
+            time.sleep(5)
+
+    print(f"\n" + "=" * 65)
+    print(f"Resumo Final — Medicina de Animais Selvagens e Pets Exoticos")
+    print(f"=" * 65)
+    for r in results:
+        ok = r['questoes'] >= TARGET_QUESTIONS * 0.85
+        print(f"   [{'OK' if ok else 'WARN'}] {r['tag']:<45} {r['questoes']:>5} q")
+    print(f"-" * 65)
+    print(f"   TOTAL: {grand_total} questoes em {len(results)} PDF(s)")
+    print(f"\nValidar antes de importar:")
+    print(f"   node scripts/normalize_questions_json.mjs <input.json> <output.json> \"<tag>\"")
+    print(f"=" * 65)
+
+if __name__ == "__main__":
+    main()

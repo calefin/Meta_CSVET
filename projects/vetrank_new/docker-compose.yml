@@ -1,0 +1,14 @@
+services:
+  vetrank:
+    build: .
+    container_name: vetrank
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:3001:3000"   # público só via NPM (rede appnet)
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    external: true
