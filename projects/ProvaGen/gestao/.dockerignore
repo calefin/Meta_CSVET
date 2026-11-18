@@ -1,0 +1,10 @@
+# Segredos chegam em runtime via env_file (docker-compose.prod.yml); o entrypoint copia
+# .env.example -> .env e as variáveis de ambiente reais têm precedência no Laravel.
+.env
+.env.*
+!.env.example
+*.bak*
+.git
+node_modules
+# instalado dentro da imagem pelo composer
+vendor

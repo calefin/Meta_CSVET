@@ -1,0 +1,37 @@
+# Version History (machine-friendly)
+
+- 0.1.0 — created: initial version tracking (files: VERSION, doc/RELEASES.md, scripts/update-version.mjs)
+- 0.1.1 — 2026-05-27 — updated via scripts/update-version.mjs\n- 0.1.2 — 2026-05-29 — updated via scripts/update-version.mjs
+- 1.0.22 — 2026-05-29 — updated via scripts/update-version.mjs
+- 1.0.23 — 2026-05-29 — updated via scripts/update-version.mjs
+- 1.0.24 — 2026-05-29 — updated via scripts/update-version.mjs
+- 1.0.25 — 2026-05-29 — updated via scripts/update-version.mjs
+- 1.0.26 — 2026-05-29 — updated via scripts/update-version.mjs
+- 1.0.27 — 2026-05-29 — updated via scripts/update-version.mjs
+- 1.0.28 — 2026-06-02 — updated via scripts/update-version.mjs
+- 1.0.29 — 2026-06-02 — updated via scripts/update-version.mjs
+- 1.0.30 — 2026-06-02 — updated via scripts/update-version.mjs
+- 1.0.31 — 2026-06-02 — updated via scripts/update-version.mjs
+- 1.0.32 — 2026-06-02 — updated via scripts/update-version.mjs
+- 1.0.33 — 2026-06-02 — updated via scripts/update-version.mjs
+- 1.0.34 — 2026-06-02 — updated via scripts/update-version.mjs
+- 1.0.35 — 2026-06-03 — updated via scripts/update-version.mjs
+- 1.0.36 — 2026-06-03 — updated via scripts/update-version.mjs
+- 1.0.37 — 2026-06-03 — updated via scripts/update-version.mjs
+- 1.0.38 — 2026-06-03 — updated via scripts/update-version.mjs
+- 1.0.39 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.40 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.41 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.42 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.43 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.44 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.45 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.46 — 2026-06-04 — updated via scripts/update-version.mjs
+- 1.0.47 — 2026-06-05 — updated via scripts/update-version.mjs
+- 1.0.48 — 2026-06-05 — updated via scripts/update-version.mjs
+- 1.0.49 — 2026-06-05 — updated via scripts/update-version.mjs
+- 1.0.50 — 2026-06-05 — updated via scripts/update-version.mjs
+- 1.0.51 — 2026-06-05 — updated via scripts/update-version.mjs
+- 1.0.52 — 2026-06-05 — updated via scripts/update-version.mjs
+- 1.0.53 — 2026-06-05 — updated via scripts/update-version.mjs
+- 1.0.54 — 2026-11-18 — updated via scripts/update-version.mjs

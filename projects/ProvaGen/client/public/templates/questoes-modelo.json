@@ -1,0 +1,19 @@
+[
+  {
+    "type": "multiple_choice",
+    "statement": "Qual é a velocidade da luz no vácuo aproximadamente?",
+    "alternatives": [
+      "150.000 km/s",
+      "300.000 km/s",
+      "450.000 km/s",
+      "600.000 km/s"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "type": "essay",
+    "statement": "Explique o impacto da Revolução Industrial na urbanização das cidades europeias.",
+    "alternatives": [],
+    "correctAnswer": null
+  }
+]

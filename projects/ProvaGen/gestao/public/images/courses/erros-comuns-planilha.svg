@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="'Segoe UI', Arial, sans-serif">
+  <rect width="900" height="560" fill="#ffffff" rx="12"/>
+  <text x="450" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b">4 erros comuns em planilhas de prontuário veterinário</text>
+
+  <!-- Spreadsheet mock -->
+  <g>
+    <rect x="70" y="56" width="620" height="330" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" rx="6"/>
+
+    <!-- header row -->
+    <rect x="70" y="56" width="620" height="34" fill="#e2e8f0"/>
+    <text x="110" y="78" font-weight="700" font-size="13" fill="#334155">Animal</text>
+    <text x="230" y="78" font-weight="700" font-size="13" fill="#334155">Espécie</text>
+    <text x="340" y="78" font-weight="700" font-size="13" fill="#334155">Peso (kg)</text>
+    <text x="450" y="78" font-weight="700" font-size="13" fill="#334155">Status</text>
+    <text x="570" y="78" font-weight="700" font-size="13" fill="#334155">Medicação</text>
+
+    <!-- column separators -->
+    <line x1="210" y1="56" x2="210" y2="386" stroke="#e2e8f0"/>
+    <line x1="320" y1="56" x2="320" y2="386" stroke="#e2e8f0"/>
+    <line x1="420" y1="56" x2="420" y2="386" stroke="#e2e8f0"/>
+    <line x1="540" y1="56" x2="540" y2="386" stroke="#e2e8f0"/>
+
+    <!-- row: Rex merged across 2 sub-rows (issue 1) -->
+    <rect x="70" y="90" width="140" height="60" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+    <text x="110" y="124" font-size="13" fill="#334155">Rex</text>
+    <rect x="210" y="90" width="410" height="30" fill="#ffffff"/>
+    <text x="230" y="110" font-size="12" fill="#334155">Canino</text>
+    <text x="340" y="110" font-size="12" fill="#334155">12.5</text>
+    <text x="450" y="110" font-size="12" fill="#334155">Consulta</text>
+    <text x="570" y="110" font-size="12" fill="#334155">—</text>
+    <rect x="210" y="120" width="410" height="30" fill="#fafafa"/>
+    <text x="230" y="140" font-size="12" fill="#334155">Canino</text>
+    <text x="340" y="140" font-size="12" fill="#334155">12.6</text>
+    <text x="450" y="140" font-size="12" fill="#334155">Retorno</text>
+    <text x="570" y="140" font-size="12" fill="#334155">—</text>
+
+    <!-- row: Mia, medicação concatenada (issue 4) -->
+    <rect x="70" y="150" width="620" height="32" fill="#ffffff"/>
+    <text x="110" y="171" font-size="12" fill="#334155">Mia</text>
+    <text x="230" y="171" font-size="12" fill="#334155">Felino</text>
+    <text x="340" y="171" font-size="12" fill="#334155">4.1</text>
+    <text x="450" y="171" font-size="12" fill="#334155">Tratamento</text>
+    <rect x="545" y="156" width="140" height="20" fill="#fed7aa" stroke="#f97316" stroke-width="1.2"/>
+    <text x="550" y="171" font-size="10.5" fill="#7c2d12">Dipirona + Amoxi.</text>
+
+    <!-- row: Thor, cor como dado (issue 2) -->
+    <rect x="70" y="182" width="620" height="32" fill="#fecaca" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="110" y="203" font-size="12" fill="#7f1d1d">Thor</text>
+    <text x="230" y="203" font-size="12" fill="#7f1d1d">Canino</text>
+    <text x="340" y="203" font-size="12" fill="#7f1d1d">—</text>
+    <text x="450" y="203" font-size="12" fill="#7f1d1d">Óbito</text>
+    <text x="570" y="203" font-size="12" fill="#7f1d1d">—</text>
+
+    <!-- more normal rows -->
+    <rect x="70" y="214" width="620" height="30" fill="#ffffff"/>
+    <text x="110" y="234" font-size="12" fill="#334155">Luna</text>
+    <text x="230" y="234" font-size="12" fill="#334155">Felino</text>
+    <text x="340" y="234" font-size="12" fill="#334155">3.9</text>
+    <text x="450" y="234" font-size="12" fill="#334155">Consulta</text>
+    <text x="570" y="234" font-size="12" fill="#334155">—</text>
+
+    <!-- Total row mixed in (issue 3) -->
+    <rect x="70" y="244" width="620" height="32" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="110" y="265" font-size="12.5" font-weight="700" fill="#1e3a8a">Total: 4 animais — peso médio 6.8kg</text>
+
+    <rect x="70" y="276" width="620" height="30" fill="#fafafa"/>
+    <text x="110" y="296" font-size="12" fill="#334155">Bibi</text>
+    <text x="230" y="296" font-size="12" fill="#334155">Ave</text>
+    <text x="340" y="296" font-size="12" fill="#334155">0.3</text>
+    <text x="450" y="296" font-size="12" fill="#334155">Consulta</text>
+    <text x="570" y="296" font-size="12" fill="#334155">—</text>
+  </g>
+
+  <!-- callouts -->
+  <g font-size="11.5">
+    <circle cx="720" cy="120" r="12" fill="#eab308"/>
+    <text x="720" y="125" text-anchor="middle" font-weight="700" fill="#ffffff">1</text>
+    <path d="M215 118 L706 120" stroke="#eab308" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+
+    <circle cx="720" cy="198" r="12" fill="#ef4444"/>
+    <text x="720" y="203" text-anchor="middle" font-weight="700" fill="#ffffff">2</text>
+    <path d="M694 198 L706 198" stroke="#ef4444" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+
+    <circle cx="720" cy="260" r="12" fill="#3b82f6"/>
+    <text x="720" y="265" text-anchor="middle" font-weight="700" fill="#ffffff">3</text>
+    <path d="M694 260 L706 260" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+
+    <circle cx="720" cy="166" r="12" fill="#f97316"/>
+    <text x="720" y="171" text-anchor="middle" font-weight="700" fill="#ffffff">4</text>
+    <path d="M690 166 L706 166" stroke="#f97316" stroke-width="1" stroke-dasharray="3 2" fill="none"/>
+  </g>
+
+  <!-- legend -->
+  <g font-size="13">
+    <rect x="70" y="404" width="760" height="132" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="92" cy="426" r="9" fill="#eab308"/><text x="92" y="430" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">1</text>
+    <text x="112" y="431" fill="#334155"><tspan font-weight="700">Célula mesclada</tspan> — "Rex" cobre 2 linhas; ao ler linha a linha, a 2ª fica sem valor de Animal.</text>
+
+    <circle cx="92" cy="452" r="9" fill="#ef4444"/><text x="92" y="456" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">2</text>
+    <text x="112" y="457" fill="#334155"><tspan font-weight="700">Cor como dado</tspan> — "óbito" marcado só pela cor vermelha, não existe em nenhuma coluna.</text>
+
+    <circle cx="92" cy="478" r="9" fill="#3b82f6"/><text x="92" y="482" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">3</text>
+    <text x="112" y="483" fill="#334155"><tspan font-weight="700">Subtotal misturado</tspan> — a linha "Total" no meio dos dados quebra qualquer cálculo automático.</text>
+
+    <circle cx="92" cy="504" r="9" fill="#f97316"/><text x="92" y="508" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">4</text>
+    <text x="112" y="509" fill="#334155"><tspan font-weight="700">Mais de um valor por célula</tspan> — "Dipirona + Amoxicilina" impede filtrar por medicamento individual.</text>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+# Segredos chegam em runtime via env_file (docker-compose.yml) — nunca dentro da imagem.
+.env
+.env.*
+!.env.example
+*.bak*
+# Outro projeto (Laravel, imagem própria) e artefatos que a imagem gera sozinha
+gestao
+.git
+node_modules

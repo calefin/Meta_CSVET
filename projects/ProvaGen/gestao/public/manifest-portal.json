@@ -1,0 +1,26 @@
+{
+  "name": "Portal do Aluno - Prof-Aid",
+  "short_name": "Portal Aluno",
+  "description": "Portal de gestão acadêmica para orientandos",
+  "start_url": "/portal",
+  "scope": "/portal",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#312e81",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/images/pwa-icon-192.png",
+      "sizes": "240x240",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/pwa-icon-512.png",
+      "sizes": "640x640",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

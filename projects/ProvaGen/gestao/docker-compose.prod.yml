@@ -1,0 +1,16 @@
+services:
+  gestao:
+    build: .
+    container_name: gestao
+    restart: always
+    env_file: .env
+    networks:
+      - apps-network
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+
+networks:
+  apps-network:
+    external: true

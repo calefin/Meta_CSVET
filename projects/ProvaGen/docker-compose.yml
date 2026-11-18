@@ -1,0 +1,16 @@
+services:
+  prof-aid:
+    build: .
+    container_name: prof-aid
+    restart: always
+    env_file: .env
+    networks:
+      - apps-network
+    deploy:
+      resources:
+        limits:
+          memory: 900m
+
+networks:
+  apps-network:
+    external: true
