@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <!-- ── Primary SEO ──────────────────────────────────────────────────── -->
+    <title>Prof-Aid — Sistema de Provas e Banco de Questões para Escolas, Faculdades e Universidades</title>
+    <meta name="description" content="Prof-Aid é a solução definitiva em banco de questões e sistema de provas para escolas, faculdades e universidades. Crie avaliações em PDF com múltiplas versões e faça correção automática de gabaritos via câmera." />
+    <meta name="keywords" content="sistema de provas para escolas, plataforma de provas para faculdades, banco de questões universidades, software de correção de provas, gerador de avaliações, portal do aluno, gabarito zipgrade gradepen, lms faculdade, avaliações educacionais" />
+    <meta name="author" content="Prof-Aid" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.prof-aid.com/" />
+
+    <!-- ── Open Graph (Facebook, WhatsApp, LinkedIn) ─────────────────── -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="/" />
+    <meta property="og:title"       content="Prof-Aid — Plataforma de Avaliações Educacionais" />
+    <meta property="og:description" content="Crie e gerencie avaliações com facilidade. Banco de questões, geração de PDF com embaralhamento automático e correção por câmera." />
+    <meta property="og:image"       content="/og-image.png" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"   content="Prof-Aid — Plataforma de Avaliações Educacionais" />
+    <meta property="og:locale"      content="pt_BR" />
+    <meta property="og:site_name"   content="Prof-Aid" />
+
+    <!-- ── Twitter Card ──────────────────────────────────────────────── -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:site"        content="@profaidapp" />
+    <meta name="twitter:title"       content="Prof-Aid — Plataforma de Avaliações Educacionais" />
+    <meta name="twitter:description" content="Crie e gerencie avaliações com facilidade. Banco de questões, PDF com embaralhamento e correção por câmera." />
+    <meta name="twitter:image"       content="/og-image.png" />
+
+    <!-- ── Favicon / PWA ─────────────────────────────────────────────── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#059669" />
+
+    <!-- ── Schema.org JSON-LD structured data ────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Prof-Aid",
+      "url": "/",
+      "description": "Solução robusta de banco de questões e sistema de provas sob medida para escolas, faculdades e universidades. Geração de provas em PDF, múltiplas versões embaralhadas e correção óptica de gabaritos.",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "Web",
+      "inLanguage": ["pt-BR", "en", "es"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL",
+        "description": "Plano gratuito disponível"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Prof-Aid",
+        "url": "/"
+      },
+      "featureList": [
+        "Banco de questões com importação XLSX, DOCX, PDF e JSON",
+        "Geração de provas em PDF com múltiplas versões embaralhadas",
+        "Correção automática de gabaritos por câmera",
+        "Gestão de turmas e alunos",
+        "Compartilhamento de provas online",
+        "Relatórios de desempenho"
+      ]
+    }
+    </script>
+
+    <!-- ── Organization schema ───────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Prof-Aid",
+      "url": "/",
+      "logo": "/og-image.png",
+      "sameAs": []
+    }
+    </script>
+
+    <script type="module">
+      const siteBase = (typeof window !== 'undefined' && window.location.origin) || import.meta.env.VITE_SITE_BASE || 'https://www.prof-aid.com';
+      // update canonical
+      const canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = siteBase + '/';
+      // update OG / Twitter
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.content = siteBase + '/';
+      const ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogImage) ogImage.content = siteBase + '/og-image.png';
+      const twitterImage = document.querySelector('meta[name="twitter:image"]');
+      if (twitterImage) twitterImage.content = siteBase + '/og-image.png';
+      // update JSON-LD scripts
+      document.querySelectorAll('script[type="application/ld+json"]').forEach(s => {
+        try {
+          const j = JSON.parse(s.textContent || '{}');
+          if (j.url) j.url = siteBase;
+          if (j.author && j.author.url) j.author.url = siteBase;
+          if (j.logo) j.logo = siteBase + '/og-image.png';
+          s.textContent = JSON.stringify(j, null, 2);
+        } catch (e) {
+          // ignore
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+
+</html>

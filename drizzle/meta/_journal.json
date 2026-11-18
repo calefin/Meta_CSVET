@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1778964361537,
+      "tag": "0000_natural_pride",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1779286276831,
+      "tag": "0001_perfect_pride",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1779288522805,
+      "tag": "0002_little_spacker_dave",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1779357412337,
+      "tag": "0003_flimsy_agent_brand",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1779880978231,
+      "tag": "0004_late_tony_stark",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1780051563977,
+      "tag": "0005_graceful_captain_midlands",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1780052371066,
+      "tag": "0006_polite_wrecker",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1780052813477,
+      "tag": "0007_silky_daredevil",
+      "breakpoints": true
+    }
+  ]
+}

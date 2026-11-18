@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.prof-aid.com/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/login</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/login?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/login?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/login" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/login?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/login?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/login?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/login" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/login?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/login?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/login?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/login" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/signup</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/signup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/signup?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/signup?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/signup" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/signup?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/signup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/signup?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/signup?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/signup" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/signup?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/signup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/signup?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/signup?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/signup" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/pricing?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/pricing?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/pricing" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/pricing?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/pricing?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/pricing?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/pricing" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/pricing?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/pricing?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/pricing?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/pricing" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/faq?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/faq?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/faq" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/faq?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/faq?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/faq?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/faq" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/faq?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/faq?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/faq?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/faq" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/quote</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/quote" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/quote?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/quote?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/quote" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/quote?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/quote" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/quote?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/quote?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/quote" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.prof-aid.com/quote?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.prof-aid.com/quote" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.prof-aid.com/quote?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.prof-aid.com/quote?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.prof-aid.com/quote" />
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

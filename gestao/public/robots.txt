@@ -1,0 +1,36 @@
+User-agent: *
+
+# Painéis privados (requerem autenticação)
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /portal
+Disallow: /portal/*
+
+# Rotas de autenticação e convite
+Disallow: /login
+Disallow: /register
+Disallow: /invite
+Disallow: /invite/*
+Disallow: /activate
+Disallow: /forgot-password
+Disallow: /reset-password
+
+# Rotas protegidas e operacionais
+Disallow: /documento/download/*
+Disallow: /documento/govbr/*
+Disallow: /documento/linha-tempo/*
+Disallow: /admin/relatorio-*
+
+# Endpoints de formulário (POST-only) — sem página para indexar; o Googlebot
+# tenta GET porque a URL aparece dentro de um <script> inline, e recebe 405.
+Disallow: /submit-consultation
+
+# Permitir explicitamente páginas públicas indexáveis
+Allow: /orientador
+Allow: /instalar-app
+Allow: /normas-abnt
+Allow: /verificador
+Allow: /documento/certificado/validar/*
+Allow: /documento/validar/*
+
+Sitemap: https://profatilio.com.br/sitemap.xml
