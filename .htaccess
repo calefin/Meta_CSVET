@@ -1,0 +1,72 @@
+# Habilitar o mecanismo de reescrita do Apache
+RewriteEngine On
+
+# Domínio canônico: https://csvet.com.br (consolida a autoridade num único host).
+# A validação do AutoSSL/Let's Encrypt em /.well-known/ fica de fora.
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://csvet.com.br%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# /index.php acessado diretamente (sem ?go=) vira a raiz, evitando URL duplicada
+RewriteCond %{THE_REQUEST} \s/index\.php[\s?] [NC]
+RewriteCond %{QUERY_STRING} !(^|&)go= [NC]
+RewriteRule ^index\.php$ / [L,R=301]
+
+# Páginas institucionais: /privacidade.php -> /privacidade (uma única URL por página)
+RewriteCond %{THE_REQUEST} \s/(privacidade|termos)\.php[\s?] [NC]
+RewriteRule ^(privacidade|termos)\.php$ /%1 [L,R=301]
+
+# Arquivos internos e de configuração nunca são servidos (exceto /.well-known/)
+RewriteRule ^(README\.(md|zip)|deploy\.sh|data\.php|\.cpanel\.yml)$ - [F,L]
+RewriteRule ^partials/ - [F,L]
+RewriteRule (^|/)\.(?!well-known/) - [F,L]
+
+# /privacidade/ (com barra) -> /privacidade: evita a cópia "com barra" no Search Console
+RewriteRule ^(privacidade|termos)/$ /$1 [L,R=301]
+
+# URLs limpas das páginas institucionais
+RewriteRule ^(privacidade|termos)$ $1.php [L]
+
+# Não aplicar a reescrita se o arquivo ou diretório existir fisicamente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirecionar URLs amigáveis como csvet.com.br/vetrank ou csvet.com.br/vetrank/ para index.php?go=vetrank
+RewriteRule ^([a-zA-Z0-9\-]+)/?$ index.php?go=$1 [L,QSA]
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    # robots.txt e sitemap não devem aparecer como resultado de busca
+    <FilesMatch "^(robots\.txt|sitemap\.xml)$">
+        Header set X-Robots-Tag "noindex"
+    </FilesMatch>
+</IfModule>
+
+AddType application/manifest+json .webmanifest
+
+# Compressão
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml image/svg+xml image/x-icon
+</IfModule>
+
+# Cache: o CSS é versionado no index.php (?v=data do arquivo), então pode ficar em cache longo.
+# O HTML é sempre revalidado, para que mudanças apareçam na hora.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 0 seconds"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 week"
+    ExpiresByType application/manifest+json "access plus 1 week"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

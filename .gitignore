@@ -1,0 +1,15 @@
+# SO / editores
+Thumbs.db
+.DS_Store
+desktop.ini
+.vscode/
+.idea/
+
+# Logs do servidor
+error_log
+*.log
+
+# Pacotes e backups gerados localmente
+*.zip
+*.tar.gz
+!README.zip
