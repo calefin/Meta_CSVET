@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap&subset=latin,latin-ext');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: theme('fontFamily.sans');
+}
+
+body {
+    background-color: theme('colors.sacred-sand');
+    color: theme('colors.ebony');
+}
+
+[lang='yo'] {
+    font-family: theme('fontFamily.sans');
+}
+
+[x-cloak] {
+    display: none !important;
+}

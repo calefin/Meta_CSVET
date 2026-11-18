@@ -1,0 +1,21 @@
+<FilesMatch "\.(env|json|lock|log|sh|sql|md|gitignore)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+RewriteEngine On
+
+# Block direct access to the .git directory regardless of how the request
+# reaches this vhost (defense in depth on top of the rewrite below, which
+# already sends every other request into public/ where .git does not exist).
+RewriteRule ^\.git/ - [F,L]
+
+Options -Indexes
+
+RewriteRule ^(.*)$ public/$1 [L]
+
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+AddDefaultCharset UTF-8
